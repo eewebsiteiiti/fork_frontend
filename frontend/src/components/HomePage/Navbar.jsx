@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Box, Divider, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
@@ -19,9 +19,9 @@ export default function Navbar() {
               </Link>
               <Link to="/">
                 <div>
-                  <Typography variant="h5" color={"white"} padding={5}>
-                    Indian Institute Of Technology Indore
-                    <br /> Department of Electrical Engineering
+                  <Typography variant="h4" color={"white"} padding={5}>
+                    INDIAN INSTITUTE OF TECHNOLOGY, INDORE
+                    <br /> DEPARTMENT OF ELECTRICAL ENGINEERING
                   </Typography>
                 </div>
               </Link>
@@ -29,12 +29,21 @@ export default function Navbar() {
             <div className="menu-wrapper">
               <ul className="nav-links">
                 <li className="menu">
-                  <Link to="/">Home</Link>
+                  <Link to="/">
+                    <Typography variant="h5" color="white">
+                      {" "}
+                      Home
+                    </Typography>
+                  </Link>
                 </li>
                 {Object.keys(navs).map((key, i) => (
                   <>
                     <li className="menu">
-                      <Link to="#">{key}</Link>
+                      <Link to="#">
+                        <Typography variant="h5" color="white">
+                          {key}
+                        </Typography>
+                      </Link>
                       {typeof navs[key] === "object" ? (
                         <>
                           <ul className="ani-menu">
@@ -44,7 +53,14 @@ export default function Navbar() {
                                   <>
                                     <li className="aniani-menu-trigger">
                                       <div className="link-button">
-                                        <Link to="#">{key2}</Link>
+                                        <Link to="#">
+                                          <Typography
+                                            variant="h5"
+                                            color="white"
+                                          >
+                                            {key2}
+                                          </Typography>
+                                        </Link>
                                         <ul className="aniani-menu">
                                           {Object.keys(navs[key][key2]).map(
                                             (key3, i3) => (
@@ -54,7 +70,12 @@ export default function Navbar() {
                                                     <Link
                                                       to={navs[key][key2][key3]}
                                                     >
-                                                      {key3}
+                                                      <Typography
+                                                        variant="h5"
+                                                        color="white"
+                                                      >
+                                                        {key3}
+                                                      </Typography>
                                                     </Link>
                                                   </div>
                                                 </li>
@@ -69,7 +90,9 @@ export default function Navbar() {
                                   <>
                                     <li>
                                       <div className="link-button">
-                                        <Link to={navs[key][key2]}>{key2}</Link>
+                                        <Link to={navs[key][key2]}>
+                                          <Typography variant="h5" color="white">{key2}</Typography>
+                                        </Link>
                                       </div>
                                     </li>
                                   </>
@@ -93,5 +116,3 @@ export default function Navbar() {
     </div>
   );
 }
-
- 

@@ -8,30 +8,41 @@ const theme = createTheme({
     secondary: {
       main: "#B2103F",
     },
+    tertiary: {
+      main: "#ffffff00",
+    },
   },
 });
 
 theme.typography.h1 = {
-    fontSize: "2rem",
-  fontFamily:'Roboto Condensed,sans-serif',
+  fontSize: "2rem",
+  fontFamily: "Roboto Condensed,sans-serif",
   color: "#000",
   fontWeight: 700,
 };
 theme.typography.h3 = {
   fontSize: "1.2rem",
+  fontFamily: "Roboto Condensed,sans-serif",
   color: "#000",
 };
 theme.typography.h4 = {
-    fontSize: "1.1rem",
-    color: "#000",
+  fontSize: "1.1rem",
+  fontFamily: "Roboto Condensed,sans-serif",
+  color: "#000",
 };
 theme.typography.h5 = {
-    fontSize: "1rem",
-    color: "#000",
+  fontSize: "1rem",
+  fontFamily: "Roboto Condensed,sans-serif",
+  color: "#000",
 };
 theme.typography.h6 = {
-    fontSize: "0.9rem",
-    color: "#000",
+  fontSize: "0.9rem",
+  color: "#000",
+};
+theme.typography.p = {
+  fontSize: "0.9rem",
+  color: "#000",
+  
 };
 
 export default theme;

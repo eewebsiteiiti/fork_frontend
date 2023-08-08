@@ -46,6 +46,7 @@ const MobileNavbar = () => {
         width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
         display: "flex",
         flexDirection: "column",
+        color: "black",
       }}
       role="presentation"
       // onClick={toggleDrawer(anchor, false)}
@@ -57,7 +58,7 @@ const MobileNavbar = () => {
         aria-labelledby="nested-list-subheader"
         subheader={
           <ListSubheader component="div" id="nested-list-subheader">
-            Department of Electrical
+            Department of Electrical Engineering
           </ListSubheader>
         }
       >
@@ -183,7 +184,7 @@ const MobileNavbar = () => {
   );
   return (
     <>
-      <AppBar position="static" color="secondary">
+      <AppBar position="absolute" color="tertiary">
         <Box
           sx={{
             display: { xs: "flex", md: "none" },
@@ -199,18 +200,18 @@ const MobileNavbar = () => {
           </Link>
           <Link to={"/"}>
             <Box sx={{ px: 1 }}>
-              <Typography fontSize="0.8rem" fontWeight="600" color="black">
-                Department Of Electical Engineering
+              <Typography variant="h1" fontSize="0.8rem" fontWeight="600" color="white">
+                DEPARTMENT OF ELECTRICAL ENGINEERING
                 <br />
               </Typography>
-              <Typography fontSize="0.6rem" fontWeight="600" color="black">
-                Indian Institute Of Technology Indore
+              <Typography variant="h1" fontSize="0.6rem" fontWeight="600" color="white">
+                INDIAN INSTITUTE OF TECHNOLOGY, INDORE
               </Typography>
             </Box>
           </Link>
           <IconButton
             onClick={toggleDrawer("left", true)}
-            sx={{ ml: "auto", color: "black" }}
+            sx={{ ml: "auto", color: "white" }}
           >
             <MenuIcon color="primary" />
           </IconButton>
@@ -222,7 +223,7 @@ const MobileNavbar = () => {
           display: {
             xs: "flex",
             md: "none",
-            backgroundColor: "#105297",
+            // backgroundColor: "#105297",
             width: "100%",
           },
         }}
