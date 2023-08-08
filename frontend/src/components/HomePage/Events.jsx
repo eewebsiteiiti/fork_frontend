@@ -1,11 +1,11 @@
-import { Container, Typography, Grid } from "@mui/material";
 import React from "react";
 import Event from "./Event";
 import { useEffect } from "react";
 import axios from "axios";
 import Dates from "./Dates";
 import { api } from "../../Api";
-
+import Heading from "../Heading";
+import { Container, Typography, Grid } from "@mui/material";
 export default function Events() {
   const [event, setEvent] = React.useState([]);
   const [isError, setIsError] = React.useState([]);
