@@ -1,4 +1,3 @@
-
 * {
   padding: 0%;
   margin: 0%;
@@ -6,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Quicksand", sans-serif;
-  color:white;
+  /* color: white; */
 }
 
 .carousel-text {
@@ -55,10 +54,12 @@ table {
   text-align: center;
   margin: auto;
 }
+
 td {
   width: 10%;
   padding: 1%;
 }
+
 th {
   background-color: var(--my-color);
   color: #fff;
@@ -71,8 +72,29 @@ th {
   background-size: cover;
   font-weight: 700;
 }
+
 .about-backdrop {
   backdrop-filter: blur(7px);
   padding: 7% 2%;
 }
 
+/* //HOD's note  */
+
+.hod-note {
+  color: #FFF;
+  background-color: #B2103F;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  margin-top: 5%;
+}
+
+.note-txt {
+  padding-left: 5%;
+}
+
+.note-img {
+  box-shadow: 18px 14px 13px 5px rgba(0, 0, 0, 0.25);
+}
