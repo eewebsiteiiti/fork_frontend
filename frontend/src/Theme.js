@@ -42,7 +42,7 @@ theme.typography.h6 = {
 theme.typography.p = {
   fontSize: "0.9rem",
   color: "#000",
-  
+  fontFamily:'Caudex , serif'
 };
 
 export default theme;
