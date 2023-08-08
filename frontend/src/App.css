@@ -26,7 +26,7 @@
 
 /* /////////////////////////Counter//////////////////////////// */
 .Counter-div {
-  background-image: url(/public/Images/bg.jpg);
+  /* background-image: url(/public/Images/bg.jpg); */
   background-position: 100%;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .Footer-div {
-  /* background-image: url(/public/Images/bg.jpg); */
+  background-image: url(/public/Images/bg.jpg);
   background-position: 100%;
   background-size: cover;
 }
