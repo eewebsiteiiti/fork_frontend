@@ -26,7 +26,7 @@
 
 /* /////////////////////////Counter//////////////////////////// */
 .Counter-div {
-  /* background-image: url(/public/Images/bg.jpg); */
+  background-image: url(/public/Images/bg.jpg);
   background-position: 100%;
 }
 
@@ -87,7 +87,7 @@ th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3%;
+  padding: 4% 2%;
   margin-top: 5%;
 }
 

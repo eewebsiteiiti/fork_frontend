@@ -40,9 +40,9 @@ theme.typography.h6 = {
   color: "#000",
 };
 theme.typography.p = {
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   color: "#000",
-  
+
 };
 
 export default theme;
