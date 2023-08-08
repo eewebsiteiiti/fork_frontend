@@ -8,30 +8,44 @@ export default function Event(props) {
     <div>
       <Grid
         container
-        justifyContent="Left"
+        justifyContent="left"
         direction="column"
-        alignItems="center"
-        spacing={2}
+        alignItems="left"
       >
         <Grid item sx={12} md={3}>
           <CardMedia
             component="img"
-            sx={{ height: 140 }}
+            sx={{ height: 100 }}
             image={`${image_api}${props.image}`}
             loading="lazy"
           />
         </Grid>
-        <Grid item> {props.time} </Grid>
         <Grid item>
-          {props.date} {props.month} {props.year} ,{props.day}
+          <Grid
+            container
+            justifyContent="space-between"
+            direction="row"
+            alignItems="left"
+          >
+            <Grid item>
+              <Typography variant="p" color="gray" fontSize={".7rem"}>
+                {props.time}
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="p" color="gray" fontSize={".7rem"}>
+                {props.date} {props.month} {props.year} ,{props.day}
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="p" fontWeight={700}>
+          <Typography variant="p" fontWeight={700} color="black">
             {props.title}
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant="p" xs={12} md={3}>
+          <Typography variant="p" xs={12} md={3} textAlign={"justify"}>
             {props.description}
           </Typography>
         </Grid>

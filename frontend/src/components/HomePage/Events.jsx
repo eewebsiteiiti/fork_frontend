@@ -2,15 +2,15 @@ import React from "react";
 import Event from "./Event";
 import { useEffect } from "react";
 import axios from "axios";
+import Dates from "./Dates";
 import { api } from "../../Api";
-
-
-
 import Heading from "../Heading";
 import { Container, Typography, Grid } from "@mui/material";
 export default function Events() {
   const [event, setEvent] = React.useState([]);
   const [isError, setIsError] = React.useState([]);
+  const [announcement, setAnnouncement] = React.useState([]);
+  const [dates, setDates] = React.useState([]);
   useEffect(() => {
     axios
       .get(`${api}/events/read`, {
@@ -22,21 +22,171 @@ export default function Events() {
       setEvent("Not Available");
     }
   }, [isError]);
-  console.log(event);
+  useEffect(() => {
+    axios
+      .get(`${api}/announcement/read`, {
+        mode: "cors",
+      })
+      .then((response) => setAnnouncement(response.data))
+      .catch((error) => setIsError(error.message));
+    if (!isError) {
+      setEvent("Not Available");
+    }
+  }, [isError]);
+  console.log(announcement)
+  useEffect(() => {
+    axios
+      .get(`${api}/news/read`, {
+        mode: "cors",
+      })
+      .then((response) => setDates(response.data))
+      .catch((error) => setIsError(error.message));
+    if (!isError) {
+      setEvent("Not Available");
+    }
+  }, [isError]);
   return (
     <div>
       <Container sx={{ my: 5 }}>
-        <Heading heading="Events" />
         <Grid
           container
-          justifyContent="Left"
-          direction="column"
-          alignItems="center"
-          spacing={2}
+          justifyContent="space-between"
+          direction="row"
+          alignItems="left"
         >
-          <Grid item xs={12} md={3}>
-            {/* map on item list */}
-            <Event description="sdfs" title="dhfjsdh" image="skjdf" />
+          <Grid item xs={12} md={8}>
+            <Grid
+              container
+              justifyContent="center"
+              direction="column"
+              alignItems="left"
+              spacing={1}
+            >
+              <Grid item>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    borderBottom: "2px solid #BBBBBB",
+                    padding: 0,
+                    marginBottom: 3,
+                  }}
+                >
+                  EVENTS
+                </Typography>
+                <Grid
+                  container
+                  justifyContent="Left"
+                  direction="row"
+                  alignItems="center"
+                >
+                  {event?.map((item, key) => (
+                    <>
+                      <Grid item sm={12} md={3}>
+                        <Event
+                          description={item.description}
+                          title={item.title}
+                          image={item.image}
+                          day={item.day}
+                          year={item.year}
+                          date={item.date}
+                          month={item.month}
+                          time={item.time}
+                          link={item.link}
+                        />
+                      </Grid>
+                    </>
+                  ))}
+                </Grid>
+              </Grid>
+              <Grid item>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    borderBottom: "2px solid #BBBBBB",
+                    padding: 0,
+                    marginBottom: 3,
+                  }}
+                >
+                  IMPORTANT DATES
+                </Typography>
+                <Grid
+                  container
+                  justifyContent="Left"
+                  direction="row"
+                  alignItems="center"
+                  spacing={4}
+                >
+                  {dates?.map((item, key) => (
+                    <>
+                      <Grid item sm={12} md={4} key={key}>
+                        <Dates
+                          description={item.description}
+                          title={item.title}
+                          image={item.image}
+                          day={item.day}
+                          year={item.year}
+                          date={item.date}
+                          month={item.month}
+                          time={item.time}
+                          link={item.link}
+                        />
+                      </Grid>
+                    </>
+                  ))}
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            backgroundColor={"#EEE"}
+            borderTop={"4px solid #B2103F"}
+            padding={2}
+          >
+            <Typography
+              variant="h1"
+              textAlign={"center"}
+              sx={{
+                borderBottom: "2px solid #BBBBBB",
+                padding: 0,
+                marginBottom: 3,
+              }}
+            >
+              NEWS
+            </Typography>
+            <Grid
+              container
+              justifyContent="Left"
+              direction="column"
+              alignItems="center"
+            >
+              {announcement?.map((item, key) => (
+                <>
+                  <Grid
+                    item
+                    sm={12}
+                    md={3}
+                    key={key}
+                    borderBottom={"2px solid #BBBBBB"}
+                    padding={1}
+                  >
+                    <Typography
+                      variant="p"
+                      fontSize={"0.8rem"}
+                      fontWeight={700}
+                    >
+                      {item.title}
+                    </Typography>
+
+                    <Typography variant="p" fontSize={"0.8rem"}>
+                      {item.description}
+                    </Typography>
+                  </Grid>
+                </>
+              ))}
+            </Grid>
           </Grid>
         </Grid>
       </Container>
