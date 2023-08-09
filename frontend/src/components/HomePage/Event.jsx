@@ -12,10 +12,10 @@ export default function Event(props) {
         direction="column"
         alignItems="left"
       >
-        <Grid item sx={12} md={3}>
+        <Grid item sx={12} md={5}>
           <CardMedia
             component="img"
-            sx={{ height: 100 }}
+            sx={{ width: 200 }}
             image={`${image_api}${props.image}`}
             loading="lazy"
           />
@@ -45,7 +45,7 @@ export default function Event(props) {
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant="p" xs={12} md={3} textAlign={"justify"}>
+          <Typography variant="p" fontSize={"0.8rem"} xs={12} md={3} textAlign={"justify"}>
             {props.description}
           </Typography>
         </Grid>
