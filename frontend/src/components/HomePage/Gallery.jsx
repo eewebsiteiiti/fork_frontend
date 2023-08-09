@@ -21,10 +21,9 @@ export default function WovenImageList() {
           gap={20}
         >
           {itemData.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem key={item.img} >
               <img
-                src={`${item.img}`}
-                // srcSet={`${item.img}`}
+                src={`${item.img}`}                // srcSet={`${item.img}`}
                 className="MuiImageListItem-img"
                 alt={item.title}
                 loading="lazy"
