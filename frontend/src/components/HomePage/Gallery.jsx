@@ -35,14 +35,7 @@ export default function WovenImageList() {
         </ImageList>
         <br />
         <br />
-        <Typography
-          sx={{ textAlign: "center", fontSize: "2.3rem", py: 4 }}
-          variant="h1"
-          component="h2"
-        >
-          Timeline!
-        </Typography>
-        <img src="/Images/history.png" alt='not available' width="98%" />
+        
       </Container>
     );
 }
