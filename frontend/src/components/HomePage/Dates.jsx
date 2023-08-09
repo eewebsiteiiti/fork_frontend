@@ -7,16 +7,16 @@ export default function Dates(props) {
   return (
     <div>
       <Card
-        styles={{
-        //   width: "10vw",
-          // height:"17vh",
-          // borderRight: 3,
-          // borderTop: 3,
-        //   whiteSpace: "nowrap",
-        //   overflow:"hidden",
+        sx={{
+          width: "15vw",
+          height:"17vh",
+          borderRight: 3,
+          borderTop: 3,
+          whiteSpace: "nowrap",
+          overflow:"hidden",
           textOverflow: "ellipsis",
-        //   borderRadius: 0,
-        //   borderColor: "primary.main",
+          borderRadius: 0,
+          borderColor: "primary.main",
         }}
         elevation={1}
       >

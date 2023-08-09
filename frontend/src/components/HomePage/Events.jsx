@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import axios from "axios";
 import Dates from "./Dates";
 import { api } from "../../Api";
-import Heading from "../Heading";
 import { Container, Typography, Grid } from "@mui/material";
 export default function Events() {
   const [event, setEvent] = React.useState([]);
@@ -33,7 +32,7 @@ export default function Events() {
       setEvent("Not Available");
     }
   }, [isError]);
-  console.log(announcement)
+  console.log(announcement);
   useEffect(() => {
     axios
       .get(`${api}/news/read`, {
@@ -53,6 +52,8 @@ export default function Events() {
           justifyContent="space-between"
           direction="row"
           alignItems="left"
+          padding={2}
+          spacing={1}
         >
           <Grid item xs={12} md={8}>
             <Grid
@@ -78,6 +79,7 @@ export default function Events() {
                   justifyContent="Left"
                   direction="row"
                   alignItems="center"
+                  spacing={1}
                 >
                   {event?.map((item, key) => (
                     <>
@@ -144,6 +146,7 @@ export default function Events() {
             backgroundColor={"#EEE"}
             borderTop={"4px solid #B2103F"}
             padding={2}
+            // spacing={1}
           >
             <Typography
               variant="h1"
@@ -151,7 +154,6 @@ export default function Events() {
               sx={{
                 borderBottom: "2px solid #BBBBBB",
                 padding: 0,
-                marginBottom: 3,
               }}
             >
               NEWS
@@ -161,6 +163,8 @@ export default function Events() {
               justifyContent="Left"
               direction="column"
               alignItems="center"
+              // spapaddingY={0}cing={1}
+              
             >
               {announcement?.map((item, key) => (
                 <>
@@ -171,6 +175,7 @@ export default function Events() {
                     key={key}
                     borderBottom={"2px solid #BBBBBB"}
                     padding={1}
+                    spacing={1}
                   >
                     <Typography
                       variant="p"
@@ -179,7 +184,7 @@ export default function Events() {
                     >
                       {item.title}
                     </Typography>
-
+                    <br />
                     <Typography variant="p" fontSize={"0.8rem"}>
                       {item.description}
                     </Typography>
