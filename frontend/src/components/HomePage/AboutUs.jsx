@@ -6,12 +6,12 @@ export default function AboutUs() {
       <div className="about">
         <Grid
           container
-          sx={{
-            backgroundColor: {
-              xs: "primary.main",
-              md: "white",
-            },
-          }}
+        // sx={{
+        //   backgroundColor: {
+        //     xs: "primary.main",
+        //     md: "white",
+        //   },
+        // }}
         >
           <Grid item sx={{ backgroundColor: "primary.main" }} xs={12} md={11}>
             <Grid
@@ -26,7 +26,6 @@ export default function AboutUs() {
                   sx={{
                     borderBottom: "2px solid #BBBBBB",
                     padding: 0,
-
                     color: "white",
                   }}
                 >
@@ -59,9 +58,9 @@ export default function AboutUs() {
                   className="about-img"
                   src="/Images/about.JPG"
                   alt=""
-                  width="500vw"
-                                  style={{ position: "relative", left: "60px" }}
-                                  
+                  width="400"
+                  style={{ position: "relative", left: "60px" }}
+
                 />
               </Grid>
             </Grid>
