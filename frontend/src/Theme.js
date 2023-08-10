@@ -11,6 +11,9 @@ const theme = createTheme({
     tertiary: {
       main: "#ffffff00",
     },
+    quaternary: {
+      main: "#ffffff",
+    }
   },
 });
 
@@ -42,7 +45,7 @@ theme.typography.h6 = {
 theme.typography.p = {
   fontSize: "1rem",
   color: "#000",
-  fontFamily:'Caudex , serif'
+  fontFamily: 'Caudex , serif'
 };
 
 export default theme;

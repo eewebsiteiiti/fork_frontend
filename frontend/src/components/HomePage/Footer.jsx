@@ -22,12 +22,13 @@ const Footer = () => {
       <div className="Footer-div">
         <div className="blacklayer">
           <Typography
+            color="secondary.main"
             variant="h1"
             sx={{
               textAlign: "center",
               padding: 3,
               marginBottom: 3,
-              color: "white",
+
             }}
           >
             ACHIEVEMENTS
@@ -51,11 +52,11 @@ const Footer = () => {
                 >
                   <Link to="people/Faculty">
                     <SupervisedUserCircle
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white ">
                     <CountUp end={18} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -78,11 +79,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Students">
                     <School
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={1115} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -105,11 +106,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Publications">
                     <LibraryBooksIcon
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={1358} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -132,11 +133,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Placements">
                     <Timeline
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={96} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -159,11 +160,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Patents">
                     <PublicIcon
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={19} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -186,11 +187,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Projects">
                     <ExtensionIcon
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={95} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -213,11 +214,11 @@ const Footer = () => {
                 >
                   <Link to="stats/Grants">
                     <CurrencyRupee
-                      color="secondary"
+                      color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </Link>
-                  <Typography color="secondary">
+                  <Typography color="white">
                     <CountUp end={32} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
@@ -233,7 +234,7 @@ const Footer = () => {
             </Grid>
           </Box>
 
-          {/* <Divider color="gray" /> */}
+          <Divider sx={{ my: 2 }} color="gray" />
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
@@ -250,10 +251,10 @@ const Footer = () => {
               }}
             >
               <Box className="footer-info" sx={{ mx: 3 }}>
-                <Typography variant="h1" sx={{ color: "white" }}>
+                <Typography variant="h1" color='secondary.main' sx={{}}>
                   IIT Indore Department of Electrical
                 </Typography>
-                <Typography variant="body2" sx={{ color: "white" }}>
+                <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
                   Contact: Head, Electrical Engineering Scandium Building,
                   <br />
                   Academic POD Indian Institute of Technology Indore Khandwa
@@ -269,13 +270,13 @@ const Footer = () => {
                 <Typography
                   textAlign="center"
                   variant="h1"
-                  sx={{ color: "white" }}
+                  color="secondary.main"
                 >
                   Important Links
                 </Typography>
                 <Box sx={{ display: "flex" }}>
                   <Box sx={{ px: 2, borderRight: "1px solid gray" }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       About Us
                     </Typography>
                     <Box>
@@ -318,7 +319,7 @@ const Footer = () => {
                     </Box>
                   </Box>
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       People
                     </Typography>
                     <Box>
@@ -371,7 +372,7 @@ const Footer = () => {
                   </Box>
 
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       Research
                     </Typography>
                     <Box>
@@ -420,7 +421,7 @@ const Footer = () => {
                   </Box>
 
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       Academics
                     </Typography>
                     <Box>
@@ -463,7 +464,7 @@ const Footer = () => {
                   </Box>
 
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       Open Positions
                     </Typography>
                     <Box>
@@ -505,7 +506,7 @@ const Footer = () => {
                     </Box>
                   </Box>
                   <Box sx={{ px: 2 }}>
-                    <Typography varient="p" sx={{ color: "secondary.main" }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
                       Safety Regulations
                     </Typography>
                   </Box>
@@ -520,7 +521,7 @@ const Footer = () => {
               backgroundColor: "#1e1e1e",
             }}
           >
-            <Typography color="secondary" textAlign="center" sx={{ p: 2 }}>
+            <Typography color="white" textAlign="center" sx={{ p: 2 }}>
               ©️Department of Electrical Engineering, IIT Indore - All Rights
               Reserved
             </Typography>

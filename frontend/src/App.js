@@ -1,5 +1,6 @@
 import "./App.css";
 import theme from "./Theme";
+import BodyNavbar from "./components/BodyNavbar/BodyNavbar";
 import Footer from "./components/HomePage/Footer"
 import HomePage from "./pages/HomePage";
 import { ThemeProvider } from "@mui/material/styles";
@@ -13,8 +14,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/a" element={<BodyNavbar />} />
           </Routes>
-          <Footer />
+
+          {/* <Footer /> */}
         </BrowserRouter>
 
       </ThemeProvider>
