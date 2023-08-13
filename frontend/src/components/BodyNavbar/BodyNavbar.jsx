@@ -33,7 +33,6 @@ export default function Navbar() {
                                 <li className={styles.menu}>
                                     <Link to="/">
                                         <Typography variant="h5" >
-                                            {" "}
                                             Home
                                         </Typography>
                                     </Link>

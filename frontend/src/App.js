@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
+import StaffCard from "./components/PeoplePage/StaffCard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/a" element={<BodyNavbar />} />
+            <Route path="/people" element={<StaffCard />} />
           </Routes>
 
           <Footer />
