@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { about } from "../HeaderData";
 import Program from "../components/AboutUsPage/Program";
 import Navbar from '../components/BodyNavbar/BodyNavbar';
+import ProgramCard from '../components/AboutUsPage/ProgramCard';
 export default function AboutPage() {
   return (
     <div className="about">
@@ -12,7 +13,8 @@ export default function AboutPage() {
       </div>
       
       <section className="programs">
-        <Program/>
+        <Program />
+        
       </section>
       </div>
   )
