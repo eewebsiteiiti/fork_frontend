@@ -2,6 +2,7 @@ import { Container, Typography } from "@mui/material";
 import React from "react";
 import "../styles/program.css";
 import ProgramCard from "../AboutUsPage/ProgramCard";
+import KeyPoint from "./KeyPoint";
 export default function Program() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function Program() {
           </Typography>
           <ProgramCard />
         </Container>
+        <KeyPoint/>
       </div>
     </div>
   );
