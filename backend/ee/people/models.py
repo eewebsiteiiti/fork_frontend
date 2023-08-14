@@ -1,7 +1,5 @@
 from django.db import models
-from django_base64field.fields import Base64Field
 # Create your models here.
-
 
 class Staff(models.Model):
     name = models.CharField(max_length=100)
