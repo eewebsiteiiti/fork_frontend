@@ -22,7 +22,7 @@ export default function Header(props) {
             </Typography>
           </Container>
         </Grid>
-        <Grid item xs={6} className="template-bg">
+        <Grid item xs={6} className="template-bg" style={{backgroundImage: `url(/public${props.image})`, backgroundSize: "cover", backgroundPosition: "center"}}>
         </Grid>
       </Grid>
     </div>

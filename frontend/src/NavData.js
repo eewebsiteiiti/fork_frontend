@@ -1,8 +1,6 @@
 const navs = {
   About: {
     Department: "/about",
-    Administration: "/administration",
-    "Contact Us": "/contact",
     Gallery: "/gallery",
   },
   People: {

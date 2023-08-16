@@ -1,0 +1,85 @@
+import React from "react";
+import { Container, Typography, Grid } from "@mui/material";
+import ResearchCard from "./ResearchCard";
+const ResearchAreas = () => {
+  return (
+    <div className="research">
+      <Container>
+        <Typography variant="h1" py={5}>
+          RESEARCH AREAS
+        </Typography>
+        <Grid
+          container
+          justifyContent="space-around"
+          direction="row"
+          alignItems="top"
+          spacing={5}
+        >
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <ResearchCard
+              specialisation={"Communications and Signal Processing"}
+              description={
+                "Communication and signal processing are two interrelated fields that deal with the transmission, reception, and analysis of information through various mediums."
+              }
+              action={"/research/signal"}
+              photo={"/Images/logo/signal.jpg"}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <ResearchCard
+              specialisation={"VLSI Design and Nano Electronics"}
+              description={
+                "VLSI Design and Nano Electronics focus on the design and manufacture of microelectronic circuits and devices."
+              }
+              action={"/research/vlsi"}
+              photo={"/Images/logo/VLSI.jpg"}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: "flex", justifyContent: "center"  }}
+          >
+            <ResearchCard
+              specialisation={"Power Electronics and Power Systems"}
+              description={
+                "Power Electronics and Power Systems deal with the generation, transmission, distribution, and use of electrical energy."
+              }
+              photo={"/Images/logo/power.png"}
+              action={"/research/power"}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: "flex", justifyContent: "center"  }}
+          >
+            <ResearchCard
+              specialisation={"RF and Microwave"}
+              description={
+                "RF (Radio Frequency) and microwave engineering are two fields of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems."
+              }
+              photo={"Images/logo/RF.jpg"}
+              action={"research//RF"}
+            />
+          </Grid>
+        </Grid>
+      </Container>
+     <br/><br/>
+    </div>
+  );
+};
+
+export default ResearchAreas;

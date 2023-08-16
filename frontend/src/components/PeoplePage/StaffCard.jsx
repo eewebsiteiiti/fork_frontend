@@ -4,30 +4,26 @@ import { Container } from "@mui/material";
 import { Typography } from "@mui/material";
 import axios from "axios";
 import { Box } from "@mui/material";
+import {api,image_api} from '../../Api';
 
 const Staff_Card = () => {
-    // const [data, setData] = useState();
-    // const [isError, setIsError] = useState();
-    // useEffect(() => {
-    //     axios
-    //         .get(`http://127.0.0.1:8000/api/people/Faculty/read`)
-    //         .then((response) => setData(response.data))
-    //         .catch((error) => setIsError(error.message));
-    //     if (!isError) {
-    //         setIsError("Not Available");
-    //     }
-    // }, []);
-
-    const data = [{ image: "https://source.unsplash.com/random/200x200?sig=1", name: "Dr.Vivek Kanhangad", at: "Ph.D IIT Indore", role: "Professor", role1: "Head Of Department", department: "Department of Electrical Engineering", ResearchFocus: ["Biometrics", "Digital Signals", "Image Processing"], address: "206 POD 1A", phone: "1234567", email: "kvivek@iiti.ac.in" },
-    { image: "https://source.unsplash.com/random/200x200?sig=1", name: "Dr.Vivek Kanhangad", at: "Ph.D IIT Indore", role: "Professor", role1: "Head Of Department", department: "Department of Electrical Engineering", ResearchFocus: ["Biometrics", "Digital Signals", "Image Processing"], address: "206 POD 1A", phone: "1234567", email: "kvivek@iiti.ac.in" },
-    { image: "https://source.unsplash.com/random/200x200?sig=1", name: "Dr.Vivek Kanhangad", at: "Ph.D IIT Indore", role: "Professor", role1: "Head Of Department", department: "Department of Electrical Engineering", ResearchFocus: ["Biometrics", "Digital Signals", "Image Processing"], address: "206 POD 1A", phone: "1234567", email: "kvivek@iiti.ac.in" }
-    ];
-
+    const [data, setData] = useState();
+  const [isError, setIsError] = useState();
+  useEffect(() => {
+    axios
+      .get(`${api}/people/Faculty/read`)
+      .then((response) => setData(response.data))
+      .catch((error) => setIsError(error.message));
+    if (!isError) {
+      setIsError("Not Available");
+    }
+  }, [isError]);
+  console.log(data);
     return (
         <>
 
             <Container sx={{ display: { xs: "none", md: "block" } }}>
-                {data?.map((item, i) => (
+                {/* {data?.map((item, i) => (
                     <>
                         <Box
                             sx={{
@@ -44,7 +40,7 @@ const Staff_Card = () => {
                                 <img
                                     alt=''
                                     width="150"
-                                    src={`${item.image}`}
+                                    src={`${image_api}${item.image}`}
                                     loading="lazy"
                                 />
                             </Box>
@@ -81,11 +77,11 @@ const Staff_Card = () => {
                             </Box>
                         </Box>
                     </>
-                ))}
+                ))} */}
             </Container>
 
             <Box sx={{ display: { xs: "block", md: "none" }, textAlign: "center" }}>
-                {data?.map((item, i) => (
+                {/* {data?.map((item, i) => (
                     <>
                         <Paper
                             sx={{
@@ -102,7 +98,7 @@ const Staff_Card = () => {
                                     alt=''
                                     width="110"
                                     height="169"
-                                    src={`${item.image}`}
+                                    src={`${image_api}${item.image}`}
                                     loading="lazy"
                                 />
                             </Box>
@@ -127,7 +123,7 @@ const Staff_Card = () => {
                             </Box>
                         </Paper>
                     </>
-                ))}
+                ))} */}
             </Box>
 
         </>
