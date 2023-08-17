@@ -62,7 +62,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = ['http://localhost:3000','https://iiti-ee-test.netlify.app']
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = "ee.urls"
 
 TEMPLATES = [

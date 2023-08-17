@@ -65,14 +65,13 @@ const Staff_Card = (props) => {
                   {/* <Typography variant="h6">{item.role1}</Typography> */}
                   <Typography variant="h6">{item.department}</Typography>
                   {/* <br /> */}
-                  <span> <Typography variant="p" fontWeight="600">
-                    Research Focus:
-                  </Typography>
-                  {item &&
-                    item.ResearchFocus &&
-                    item.ResearchFocus.map((item1, i) => <>{item1}</>)}</span>
+
                   <Box>
-                    <Typography fontSize="0.8rem">{item.details}</Typography>
+                    <Typography color="gray" fontSize="0.8rem">
+                    <Typography variant="p" fontWeight="600">
+                    Research Focus:
+                  </Typography> {item.details}
+                    </Typography>
                   </Box>
                 </Box>
                 <Box sx={{ p: 2, width: "40%" }}>
@@ -80,7 +79,7 @@ const Staff_Card = (props) => {
                     Phone: {item.phone ? item.phone : 1234567890}
                   </Typography>
                   <Typography fontSize="0.8rem">
-                    Email: <a href={`mailto:${item.email}`}>{item.email}</a>
+                    Email: <a href={`mailto:${item.email}`}><Typography variant='body' fontSize={"0.8rem"} color="secondary.main"> {item.email}</Typography></a>
                   </Typography>
                   <Typography fontSize="0.8rem">
                     Address:{item.address}
@@ -92,7 +91,7 @@ const Staff_Card = (props) => {
       </Container>
 
       <Box sx={{ display: { xs: "block", md: "none" }, textAlign: "center" }}>
-        {/* {data?.map((item, i) => (
+        {data?.map((item, i) => (
                     <>
                         <Paper
                             sx={{
@@ -134,7 +133,7 @@ const Staff_Card = (props) => {
                             </Box>
                         </Paper>
                     </>
-                ))} */}
+                ))}
       </Box>
     </>
   );
