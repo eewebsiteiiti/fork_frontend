@@ -63,7 +63,7 @@
 }
 
 /* //////////////////////////////Table//////////////////////////////// */
-
+/* 
 table,
 th,
 td {
@@ -85,7 +85,7 @@ th {
   background-color: var(--my-color);
   color: #fff;
   padding: 0.5%;
-}
+} */
 
 .about-bg {
   /* background-image: url(/public/Images/about_bg.jpg); */
