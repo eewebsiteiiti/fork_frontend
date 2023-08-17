@@ -6,6 +6,7 @@ import axios from "axios";
 import { Box } from "@mui/material";
 import { api, image_api } from "../../Api";
 
+
 const Staff_Card = (props) => {
   const [data, setData] = useState();
   const [isError, setIsError] = useState();

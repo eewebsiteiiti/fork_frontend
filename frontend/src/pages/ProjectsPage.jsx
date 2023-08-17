@@ -13,7 +13,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-
+import '../components/styles/program.css';
 export default function ProjectsPage() {
   const [data, setData] = useState();
   const [isError, setIsError] = useState();
@@ -64,6 +64,7 @@ export default function ProjectsPage() {
         </table>
       </Box>
       </div>  */}
+      <div className="program">
       <Container>
         <br />
         <br />
@@ -107,6 +108,7 @@ export default function ProjectsPage() {
         </TableContainer>
       </Container>
       <br />
+      </div>
     </>
   );
 }
