@@ -46,7 +46,7 @@ const params = useParams();
               direction={"column"}
             >
               <Grid item>
-                <StaffCard />
+                <StaffCard name="Faculty"/>
               </Grid>
             </Grid>
             </Container>
@@ -65,7 +65,7 @@ const params = useParams();
               direction={"column"}
             >
               <Grid item>
-                <StaffCard />
+                <StaffCard name="Staff" />
               </Grid>
             </Grid>
             </Container>

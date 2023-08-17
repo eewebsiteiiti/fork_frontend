@@ -1,8 +1,7 @@
 .program{
     background-image: url('/public/Images/body_bg.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 20%;
-
+    background-repeat: repeat-y;
+    background-position: 50%;
     /* background-position: ; */
 }

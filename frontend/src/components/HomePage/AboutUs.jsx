@@ -29,28 +29,24 @@ export default function AboutUs() {
                     color: "white",
                   }}
                 >
-                  ABOUT US
+                  EE at IITI
                 </Typography>
                 <br />
                 <Typography variant="p" color="white">
-                  One of the founding departments of the Institute from 2009,
-                  the Department of Electrical Engineering at IIT Indore has
-                  played a prominent role by setting the highest standards in
-                  teaching and research. Over the years, several new
-                  interdisciplinary courses and programs in the fields of
-                  Communications and Signal Processing (CSP), VLSI Design and
-                  Nanotechnology (VDN), have been offered. conferred with
-                  several awards and fellowships at national and international
-                  levels. Many of the faculty members have memberships in
-                  various professional societies of the IEEE. Several serve on
-                  the editorial boards of reputed international and national
-                  journals and review technical articles for journals on a
-                  regular basis. Furthermore, many serve as technical and
-                  organizing committee members of international symposia and
-                  conferences. Some faculty have excelled in teaching and have
-                  been conferred awards and recognitions for their
-                  contributions. Some also have books and monographs to their
-                  credit.
+                One of the founding departments of the Institute from 2009, the Department of Electrical
+Engineering at IIT Indore has played a prominent role by setting the highest standards in
+teaching and research. Over the years, several new interdisciplinary courses and programs
+in the fields of Communications and Signal Processing (CSP), VLSI Design and
+Nanotechnology (VDN), have been offered. <br/>
+The department offers four academic programs: 1) B.Tech.(EE), 2) MS (by Research)
+3) M.Tech. (CSP, VDN) and 4) Ph.D. in Electrical Engineering. The current intake of the
+Department is 85 in B.Tech., 30 in M. Tech and 15-20 PhDs per year. A wide spectrum
+of courses is being offered at levels ranging from the undergraduate to the doctoral degree
+program. Many subjects such as Special Semiconductor Devices, IC Fabrication
+Technology, Advanced Micro-processes and Nanotechnology, Nanotechnology and
+Nanoelectronics, Optoelectronics, Microwave and Satellite Communication, Internet of
+Things (IoT) Networks are currently being offered as electives.
+
                 </Typography>
               </Grid>
               <Grid item>

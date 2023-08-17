@@ -10,12 +10,12 @@ export default function Event(props) {
         container
         justifyContent="left"
         direction="column"
-        alignItems="left"
+        alignItems="top"
       >
         <Grid item sx={12} md={5}>
           <CardMedia
             component="img"
-            sx={{ width: 200 }}
+            sx={{ width: "100%" }}
             image={`${image_api}${props.image}`}
             loading="lazy"
           />

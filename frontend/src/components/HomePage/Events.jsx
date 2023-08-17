@@ -61,7 +61,7 @@ export default function Events() {
               justifyContent="center"
               direction="column"
               alignItems="left"
-              spacing={1}
+              spacing={4}
             >
               <Grid item>
                 <Typography
@@ -76,14 +76,14 @@ export default function Events() {
                 </Typography>
                 <Grid
                   container
-                  justifyContent="Left"
-                  direction="row"
-                  alignItems="center"
-                  spacing={1}
+                  justifyContent="space-between"
+                  direction="row-reverse"
+                  alignItems="top"
+                  spacing={2}
                 >
                   {event?.map((item, key) => (
                     <>
-                      <Grid item sm={12} md={3}>
+                      <Grid item sm={12} md={4}>
                         <Event
                           description={item.description}
                           title={item.title}
@@ -161,7 +161,7 @@ export default function Events() {
             <Grid
               container
               justifyContent="Left"
-              direction="column"
+              direction="column-reverse"
               alignItems="center"
               // spapaddingY={0}cing={1}
               

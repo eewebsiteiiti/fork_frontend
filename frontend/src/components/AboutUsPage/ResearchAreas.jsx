@@ -76,6 +76,14 @@ const ResearchAreas = () => {
             />
           </Grid>
         </Grid>
+        <Typography
+            sx={{ textAlign: "center", fontSize: "2.3rem", py: 1 }}
+            variant="h1"
+            component="h2"
+          >
+            OUR HISTORY!
+          </Typography>
+          <center><img src="/Images/history.png" alt="not available" width="65%" /></center>
       </Container>
      <br/><br/>
     </div>

@@ -1,0 +1,7 @@
+.projects{
+    background-image: url('/public/Images/body_bg.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: 20%;
+    /* background-position: ; */
+}

@@ -5,6 +5,7 @@ import Program from "../components/AboutUsPage/Program";
 import Navbar from '../components/BodyNavbar/BodyNavbar';
 import KeyPoint from '../components/AboutUsPage/KeyPoint';
 import ResearchAreas from '../components/AboutUsPage/ResearchAreas';
+
 export default function AboutPage() {
   return (
     <div className="about">

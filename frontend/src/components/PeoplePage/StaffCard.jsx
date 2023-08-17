@@ -6,24 +6,24 @@ import axios from "axios";
 import { Box } from "@mui/material";
 import {api,image_api} from '../../Api';
 
-const Staff_Card = () => {
+const Staff_Card = (props) => {
     const [data, setData] = useState();
   const [isError, setIsError] = useState();
   useEffect(() => {
     axios
-      .get(`${api}/people/Faculty/read`)
+      .get(`${api}/people/${props.name}/read`)
       .then((response) => setData(response.data))
       .catch((error) => setIsError(error.message));
     if (!isError) {
       setIsError("Not Available");
     }
-  }, [isError]);
+  }, []);
   console.log(data);
     return (
         <>
 
             <Container sx={{ display: { xs: "none", md: "block" } }}>
-                {/* {data?.map((item, i) => (
+                {data && data.map((item, i) => (
                     <>
                         <Box
                             sx={{
@@ -39,24 +39,24 @@ const Staff_Card = () => {
                             <Box sx={{ p: 2 }}>
                                 <img
                                     alt=''
-                                    width="150"
+                                    width="75"
                                     src={`${image_api}${item.image}`}
                                     loading="lazy"
                                 />
                             </Box>
                             <Box sx={{ p: 2, width: "100%" }}>
-                                <Typography variant="h5" color="primary">
+                                <Typography variant="h5" color="secondary.main">
                                     <a style={{ borderBottom: "1px solid #ccc" }} href={`${item.link}`}>{item.name}</a>
                                 </Typography>
                                 <Typography variant="h5">{item.at}</Typography>
                                 <br />
-                                <Typography variant="h5">{item.role}</Typography>
-                                <Typography variant="h6">{item.role1}</Typography>
+                                <Typography variant="h5">{item.title}</Typography>
+                                {/* <Typography variant="h6">{item.role1}</Typography> */}
                                 <Typography variant="h6">{item.department}</Typography>
                                 <br />
                                 <Typography fontWeight="600">Research Focus:</Typography>
                                 {
-                                    item.ResearchFocus.map((item1, i) => (
+                                    item && item.ResearchFocus && item.ResearchFocus.map((item1, i) => (
                                         <>{item1}</>
                                     ))
                                 }
@@ -77,7 +77,7 @@ const Staff_Card = () => {
                             </Box>
                         </Box>
                     </>
-                ))} */}
+                ))}
             </Container>
 
             <Box sx={{ display: { xs: "block", md: "none" }, textAlign: "center" }}>
@@ -103,7 +103,7 @@ const Staff_Card = () => {
                                 />
                             </Box>
                             <Box>
-                                <Typography variant="h5" color="primary">
+                                <Typography variant="h5" color="secondary.main">
                                     <a href={`${item.link}`}>{item.name}</a>
                                 </Typography>
                                 <Typography variant="h7">{item.title}</Typography>

@@ -63,6 +63,9 @@ const navs = {
     "Faculty Recognition": "achievements/faculty",
     "Student Achievements": "achievements/students",
   },
+  Activities:{
+    'EESA' : "/eesa"
+  }
 };
 
 export default navs;

@@ -12,7 +12,7 @@ export default function WovenImageList() {
         variant="h1"
         component="h2"
       >
-        Electrical is very important in our Lives!
+        Electrical Engineering is vital in our Lives!
       </Typography>
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
@@ -38,11 +38,11 @@ export default function WovenImageList() {
         <Grid item xs={12} md={4} lg={4} >
           <img width="320" height="240" src="/Images/carousel/4.JPG" alt="" />
         </Grid>
-        {/* <Grid item xs={12} md={4} lg={4} >
+        <Grid item xs={12} md={4} lg={4} >
           <video style={{ padding: "10px 0px" }} width="350" height="240" autoPlay muted controls >
             <source src={`Videos/video.mp4`} type="video/mp4" />
           </video>
-        </Grid> */}
+        </Grid>
         <Grid item xs={12} md={4} lg={4} >
           <img width="320" height="240" src="/Images/carousel/6.JPG" alt="" />
 
