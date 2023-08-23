@@ -48,15 +48,15 @@ const navs = {
       2019: "https://drive.google.com/file/d/1kvh7ALhO19oXuUyz4G1SvPHc9BcO968z/view?usp=share_link",
       2020: "https://drive.google.com/file/d/1DTileDvZgFsl-POcNFKNd7itR58JgV15/view?usp=share_link",
     },
+    
+  },
+
+  Academics: {
+    Courses: { Btech: "/courses/BTech", Mtech: "/courses/MTech" },
     Laboratories: {
       UG: "/labs/ug",
       PG: "/labs/pg",
     },
-  },
-
-  Academics: {
-    Programs: "/research/programs",
-    Courses: { Btech: "/courses/BTech", Mtech: "/courses/MTech" },
   },
   Achievements: {
     "Books Published": "/achievements/books",

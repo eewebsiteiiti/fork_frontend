@@ -1,6 +1,7 @@
 from django.db import models
 # Create your models here.
 
+
 class Staff(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=50)
@@ -14,7 +15,9 @@ class Staff(models.Model):
 class Faculty(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=50)
+    subtitle = models.CharField(max_length=50, blank=True)
     email = models.EmailField(max_length=254)
+    phone = models.CharField(max_length=16, blank=True)
     details = models.CharField(max_length=10000)
     address = models.CharField(max_length=500, blank=True)
     link = models.URLField(blank=True)

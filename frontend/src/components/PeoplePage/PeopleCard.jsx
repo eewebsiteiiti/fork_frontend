@@ -21,7 +21,7 @@ export default function PeopleCard(props) {
         setData("Not Available");
       }
     }, 3000);
-    console.log(data);
+    console.log("hello");
   }, [props.year, isError, props.program]);
   return (
     <div>

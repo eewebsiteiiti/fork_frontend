@@ -53,6 +53,30 @@ export const eesa = {
   description: "Within the Electrical Engineering department, students are represented through the Electrical Engineering Students' Association (EESA). An initiative by students, for students, is the EESA. Our responsibility is to lead and plan treks, sporting events, cultural events, orientations, and other activities. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
   image: "/Images/eesa.png",
 };
+
+export const research = {
+  title: "Research",
+  description: "Within the Electrical Engineering department, students are represented through the Electrical Engineering Students' Association (EESA). An initiative by students, for students, is the EESA. Our responsibility is to lead and plan treks, sporting events, cultural events, orientations, and other activities. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
+  image: "/Images/research.jpg",
+};
+
+export const ug = {
+  title: "UG LABS",
+  description: "Within the Electrical Engineering department, students are represented through the Electrical Engineering Students' Association (EESA). An initiative by students, for students, is the EESA. Our responsibility is to lead and plan treks, sporting events, cultural events, orientations, and other activities. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
+  image: "/Images/ug_lab.png",
+};
+
+export const pg = {
+  title: "PG LABS",
+  description: "Within the Electrical Engineering department, students are represented through the Electrical Engineering Students' Association (EESA). An initiative by students, for students, is the EESA. Our responsibility is to lead and plan treks, sporting events, cultural events, orientations, and other activities. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
+  image: "/Images/pg_lab.png",
+};
+
+export const courses = {
+  title: "Courses",
+  description: "Within the Electrical Engineering department, students are represented through the Electrical Engineering Students' Association (EESA). An initiative by students, for students, is the EESA. Our responsibility is to lead and plan treks, sporting events, cultural events, orientations, and other activities. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
+  image: "/Images/pg_lab.png",
+};
 // const about = {
 //   title: "About",
 //   description: "This is a simple react app that uses the MUI framework.",

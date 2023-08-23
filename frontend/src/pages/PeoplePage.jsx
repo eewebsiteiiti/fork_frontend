@@ -1,25 +1,29 @@
 import React from "react";
-import { Typography, Box, Container, Grid, Divider } from "@mui/material";
+import { Container, Grid, Divider } from "@mui/material";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
-import {btech,faculty, staff,mtech,phd,alumni} from '../HeaderData';
-import StaffCard from '../components/PeoplePage/StaffCard';
+import { btech, faculty, staff, mtech, phd, alumni } from "../HeaderData";
+import StaffCard from "../components/PeoplePage/StaffCard";
 import PeopleCard from "../components/PeoplePage/PeopleCard";
-
 const PeoplePage = () => {
-const params = useParams();
+  const params = useParams();
   console.log(params.program);
   console.log(params.year);
   const [news, setNews] = React.useState(1);
-    return (
-        <div>
-            <Navbar/>
+  return (
+    <div>
+      <Navbar />
 
-            {params.program=='BTech'?<>
-            
-            <Header title={btech.title+' Batch ' +params.year} description={btech.description} image={btech.image} />
-            <Container>
+      {params.program == "BTech" ? (
+        <>
+          <Header
+            title={btech.title + " Batch " + params.year}
+            description={btech.description}
+            image={btech.image}
+          />
+          <div className="bg_border">
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -30,15 +34,22 @@ const params = useParams();
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
-            </Container>
-            </>:<></>}
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-
-
-            {params.program=='Faculty'?<>
-            
-            <Header title={faculty.title} description={faculty.description} image={faculty.image} />
-            <Container>
+      {params.program == "Faculty" ? (
+        <>
+          <Header
+            title={faculty.title}
+            description={faculty.description}
+            image={faculty.image}
+          />
+          <div className="bg_border">
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -46,18 +57,25 @@ const params = useParams();
               direction={"column"}
             >
               <Grid item>
-                <StaffCard name="Faculty"/>
+                <StaffCard name="Faculty" />
               </Grid>
             </Grid>
-            </Container>
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-            </>:<></>}
-
-
-            {params.program=='Staff'?<>
-            
-            <Header title={staff.title} description={staff.description} image={staff.image} />
-            <Container>
+      {params.program == "Staff" ? (
+        <>
+          <Header
+            title={staff.title}
+            description={staff.description}
+            image={staff.image}
+          />
+          <div className="bg_border">
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -68,15 +86,21 @@ const params = useParams();
                 <StaffCard name="Staff" />
               </Grid>
             </Grid>
-            </Container>
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-            </>:<></>}
-
-
-            {params.program=='MTech'?<>
-            
-            <Header title={mtech.title + ' Batch ' + params.year} description={mtech.description} image={mtech.image} />
-            <Container>
+      {params.program == "MTech" ? (
+        <>
+          {/* <Header
+            title={mtech.title + " Batch " + params.year}
+            description={mtech.description}
+            image={mtech.image}
+          /> */}
+          {/* <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -87,15 +111,21 @@ const params = useParams();
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
-            </Container>
+          </Container> */}
+        </>
+      ) : (
+        <></>
+      )}
 
-            </>:<></>}
-
-
-            {params.program=='PhD'?<>
-            
-            <Header title={phd.title + ' Batch ' + params.year} description={phd.description} image={phd.image} />
-            <Container>
+      {params.program == "PhD" ? (
+        <>
+          <Header
+            title={phd.title + " Batch " + params.year}
+            description={phd.description}
+            image={phd.image}
+          />
+          <div className="bg_border">
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -106,14 +136,22 @@ const params = useParams();
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
-            </Container>
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-            </>:<></>}
-
-            {params.program=='MTech'?<>
-            
-            <Header title={mtech.title + ' Batch ' + params.year} description={mtech.description} image={mtech.image} />
-            <Container>
+      {params.program == "MTech" ? (
+        <>
+          <Header
+            title={mtech.title + " Batch " + params.year}
+            description={mtech.description}
+            image={mtech.image}
+          />
+         <div className="bg_border">
+         <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -124,14 +162,17 @@ const params = useParams();
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
+          </Container>
+         </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-            </Container>
-            </>:<></>}
-
-            {params.program=='Alumni'?<>
-            
-            
-            <Container>
+      {params.program == "Alumni" ? (
+        <>
+          <div className="bg_border">
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -142,18 +183,24 @@ const params = useParams();
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
 
-            </Container>
-            </>:<></>}
-
-
-
-            {params.program === "Alumni" ? (
-          <>
-          <Header title={alumni.title + ' Batch ' + params.year} description={alumni.description} image={alumni.image} />
-            <Container>
+      {params.program === "Alumni" ? (
+        <>
+          <Header
+            title={alumni.title + " Batch " + params.year}
+            description={alumni.description}
+            image={alumni.image}
+          />
+          <div className="bg_border">
+          <Container>
             <br />
-            
+
             <Grid
               container
               justifyContent="left"
@@ -167,7 +214,7 @@ const params = useParams();
                 borderColor={"primary.main"}
                 xs={1.5}
                 color={news === 1 ? "primary.main" : "black"}
-                backgroundColor={news === 1 ? "primary." : "white"}
+                backgroundColor={news === 1 ? "primary.main" : "white"}
                 sx={{
                   boxShadow: news === 1 ? "0px 0px 0.5px 0px #010101" : "none",
                 }}
@@ -266,7 +313,7 @@ const params = useParams();
                 <PeopleCard
                   year={params.year}
                   program={params.program}
-                  prog="B. Tech."
+                  prog="B.Tech."
                 />
               </>
             ) : (
@@ -277,7 +324,7 @@ const params = useParams();
                 <PeopleCard
                   year={params.year}
                   program={params.program}
-                  prog="M. Tech."
+                  prog="M.Tech."
                 />
               </>
             ) : (
@@ -305,14 +352,16 @@ const params = useParams();
             ) : (
               <></>
             )}
-            <br/><br/>
-            </Container>
-          </>
-        ) : (
-          <></>
-        )}
-        </div>
-    );
-}
+            <br />
+            <br />
+          </Container>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+    </div>
+  );
+};
 
 export default PeoplePage;

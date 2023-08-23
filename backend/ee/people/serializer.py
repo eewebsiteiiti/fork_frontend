@@ -22,6 +22,7 @@ class FacultySerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         faculty = Faculty.objects.create(name=validated_data.get('name'),
                                        title=validated_data.get('title'),
+                                       subtitle=validated_data.get('subtitle'),
                                        email=validated_data.get('email'),
                                        image=im_to_base64(validated_data.get('image')),
                                        details=validated_data.get('details'),

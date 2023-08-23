@@ -65,6 +65,7 @@ export default function ProjectsPage() {
       </Box>
       </div>  */}
       <div className="program">
+      <div className="bg_border">
       <Container>
         <br />
         <br />
@@ -108,6 +109,7 @@ export default function ProjectsPage() {
         </TableContainer>
       </Container>
       <br />
+      </div>
       </div>
     </>
   );

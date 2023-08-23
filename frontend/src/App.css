@@ -120,6 +120,48 @@ th {
   box-shadow: 18px 14px 13px 5px rgba(0, 0, 0, 0.25);
 }
 
-.test{
-  color: #ffd6dd7c;
+#rectangle-l-outside {
+  width: 60%;
+  height: fit-content;
+  clip-path: polygon(60% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+  float: right;
+  background: #000;
+  box-sizing: border-box;
+
+}
+#rectangle-l-inside {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  top: 1px;
+  right: 1px;
+  clip-path: polygon(60% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+  float: right;
+  background-color:white ;
+}
+
+
+#rectangle-r-outside {
+  width: 60%;
+  height: fit-content;
+  text-align: right;
+  background-color: #000;
+  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
+}
+#rectangle-r-inside {
+  width: 100%;
+  height: fit-content;
+  top: 1px;
+  position: relative;
+  left: 1px;
+  text-align: right;
+  background-color: white;
+  clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
+}
+
+.bg_border{
+  background-image: url("/public/Images/body_bg_1.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  /* background-position: 50%; */
 }
