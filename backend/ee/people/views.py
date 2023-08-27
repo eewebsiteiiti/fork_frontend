@@ -2,43 +2,37 @@ from rest_framework.views import APIView
 from .serializer import BTechSerializer, MTechSerializer, FacultySerializer, AlumniSerializer, PhdSerializer, StaffSerializer
 from rest_framework.response import Response
 from rest_framework import status
-from .models import BTech, Faculty, Staff, MTech, Alumni, Phd
+from .models import BTech, Faculty, Staff, MTech, Alumni, Phd, MS
 # from .manager import btech
 # Create your views here.
 import pandas as pd
 import os
-from .models import BTech
+from .models import BTech, MTech, Faculty, Staff, Alumni, Phd
 from PIL import Image
 
 from django.core.files import File
 from django.core.files.images import ImageFile
 
 
-def btech():
-    direct = os.listdir(
-        r'D:\projects\EE Website\ee-website-backend\ee\people\final\btech')[::2]
-    print(direct)
-    roll_list = []
-    for i in range(1, 86):
-        if i not in [38, 70, 79]:
-            # print(i)
-            roll = 200002000+i
-            roll_list.append(roll)
-    roll_list.extend([200003003, 200004001])
-    for i in range(len(direct)):
-        image_path = f"D:/projects/EE Website/ee-website-backend/ee/people/final/btech/{direct[i]}"
-        im = open(image_path, 'rb')
-        django_file = File(im)
-        # print(django_file)
-        django_image_file = ImageFile(im)
-        btech = BTech.objects.get(roll_no=roll_list[i])
-        # print(btech)
-        btech.image.save(f'{roll_list[i]}.jpg', django_file, save=True)
-        # print(btech.image)
-        im.close()
-        # obj = serializer.save(created_by=self.request.user) aise karrrr haaa ruk naaa
+# def btech():
+#     direct = os.listdir(r'D:\projects\ee-iiti\backend\ee\people\phd')
+#     print(direct)
+#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\people\phd2022.csv')
+#     roll_list = df.roll_no.tolist()
+#     for i in range(len(direct)):
+#         image_path = f"D://projects//ee-iiti//backend//ee//people//phd//{direct[i]}"
+#         im = open(image_path, 'rb')
+#         django_file = File(im)
+#     #     # print(django_file)
+#         django_image_file = ImageFile(im)
+#         btech = Phd.objects.get(roll_no=roll_list[i])
+#         print("sfkshdkjhskfhdkusahd")
+#         btech.image.save(f'{roll_list[i]}.jpg', django_file, save=True)
+#     #     # print(btech.image)
+#         im.close()
+#         # obj = serializer.save(created_by=self.request.user) aise karrrr haaa ruk naaa
 
-        # btech.save(update_fields=['image'])
+#         btech.save(update_fields=['image'])
 
 
 # class PeopleView(APIView):
@@ -120,4 +114,16 @@ class GetAlumniByYear(APIView):
             except Alumni.DoesNotExist:
                 return Response({"error": "No alumni"}, status=404)
             return Response(alumni)
+        return Response({"message": "{} method is not allowed".format(request.method)})
+
+
+
+class GetMSByYear(APIView):
+    def get(self, request, year):
+        if request.method == "GET":
+            try:
+                ms = MS.objects.filter(year=year).values()
+            except MS.DoesNotExist:
+                return Response({"error": "No MS"}, status=404)
+            return Response(ms)
         return Response({"message": "{} method is not allowed".format(request.method)})

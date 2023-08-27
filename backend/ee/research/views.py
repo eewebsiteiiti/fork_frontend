@@ -5,20 +5,21 @@ from rest_framework import status
 from .models import Research, Projects, Papers, PGLabs, UGLabs
 from achievements.models import Books
 import pandas as pd
+from people.models import MTech, Phd
 
 
 def faculty():
-    df = pd.read_csv(
-        r'D:\projects\EE Website\ee-website-backend\ee\research\research3.csv')
-    specialization = df.specialization.tolist()
+    df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\people\phd2022.csv')
+    print("silfkjshdjkh")
     name = df.name.tolist()
-    person = df.person.tolist()
-    description = df.description.tolist()
+    roll_no = df.roll_no.tolist()
+    details = df.details.tolist()
+    year = df.year.tolist()
     for i in range(len(name)):
-        data = Research.objects.create(specialization=specialization[i],
-                                    name=name[i],
-                                    person=person[i],
-                                    description=description[i])
+        data = Phd.objects.create(name=name[i],
+                                    roll_no=roll_no[i],
+                                    details=details[i],
+                                    year=year[i])
         data.save()
 
 

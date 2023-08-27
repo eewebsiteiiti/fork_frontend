@@ -66,7 +66,7 @@ const Staff_Card = (props) => {
                   </Link>
                   {props.name === "Faculty" ? (
                     <Typography color="grey" variant="p" fontSize="0.8rem">
-                      Ph.D, IIT Indore
+                      {item.place}
                     </Typography>
                   ) : null}
 

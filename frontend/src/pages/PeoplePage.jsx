@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import { btech, faculty, staff, mtech, phd, alumni } from "../HeaderData";
 import StaffCard from "../components/PeoplePage/StaffCard";
 import PeopleCard from "../components/PeoplePage/PeopleCard";
+import { ms } from "../HeaderData";
 const PeoplePage = () => {
   const params = useParams();
   console.log(params.program);
@@ -23,18 +24,18 @@ const PeoplePage = () => {
             image={btech.image}
           />
           <div className="bg_border">
-          <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <PeopleCard program={params.program} year={params.year} />
+            <Container>
+              <Grid
+                container
+                justifyContent={"space-around"}
+                alignItems={"center"}
+                direction={"column"}
+              >
+                <Grid item>
+                  <PeopleCard program={params.program} year={params.year} />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
           </div>
         </>
       ) : (
@@ -49,18 +50,18 @@ const PeoplePage = () => {
             image={faculty.image}
           />
           <div className="bg_border">
-          <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <StaffCard name="Faculty" />
+            <Container>
+              <Grid
+                container
+                justifyContent={"space-around"}
+                alignItems={"center"}
+                direction={"column"}
+              >
+                <Grid item>
+                  <StaffCard name="Faculty" />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
           </div>
         </>
       ) : (
@@ -75,18 +76,18 @@ const PeoplePage = () => {
             image={staff.image}
           />
           <div className="bg_border">
-          <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <StaffCard name="Staff" />
+            <Container>
+              <Grid
+                container
+                justifyContent={"space-around"}
+                alignItems={"center"}
+                direction={"column"}
+              >
+                <Grid item>
+                  <StaffCard name="Staff" />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
           </div>
         </>
       ) : (
@@ -95,12 +96,12 @@ const PeoplePage = () => {
 
       {params.program == "MTech" ? (
         <>
-          {/* <Header
+          <Header
             title={mtech.title + " Batch " + params.year}
             description={mtech.description}
             image={mtech.image}
-          /> */}
-          {/* <Container>
+          />
+          <Container>
             <Grid
               container
               justifyContent={"space-around"}
@@ -111,7 +112,30 @@ const PeoplePage = () => {
                 <PeopleCard program={params.program} year={params.year} />
               </Grid>
             </Grid>
-          </Container> */}
+          </Container>
+        </>
+      ) : (
+        <></>
+      )}
+      {params.program == "MS" ? (
+        <>
+          <Header
+            title={ms.title + " Batch " + params.year}
+            description={ms.description}
+            image={ms.image}
+          />
+          <Container>
+            <Grid
+              container
+              justifyContent={"space-around"}
+              alignItems={"center"}
+              direction={"column"}
+            >
+              <Grid item>
+                <PeopleCard program={params.program} year={params.year} />
+              </Grid>
+            </Grid>
+          </Container>
         </>
       ) : (
         <></>
@@ -125,45 +149,19 @@ const PeoplePage = () => {
             image={phd.image}
           />
           <div className="bg_border">
-          <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <PeopleCard program={params.program} year={params.year} />
+            <Container>
+              <Grid
+                container
+                justifyContent={"space-around"}
+                alignItems={"center"}
+                direction={"column"}
+              >
+                <Grid item>
+                  <PeopleCard program={params.program} year={params.year} />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
           </div>
-        </>
-      ) : (
-        <></>
-      )}
-
-      {params.program == "MTech" ? (
-        <>
-          <Header
-            title={mtech.title + " Batch " + params.year}
-            description={mtech.description}
-            image={mtech.image}
-          />
-         <div className="bg_border">
-         <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <PeopleCard program={params.program} year={params.year} />
-              </Grid>
-            </Grid>
-          </Container>
-         </div>
         </>
       ) : (
         <></>
@@ -172,18 +170,18 @@ const PeoplePage = () => {
       {params.program == "Alumni" ? (
         <>
           <div className="bg_border">
-          <Container>
-            <Grid
-              container
-              justifyContent={"space-around"}
-              alignItems={"center"}
-              direction={"column"}
-            >
-              <Grid item>
-                <PeopleCard program={params.program} year={params.year} />
+            <Container>
+              <Grid
+                container
+                justifyContent={"space-around"}
+                alignItems={"center"}
+                direction={"column"}
+              >
+                <Grid item>
+                  <PeopleCard program={params.program} year={params.year} />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
           </div>
         </>
       ) : (
@@ -198,163 +196,173 @@ const PeoplePage = () => {
             image={alumni.image}
           />
           <div className="bg_border">
-          <Container>
-            <br />
+            <Container>
+              <br />
 
-            <Grid
-              container
-              justifyContent="left"
-              direction="row"
-              alignItems="center"
-            >
               <Grid
-                item
-                marginX={1}
-                borderTop={news === 1 ? 3 : 0}
-                borderColor={"primary.main"}
-                xs={1.5}
-                color={news === 1 ? "primary.main" : "black"}
-                backgroundColor={news === 1 ? "primary.main" : "white"}
-                sx={{
-                  boxShadow: news === 1 ? "0px 0px 0.5px 0px #010101" : "none",
-                }}
+                container
+                justifyContent="left"
+                direction="row"
+                alignItems="center"
               >
-                <button
-                  className="news"
-                  onClick={() => setNews(1)}
-                  style={{
-                    textAlign: "center",
-                    width: "100%",
-                    padding: "20px",
+                <Grid
+                  item
+                  marginX={1}
+                  borderTop={news === 1 ? 3 : 0}
+                  borderColor={"primary.main"}
+                  xs={1.5}
+                  color={news === 1 ? "primary.main" : "black"}
+                  backgroundColor={news === 1 ? "primary.main" : "white"}
+                  sx={{
+                    boxShadow:
+                      news === 1 ? "0px 0px 0.5px 0px #010101" : "none",
                   }}
                 >
-                  B. Tech
-                </button>
-              </Grid>
-              <Grid
-                item
-                marginX={1}
-                borderTop={news === 2 ? 3 : 0}
-                borderColor={"primary.main"}
-                xs={1.5}
-                color={news === 2 ? "primary.main" : "black"}
-                backgroundColor={news === 2 ? "primary.mainGradient" : "white"}
-                sx={{
-                  boxShadow: news === 2 ? "0px 0px 0.5px 0px #010101" : "none",
-                  width: "100%",
-                }}
-              >
-                <button
-                  className="mtech"
-                  onClick={() => setNews(2)}
-                  style={{
-                    textAlign: "center",
+                  <button
+                    className="news"
+                    onClick={() => setNews(1)}
+                    style={{
+                      textAlign: "center",
+                      width: "100%",
+                      padding: "20px",
+                    }}
+                  >
+                    B. Tech
+                  </button>
+                </Grid>
+                <Grid
+                  item
+                  marginX={1}
+                  borderTop={news === 2 ? 3 : 0}
+                  borderColor={"primary.main"}
+                  xs={1.5}
+                  color={news === 2 ? "primary.main" : "black"}
+                  backgroundColor={
+                    news === 2 ? "primary.mainGradient" : "white"
+                  }
+                  sx={{
+                    boxShadow:
+                      news === 2 ? "0px 0px 0.5px 0px #010101" : "none",
                     width: "100%",
-                    padding: "20px",
                   }}
                 >
-                  M. Tech
-                </button>
-              </Grid>
-              <Grid
-                item
-                marginX={1}
-                borderTop={news === 3 ? 3 : 0}
-                borderColor={"primary.main"}
-                xs={1.5}
-                color={news === 3 ? "primary.main" : "black"}
-                backgroundColor={news === 3 ? "primary." : "white"}
-                sx={{
-                  boxShadow: news === 3 ? "0px 0px 0.5px 0px #010101" : "none",
-                }}
-              >
-                <button
-                  className="news"
-                  onClick={() => setNews(3)}
-                  style={{
-                    textAlign: "center",
-                    width: "100%",
-                    padding: "20px",
+                  <button
+                    className="mtech"
+                    onClick={() => setNews(2)}
+                    style={{
+                      textAlign: "center",
+                      width: "100%",
+                      padding: "20px",
+                    }}
+                  >
+                    M. Tech
+                  </button>
+                </Grid>
+                <Grid
+                  item
+                  marginX={1}
+                  borderTop={news === 3 ? 3 : 0}
+                  borderColor={"primary.main"}
+                  xs={1.5}
+                  color={news === 3 ? "primary.main" : "black"}
+                  backgroundColor={news === 3 ? "primary." : "white"}
+                  sx={{
+                    boxShadow:
+                      news === 3 ? "0px 0px 0.5px 0px #010101" : "none",
                   }}
                 >
-                  Ph.D
-                </button>
-              </Grid>
-              <Grid
-                item
-                marginX={1}
-                borderTop={news === 4 ? 3 : 0}
-                borderColor={"primary.main"}
-                xs={1.5}
-                color={news === 4 ? "primary.main" : "black"}
-                backgroundColor={news === 4 ? "primary." : "white"}
-                sx={{
-                  boxShadow: news === 4 ? "0px 0px 0.5px 0px #010101" : "none",
-                }}
-              >
-                <button
-                  className="news"
-                  onClick={() => setNews(4)}
-                  style={{
-                    textAlign: "center",
-                    width: "100%",
-                    padding: "20px",
+                  <button
+                    className="news"
+                    onClick={() => setNews(3)}
+                    style={{
+                      textAlign: "center",
+                      width: "100%",
+                      padding: "20px",
+                    }}
+                  >
+                    Ph.D
+                  </button>
+                </Grid>
+                <Grid
+                  item
+                  marginX={1}
+                  borderTop={news === 4 ? 3 : 0}
+                  borderColor={"primary.main"}
+                  xs={1.5}
+                  color={news === 4 ? "primary.main" : "black"}
+                  backgroundColor={news === 4 ? "primary." : "white"}
+                  sx={{
+                    boxShadow:
+                      news === 4 ? "0px 0px 0.5px 0px #010101" : "none",
                   }}
                 >
-                  MS (Research)
-                </button>
+                  <button
+                    className="news"
+                    onClick={() => setNews(4)}
+                    style={{
+                      textAlign: "center",
+                      width: "100%",
+                      padding: "20px",
+                    }}
+                  >
+                    MS (Research)
+                  </button>
+                </Grid>
               </Grid>
-            </Grid>
-            <Divider
-              sx={{ bgcolor: "primary.main", borderBottomWidth: 1, opacity: 1 }}
-            />
-            {news === 1 ? (
-              <>
-                <PeopleCard
-                  year={params.year}
-                  program={params.program}
-                  prog="B.Tech."
-                />
-              </>
-            ) : (
-              <></>
-            )}
-            {news === 2 ? (
-              <>
-                <PeopleCard
-                  year={params.year}
-                  program={params.program}
-                  prog="M.Tech."
-                />
-              </>
-            ) : (
-              <></>
-            )}
-            {news === 3 ? (
-              <>
-                <PeopleCard
-                  year={params.year}
-                  program={params.program}
-                  prog="Ph.D."
-                />
-              </>
-            ) : (
-              <></>
-            )}
-            {news === 4 ? (
-              <>
-                <PeopleCard
-                  year={params.year}
-                  program={params.program}
-                  prog="MS"
-                />
-              </>
-            ) : (
-              <></>
-            )}
-            <br />
-            <br />
-          </Container>
+              <Divider
+                sx={{
+                  bgcolor: "primary.main",
+                  borderBottomWidth: 1,
+                  opacity: 1,
+                }}
+              />
+              {news === 1 ? (
+                <>
+                  <PeopleCard
+                    year={params.year}
+                    program={params.program}
+                    prog="B.Tech."
+                  />
+                </>
+              ) : (
+                <></>
+              )}
+              {news === 2 ? (
+                <>
+                  <PeopleCard
+                    year={params.year}
+                    program={params.program}
+                    prog="M.Tech."
+                  />
+                </>
+              ) : (
+                <></>
+              )}
+              {news === 3 ? (
+                <>
+                  <PeopleCard
+                    year={params.year}
+                    program={params.program}
+                    prog="Ph.D."
+                  />
+                </>
+              ) : (
+                <></>
+              )}
+              {news === 4 ? (
+                <>
+                  <PeopleCard
+                    year={params.year}
+                    program={params.program}
+                    prog="MS"
+                  />
+                </>
+              ) : (
+                <></>
+              )}
+              <br />
+              <br />
+            </Container>
           </div>
         </>
       ) : (

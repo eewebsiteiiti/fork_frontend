@@ -80,10 +80,10 @@ Faculty Involved:
     Prof. Srivathsan Vasudevan
     </li>
     <li>
-    Mukesh Kumar
+    Prof. Mukesh Kumar
     </li>
     <li>
-    Dr. Shaibal
+    Prof. Shaibal Mukherjee
     </li>
    
 </list></Typography></div> </div>
@@ -96,20 +96,20 @@ Faculty Involved:
     Faculty Involved:
 <list>
     <li>
-    Santosh 
+   Prof. Santosh Kumar Vishvakarma 
     </li>
     <li>
-    Shaibal
+   Prof. Shaibal Mukherjee
     </li>
     <li>
-    Dr. Vipul Singh
+    Prof. Vipul Singh
     </li>
     <li>
-    Dr. Kranti
+    Prof. Abhinav Kranti
     </li>
    
     <li>
-    Dr. Mukesh
+    Prof. Mukesh Kumar
     </li>
 
 </list></Typography>
@@ -126,21 +126,21 @@ Faculty Involved:
     Faculty Involved:
 <list>
     <li>
-    Dr. RAM 
+    Prof. Ram Bilas Pachori
     </li>
     <li>
-    Dr. Sumit 
+    Dr. Sumit Gautam
     </li>
     <li>
-Prabhat     </li>
+Prof. Prabhat Kumar Upadhyay     </li>
     <li>
-    Vimal 
+   Prof. Vimal Bhatia 
     </li>
     <li>
-   Swaminathan
+   Dr. Swaminathan R.
     </li>
     <li>
-    Appina 
+    Dr. Appina Balasubramanyam
     </li>
    
 </list></Typography></div> </div>
@@ -154,10 +154,10 @@ Prabhat     </li>
 <list>
   
     <li>
-    Dr. Saptrishi
+    Dr. Saptrishi Ghosh
     </li>
     <li>
-    Rinki
+    Dr. Rinkee Chopra
     </li>
 
 </list></Typography>
@@ -174,10 +174,10 @@ Prabhat     </li>
     Faculty Involved:
 <list>
     <li>
-    Dr. Trapti
+    Prof. Trapti Jain
     </li>
     <li>
-    Dr. Shubhadeep
+    Dr. Shubhadeep Paladhi
     </li>
    
 </list></Typography></div> </div>
@@ -190,19 +190,19 @@ Prabhat     </li>
     Faculty Involved:
 <list>
     <li>
-    Dr. Ram 
+    Prof. Ram Bilas Pachori
     </li>
     <li>
-    Dr. Prabhat kumar
+    Prof. Prabhat kumar Upadhyay
     </li>
     <li>
-    Dr. Vimal
+    Prof. Vimal Bhatia
     </li>
     <li>
-    Vivek 
+   Dr. Vivek A. S. 
     </li>
     <li>
-    Appinaa
+   Dr. Appinaa Balasubramanyam
     </li>
     
 </list></Typography>
@@ -219,10 +219,10 @@ Prabhat     </li>
     Faculty Involved:
 <list>
     <li>
-    Dr. Amogh
+    Prof. Amod C. Umarikar
     </li>
     <li>
-    Dr. Vijay
+    Dr. Vijay A. S.
     </li>
 </list></Typography></div> </div>
    </Grid>

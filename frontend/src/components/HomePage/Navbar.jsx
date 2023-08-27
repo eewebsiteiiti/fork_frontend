@@ -10,13 +10,14 @@ export default function Navbar() {
         <div className="navdiv">
           <nav className="naviiii">
             <div className="logo-text">
-              <Link to="/">
+              <a href="https://www.iiti.ac.in/" target="_blank">
                 <img
                   src="/Images/logo/blue_logo.png"
                   alt="logo_png"
                   width="100px"
                 ></img>
-              </Link>
+              </a>
+              {/* <Link to="https://www.iiti.ac.in/"></Link> */}
               <Link to="/">
                 <div>
                   <Typography variant="h4" color={"white"} padding={5}>
@@ -91,7 +92,12 @@ export default function Navbar() {
                                     <li>
                                       <div className="link-button">
                                         <Link to={navs[key][key2]}>
-                                          <Typography variant="h5" color="white">{key2}</Typography>
+                                          <Typography
+                                            variant="h5"
+                                            color="white"
+                                          >
+                                            {key2}
+                                          </Typography>
                                         </Link>
                                       </div>
                                     </li>

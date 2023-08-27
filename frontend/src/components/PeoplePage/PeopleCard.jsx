@@ -36,7 +36,7 @@ export default function PeopleCard(props) {
           >
             {data?.map((item, i) => (
               <>
-             { console.log(item.program)}
+                {console.log(item.program)}
                 {props.prog === item.program ? (
                   <>
                     <>
@@ -46,7 +46,9 @@ export default function PeopleCard(props) {
                           {item.image ? (
                             <CardMedia
                               sx={{ height: "150px" }}
-                              image={`${image_api}${props.program==="BTech"?'/media/':''}${item.image}`}
+                              image={`${image_api}${
+                                props.program === "BTech" ? "/media/" : ""
+                              }${item.image}`}
                               // title="Faculty"
                               loading="lazy"
                             />
@@ -65,7 +67,7 @@ export default function PeopleCard(props) {
                             image={props.photo}
                             title="Staff"
                           /> */}
-                        {/* yeh extra tha commented part isliye nahi chal rha tha  */}
+                          {/* yeh extra tha commented part isliye nahi chal rha tha  */}
                           <CardContent>
                             <Typography
                               gutterBottom
@@ -74,7 +76,7 @@ export default function PeopleCard(props) {
                             >
                               {item.name}
                             </Typography>
-                            
+
                             <Typography
                               variant="body2"
                               color="black"

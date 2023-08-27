@@ -8,4 +8,5 @@ urlpatterns = [
     path('Alumni/read/<year>', views.GetAlumniByYear.as_view()),
     path('Staff/read', views.GetStaffView.as_view()),
     path('Faculty/read', views.GetFacultyView.as_view()),
+    path('MS/read/<year>', views.GetMSByYear.as_view()),
 ]

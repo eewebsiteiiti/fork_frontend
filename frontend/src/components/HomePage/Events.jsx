@@ -49,7 +49,7 @@ export default function Events() {
       <Container sx={{ my: 5 }}>
         <Grid
           container
-          justifyContent="space-between"
+          justifyContent="space-around"
           direction="row"
           alignItems="left"
           padding={2}
@@ -76,7 +76,7 @@ export default function Events() {
                 </Typography>
                 <Grid
                   container
-                  justifyContent="space-between"
+                  justifyContent="space-around"
                   direction="row-reverse"
                   alignItems="top"
                   spacing={2}

@@ -20,6 +20,7 @@ export default function LabPage() {
     if (!isError) {
       setLabs("Not Available");
     }
+    // console.log(labs[0].equipments["equipments"][0]);
   }, [isError, params.type]);
   return (
     <div>
@@ -91,17 +92,14 @@ export default function LabPage() {
                     >
                       About
                     </Typography>
+                 
                     {labs?.map((item, key) =>
                       active === key ? (
                         <>
                           <Grid item sx={{ textAlign: "left" }}>
-                            {item.name} Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Possimus nihil earum autem,
-                            accusantium nesciunt esse sint quibusdam veritatis
-                            amet cum cumque illum praesentium pariatur nostrum
-                            assumenda! Natus rerum impedit aliquam.
+                            {item.name}
                           </Grid>
-
+                         
                           <Typography
                             textAlign={"center"}
                             mt={3}
@@ -114,7 +112,7 @@ export default function LabPage() {
                           <Grid item sx={{ textAlign: "left" }}>
                             {item?.experiments["experiments"]?.map((exp, i) => (
                               <>
-                                <Grid item>{exp}</Grid>
+                                <Grid item> {exp}</Grid>
                               </>
                             ))}
                           </Grid>
@@ -125,12 +123,12 @@ export default function LabPage() {
                             fontWeight={600}
                             variant="h1"
                           >
-                            Equipments
+                            Equipment
                           </Typography>
                           <Grid item sx={{ textAlign: "left" }}>
                             {item?.equipments["equipments"]?.map((eq, j) => (
                               <>
-                                <Grid item>{eq}</Grid>
+                                <Grid item>  • {eq}</Grid>
                               </>
                             ))}
                           </Grid>
@@ -205,7 +203,22 @@ export default function LabPage() {
                     padding={1}
                   >
                     <>
-                      <Typography
+                    
+                      
+                      {labs?.map((item, key) =>
+                        active === key ? (
+                          <>
+                          <Grid item sx={{ textAlign: "left", fontWeight:"800" }}>
+                        <Typography variant="h5" color="secondary.main">Person associated:</Typography>
+                            <Typography variant="h3"> {item.person}</Typography>
+                            </Grid>
+                            <br/>
+                            <Grid item sx={{ textAlign: "left" }}>
+                        <Typography variant="h5" color="secondary.main" >Research Keywords:</Typography>
+                            <Typography variant="p" fontWeight={500}> {item.keywords}</Typography>
+                            </Grid>
+                            <br/>
+                            <Typography
                         textAlign={"center"}
                         color="secondary.main"
                         fontWeight={600}
@@ -213,11 +226,8 @@ export default function LabPage() {
                       >
                         About
                       </Typography>
-                      {labs?.map((item, key) =>
-                        active === key ? (
-                          <>
                             <Grid item sx={{ textAlign: "left" }}>
-                              {item.description}
+                              <Typography variant="p">{item.description}</Typography>
                             </Grid>
 
                             <Typography
@@ -232,12 +242,14 @@ export default function LabPage() {
                             <Grid item sx={{ textAlign: "left" }}>
                               {Object.keys(item?.review)?.map((exp, i) => (
                                 <>
-                                  <Grid item>{exp}</Grid>
+                                  <Grid item>
+                                    <strong>{exp}</strong>
+                                  </Grid>
                                   <Grid item>
                                     <ul>
                                       {item?.review[exp]?.map((item2, key2) => (
                                         <li style={{ listStyleType: "circle" }}>
-                                          {item2}
+                                          <Typography variant="p">{item2}</Typography>
                                         </li>
                                       ))}
                                     </ul>
@@ -252,19 +264,25 @@ export default function LabPage() {
                               fontWeight={600}
                               variant="h1"
                             >
-                              Equipments
+                              Equipment
                             </Typography>
-                            
-                            {labs?.map((item, key) => {
+                            {/* {item.equipments["equipments"][0]} */}
+                            {item?.equipments["equipments"]?.map((eq, j) => (
+                              <>
+                                
+                                <Typography variant="p">• {eq}</Typography> <br />
+                              </>
+                            ))}
+
+                            {/* .equipments["equipments"][0] */}
+                            {/* {labs?.map((item, key) => {
                               <Grid item sx={{ textAlign: "left" }}>
-                                {item.equipments["equipments"]?.map(
-                                  (eq, j) => (
-                                    <>
-                                      <Grid item>{eq}</Grid>
-                                    </>
-                                  )
-                                )}
-                                {/* {Object?.keys(labs?.equipments)?.map(
+                                {item.equipments["equipments"]?.map((eq, j) => (
+                                  <>
+                                    <Grid item>{eq}dfdsbfhh</Grid>
+                                  </>
+                                ))} */}
+                            {/* {Object?.keys(labs?.equipments)?.map(
                                   (item3, key3) => (
                                     <>
                                       {console.log(item3)}
@@ -272,8 +290,8 @@ export default function LabPage() {
                                     </>
                                   )
                                 )} */}
-                              </Grid>;
-                            })}
+                            {/* </Grid>; */}
+                            {/* })} */}
                           </>
                         ) : (
                           <></>

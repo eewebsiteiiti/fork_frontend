@@ -40,7 +40,7 @@ export default function Event(props) {
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="p" fontWeight={700} color="black">
+          <Typography variant="h5" fontWeight={700} color="black">
             {props.title}
           </Typography>
         </Grid>

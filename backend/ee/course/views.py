@@ -1,8 +1,8 @@
 from rest_framework.views import APIView
-from .serializer import CourseSerializer, ElectiveSerializer
+from .serializer import CourseSerializer, ElectiveSerializer, CourseSerializerNew
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Elective, Course
+from .models import Elective, Course, CourseNew
 from django.http import JsonResponse
 
 
@@ -21,11 +21,23 @@ class GetCourseByProgramView(APIView):
     def get(self, request, program):
         if request.method == "GET":
             try:
+                print(program)
                 course = Course.objects.filter(program=program).values()
             except Course.DoesNotExist:
                 return Response({"message": "Course of the required program and semester not found"}, status=status.HTTP_404_NOT_FOUND)
             return Response(course)
         return Response({"message": "{} method is not allowed".format(request.method)})
+    
+class GetCourseByProgramNewView(APIView):
+    def get(self, request, program):
+        if request.method == "GET":
+            try:
+                course = CourseNew.objects.filter(program=program).values()
+            except CourseNew.DoesNotExist:
+                return Response({"message": "Course of the required program and semester not found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response(course)
+        return Response({"message": "{} method is not allowed".format(request.method)})
+
 
 
 class GetElectiveByProgramView(APIView):

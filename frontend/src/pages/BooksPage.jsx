@@ -20,13 +20,14 @@ const BooksPage = () => {
     if (!isError) {
       setData("Not Available");
     }
-  }, [isError]);
+  }, [data, isError]);
   console.log(data);
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Container sx={{ py: 2 }}>
-        <Header title={`${
+        <Header
+          title={`${
             params.achievement === "books"
               ? "Books Published"
               : params.achievement === "students"
@@ -34,7 +35,8 @@ const BooksPage = () => {
               : params.achievement === "faculty"
               ? "Faculty Achievement"
               : ""
-          }`}/>
+          }`}
+        />
         <br />
         {data?.map((item, key) => (
           <>
@@ -90,9 +92,7 @@ const BooksPage = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Typography color={"primary.main"} >
-              {item.award}
-            </Typography>
+            <Typography color={"primary.main"}>{item.award}</Typography>
             <hr color="rgb(50,50,50,.1)" />
           </>
         ))}

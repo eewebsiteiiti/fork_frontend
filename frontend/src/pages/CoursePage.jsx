@@ -18,7 +18,6 @@ import LoadingPage from "./LoadingPage";
 import Header from "../components/Header";
 import { courses } from "../HeaderData";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
-import { Rowing } from "@mui/icons-material";
 export default function CoursePage() {
   const param = useParams();
   const [data, setData] = useState();
@@ -40,7 +39,7 @@ export default function CoursePage() {
   useEffect(() => {
     setTimeout(() => {
       axios
-        .get(`${api}/course/read/elective/${param.program}`, { timeout: 50000 })
+        .get(`${api}/course/read/elective/${param.program}`)
         .then((response) => setElective(response.data))
         .catch((error) => setIsError(error.message));
       if (!isError) {
@@ -71,89 +70,91 @@ export default function CoursePage() {
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((first, i) => (
                     <>
                       <div className="bg_border">
-                      <Typography
-                        variant="h1"
-                        textAlign="center"
-                        fontWeight="bold"
-                        color="primary.main"
-                      >
-                        Semester: {first}
-                      </Typography>
-                      <Container>
-                        <br />
-                        <br />
-                        <TableContainer component={Paper}>
-                          <Table
-                            sx={{ minWidth: 650 }}
-                            aria-label="simple table"
-                          >
-                            <TableHead
-                              sx={{ backgroundColor: "secondary.main" }}
+                        <Typography
+                          variant="h1"
+                          textAlign="center"
+                          fontWeight="bold"
+                          color="primary.main"
+                        >
+                          Semester: {first}
+                        </Typography>
+                        <Container>
+                          <br />
+                          <br />
+                          <TableContainer component={Paper}>
+                            <Table
+                              sx={{ minWidth: 650 }}
+                              aria-label="simple table"
                             >
-                              <TableRow>
-                                <TableCell>
+                              <TableHead
+                                sx={{ backgroundColor: "secondary.main" }}
+                              >
+                                <TableRow>
+                                  {/* <TableCell>
                                   <Typography color="white">S.No.</Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">
-                                    Course Code
-                                  </Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">
-                                    Course Name / Syllabus
-                                  </Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">Credit</Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">L-T-P</Typography>
-                                </TableCell>
-                              </TableRow>
-                            </TableHead>
-                            <TableBody>
-                              {data?.map((row, key) => (
-                                <TableRow
-                                  key={key}
-                                  sx={{
-                                    color: "black",
-                                    backgroundColor:
-                                      key % 2 != 0 ? "#ffd6dd7c" : "",
-                                    "&:last-child td, &:last-child th": {
-                                      border: 0,
-                                    },
-                                  }}
-                                >
-                                  {row.semester === first ? (
-                                    <>
-                                      <TableCell component="th" scope="row">
-                                        number
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.code}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.name}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.worker}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.worker}
-                                      </TableCell>
-                                    </>
-                                  ) : (
-                                    <></>
-                                  )}
+                                </TableCell> */}
+                                  <TableCell align="left">
+                                    <Typography color="white">
+                                      Course Code
+                                    </Typography>
+                                  </TableCell>
+                                  <TableCell align="left">
+                                    <Typography color="white">
+                                      Course Name / Syllabus
+                                    </Typography>
+                                  </TableCell>
+                                  <TableCell align="left">
+                                    <Typography color="white">
+                                      Credit
+                                    </Typography>
+                                  </TableCell>
+                                  <TableCell align="left">
+                                    <Typography color="white">L-T-P</Typography>
+                                  </TableCell>
                                 </TableRow>
-                              ))}
-                            </TableBody>
-                          </Table>
-                        </TableContainer>
-                      </Container>
+                              </TableHead>
+                              <TableBody>
+                                {data?.map((row, key) => (
+                                  <TableRow
+                                    key={key}
+                                    sx={{
+                                      color: "black",
+                                      backgroundColor:
+                                        key % 2 != 0 ? "#ffd6dd7c" : "",
+                                      "&:last-child td, &:last-child th": {
+                                        border: 0,
+                                      },
+                                    }}
+                                  >
+                                    {row.semester === first ? (
+                                      <>
+                                        {/* <TableCell component="th" scope="row">
+                                        number
+                                      </TableCell> */}
+                                        <TableCell align="left">
+                                          {row.code}
+                                        </TableCell>
+                                        <TableCell align="left">
+                                          {row.name}
+                                        </TableCell>
+                                        <TableCell align="left">
+                                          {row.worker}
+                                        </TableCell>
+                                        <TableCell align="left">
+                                          {row.worker}
+                                        </TableCell>
+                                      </>
+                                    ) : (
+                                      <></>
+                                    )}
+                                  </TableRow>
+                                ))}
+                              </TableBody>
+                            </Table>
+                          </TableContainer>
+                        </Container>
 
-                      <br />
+                        <br />
                       </div>
                     </>
                   ))}
@@ -168,9 +169,6 @@ export default function CoursePage() {
                       <Table sx={{ minWidth: 650 }} aria-label="simple table">
                         <TableHead sx={{ backgroundColor: "secondary.main" }}>
                           <TableRow>
-                            <TableCell>
-                              <Typography color="white">S.No.</Typography>
-                            </TableCell>
                             <TableCell align="left">
                               <Typography color="white">Couse Code</Typography>
                             </TableCell>
@@ -199,9 +197,6 @@ export default function CoursePage() {
                                 },
                               }}
                             >
-                              <TableCell component="th" scope="row">
-                                number
-                              </TableCell>
                               <TableCell align="left">{row.code}</TableCell>
                               <TableCell align="left">{row.name}</TableCell>
                               <TableCell align="left"></TableCell>
@@ -218,89 +213,76 @@ export default function CoursePage() {
                   {[1, 2, 3, 4].map((first, i) => (
                     <>
                       <div className="bg_border">
-                      <Typography textAlign="center" fontWeight="bold" variant="h1">
-                        Semester: {first}
-                      </Typography>
+                        <Typography
+                          textAlign="center"
+                          fontWeight="bold"
+                          variant="h1"
+                        >
+                          Semester: {first}
+                        </Typography>
 
-                      <Container>
-                        <br />
-                        <br />
-                        <TableContainer component={Paper}>
-                          <Table
-                            sx={{ minWidth: 650 }}
-                            aria-label="simple table"
-                          >
-                            <TableHead
-                              sx={{ backgroundColor: "secondary.main" }}
+                        <Container>
+                          <br />
+                          <br />
+                          <TableContainer component={Paper}>
+                            <Table
+                              sx={{ minWidth: 500 }}
+                              aria-label="simple table"
                             >
-                              <TableRow>
-                                <TableCell>
-                                  <Typography color="white">S.No.</Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">
-                                    Course Code
-                                  </Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">
-                                    Course Name / Syllabus
-                                  </Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">Credit</Typography>
-                                </TableCell>
-                                <TableCell align="left">
-                                  <Typography color="white">L-T-P</Typography>
-                                </TableCell>
-                              </TableRow>
-                            </TableHead>
-                            <TableBody>
-                              {data?.map((row, key) => (
-                                <TableRow
-                                  key={key}
-                                  sx={{
-                                    color: "black",
-                                    backgroundColor:
-                                      key % 2 != 0 ? "#ffd6dd7c" : "",
-                                    "&:last-child td, &:last-child th": {
-                                      border: 0,
-                                    },
-                                  }}
-                                >
-                                  {row.semester === first ? (
-                                    <>
-                                      <TableCell component="th" scope="row">
-                                        number
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.code}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.name}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.worker}
-                                      </TableCell>
-                                      <TableCell align="left">
-                                        {row.worker}
-                                      </TableCell>
-                                    </>
-                                  ) : (
-                                    <></>
-                                  )}
+                              <TableHead
+                                sx={{ backgroundColor: "secondary.main" }}
+                              >
+                                <TableRow>
+                                  <TableCell align="center">
+                                    <Typography color="white">
+                                      Course Code
+                                    </Typography>
+                                  </TableCell>
+                                  <TableCell align="center">
+                                    <Typography color="white">
+                                      Course Name / Syllabus
+                                    </Typography>
+                                  </TableCell>
                                 </TableRow>
-                              ))}
-                            </TableBody>
-                          </Table>
-                        </TableContainer>
-                      </Container>
+                              </TableHead>
+                              <TableBody>
+                                {data?.map((row, key) => (
+                                  <TableRow
+                                    key={key}
+                                    sx={{
+                                      color: "black",
+                                      backgroundColor: "white",
+                                    }}
+                                  >
+                                    {row.semester === first ? (
+                                      <>
+                                        <TableCell align="center">
+                                          {row.code}
+                                        </TableCell>
+                                        <TableCell align="center">
+                                          {row.name}
+                                        </TableCell>
+                                        {/* <TableCell align="left">
+                                          {row.credit}
+                                        </TableCell>
+                                        <TableCell align="left">
+                                          {row.ltp}
+                                        </TableCell> */}
+                                      </>
+                                    ) : (
+                                      <></>
+                                    )}
+                                  </TableRow>
+                                ))}
+                              </TableBody>
+                            </Table>
+                          </TableContainer>
+                        </Container>
 
-                      <br />
+                        <br />
                       </div>
 
-
-{/* 
+                      {/* 
 
                       <table>
                         <th>Course Code</th>
