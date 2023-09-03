@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
-from .serializer import BooksSerializer, StudentAwardsSerializer, FacultyAwardsSerializer
+from .serializer import BooksSerializer, StudentAwardsSerializer, FacultyAwardsSerializer, PatentSerializer
 from rest_framework.response import Response
-from .models import Books,StudentAwards,FacultyAwards
+from .models import Books,StudentAwards,FacultyAwards, Patent
 
 class GetBooksAPI(APIView):
     def get(self, request):
@@ -36,4 +36,15 @@ class GetFacultyAwardsAPI(APIView):
                 return Response({"error": "No   faculty"}, status=404)
             faculty = FacultyAwardsSerializer(faculty, many=True)
             return Response(faculty.data)
+        return Response({"message": "{} method is not allowed".format(request.method)})
+
+class GetPatentAPI(APIView):
+    def get(self, request):
+        if request.method == "GET":
+            try:
+                patent = Patent.objects.all()
+            except patent.DoesNotExist:
+                return Response({"error": "No   patent"}, status=404)
+            patent = PatentSerializer(patent, many=True)
+            return Response(patent.data)
         return Response({"message": "{} method is not allowed".format(request.method)})

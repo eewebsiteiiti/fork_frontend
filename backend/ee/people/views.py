@@ -15,23 +15,22 @@ from django.core.files.images import ImageFile
 
 
 # def btech():
-#     direct = os.listdir(r'D:\projects\ee-iiti\backend\ee\people\phd')
+#     direct = os.listdir(r'D:\projects\ee-iiti\backend\ee\people\image')
 #     print(direct)
-#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\people\phd2022.csv')
+#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\research\data.csv')
 #     roll_list = df.roll_no.tolist()
 #     for i in range(len(direct)):
-#         image_path = f"D://projects//ee-iiti//backend//ee//people//phd//{direct[i]}"
+#         image_path = f"D://projects//ee-iiti//backend//ee//people//image//{direct[i]}"
 #         im = open(image_path, 'rb')
 #         django_file = File(im)
 #     #     # print(django_file)
 #         django_image_file = ImageFile(im)
-#         btech = Phd.objects.get(roll_no=roll_list[i])
+#         btech = BTech.objects.get(roll_no=roll_list[i])
 #         print("sfkshdkjhskfhdkusahd")
 #         btech.image.save(f'{roll_list[i]}.jpg', django_file, save=True)
 #     #     # print(btech.image)
 #         im.close()
 #         # obj = serializer.save(created_by=self.request.user) aise karrrr haaa ruk naaa
-
 #         btech.save(update_fields=['image'])
 
 
@@ -50,7 +49,6 @@ class GetFacultyView(APIView):
     def get(self, request):
         if request.method == "GET":
             try:
-                # btech()
                 faculty = Faculty.objects.all()
             except Faculty.DoesNotExist:
                 return Response({"error": "No faculty"}, status=404)
@@ -115,7 +113,6 @@ class GetAlumniByYear(APIView):
                 return Response({"error": "No alumni"}, status=404)
             return Response(alumni)
         return Response({"message": "{} method is not allowed".format(request.method)})
-
 
 
 class GetMSByYear(APIView):

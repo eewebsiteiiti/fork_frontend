@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
 import { research } from "../HeaderData";
-import { Grid, Typography, List } from "@mui/material";
-import {ListItem} from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 const ResearchPage = () => {
   return (
     <div>
@@ -24,9 +23,12 @@ const ResearchPage = () => {
    
    <Typography variant="p" fontSize={"0.8rem"}>
 
-sdkjfbsdihfbdshf fhdbf ihsd 
-fhdbfds fhsd fdfhbsfh <br/>dfbdhfhfbf ihbfhjsd fu fds fhb f f fds fhdbf hfsd fhvfhd fdifh sdfsfbdfsdfih sdf hisd fhsdfbdhfisfhfhif
+
+<Typography fontWeight="bold">
+
 Faculty Involved:
+</Typography>
+
 <list>
     <li>
     Prof. Ram Bilas Pachori
@@ -51,7 +53,10 @@ Faculty Involved:
    <div id="rectangle-r-outside">
     <div id="rectangle-r-inside">
     <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Shaibal Mukherjee
@@ -74,7 +79,10 @@ Faculty Involved:
     <Typography variant='h4' paddingLeft="40%" color={"secondary.main"}>Photonics</Typography>
    <div id="rectangle-l-outside"> <div id="rectangle-l-inside">
    <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Srivathsan Vasudevan
@@ -85,6 +93,9 @@ Faculty Involved:
     <li>
     Prof. Shaibal Mukherjee
     </li>
+    <li>
+    Prof. Vipul Singh
+    </li>
    
 </list></Typography></div> </div>
    </Grid>
@@ -93,7 +104,10 @@ Faculty Involved:
    <div id="rectangle-r-outside">
     <div id="rectangle-r-inside">
     <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
    Prof. Santosh Kumar Vishvakarma 
@@ -123,7 +137,10 @@ Faculty Involved:
     <Typography variant='h4' paddingLeft="40%" color={"secondary.main"}>Communications</Typography>
    <div id="rectangle-l-outside"> <div id="rectangle-l-inside">
    <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Ram Bilas Pachori
@@ -150,7 +167,10 @@ Prof. Prabhat Kumar Upadhyay     </li>
    <div id="rectangle-r-outside">
     <div id="rectangle-r-inside">
     <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
   
     <li>
@@ -171,7 +191,10 @@ Prof. Prabhat Kumar Upadhyay     </li>
     <Typography variant='h4' paddingLeft="40%" color={"secondary.main"}>Power Systems</Typography>
    <div id="rectangle-l-outside"> <div id="rectangle-l-inside">
    <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Trapti Jain
@@ -187,19 +210,23 @@ Prof. Prabhat Kumar Upadhyay     </li>
    <div id="rectangle-r-outside">
     <div id="rectangle-r-inside">
     <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Ram Bilas Pachori
     </li>
     <li>
-    Prof. Prabhat kumar Upadhyay
+    Prof. Prabhat Kumar Upadhyay
     </li>
     <li>
     Prof. Vimal Bhatia
     </li>
     <li>
-   Dr. Vivek A. S. 
+    Prof. Vivek Kanhangad
+ 
     </li>
     <li>
    Dr. Appinaa Balasubramanyam
@@ -216,7 +243,10 @@ Prof. Prabhat Kumar Upadhyay     </li>
     <Typography variant='h4' paddingLeft="40%" color={"secondary.main"}>Power Electronics</Typography>
    <div id="rectangle-l-outside"> <div id="rectangle-l-inside">
    <Typography variant="p" fontSize={"0.8rem"}> 
-    Faculty Involved:
+    <Typography fontWeight="bold">
+
+Faculty Involved:
+</Typography>
 <list>
     <li>
     Prof. Amod C. Umarikar
@@ -242,3 +272,4 @@ Prof. Prabhat Kumar Upadhyay     </li>
 };
 
 export default ResearchPage;
+// KYAA HUAAAAA

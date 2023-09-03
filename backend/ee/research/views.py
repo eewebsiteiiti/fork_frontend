@@ -5,22 +5,20 @@ from rest_framework import status
 from .models import Research, Projects, Papers, PGLabs, UGLabs
 from achievements.models import Books
 import pandas as pd
-from people.models import MTech, Phd
+from people.models import MTech, Phd, BTech
 
 
-def faculty():
-    df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\people\phd2022.csv')
-    print("silfkjshdjkh")
-    name = df.name.tolist()
-    roll_no = df.roll_no.tolist()
-    details = df.details.tolist()
-    year = df.year.tolist()
-    for i in range(len(name)):
-        data = Phd.objects.create(name=name[i],
-                                    roll_no=roll_no[i],
-                                    details=details[i],
-                                    year=year[i])
-        data.save()
+# def faculty():
+#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\research\data.csv')
+#     print("silfkjshdjkh")
+#     name = df.name.tolist()
+#     roll_no = df.roll_no.tolist()
+#     year = df.year.tolist()
+#     for i in range(len(name)):
+#         data = BTech.objects.create(name=name[i],
+#                                     roll_no=roll_no[i],
+#                                     year=year[i])
+#         data.save()
 
 
 class ResearchView(APIView):

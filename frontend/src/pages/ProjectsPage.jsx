@@ -13,7 +13,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import '../components/styles/program.css';
+import "../components/styles/program.css";
 export default function ProjectsPage() {
   const [data, setData] = useState();
   const [isError, setIsError] = useState();
@@ -65,51 +65,51 @@ export default function ProjectsPage() {
       </Box>
       </div>  */}
       <div className="program">
-      <div className="bg_border">
-      <Container>
-        <br />
-        <br />
-        <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead sx={{ backgroundColor: "secondary.main" }}>
-              <TableRow>
-                <TableCell>
-                  <Typography color="white">Project Title</Typography>
-                </TableCell>
-                <TableCell align="right">
-                  <Typography color="white">Duration</Typography>
-                </TableCell>
-                <TableCell align="right">
-                  <Typography color="white">Source</Typography>
-                </TableCell>
-                <TableCell align="right">
-                  <Typography color="white">Project Incharge</Typography>
-                </TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {data?.map((row, key) => (
-                <TableRow
-                  key={key}
-                  sx={{
-                    backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
-                    "&:last-child td, &:last-child th": { border: 0 },
-                  }}
-                >
-                  <TableCell component="th" scope="row">
-                    {row.title}
-                  </TableCell>
-                  <TableCell align="right">{row.duration}</TableCell>
-                  <TableCell align="right">{row.project_type}</TableCell>
-                  <TableCell align="right">{row.worker}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Container>
-      <br />
-      </div>
+        <div className="bg_border">
+          <Container>
+            <br />
+            <br />
+            <TableContainer component={Paper}>
+              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <TableHead sx={{ backgroundColor: "secondary.main" }}>
+                  <TableRow>
+                    <TableCell>
+                      <Typography color="white">Project Title</Typography>
+                    </TableCell>
+                    <TableCell align="right">
+                      <Typography color="white">Duration (Months)</Typography>
+                    </TableCell>
+                    <TableCell align="right">
+                      <Typography color="white">Source</Typography>
+                    </TableCell>
+                    <TableCell align="right">
+                      <Typography color="white">Project Incharge</Typography>
+                    </TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {data?.map((row, key) => (
+                    <TableRow
+                      key={key}
+                      sx={{
+                        backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
+                        "&:last-child td, &:last-child th": { border: 0 },
+                      }}
+                    >
+                      <TableCell component="th" scope="row">
+                        {row.title}
+                      </TableCell>
+                      <TableCell align="right">{row.duration}</TableCell>
+                      <TableCell align="right">{row.project_type}</TableCell>
+                      <TableCell align="right">{row.worker}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Container>
+          <br />
+        </div>
       </div>
     </>
   );

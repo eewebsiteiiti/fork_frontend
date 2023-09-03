@@ -63,7 +63,7 @@ export default function WovenImageList() {
         cols={5}
         gap={20}
       >
-        {itemData1.map((item) => (
+        {itemData2.map((item) => (
           <ImageListItem key={item.img} sx={{ overflow: 'hidden' }} >
 
             <img
@@ -108,23 +108,23 @@ const itemData1 = [
 ];
 const itemData2 = [
   {
-    img: '/Images/carousel/1.JPG',
+    img: '/Images/carousel/6.JPG',
     type: 'img',
   },
   {
-    img: '/Images/carousel/2.JPG',
+    img: '/Images/carousel/7.JPG',
     type: 'img',
   },
   {
-    img: '/Images/carousel/3.JPG',
+    img: '/Images/carousel/8.JPG',
     type: 'img',
   },
   {
-    img: '/Images/carousel/4.JPG',
+    img: '/Images/carousel/9.JPG',
     type: 'img',
   },
   {
-    img: '/Images/carousel/5.JPG',
+    img: '/Images/carousel/10.JPG',
     type: 'img',
   },
 ]

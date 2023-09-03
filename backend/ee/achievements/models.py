@@ -1,8 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
-
 class Books(models.Model):
     year = models.IntegerField()
     name = models.CharField(max_length=5000)
@@ -27,3 +25,10 @@ class FacultyAwards(models.Model):
     name = models.CharField(max_length=5000)
     award = models.CharField(max_length=5000, null=True)
     image = models.ImageField(blank=True, null=True, upload_to='images/')
+
+class Patent(models.Model):
+    year = models.IntegerField()
+    name = models.CharField(max_length=5000)
+    pi = models.CharField(max_length=5000, null=True)
+    uuid = models.CharField(max_length=5000, null=True)
+    status = models.CharField(max_length=5000, null=True)

@@ -8,6 +8,7 @@ import LoadingPage from "../../pages/LoadingPage";
 import { api, image_api } from "../../Api";
 export default function PeopleCard(props) {
   const [data, setData] = useState();
+  console.log(props.program)
   const [isError, setIsError] = useState([]);
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +22,7 @@ export default function PeopleCard(props) {
         setData("Not Available");
       }
     }, 3000);
-    console.log("hello");
+    
   }, [props.year, isError, props.program]);
   return (
     <div>
@@ -43,11 +44,12 @@ export default function PeopleCard(props) {
                       {console.log(item.image)}
                       <Grid item mt={5}>
                         <Card sx={{ width: 150, height: 280 }}>
+                          {console.log(item.image)}
                           {item.image ? (
                             <CardMedia
                               sx={{ height: "150px" }}
                               image={`${image_api}${
-                                props.program === "BTech" ? "/media/" : ""
+                                 "/media/" 
                               }${item.image}`}
                               // title="Faculty"
                               loading="lazy"

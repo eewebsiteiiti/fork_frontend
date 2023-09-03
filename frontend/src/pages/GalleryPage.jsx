@@ -34,6 +34,18 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/IMG_6913.JPG",
         },
         {
+          source: "Images/gallery/1.JPG",
+        },
+        {
+          source: "Images/gallery/13.JPG",
+        },
+        {
+          source: "Images/gallery/btech25.JPG",
+        },
+        {
+          source: "Images/gallery/2.JPG",
+        },
+        {
           source: "Images/gallery/IMG_6925.JPG",
         },
         {
@@ -41,9 +53,6 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/IMG_6928.JPG",
-        },
-        {
-          source: "Images/gallery/IMG_6805.JPG",
         },
         {
           source: "Images/gallery/9K6A6820.JPG",
@@ -77,19 +86,7 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/9K6A6861.JPG",
-        },
-        {
-          source: "Images/gallery/1.JPG",
-        },
-        {
-          source: "Images/gallery/13.JPG",
-        },
-        {
-          source: "Images/gallery/2.JPG",
-        },
-        {
-          source: "Images/gallery/btech25.JPG",
-        },
+        }
       ],
       showNumOfRemainingPhotos: true,
     };

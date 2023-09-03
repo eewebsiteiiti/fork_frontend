@@ -22,23 +22,22 @@
   /* height:10px; */
 }
 
-.programBg1{
-  background-image: url('/public/Images/btech.png');
+.programBg1 {
+  background-image: url("/public/Images/btech.png");
 }
-.programBg2{
-  background-image: url('/public/Images/mtech.png');
-}
-
-.programBg3{
-  background-image: url('/public/Images/ms.png');
+.programBg2 {
+  background-image: url("/public/Images/mtech.png");
 }
 
-.programBg4{
-  background-image: url('/public/Images/phd.png');
+.programBg3 {
+  background-image: url("/public/Images/ms.png");
 }
 
+.programBg4 {
+  background-image: url("/public/Images/phd.png");
+}
 
-.programBgColor{
+.programBgColor {
   background-color: rgb(0, 0, 0);
   background-color: rgba(5, 5, 5, 0.7);
 }
@@ -127,7 +126,6 @@ th {
   float: right;
   background: #000;
   box-sizing: border-box;
-
 }
 #rectangle-l-inside {
   width: 100%;
@@ -137,9 +135,8 @@ th {
   right: 1px;
   clip-path: polygon(60% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
   float: right;
-  background-color:white ;
+  background-color: white;
 }
-
 
 #rectangle-r-outside {
   width: 60%;
@@ -159,9 +156,8 @@ th {
   clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
 }
 
-.bg_border{
+.bg_border {
   background-image: url("/public/Images/body_bg_1.png");
-  background-size: contain;
   background-repeat: repeat-y;
-  /* background-position: 50%; */
+  background-size: 100%;
 }

@@ -18,7 +18,7 @@ import StatsPage from "./pages/StatsPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>

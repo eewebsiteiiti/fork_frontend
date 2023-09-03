@@ -24,7 +24,7 @@ const ResearchAreas = () => {
             <ResearchCard
               specialisation={"Communications and Signal Processing"}
               description={
-                "Communication and signal processing are two interrelated fields that deal with the transmission, reception, and analysis of information through various mediums."
+                "Communication and signal processing group works in areas related to wireless communication technologies and various signal/image processing techniques."
               }
               action={"/research/signal"}
               photo={"/Images/logo/signal.jpg"}
@@ -49,12 +49,12 @@ const ResearchAreas = () => {
             item
             xs={12}
             md={3}
-            sx={{ display: "flex", justifyContent: "center"  }}
+            sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
               specialisation={"Power Electronics and Power Systems"}
               description={
-                "Power Electronics and Power Systems deal with the generation, transmission, distribution, and use of electrical energy."
+                "Power Electronics and Power Systems group works on efficient and optimal generation, transmission, distribution, and use of electrical energy."
               }
               photo={"/Images/logo/power.png"}
               action={"/research/power"}
@@ -64,12 +64,12 @@ const ResearchAreas = () => {
             item
             xs={12}
             md={3}
-            sx={{ display: "flex", justifyContent: "center"  }}
+            sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
               specialisation={"RF and Microwave"}
               description={
-                "RF (Radio Frequency) and microwave engineering are two fields of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems."
+                "RF (Radio Frequency) and microwave engineering are a particular domain of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems."
               }
               photo={"Images/logo/RF.jpg"}
               action={"research//RF"}
@@ -77,15 +77,18 @@ const ResearchAreas = () => {
           </Grid>
         </Grid>
         <Typography
-            sx={{ textAlign: "center", fontSize: "2.3rem", py: 1 }}
-            variant="h1"
-            component="h2"
-          >
-            OUR HISTORY!
-          </Typography>
-          <center><img src="/Images/history.png" alt="not available" width="65%" /></center>
+          sx={{ textAlign: "center", fontSize: "2.3rem", py: 1 }}
+          variant="h1"
+          component="h2"
+        >
+          OUR HISTORY!
+        </Typography>
+        <center>
+          <img src="/Images/history.png" alt="not available" width="65%" />
+        </center>
       </Container>
-     <br/><br/>
+      <br />
+      <br />
     </div>
   );
 };

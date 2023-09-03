@@ -28,7 +28,6 @@ const Footer = () => {
               textAlign: "center",
               padding: 3,
               marginBottom: 3,
-
             }}
           >
             ACHIEVEMENTS
@@ -77,7 +76,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Students">
+                  <Link to="/research/stats/Students">
                     <School
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -104,7 +103,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Publications">
+                  <Link to="/research/stats/Publications">
                     <LibraryBooksIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -131,7 +130,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Placements">
+                  <Link to="/research/stats/Placements">
                     <Timeline
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -158,7 +157,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Patents">
+                  <Link to="/research/stats/Patents">
                     <PublicIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -185,7 +184,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Projects">
+                  <Link to="/research/stats/Projects">
                     <ExtensionIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -212,7 +211,7 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="stats/Grants">
+                  <Link to="/research/stats/Grants">
                     <CurrencyRupee
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
@@ -228,7 +227,7 @@ const Footer = () => {
                     </CountUp>
                     .7 Cr
                   </Typography>
-                  <Typography color="white">Project Grant</Typography>
+                  <Typography color="white">Project Grants</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -246,12 +245,13 @@ const Footer = () => {
                 justifyContent: "space-between",
                 alignItems: "start",
                 paddingTop: 5,
-                px: 10,
+                // px: 10,
+                m: "auto",
                 py: 5,
               }}
             >
               <Box className="footer-info" sx={{ mx: 3 }}>
-                <Typography variant="h1" color='secondary.main' sx={{}}>
+                <Typography variant="h1" color="secondary.main" sx={{}}>
                   IIT Indore Department of Electrical
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
@@ -289,7 +289,7 @@ const Footer = () => {
                           Department
                         </Typography>
                       </Link>
-                      <Link to="/administration">
+                      {/* <Link to="/administration">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -297,8 +297,8 @@ const Footer = () => {
                         >
                           Administration
                         </Typography>
-                      </Link>
-                      <Link to="/contact">
+                      </Link> */}
+                      {/* <Link to="/contact">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -306,7 +306,7 @@ const Footer = () => {
                         >
                           Contact Us
                         </Typography>
-                      </Link>
+                      </Link> */}
                       <Link to="/gallery">
                         <Typography
                           fontSize="0.7rem"
@@ -341,31 +341,40 @@ const Footer = () => {
                           Staff
                         </Typography>
                       </Link>
-                      <Link to="/people/PhD">
+                      <Link to="/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          PhD-student
+                          PhD - students
                         </Typography>
                       </Link>
-                      <Link to="/people/MTech">
+                      <Link to="/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          MTech-student
+                          M S Research - students
                         </Typography>
                       </Link>
-                      <Link to="/people/BTech">
+                      <Link to="/people/MTech/2023">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          BTech-student
+                          M.Tech. - students
+                        </Typography>
+                      </Link>
+                      <Link to="/people/BTech/2023">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          B.Tech. - students
                         </Typography>
                       </Link>
                     </Box>
@@ -385,38 +394,15 @@ const Footer = () => {
                           Research Areas
                         </Typography>
                       </Link>
-                      <Link to="/labs">
+                      <Link to="/projects">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          Laboratories
+                          Projects
                         </Typography>
                       </Link>
-                      <Link to="/publication">
-                        <Typography
-                          fontSize="0.7rem"
-                          varient="p"
-                          sx={{ color: "#B7B7c7" }}
-                        >
-                          Recent Publications
-                        </Typography>
-                      </Link>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Projects
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Open Positions
-                      </Typography>
                     </Box>
                   </Box>
 
@@ -425,41 +411,87 @@ const Footer = () => {
                       Academics
                     </Typography>
                     <Box>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Academics
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Courses
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Scholarship
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Awards and Recognitions
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        PhD intership in Industry
-                      </Typography>
+                      <a href="https://academic.iiti.ac.in/">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Academics
+                        </Typography>
+                      </a>
+
+                      <Link to="/courses/BTech">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Courses - UG
+                        </Typography>
+                      </Link>
+                      <Link to="/courses/MTech/old">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Courses - PG
+                        </Typography>
+                      </Link>
+                      <Link to="/labs/ug">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Laboratories - UG
+                        </Typography>
+                      </Link>
+                      <Link to="/labs/pg">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Laboratories - Research
+                        </Typography>
+                      </Link>
+                    </Box>
+                  </Box>
+                  <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
+                      Achievements
+                    </Typography>
+                    <Box>
+                      <Link to="/achievements/books">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Books
+                        </Typography>
+                      </Link>
+
+                      <Link to="/achievements/faculty">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Faculty Recognition
+                        </Typography>
+                      </Link>
+                      <Link to="/achievements/students">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Student Achievements
+                        </Typography>
+                      </Link>
                     </Box>
                   </Box>
 
@@ -468,47 +500,56 @@ const Footer = () => {
                       Open Positions
                     </Typography>
                     <Box>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Ph.D. Positions
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Faculty Positions
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Seminars
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        CEP
-                      </Typography>
-                      <Typography
-                        fontSize="0.7rem"
-                        varient="p"
-                        sx={{ color: "#B7B7c7" }}
-                      >
-                        Placement Statistics
-                      </Typography>
+                      <a href="http://academic.iiti.ac.in/phdadvt.php">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Ph.D. Positions
+                        </Typography>
+                      </a>
+
+                      <a href="http://www.iiti.ac.in/Careers/faculty_appointments.htm">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Faculty Positions
+                        </Typography>
+                      </a>
+
+                      <a href="http://ee.iiti.ac.in/seminars.html">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Seminars
+                        </Typography>
+                      </a>
+
+                      <a href="http://www.iiti.ac.in/Courses/index.htm">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          CEP
+                        </Typography>
+                      </a>
+
+                      <Link to="/stats/Placements">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          Placement Statistics
+                        </Typography>
+                      </Link>
                     </Box>
-                  </Box>
-                  <Box sx={{ px: 2 }}>
-                    <Typography varient="p" sx={{ color: "white" }}>
-                      Safety Regulations
-                    </Typography>
                   </Box>
                 </Box>
               </Box>
@@ -522,7 +563,7 @@ const Footer = () => {
             }}
           >
             <Typography color="white" textAlign="center" sx={{ p: 2 }}>
-              ©️Department of Electrical Engineering, IIT Indore - All Rights
+              ©️ Department of Electrical Engineering, IIT Indore - All Rights
               Reserved
             </Typography>
           </Box>

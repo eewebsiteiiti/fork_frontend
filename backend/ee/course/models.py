@@ -29,8 +29,8 @@ class CourseNew(models.Model):
 
 
 class Elective(models.Model):
-    code = models.CharField(max_length=5)
-    name = models.CharField(max_length=50)
+    code = models.CharField(max_length=30)
+    name = models.CharField(max_length=100)
     program = models.CharField(max_length=60)
     credit = models.FloatField(blank=True)
     ltp = models.CharField(max_length=10)

@@ -133,7 +133,7 @@ const Staff_Card = (props) => {
                       </Typography>
                     </a>
                   </Typography>
-                  <Typography fontSize="0.8rem">
+                  {props.name=="Staff"?<></>:<Typography fontSize="0.8rem">
                     <Business
                       sx={{
                         verticalAlign: "bottom",
@@ -142,7 +142,7 @@ const Staff_Card = (props) => {
                       }}
                     />
                     Address:&nbsp;{item.address}
-                  </Typography>
+                  </Typography>}
                 </Box>
               </Box>
             </>

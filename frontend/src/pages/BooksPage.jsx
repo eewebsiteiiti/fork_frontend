@@ -6,6 +6,7 @@ import { api, image_api } from "../Api";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
+
 const BooksPage = () => {
   const [data, setData] = useState();
   const [isError, setIsError] = useState([false]);
@@ -20,30 +21,32 @@ const BooksPage = () => {
     if (!isError) {
       setData("Not Available");
     }
-  }, [data, isError]);
+  }, [params, isError]);
   console.log(data);
   return (
     <>
       <Navbar />
+      <Header
+        title={`${
+          params.achievement === "books"
+            ? "Books Published"
+            : params.achievement === "students"
+            ? "Students Achievement"
+            : params.achievement === "faculty"
+            ? "Faculty Achievement"
+            : ""
+        }`}
+      />
       <Container sx={{ py: 2 }}>
-        <Header
-          title={`${
-            params.achievement === "books"
-              ? "Books Published"
-              : params.achievement === "students"
-              ? "Students Achievement"
-              : params.achievement === "faculty"
-              ? "Faculty Achievement"
-              : ""
-          }`}
-        />
         <br />
+        <Grid container direction={"column-reverse"}>
         {data?.map((item, key) => (
           <>
+            <Grid item sx={{backgroundColor:item.award==="The President of India Gold Medalist"? "#FFD700":"white"}}>
             <Grid
               container
-              justifyContent="left"
-              direction="row"
+              justifyContent="space-between"
+              direction="row-reverse"
               alignItems="center"
               spacing={2}
             >
@@ -56,7 +59,11 @@ const BooksPage = () => {
                   />
                 </Grid>
               ) : (
-                <></>
+                <><img
+                src={"/Images/profile_placeholder.jpg"}
+                alt={item.image}
+                width={50}
+              /></>
               )}
 
               <Grid item>
@@ -94,8 +101,10 @@ const BooksPage = () => {
             </Grid>
             <Typography color={"primary.main"}>{item.award}</Typography>
             <hr color="rgb(50,50,50,.1)" />
+            </Grid>
           </>
         ))}
+        </Grid>
       </Container>
     </>
   );

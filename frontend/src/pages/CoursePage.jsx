@@ -55,12 +55,16 @@ export default function CoursePage() {
         description={courses.description}
         image={courses.image}
       />
+  <div className="bg_border">
 
-      <Container sx={{ py: 2 }}>
+      <Container  sx={{ py: 2 }}>
         <br />
+        <a href="https://academic.iiti.ac.in/" target="_blank">
+          <Typography variant="h4">👉Academic IIT Indore</Typography>
+        </a>
 
         <Typography variant="h1" color="primary.main" textAlign="center">
-          {param.program}
+          {param.program === "BTech" ? "B.Tech." : "M.Tech."}
         </Typography>
         <Box sx={{ py: 4 }}>
           {data ? (
@@ -69,7 +73,7 @@ export default function CoursePage() {
                 <>
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((first, i) => (
                     <>
-                      <div className="bg_border">
+                      <div >
                         <Typography
                           variant="h1"
                           textAlign="center"
@@ -138,10 +142,10 @@ export default function CoursePage() {
                                           {row.name}
                                         </TableCell>
                                         <TableCell align="left">
-                                          {row.worker}
+                                          {row.credit}
                                         </TableCell>
                                         <TableCell align="left">
-                                          {row.worker}
+                                          {row.ltp}
                                         </TableCell>
                                       </>
                                     ) : (
@@ -199,8 +203,8 @@ export default function CoursePage() {
                             >
                               <TableCell align="left">{row.code}</TableCell>
                               <TableCell align="left">{row.name}</TableCell>
-                              <TableCell align="left"></TableCell>
-                              <TableCell align="left"></TableCell>
+                              <TableCell align="left">{row.credit}</TableCell>
+                              <TableCell align="left">{row.ltp}</TableCell>
                             </TableRow>
                           ))}
                         </TableBody>
@@ -212,7 +216,7 @@ export default function CoursePage() {
                 <>
                   {[1, 2, 3, 4].map((first, i) => (
                     <>
-                      <div className="bg_border">
+                      <div >
                         <Typography
                           textAlign="center"
                           fontWeight="bold"
@@ -262,12 +266,12 @@ export default function CoursePage() {
                                         <TableCell align="center">
                                           {row.name}
                                         </TableCell>
-                                        {/* <TableCell align="left">
+                                        <TableCell align="left">
                                           {row.credit}
                                         </TableCell>
                                         <TableCell align="left">
                                           {row.ltp}
-                                        </TableCell> */}
+                                        </TableCell>
                                       </>
                                     ) : (
                                       <></>
@@ -312,6 +316,7 @@ export default function CoursePage() {
           )}
         </Box>
       </Container>
+      </div>
     </div>
   );
 }

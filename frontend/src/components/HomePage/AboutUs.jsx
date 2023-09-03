@@ -52,7 +52,7 @@ Things (IoT) Networks are currently being offered as electives.
               <Grid item>
                 <img
                   className="about-img"
-                  src="/Images/about.JPG"
+                  src="/Images/about.jpg"
                   alt=""
                   width="400"
                   style={{ position: "relative", left: "60px" }}

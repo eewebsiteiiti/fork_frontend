@@ -9,6 +9,8 @@ class CourseSerializer(serializers.ModelSerializer):
     def create(self,validated_data):
         course = Course.objects.create(program=validated_data.get('program'),
                                            semester=validated_data.get('semester'),
+                                           credit=validated_data.get('credit'),
+                                           ltp=validated_data('ltp'),
                                          name=validated_data.get('name'),
                                            code=validated_data.get('code'))
         return course
@@ -23,6 +25,8 @@ class CourseSerializerNew(serializers.ModelSerializer):
         course = CourseNew.objects.create(program=validated_data.get('program'),
                                            semester=validated_data.get('semester'),
                                          name=validated_data.get('name'),
+                                           credit=validated_data.get('credit'),
+                                           ltp=validated_data('ltp'),
                                          elective=validated_data.get('elective'),
                                            code=validated_data.get('code'))
         return course
@@ -37,5 +41,7 @@ class ElectiveSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         elective = Elective.objects.create(program=validated_data.get('program'),
                                        name=validated_data.get('name'),
-                                       code=validated_data.get('code'))
+                                       code=validated_data.get('code'),
+                                       credit=validated_data.get('credit'),
+                                        ltp=validated_data('ltp'))
         return elective

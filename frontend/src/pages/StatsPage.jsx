@@ -11,7 +11,7 @@ export default function StatsPage() {
       <>
       <Navbar/>
         <br />
-        <center>
+        <center className="bg_border">
           {param?.program === "Faculty" ? (
             <>
             <Header title="Statistics"/>
