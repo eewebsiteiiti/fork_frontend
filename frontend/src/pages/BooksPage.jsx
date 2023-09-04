@@ -42,7 +42,7 @@ const BooksPage = () => {
         <Grid container direction={"column-reverse"}>
         {data?.map((item, key) => (
           <>
-            <Grid item sx={{backgroundColor:item.award==="The President of India Gold Medalist"? "#FFD700":"white"}}>
+            <Grid item sx={{backgroundColor:item.award==="The President of India Gold Medalist"? "#ffda95": item.award==="Departmental Silver Medalist"?"#dfdfdf":"white"}}>
             <Grid
               container
               justifyContent="space-between"

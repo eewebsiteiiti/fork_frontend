@@ -8,6 +8,7 @@ import "../styles/footer.css";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import PublicIcon from "@mui/icons-material/Public";
 import ExtensionIcon from "@mui/icons-material/Extension";
+import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import {
   CurrencyRupee,
   School,
@@ -41,7 +42,7 @@ const Footer = () => {
               alignItems="center"
               sx={{ m: "auto" }}
             >
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -49,12 +50,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="people/Faculty">
+                  <a href="/people/Faculty">
                     <SupervisedUserCircle
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white ">
                     <CountUp end={18} duration={2}>
                       {({ countUpRef, start }) => (
@@ -68,7 +69,7 @@ const Footer = () => {
                   <Typography color="white">Faculty</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -76,12 +77,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Students">
-                    <School
+                  <a href="/research/stats/Students">
+                    <SupervisorAccountIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={1115} duration={2}>
                       {({ countUpRef, start }) => (
@@ -95,7 +96,7 @@ const Footer = () => {
                   <Typography color="white">Students Graduated</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -103,12 +104,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Publications">
+                  <a href="/research/stats/Publications">
                     <LibraryBooksIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={1358} duration={2}>
                       {({ countUpRef, start }) => (
@@ -122,7 +123,7 @@ const Footer = () => {
                   <Typography color="white">Publications</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -130,12 +131,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Placements">
+                  <a href="/research/stats/Placements">
                     <Timeline
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={96} duration={2}>
                       {({ countUpRef, start }) => (
@@ -149,7 +150,7 @@ const Footer = () => {
                   <Typography color="white">Placement</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -157,12 +158,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Patents">
+                  <a href="/research/stats/Patents">
                     <PublicIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={19} duration={2}>
                       {({ countUpRef, start }) => (
@@ -176,7 +177,7 @@ const Footer = () => {
                   <Typography color="white">Patents</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -184,12 +185,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Projects">
+                  <a href="/research/stats/Projects">
                     <ExtensionIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={95} duration={2}>
                       {({ countUpRef, start }) => (
@@ -203,7 +204,7 @@ const Footer = () => {
                   <Typography color="white">Projects</Typography>
                 </Box>
               </Grid>
-              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.7}>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
                 <Box
                   sx={{
                     display: "flex",
@@ -211,12 +212,12 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <Link to="/research/stats/Grants">
+                  <a href="/research/stats/Grants">
                     <CurrencyRupee
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
-                  </Link>
+                  </a>
                   <Typography color="white">
                     <CountUp end={32} duration={2}>
                       {({ countUpRef, start }) => (
@@ -228,6 +229,35 @@ const Footer = () => {
                     .7 Cr
                   </Typography>
                   <Typography color="white">Project Grants</Typography>
+                </Box>
+              </Grid>
+              <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexDirection: "column",
+                  }}
+                >
+                  <a href="/research/stats/citations">
+                    <School
+                      color="quaternary"
+                      sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
+                    />
+                  </a>
+                  <Typography color="white">
+                    <CountUp end={44150} duration={2}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                    +
+                  </Typography>
+                  <Typography color="white" align="center">
+                    Google Scholar Citations
+                  </Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -457,6 +487,15 @@ const Footer = () => {
                           Laboratories - Research
                         </Typography>
                       </Link>
+                      <a href="https://academic.iiti.ac.in:8443/index1.html" target="_blank">
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          AROL
+                        </Typography>
+                      </a>
                     </Box>
                   </Box>
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
@@ -530,7 +569,7 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="http://www.iiti.ac.in/Courses/index.htm">
+                      {/* <a href="http://www.iiti.ac.in/Courses/index.htm">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -538,7 +577,7 @@ const Footer = () => {
                         >
                           CEP
                         </Typography>
-                      </a>
+                      </a> */}
 
                       <Link to="/stats/Placements">
                         <Typography

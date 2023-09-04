@@ -156,6 +156,10 @@ th {
   clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
 }
 
+.test{
+  color:#dfdfdf
+}
+
 .bg_border {
   background-image: url("/public/Images/body_bg_1.png");
   background-repeat: repeat-y;

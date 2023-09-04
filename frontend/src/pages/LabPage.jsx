@@ -20,7 +20,6 @@ export default function LabPage() {
     if (!isError) {
       setLabs("Not Available");
     }
-    // console.log(labs[0].equipments["equipments"][0]);
   }, [isError, params?.type]);
   return (
     <div>
@@ -146,6 +145,10 @@ export default function LabPage() {
           <br />
         </>
       ) : (
+        <></>
+      )}
+
+      {params.type === "pg" ? (
         <>
           <>
             <Header
@@ -214,7 +217,6 @@ export default function LabPage() {
                                 Prof. In-Charge:
                               </Typography>
                               <Typography variant="h3">
-                                {" "}
                                 {item.person}
                               </Typography>
                             </Grid>
@@ -224,7 +226,6 @@ export default function LabPage() {
                                 Research Keywords:
                               </Typography>
                               <Typography variant="p" fontWeight={500}>
-                                {" "}
                                 {item.keywords}
                               </Typography>
                             </Grid>
@@ -320,6 +321,8 @@ export default function LabPage() {
             <br /> <br />
           </>
         </>
+      ) : (
+        <></>
       )}
     </div>
   );

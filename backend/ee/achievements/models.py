@@ -27,7 +27,7 @@ class FacultyAwards(models.Model):
     image = models.ImageField(blank=True, null=True, upload_to='images/')
 
 class Patent(models.Model):
-    year = models.IntegerField()
+    year = models.CharField(max_length=50)
     name = models.CharField(max_length=5000)
     pi = models.CharField(max_length=5000, null=True)
     uuid = models.CharField(max_length=5000, null=True)

@@ -18,7 +18,7 @@ const navs = {
     "M S (Research)": {
       // 2019: "/people/MS/2019",
       // 2020: "/people/MS/2020",
-      2021: "/people/MS/2021",
+      // 2021: "/people/MS/2021",
       2022: "/people/MS/2022",
       2023: "/people/MS/2023",
     },
@@ -84,7 +84,8 @@ const navs = {
     "Student Achievements": "/achievements/students",
   },
   Activities:{
-    'EESA' : "/eesa"
+    'EESA' : "/eesa",
+    'Upcoming seminars' : "#"
   }
 };
 

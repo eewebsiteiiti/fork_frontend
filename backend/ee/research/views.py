@@ -6,18 +6,23 @@ from .models import Research, Projects, Papers, PGLabs, UGLabs
 from achievements.models import Books
 import pandas as pd
 from people.models import MTech, Phd, BTech
+from achievements.models import Patent
 
 
 # def faculty():
-#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\research\data.csv')
+#     df = pd.read_csv(r'D:\projects\ee-iiti\backend\ee\research\Patents.csv')
 #     print("silfkjshdjkh")
 #     name = df.name.tolist()
-#     roll_no = df.roll_no.tolist()
+#     uuid = df.uuid.tolist()
 #     year = df.year.tolist()
+#     status = df.status.tolist()
+#     pi = df.pi.tolist()
 #     for i in range(len(name)):
-#         data = BTech.objects.create(name=name[i],
-#                                     roll_no=roll_no[i],
-#                                     year=year[i])
+#         data = Patent.objects.create(name=name[i],
+#                                     uuid=uuid[i],
+#                                     year=year[i],
+#                                     status=status[i],
+#                                     pi=pi[i])
 #         data.save()
 
 
@@ -81,7 +86,6 @@ class LabsView(APIView):
 
 class GetUGLabsView(APIView):
     def get(self, request):
-        # faculty()
         print("hwloooo")
         if request.method == "GET":
             try:
