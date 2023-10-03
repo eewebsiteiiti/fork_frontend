@@ -20,21 +20,22 @@ const ResearchPage = () => {
         <br />
         <br />
         <Grid container>
-          <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Machine Learning and Deep Learning
+              Communications
             </Typography>
             <div id="rectangle-l-outside">
               {" "}
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
-
                   <list>
                     <li>Prof. Ram Bilas Pachori</li>
-                    <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Vivek Kanhangad</li>
+                    <li>Dr. Sumit Gautam</li>
+                    <li>Prof. Prabhat Kumar Upadhyay </li>
                     <li>Prof. Vimal Bhatia</li>
+                    <li>Dr. Swaminathan R.</li>
+                    <li>Dr. Appina Balasubramanyam</li>
                   </list>
                 </Typography>
               </div>{" "}
@@ -47,16 +48,18 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              Bio-Photonics
+              Signal and Image Processing
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
-                    <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Srivathsan Vasudevan</li>
-                    <li>Prof. Mukesh Kumar</li>
+                    <li>Prof. Ram Bilas Pachori</li>
+                    <li>Prof. Prabhat Kumar Upadhyay</li>
+                    <li>Prof. Vimal Bhatia</li>
+                    <li>Prof. Vivek Kanhangad</li>
+                    <li>Dr. Appinaa Balasubramanyam</li>
                   </list>
                 </Typography>
               </div>
@@ -66,9 +69,9 @@ const ResearchPage = () => {
         <br />
 
         <Grid container>
-          <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Photonics
+              Power Systems
             </Typography>
             <div id="rectangle-l-outside">
               {" "}
@@ -76,15 +79,14 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
-                    <li>Prof. Srivathsan Vasudevan</li>
-                    <li>Prof. Mukesh Kumar</li>
-                    <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Vipul Singh</li>
+                    <li>Prof. Trapti Jain</li>
+                    <li>Dr. Shubhadeep Paladhi</li>
                   </list>
                 </Typography>
               </div>{" "}
             </div>
           </Grid>
+          
           <Grid item xs={12} sm={6}>
             <Typography
               variant="h4"
@@ -92,7 +94,7 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              VLSI, Nano Electronics and Semiconductor Devices
+              VLSI Design
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
@@ -113,9 +115,9 @@ const ResearchPage = () => {
         </Grid>
         <br />
         <Grid container>
-          <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Communications
+              Power Electronics
             </Typography>
             <div id="rectangle-l-outside">
               {" "}
@@ -123,12 +125,8 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
-                    <li>Prof. Ram Bilas Pachori</li>
-                    <li>Dr. Sumit Gautam</li>
-                    <li>Prof. Prabhat Kumar Upadhyay </li>
-                    <li>Prof. Vimal Bhatia</li>
-                    <li>Dr. Swaminathan R.</li>
-                    <li>Dr. Appina Balasubramanyam</li>
+                    <li>Prof. Amod C. Umarikar</li>
+                    <li>Dr. Vijay A. S.</li>
                   </list>
                 </Typography>
               </div>{" "}
@@ -158,9 +156,9 @@ const ResearchPage = () => {
         </Grid>
         <br />
         <Grid container>
-          <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Power Systems
+              Photonics
             </Typography>
             <div id="rectangle-l-outside">
               {" "}
@@ -168,8 +166,10 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
-                    <li>Prof. Trapti Jain</li>
-                    <li>Dr. Shubhadeep Paladhi</li>
+                    <li>Prof. Srivathsan Vasudevan</li>
+                    <li>Prof. Mukesh Kumar</li>
+                    <li>Prof. Shaibal Mukherjee</li>
+                    <li>Prof. Vipul Singh</li>
                   </list>
                 </Typography>
               </div>{" "}
@@ -182,43 +182,46 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              Signal and IP
+              Bio-Photonics
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
-                    <li>Prof. Ram Bilas Pachori</li>
-                    <li>Prof. Prabhat Kumar Upadhyay</li>
-                    <li>Prof. Vimal Bhatia</li>
-                    <li>Prof. Vivek Kanhangad</li>
-                    <li>Dr. Appinaa Balasubramanyam</li>
+                    <li>Prof. Shaibal Mukherjee</li>
+                    <li>Prof. Srivathsan Vasudevan</li>
+                    <li>Prof. Mukesh Kumar</li>
                   </list>
                 </Typography>
               </div>
             </div>
           </Grid>
+         
         </Grid>
         <br />
         <Grid container>
-          <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Power Electronics
+              Machine Learning and Deep Learning
             </Typography>
             <div id="rectangle-l-outside">
               {" "}
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
+
                   <list>
-                    <li>Prof. Amod C. Umarikar</li>
-                    <li>Dr. Vijay A. S.</li>
+                    <li>Prof. Ram Bilas Pachori</li>
+                    <li>Prof. Shaibal Mukherjee</li>
+                    <li>Prof. Vivek Kanhangad</li>
+                    <li>Prof. Vimal Bhatia</li>
                   </list>
                 </Typography>
               </div>{" "}
             </div>
           </Grid>
+          
           <Grid item xs={12} sm={6}>
             {/* <Typography variant='h4' align="right" paddingRight="40%" color={"secondary.main"}>Radio Frequency and Microwave</Typography>
    <div id="rectangle-r-outside">

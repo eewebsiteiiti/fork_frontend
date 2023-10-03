@@ -73,7 +73,7 @@ const navs = {
   },
 
   Academics: {
-    "Courses": { "B.Tech. (before 2023)": "/courses/BTech/old", "B.Tech. (after 2023)": "/courses/BTech", "M.Tech.": "/courses/MTech" },
+    "Courses": { "B. Tech. (before 2023)": "/courses/BTech/old", "B. Tech. (after 2023)": "/courses/BTech", "M.Tech.": "/courses/MTech" },
     Laboratories: {
       UG: "/labs/ug",
       Research: "/labs/pg",

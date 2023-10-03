@@ -63,7 +63,7 @@ export default function CourseNewPage() {
           <br />
 
           <Typography variant="h1" color="primary.main" textAlign="center">
-            {param.program == "BTech" ? "B.Tech." : "M.Tech."}
+            {param.program == "BTech" ? "B. Tech." : "M. Tech."}
           </Typography>
           <Box sx={{ py: 4 }}>
             {data ? (

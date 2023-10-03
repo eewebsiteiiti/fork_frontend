@@ -409,7 +409,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          B.Tech. - students
+                          B. Tech. - students
                         </Typography>
                       </a>
                     </Box>

@@ -41,10 +41,10 @@ export default function AboutUs() {
                     interdisciplinary courses and programs in the fields of
                     Communications and Signal Processing (CSP), VLSI Design and
                     Nanotechnology (VDN), have been offered. <br />
-                    The department offers four academic programs: 1) B.Tech.
+                    The department offers four academic programs: 1) B. Tech.
                     (EE), 2) MS (by Research) 3) M.Tech. (CSP, VDN) and 4) Ph.D.
                     in Electrical Engineering. The current intake of the
-                    Department is 85 in B.Tech., 30 in M. Tech and 15-20 PhDs
+                    Department is 85 in B. Tech., 30 in M. Tech and 15-20 PhDs
                     per year. A wide spectrum of courses is being offered at
                     levels ranging from the undergraduate to the doctoral degree
                     program. Many subjects such as Special Semiconductor
