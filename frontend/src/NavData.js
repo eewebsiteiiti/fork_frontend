@@ -67,6 +67,7 @@ const navs = {
       "Patents": "/research/stats/Patents",
       "Placements":"/research/stats/Placements",
       "Grants":"/research/stats/Grants",
+      "Citations":"/research/stats/citations"
     }
     
   },
@@ -85,7 +86,8 @@ const navs = {
   },
   Activities:{
     'EESA' : "/eesa",
-    'Upcoming seminars' : "#"
+    'Upcoming seminars' : "#",
+    'Interesting reads': "#"
   }
 };
 

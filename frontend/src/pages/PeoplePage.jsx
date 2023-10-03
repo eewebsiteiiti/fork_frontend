@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Divider } from "@mui/material";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
+import MobileNavbar from "../components/HomePage/MobileNavbar";
 import Header from "../components/Header";
 import { btech, faculty, staff, mtech, phd, alumni } from "../HeaderData";
 import StaffCard from "../components/PeoplePage/StaffCard";
@@ -15,7 +16,7 @@ const PeoplePage = () => {
   return (
     <div>
       <Navbar />
-
+      <MobileNavbar />
       {params.program == "BTech" ? (
         <>
           <Header

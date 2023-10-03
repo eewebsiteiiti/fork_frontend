@@ -18,6 +18,9 @@ import LoadingPage from "./LoadingPage";
 import Header from "../components/Header";
 import { courses } from "../HeaderData";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
+import MobileNavbar from "../components/HomePage/MobileNavbar";
+
+
 export default function CoursePage() {
   const param = useParams();
   const [data, setData] = useState();
@@ -50,6 +53,7 @@ export default function CoursePage() {
   return (
     <div>
       <Navbar />
+      <MobileNavbar />
       <Header
         title={courses.title}
         description={courses.description}

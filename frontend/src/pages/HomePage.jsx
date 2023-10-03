@@ -6,6 +6,7 @@ import Events from "../components/HomePage/Events";
 import Gallery from "../components/HomePage/Gallery";
 import NoteFromHOD from "../components/HomePage/NoteFromHOD";
 import AboutUs from "../components/HomePage/AboutUs";
+
 export default function HomePage() {
   return (
     <>

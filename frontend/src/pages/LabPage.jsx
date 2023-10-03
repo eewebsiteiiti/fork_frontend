@@ -7,6 +7,8 @@ import { api } from "../Api";
 import Header from "../components/Header";
 import { ug, pg } from "../HeaderData";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
+import MobileNavbar from "../components/HomePage/MobileNavbar";
+
 export default function LabPage() {
   const [labs, setLabs] = useState([]);
   const [isError, setIsError] = useState([]);
@@ -24,6 +26,7 @@ export default function LabPage() {
   return (
     <div>
       <Navbar />
+      <MobileNavbar />
       {params.type === "ug" ? (
         <>
           <Header
@@ -251,7 +254,7 @@ export default function LabPage() {
                               fontWeight={600}
                               variant="h1"
                             >
-                              Review
+                              Periodic updates
                             </Typography>
                             <Grid item sx={{ textAlign: "left" }}>
                               {Object.keys(item?.review)?.map((exp, i) => (

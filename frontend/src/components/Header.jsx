@@ -13,7 +13,7 @@ export default function Header(props) {
           overflow: "hidden",
         }}
       >
-        <Grid item xs={6} paddingX={10} paddingY={5}>
+        <Grid item xs={12} paddingX={5} paddingY={5}>
           <Container>
             <Typography variant="h1" color="white">
               {props.title}
@@ -23,8 +23,16 @@ export default function Header(props) {
             </Typography>
           </Container>
         </Grid>
-        <Grid item xs={6} className="template-bg" sx={{backgroundImage: 'url('+im_path+')', backgroundPositionY: "0", backgroundSize: "cover" }}>
-        </Grid>
+        <Grid
+          item
+          xs={0}
+          className="template-bg"
+          sx={{
+            backgroundImage: "url(" + im_path + ")",
+            backgroundPositionY: "0",
+            backgroundSize: "cover",
+          }}
+        ></Grid>
       </Grid>
     </div>
   );

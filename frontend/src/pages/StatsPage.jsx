@@ -19,6 +19,8 @@ import { api } from "../Api";
 import axios from "axios";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import MobileNavbar from "../components/HomePage/MobileNavbar";
+
 
 export default function StatsPage() {
   const param = useParams();
@@ -37,6 +39,7 @@ export default function StatsPage() {
     <div>
       <>
         <Navbar />
+        <MobileNavbar />
         <br />
         <center className="bg_border">
           {param?.program === "Faculty" ? (
@@ -189,7 +192,7 @@ export default function StatsPage() {
 
           {param?.program === "citations" ? (
             <>
-              <Header title="Google Scholar Citation" />
+              <Header title="Google Scholar Citations" />
               {/* <img alt="not_found" width="50%" src="/Images/patent_data.jpg" /> */}
               <Typography variant="h1" color="secondary.main" sx={{fontSize:"7rem"}}>
                 <CountUp end={44150} duration={5}>

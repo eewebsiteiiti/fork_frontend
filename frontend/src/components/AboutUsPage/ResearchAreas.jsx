@@ -39,7 +39,7 @@ const ResearchAreas = () => {
             <ResearchCard
               specialisation={"VLSI Design and Nano Electronics"}
               description={
-                "VLSI Design and Nano Electronics focus on the design and manufacture of microelectronic circuits and devices."
+                "VLSI Design and Nano Electronics focuses on design and fabrication of various electronic devices having applications in memory, communication, sensors, IoT, and wearable electronics"
               }
               action={"/research/vlsi"}
               photo={"/Images/logo/VLSI.jpg"}
@@ -81,7 +81,7 @@ const ResearchAreas = () => {
           variant="h1"
           component="h2"
         >
-          OUR HISTORY!
+          Our Journey...
         </Typography>
         <center>
           <img src="/Images/history.png" alt="not available" width="65%" />

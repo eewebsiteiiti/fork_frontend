@@ -6,6 +6,8 @@ import { api, image_api } from "../Api";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
+import MobileNavbar from "../components/HomePage/MobileNavbar";
+
 
 const BooksPage = () => {
   const [data, setData] = useState();
@@ -26,6 +28,7 @@ const BooksPage = () => {
   return (
     <>
       <Navbar />
+      <MobileNavbar />
       <Header
         title={`${
           params.achievement === "books"

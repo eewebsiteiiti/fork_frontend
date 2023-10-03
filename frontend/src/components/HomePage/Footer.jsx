@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { Divider, Grid, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
 import "../styles/footer.css";
@@ -11,9 +11,14 @@ import ExtensionIcon from "@mui/icons-material/Extension";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import {
   CurrencyRupee,
+  FacebookOutlined,
+  Instagram,
+  aedIn,
+  Mail,
   School,
   SupervisedUserCircle,
   Timeline,
+  Twitter,
 } from "@mui/icons-material";
 
 const Footer = () => {
@@ -282,7 +287,7 @@ const Footer = () => {
             >
               <Box className="footer-info" sx={{ mx: 3 }}>
                 <Typography variant="h1" color="secondary.main" sx={{}}>
-                  IIT Indore Department of Electrical
+                  IIT Indore Department of Electrical Engineering
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
                   Contact: Head, Electrical Engineering Scandium Building,
@@ -296,13 +301,13 @@ const Footer = () => {
                 </Typography>
               </Box>
 
-              <Box className="footer-Links">
+              <Box className="footer-as">
                 <Typography
                   textAlign="center"
                   variant="h1"
                   color="secondary.main"
                 >
-                  Important Links
+                  Important as
                 </Typography>
                 <Box sx={{ display: "flex" }}>
                   <Box sx={{ px: 2, borderRight: "1px solid gray" }}>
@@ -310,7 +315,7 @@ const Footer = () => {
                       About Us
                     </Typography>
                     <Box>
-                      <Link to="/about">
+                      <a href="/about">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -318,8 +323,8 @@ const Footer = () => {
                         >
                           Department
                         </Typography>
-                      </Link>
-                      {/* <Link to="/administration">
+                      </a>
+                      {/* <a href="/administration">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -327,8 +332,8 @@ const Footer = () => {
                         >
                           Administration
                         </Typography>
-                      </Link> */}
-                      {/* <Link to="/contact">
+                      </a> */}
+                      {/* <a href="/contact">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -336,8 +341,8 @@ const Footer = () => {
                         >
                           Contact Us
                         </Typography>
-                      </Link> */}
-                      <Link to="/gallery">
+                      </a> */}
+                      <a href="/gallery">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -345,7 +350,7 @@ const Footer = () => {
                         >
                           Gallery
                         </Typography>
-                      </Link>
+                      </a>
                     </Box>
                   </Box>
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
@@ -353,7 +358,7 @@ const Footer = () => {
                       People
                     </Typography>
                     <Box>
-                      <Link to="/people/Faculty">
+                      <a href="/people/Faculty">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -361,8 +366,8 @@ const Footer = () => {
                         >
                           Faculty
                         </Typography>
-                      </Link>
-                      <Link to="/people/Staff">
+                      </a>
+                      <a href="/people/Staff">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -370,8 +375,8 @@ const Footer = () => {
                         >
                           Staff
                         </Typography>
-                      </Link>
-                      <Link to="/people/PhD/2021">
+                      </a>
+                      <a href="/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -379,8 +384,8 @@ const Footer = () => {
                         >
                           PhD - students
                         </Typography>
-                      </Link>
-                      <Link to="/people/PhD/2021">
+                      </a>
+                      <a href="/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -388,8 +393,8 @@ const Footer = () => {
                         >
                           M S Research - students
                         </Typography>
-                      </Link>
-                      <Link to="/people/MTech/2023">
+                      </a>
+                      <a href="/people/MTech/2023">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -397,8 +402,8 @@ const Footer = () => {
                         >
                           M.Tech. - students
                         </Typography>
-                      </Link>
-                      <Link to="/people/BTech/2023">
+                      </a>
+                      <a href="/people/BTech/2023">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -406,7 +411,7 @@ const Footer = () => {
                         >
                           B.Tech. - students
                         </Typography>
-                      </Link>
+                      </a>
                     </Box>
                   </Box>
 
@@ -415,7 +420,7 @@ const Footer = () => {
                       Research
                     </Typography>
                     <Box>
-                      <Link to="/research">
+                      <a href="/research">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -423,8 +428,8 @@ const Footer = () => {
                         >
                           Research Areas
                         </Typography>
-                      </Link>
-                      <Link to="/projects">
+                      </a>
+                      <a href="/projects">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -432,7 +437,7 @@ const Footer = () => {
                         >
                           Projects
                         </Typography>
-                      </Link>
+                      </a>
                     </Box>
                   </Box>
 
@@ -441,7 +446,7 @@ const Footer = () => {
                       Academics
                     </Typography>
                     <Box>
-                      <a href="https://academic.iiti.ac.in/">
+                      <a href="https://academic.iiti.ac.in/" target="_blank">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -451,7 +456,7 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <Link to="/courses/BTech">
+                      <a href="/courses/BTech">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -459,8 +464,8 @@ const Footer = () => {
                         >
                           Courses - UG
                         </Typography>
-                      </Link>
-                      <Link to="/courses/MTech/old">
+                      </a>
+                      <a href="/courses/MTech/old">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -468,8 +473,8 @@ const Footer = () => {
                         >
                           Courses - PG
                         </Typography>
-                      </Link>
-                      <Link to="/labs/ug">
+                      </a>
+                      <a href="/labs/ug">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -477,8 +482,8 @@ const Footer = () => {
                         >
                           Laboratories - UG
                         </Typography>
-                      </Link>
-                      <Link to="/labs/pg">
+                      </a>
+                      <a href="/labs/pg">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -486,8 +491,11 @@ const Footer = () => {
                         >
                           Laboratories - Research
                         </Typography>
-                      </Link>
-                      <a href="https://academic.iiti.ac.in:8443/index1.html" target="_blank">
+                      </a>
+                      <a
+                        href="https://academic.iiti.ac.in:8443/index1.html"
+                        target="_blank"
+                      >
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -503,7 +511,7 @@ const Footer = () => {
                       Achievements
                     </Typography>
                     <Box>
-                      <Link to="/achievements/books">
+                      <a href="/achievements/books">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -511,9 +519,9 @@ const Footer = () => {
                         >
                           Books
                         </Typography>
-                      </Link>
+                      </a>
 
-                      <Link to="/achievements/faculty">
+                      <a href="/achievements/faculty">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -521,8 +529,8 @@ const Footer = () => {
                         >
                           Faculty Recognition
                         </Typography>
-                      </Link>
-                      <Link to="/achievements/students">
+                      </a>
+                      <a href="/achievements/students">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -530,7 +538,7 @@ const Footer = () => {
                         >
                           Student Achievements
                         </Typography>
-                      </Link>
+                      </a>
                     </Box>
                   </Box>
 
@@ -579,7 +587,7 @@ const Footer = () => {
                         </Typography>
                       </a> */}
 
-                      <Link to="/stats/Placements">
+                      <a href="/stats/Placements">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -587,7 +595,33 @@ const Footer = () => {
                         >
                           Placement Statistics
                         </Typography>
-                      </Link>
+                      </a>
+                    </Box>
+                  </Box>
+                  <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
+                    <Typography varient="p" sx={{ color: "white" }}>
+                      Links
+                    </Typography>
+                    <Box>
+                      <a>
+                        <FacebookOutlined sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <a>
+                        <aedIn sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <br/>
+                      <a>
+                        <Instagram sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <br/>
+                      <a>
+                        <Twitter sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <br/>
+                      <a>
+                        <Mail sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <br/>
                     </Box>
                   </Box>
                 </Box>
