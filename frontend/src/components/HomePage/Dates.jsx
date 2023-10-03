@@ -8,8 +8,8 @@ export default function Dates(props) {
     <div>
       <Card
         sx={{
-          width: "15vw",
-          height:"17vh",
+          width: "240px",
+          height:"150px",
           borderRight: 3,
           borderTop: 3,
           whiteSpace: "nowrap",

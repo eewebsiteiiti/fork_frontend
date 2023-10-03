@@ -10,7 +10,7 @@ export const btech = {
     "The Department of Electrical Engineering offers the 4-year Bachelor of Technology in EE, with the first batch having passed out in 2013. The admission to this program is based on the results of the JEE Advanced exam. The Department intakes 80 UG students every year. The students are actively involved in various Academic and Co-Cirrucular activities.",
 };
 export const faculty = {
-  title: "Faculty",
+  title: "Faculty Members",
   description:
     "The Department has 19 faculty who's expertise falls under five main categories : Communications and Signal Processing, VLSI and Nano Scale Design, Power Systems and Power Electronics, RF and Microwave, and Controls and Instrumentation.",
 };

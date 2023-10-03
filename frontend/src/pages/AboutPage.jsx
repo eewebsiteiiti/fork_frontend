@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
       <div className="about">
         <Navbar />
-        <MobileNavbar />
+       
         <div className="header">
           <Header
             title={about.title}

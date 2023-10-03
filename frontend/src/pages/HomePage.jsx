@@ -27,7 +27,6 @@ export default function HomePage() {
           <NoteFromHOD />
           <br />
           <br />
-          
         </section>
       </div>
     </>

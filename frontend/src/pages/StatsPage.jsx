@@ -39,7 +39,7 @@ export default function StatsPage() {
     <div>
       <>
         <Navbar />
-        <MobileNavbar />
+        {/* <MobileNavbar /> */}
         <br />
         <center className="bg_border">
           {param?.program === "Faculty" ? (

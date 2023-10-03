@@ -51,7 +51,7 @@ export default function Events() {
           container
           justifyContent="space-around"
           direction="row"
-          alignItems="left"
+          alignItems="top"
           padding={2}
           spacing={1}
         >
@@ -83,7 +83,7 @@ export default function Events() {
                 >
                   {event?.map((item, key) => (
                     <>
-                      <Grid item sm={12} md={4}>
+                      <Grid item sm={12} md={4} my={3}>
                         <Event
                           description={item.description}
                           title={item.title}
@@ -95,7 +95,9 @@ export default function Events() {
                           time={item.time}
                           link={item.link}
                         />
+                    
                       </Grid>
+                      
                     </>
                   ))}
                 </Grid>
@@ -113,7 +115,7 @@ export default function Events() {
                 </Typography>
                 <Grid
                   container
-                  justifyContent="Left"
+                  justifyContent="space-around"
                   direction="row"
                   alignItems="center"
                   spacing={4}
@@ -139,6 +141,7 @@ export default function Events() {
               </Grid>
             </Grid>
           </Grid>
+          <br />
           <Grid
             item
             xs={12}
@@ -146,6 +149,7 @@ export default function Events() {
             backgroundColor={"#EEE"}
             borderTop={"4px solid #B2103F"}
             padding={2}
+            sx={{marginY:{xs:4,md:0}}}
             // spacing={1}
           >
             <Typography
@@ -164,7 +168,6 @@ export default function Events() {
               direction="column-reverse"
               alignItems="center"
               // spapaddingY={0}cing={1}
-              
             >
               {announcement?.map((item, key) => (
                 <>

@@ -26,7 +26,7 @@ export default function LabPage() {
   return (
     <div>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       {params.type === "ug" ? (
         <>
           <Header
@@ -43,7 +43,7 @@ export default function LabPage() {
               direction="row"
               alignItems="top"
             >
-              <Grid item xs="12" md="3">
+              <Grid item xs="11" md="3">
                 <Grid
                   container
                   justifyContent="center"
@@ -167,7 +167,7 @@ export default function LabPage() {
                 direction="row"
                 alignItems="top"
               >
-                <Grid item xs="12" md="3">
+                <Grid item xs="11" md="3">
                   <Grid
                     container
                     justifyContent="center"

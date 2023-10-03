@@ -16,7 +16,7 @@ const PeoplePage = () => {
   return (
     <div>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       {params.program == "BTech" ? (
         <>
           <Header

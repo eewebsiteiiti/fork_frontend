@@ -61,33 +61,8 @@
   background-size: cover;
 }
 
-/* //////////////////////////////Table//////////////////////////////// */
-/* 
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
-table {
-  width: 60%;
-  text-align: center;
-  margin: auto;
-}
-
-td {
-  width: 10%;
-  padding: 1%;
-}
-
-th {
-  background-color: var(--my-color);
-  color: #fff;
-  padding: 0.5%;
-} */
 
 .about-bg {
-  /* background-image: url(/public/Images/about_bg.jpg); */
   background-position: 10%;
   background-size: cover;
   font-weight: 700;
@@ -98,18 +73,7 @@ th {
   padding: 7% 2%;
 }
 
-/* //HOD's note  */
 
-/* .hod-note {
-  color: #fff;
-  background-color: #b2103f;
-  margin-left: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4% 2%;
-  margin-top: 5%;
-} */
 
 .note-txt {
   padding-left: 5%;
@@ -160,8 +124,8 @@ th {
   color:#dfdfdf
 }
 
-.bg_border {
+/* .bg_border {
   background-image: url("/public/Images/body_bg_1.png");
   background-repeat: repeat-y;
   background-size: 100%;
-}
+} */

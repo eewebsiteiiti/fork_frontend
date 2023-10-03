@@ -21,6 +21,8 @@ export default function Program() {
           sx={{
             width: "150px",
             height: "150px",
+            marginY: "10px",
+          
           }}
           className="programBg1"
         >
@@ -51,6 +53,7 @@ export default function Program() {
           sx={{
             width: "150px",
             height: "150px",
+            marginY: "10px",
           }}
           className="programBg2"
         >
@@ -81,6 +84,7 @@ export default function Program() {
           sx={{
             width: "150px",
             height: "150px",
+            marginY: "10px",
           }}
           className="programBg3"
         >
@@ -107,6 +111,7 @@ export default function Program() {
           sx={{
             width: "150px",
             height: "150px",
+            marginY: "10px",
           }}
           className="programBg4"
         >

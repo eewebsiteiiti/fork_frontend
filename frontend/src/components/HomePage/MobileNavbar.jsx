@@ -17,19 +17,14 @@ import navs from "../../NavData";
 const MobileNavbar = () => {
   const [ani, setAni] = React.useState(-1);
   const [aniani, setAniani] = React.useState(0);
-
   const [toggle1, setToggle1] = React.useState(0);
   const [toggle2, setToggle2] = React.useState(0);
-  // useEffect(() => {
-  //   setToggle1
-  // },[ani])
   const [state, setState] = React.useState({
     top: false,
     left: false,
     bottom: false,
     right: false,
   });
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -37,7 +32,6 @@ const MobileNavbar = () => {
     ) {
       return;
     }
-
     setState({ ...state, [anchor]: open });
   };
   const list = (anchor) => (
@@ -200,12 +194,22 @@ const MobileNavbar = () => {
           </Link>
           <Link to={"/"}>
             <Box sx={{ px: 1 }}>
-              <Typography variant="h1" fontSize="0.8rem" fontWeight="600" color="white">
+              <Typography
+                variant="h1"
+                fontSize="0.8rem"
+                fontWeight="600"
+                color="white"
+              >
                 DEPARTMENT OF ELECTRICAL ENGINEERING
                 <br />
               </Typography>
-              <Typography variant="h1" fontSize="0.6rem" fontWeight="600" color="white">
-                INDIAN INSTITUTE OF TECHNOLOGY, INDORE
+              <Typography
+                variant="h1"
+                fontSize="0.6rem"
+                fontWeight="600"
+                color="white"
+              >
+                INDIAN INSTITUTE OF TECHNOLOGY INDORE
               </Typography>
             </Box>
           </Link>

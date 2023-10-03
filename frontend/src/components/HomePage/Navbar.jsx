@@ -21,7 +21,7 @@ export default function Navbar() {
               <Link to="/">
                 <div>
                   <Typography variant="h4" color={"white"} padding={5}>
-                    INDIAN INSTITUTE OF TECHNOLOGY, INDORE
+                    INDIAN INSTITUTE OF TECHNOLOGY INDORE
                     <br /> DEPARTMENT OF ELECTRICAL ENGINEERING
                   </Typography>
                 </div>

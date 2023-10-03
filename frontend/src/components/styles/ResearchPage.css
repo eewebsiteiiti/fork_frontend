@@ -12,11 +12,11 @@
   cursor: pointer;
 }
 
-.research {
+/* .research {
   background-image: url("/public/Images/body_bg_1.png");
   background-size: contain;
   background-repeat: repeat-y;
-}
+} */
 .service .heading {
   position: relative;
   top: 50px;

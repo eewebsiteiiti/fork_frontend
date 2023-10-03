@@ -15,7 +15,7 @@ export default function Event(props) {
         <Grid item sx={12} md={5}>
           <CardMedia
             component="img"
-            sx={{ width: "100%" }}
+            sx={{ height: "140px" }}
             image={`${image_api}${props.image}`}
             loading="lazy"
           />

@@ -2,10 +2,10 @@ import React from "react";
 import { ReactPhotoCollage } from "react-photo-collage";
 import { Container } from "@mui/material";
 import LazyLoad from "react-lazyload";
-import {gallery} from "../HeaderData";
+import { gallery } from "../HeaderData";
 import Header from "../components/Header";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
-import '../components/styles/gallery.css'
+import "../components/styles/gallery.css";
 class GalleryPage extends React.Component {
   state = {
     innerWidth: window.innerWidth,
@@ -86,23 +86,25 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/9K6A6861.JPG",
-        }
+        },
       ],
       showNumOfRemainingPhotos: true,
     };
 
     return (
       <>
-      <Navbar/>
-      <Header title={gallery.title} description={gallery.description} image={gallery.image} />
+        <Navbar />
+        <Header
+          title={gallery.title}
+          description={gallery.description}
+          image={gallery.image}
+        />
         <div className="gallery">
-        <Container sx={{ py: 2 }} >
-
-            
-<LazyLoad height={200}>
-  <ReactPhotoCollage {...setting} />
-</LazyLoad>
-</Container>
+          <Container sx={{ py: 2 }}>
+            <LazyLoad height={200}>
+              <ReactPhotoCollage {...setting} />
+            </LazyLoad>
+          </Container>
         </div>
       </>
     );

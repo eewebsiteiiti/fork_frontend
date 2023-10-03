@@ -33,7 +33,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       <Header
         title={projects.title}
         description={projects.description}
@@ -73,10 +73,10 @@ export default function ProjectsPage() {
             <br />
             <br />
             <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <Table>
                 <TableHead sx={{ backgroundColor: "secondary.main" }}>
                   <TableRow>
-                    <TableCell>
+                    <TableCell align="left">
                       <Typography color="white">Project Title</Typography>
                     </TableCell>
                     <TableCell align="right">
@@ -86,7 +86,7 @@ export default function ProjectsPage() {
                       <Typography color="white">Source</Typography>
                     </TableCell>
                     <TableCell align="right">
-                      <Typography color="white">Project Incharge</Typography>
+                      <Typography color="white">PI/Co-PI</Typography>
                     </TableCell>
                   </TableRow>
                 </TableHead>
@@ -99,9 +99,7 @@ export default function ProjectsPage() {
                         "&:last-child td, &:last-child th": { border: 0 },
                       }}
                     >
-                      <TableCell component="th" scope="row">
-                        {row.title}
-                      </TableCell>
+                      <TableCell component="th">{row.title}</TableCell>
                       <TableCell align="right">{row.duration}</TableCell>
                       <TableCell align="right">{row.project_type}</TableCell>
                       <TableCell align="right">{row.worker}</TableCell>

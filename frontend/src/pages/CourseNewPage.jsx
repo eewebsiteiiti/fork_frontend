@@ -20,7 +20,6 @@ import { courses } from "../HeaderData";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import MobileNavbar from "../components/HomePage/MobileNavbar";
 
-
 export default function CourseNewPage() {
   const param = useParams();
   const [data, setData] = useState();
@@ -53,7 +52,7 @@ export default function CourseNewPage() {
   return (
     <div>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       <Header
         title={courses.title}
         description={courses.description}
@@ -231,11 +230,7 @@ export default function CourseNewPage() {
                                   sx={{ backgroundColor: "secondary.main" }}
                                 >
                                   <TableRow>
-                                    <TableCell>
-                                      <Typography color="white">
-                                        S.No.
-                                      </Typography>
-                                    </TableCell>
+                                   
                                     <TableCell align="left">
                                       <Typography color="white">
                                         Course Code
@@ -259,6 +254,7 @@ export default function CourseNewPage() {
                                   </TableRow>
                                 </TableHead>
                                 <TableBody>
+                                  {console.log(data)}
                                   {data?.map((row, key) => (
                                     <TableRow
                                       key={key}
@@ -273,9 +269,7 @@ export default function CourseNewPage() {
                                     >
                                       {row.semester === first ? (
                                         <>
-                                          <TableCell component="th" scope="row">
-                                            number
-                                          </TableCell>
+                                          
                                           <TableCell align="left">
                                             {row.code}
                                           </TableCell>
@@ -328,7 +322,8 @@ export default function CourseNewPage() {
                 )}
               </>
             ) : (
-              <LoadingPage />
+              // <LoadingPage />
+              <></>
             )}
           </Box>
         </Container>

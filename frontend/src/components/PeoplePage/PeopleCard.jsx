@@ -105,7 +105,8 @@ export default function PeopleCard(props) {
           </Grid>
         </>
       ) : (
-        <LoadingPage />
+        // <LoadingPage />
+        <></>
       )}
     </div>
   );

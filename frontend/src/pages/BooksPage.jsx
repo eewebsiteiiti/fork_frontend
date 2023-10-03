@@ -28,7 +28,7 @@ const BooksPage = () => {
   return (
     <>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       <Header
         title={`${
           params.achievement === "books"
@@ -54,7 +54,7 @@ const BooksPage = () => {
               spacing={2}
             >
               {item.image ? (
-                <Grid item>
+                <Grid item xs={11} md={1}>
                   <img
                     src={`${image_api}${item.image}`}
                     alt={item.image}
@@ -68,8 +68,7 @@ const BooksPage = () => {
                 width={50}
               /></>
               )}
-
-              <Grid item>
+              <Grid item xs={12} md={11}>
                 <Grid
                   container
                   justifyContent="space-between"
@@ -92,7 +91,7 @@ const BooksPage = () => {
                       {item.year}
                     </Typography>
                   </Grid>
-                </Grid>
+                </Grid> 
                 <Typography fontSize={12} mb={1}>
                   {item.author}
                 </Typography>

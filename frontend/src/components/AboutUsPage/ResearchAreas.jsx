@@ -13,7 +13,7 @@ const ResearchAreas = () => {
           justifyContent="space-around"
           direction="row"
           alignItems="top"
-          spacing={5}
+          spacing={1}
         >
           <Grid
             item
@@ -26,7 +26,7 @@ const ResearchAreas = () => {
               description={
                 "Communication and signal processing group works in areas related to wireless communication technologies and various signal/image processing techniques."
               }
-              action={"/research/signal"}
+              action={"#"}
               photo={"/Images/logo/signal.jpg"}
             />
           </Grid>
@@ -41,7 +41,7 @@ const ResearchAreas = () => {
               description={
                 "VLSI Design and Nano Electronics focuses on design and fabrication of various electronic devices having applications in memory, communication, sensors, IoT, and wearable electronics"
               }
-              action={"/research/vlsi"}
+              action={"#"}
               photo={"/Images/logo/VLSI.jpg"}
             />
           </Grid>
@@ -57,7 +57,7 @@ const ResearchAreas = () => {
                 "Power Electronics and Power Systems group works on efficient and optimal generation, transmission, distribution, and use of electrical energy."
               }
               photo={"/Images/logo/power.png"}
-              action={"/research/power"}
+              action={"#"}
             />
           </Grid>
           <Grid
@@ -72,7 +72,7 @@ const ResearchAreas = () => {
                 "RF (Radio Frequency) and microwave engineering are a particular domain of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems."
               }
               photo={"Images/logo/RF.jpg"}
-              action={"research//RF"}
+              action={"#"}
             />
           </Grid>
         </Grid>

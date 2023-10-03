@@ -27,7 +27,8 @@ export default function CoursePage() {
   const [isError, setIsError] = useState();
 
   const [elective, setElective] = useState();
-
+  console.log("hello")
+  console.log(param.program)
   useEffect(() => {
     setTimeout(() => {
       axios
@@ -53,7 +54,7 @@ export default function CoursePage() {
   return (
     <div>
       <Navbar />
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       <Header
         title={courses.title}
         description={courses.description}
@@ -316,7 +317,8 @@ export default function CoursePage() {
               )}
             </>
           ) : (
-            <LoadingPage />
+            // <LoadingPage />
+            <></>
           )}
         </Box>
       </Container>
