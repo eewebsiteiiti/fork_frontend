@@ -7,7 +7,7 @@ import { api } from "../Api";
 import Header from "../components/Header";
 import { ug, pg } from "../HeaderData";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
+import { image_api } from "../Api";
 
 export default function LabPage() {
   const [labs, setLabs] = useState([]);
@@ -86,22 +86,25 @@ export default function LabPage() {
                   padding={1}
                 >
                   <>
-                    <Typography
+                    
+
+                    {labs?.map((item, key) =>
+                      active === key ? (
+                        <>
+                          <Typography
                       textAlign={"center"}
                       color="secondary.main"
                       fontWeight={600}
                       variant="h1"
                     >
-                      About
+                      {item.name}
                     </Typography>
-
-                    {labs?.map((item, key) =>
-                      active === key ? (
-                        <>
-                          <Grid item sx={{ textAlign: "left" }}>
-                            {item.name}
-                          </Grid>
-
+                          <img
+                              src={`${image_api}${item.image}`}
+                              alt={item.image}
+                              width={"100%"}
+                              style={{ padding: 0 }}
+                            />
                           <Typography
                             textAlign={"center"}
                             mt={3}
@@ -114,7 +117,7 @@ export default function LabPage() {
                           <Grid item sx={{ textAlign: "left" }}>
                             {item?.experiments["experiments"]?.map((exp, i) => (
                               <>
-                                <Grid item> {exp}</Grid>
+                                <Grid item> • {exp}</Grid>
                               </>
                             ))}
                           </Grid>
@@ -212,6 +215,16 @@ export default function LabPage() {
                       {labs?.map((item, key) =>
                         active === key ? (
                           <>
+                          <Typography
+                      textAlign={"center"}
+                      color="secondary.main"
+                      fontWeight={600}
+                      variant="h1"
+                    >
+                      {item.name}
+                    </Typography>
+                    <br />
+                    <br />
                             <Grid
                               item
                               sx={{ textAlign: "left", fontWeight: "800" }}
@@ -220,7 +233,13 @@ export default function LabPage() {
                                 Prof. In-Charge:
                               </Typography>
                               <Typography variant="h3">
-                                {item.person}
+                                <a
+                                  href={`${item.link}`}
+                                  style={{ color: "black" }}
+                                  target="_blank"
+                                >
+                                  {item.person}
+                                </a>
                               </Typography>
                             </Grid>
                             <br />
@@ -241,6 +260,12 @@ export default function LabPage() {
                             >
                               About
                             </Typography>
+                            <img
+                              src={`${image_api}${item.image}`}
+                              alt={item.image}
+                              width={"100%"}
+                              style={{ padding: 0 }}
+                            />
                             <Grid item sx={{ textAlign: "left" }}>
                               <Typography variant="p">
                                 {item.description}
@@ -254,7 +279,7 @@ export default function LabPage() {
                               fontWeight={600}
                               variant="h1"
                             >
-                              Periodic updates
+                              Research Highlights
                             </Typography>
                             <Grid item sx={{ textAlign: "left" }}>
                               {Object.keys(item?.review)?.map((exp, i) => (
@@ -288,7 +313,7 @@ export default function LabPage() {
                             {/* {item.equipments["equipments"][0]} */}
                             {item?.equipments["equipments"]?.map((eq, j) => (
                               <>
-                                <Typography variant="p">• {eq}</Typography>{" "}
+                                <Typography variant="p">• {eq}</Typography>
                                 <br />
                               </>
                             ))}

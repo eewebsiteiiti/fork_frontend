@@ -6,12 +6,6 @@ export default function AboutUs() {
       <div className="about">
         <Grid
           container
-          // sx={{
-          //   backgroundColor: {
-          //     xs: "primary.main",
-          //     md: "white",
-          //   },
-          // }}
         >
           <Grid item sx={{ backgroundColor: "primary.main" }} xs={12} md={11}>
             <Container sx={{ padding: 5 }}>
@@ -30,7 +24,7 @@ export default function AboutUs() {
                       color: "white",
                     }}
                   >
-                    EE at IITI
+                    EE @ IITI
                   </Typography>
                   <br />
                   <Typography variant="p" color="white">
@@ -39,12 +33,12 @@ export default function AboutUs() {
                     played a prominent role by setting the highest standards in
                     teaching and research. Over the years, several new
                     interdisciplinary courses and programs in the fields of
-                    Communications and Signal Processing (CSP), VLSI Design and
+                    Communications and Signal Processing (CSP) and VLSI Design and
                     Nanotechnology (VDN), have been offered. <br />
                     The department offers four academic programs: 1) B. Tech.
-                    (EE), 2) MS (by Research) 3) M.Tech. (CSP, VDN) and 4) Ph.D.
+                    (EE), 2) M. S. (by Research) 3) M. Tech. (CSP, VDN) and 4) Ph. D. all
                     in Electrical Engineering. The current intake of the
-                    Department is 85 in B. Tech., 30 in M. Tech and 15-20 PhDs
+                    Department is 80 in B. Tech., 30 in M. Tech and 15-20 Ph.D. students
                     per year. A wide spectrum of courses is being offered at
                     levels ranging from the undergraduate to the doctoral degree
                     program. Many subjects such as Special Semiconductor

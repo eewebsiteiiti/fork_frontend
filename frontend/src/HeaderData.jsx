@@ -1,7 +1,7 @@
 export const about = {
   title: "ABOUT US",
   description:
-    "Faculty members, 19 in number at present, have excellent academic credentials and are well known for their contributions. The diverse areas of research expertise of the department faculty members include Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking, Signal Processing, Optoelectronics and Bio-photonics. They have been conferred with several awards and fellowships at national and international levels. Many of them serve as technical and organizing committee members of international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
+    "Department faculty members, 19 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
   image: "/Images/aboutPage.JPG",
 };
 export const btech = {
@@ -12,7 +12,7 @@ export const btech = {
 export const faculty = {
   title: "Faculty Members",
   description:
-    "The Department has 19 faculty who's expertise falls under five main categories : Communications and Signal Processing, VLSI and Nano Scale Design, Power Systems and Power Electronics, RF and Microwave, and Controls and Instrumentation.",
+    "The Department currently has 19 faculty members who's expertise falls under five main areas : Communications and Signal Processing (CSP), VLSI and Nano electronic devices (VDN), Power Electronics and Power Systems (PEPS), RF and Microwave, and Controls and Instrumentation.",
 };
 
 export const staff = {
@@ -23,7 +23,7 @@ export const staff = {
 export const mtech = {
   title: "M. Tech.",
   description:
-    "The Department offers two Masters of Technology Programs in the following specialisations : M.Tech in Communications and Signal Processing (CSP) and M.Tech in VLSI and Nano Electronics. There are 15 seats in each of the specialisations.",
+    "The Department offers two Master of Technology Programs in the following specialisations : M. Tech. in Communications and Signal Processing (CSP) and M. Tech. in VLSI and Nano Electronics(VDN). There are 15 seats in each of these specialisations.",
 };
 
 export const alumni = {
@@ -33,19 +33,19 @@ export const alumni = {
 };
 
 export const ms = {
-  title: "MS Research",
+  title: "M. S. Research",
   description:
     "To enable students to get a flavour of Research during their Masters degree, the MS (Research) has been started by the Department since 2019. This program has an intake of 10 students across the different specialisations.",
 };
 export const phd = {
   title: "Ph.D.",
   description:
-    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Financially Assisted (FA). The first PhD student from the Department graduated in 2014, and the Department currently has around 50 students actively engaged in research and pursuing their Doctoral Degrees.",
+    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times in a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Financially Assisted (FA). The first Ph. D. student from the Department graduated in 2014, and the Department currently has around 50 students actively engaged in research and pursuing their Doctoral Degrees.",
 };
 
 export const gallery = {
   title: "Gallery",
-  description: "Glimpses of EE IITI",
+  description: "Glimpses of life @ EE IITI",
   image: "/Images/gallery.JPG",
 };
 export const projects = {
@@ -57,7 +57,7 @@ export const projects = {
 export const eesa = {
   title: "EESA: Electrical Engineering Student's Association",
   description:
-    "All students of the department are representatives in the Electrical Engineering Students' Association (EESA). Our responsibility is to organise technical events and activities pertaining to the Electrical Engineering Discipline. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
+    "All students of the department are members of the Electrical Engineering Students' Association (EESA). Our responsibility is to organise technical events and activities pertaining to the Electrical Engineering Discipline. In order to help you succeed throughout your time in the department, we also host presentations and publish blogs regarding placements, internships, and further education.",
   image: "/Images/eesa.jpg",
 };
 
@@ -71,31 +71,42 @@ export const research = {
 export const ug = {
   title: "UG LABS",
   description:
-    "The Department hosts 8 Undergraduate Laboratories for students pursuing the Bachelor of Technology degree. The Laboratory courses supplement the Theoretical courses on the same and provide the students with the practical applications of the concepts learnt in class. These labs host modern equipment and facilities to familiarise students with industry-level practical skills.",
+    "The Department currently hosts around 8 undergraduate laboratories for students pursuing the Bachelor of Technology degree. The Laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learnt in class. These labs host modern equipment and facilities to familiarise students with industry-level practical skills.",
   image: "/Images/ug_lab.png",
 };
 
 export const pg = {
   title: "PG LABS",
   description:
-    "The Department hosts 14 Research Laboratories for students pursuing higher studies. The labs range across the various areas of Electrical Engineering, from nano-electronics and microprocessors to power systems and smart grids.",
+    "The Department currently hosts 14 Research Laboratories for students pursuing higher studies. The labs range across the spectrum areas of Electrical Engineering, from nano-electronics and microprocessors to power systems and smart grids.",
   image: "/Images/pg_lab.png",
 };
 
 export const courses = {
   title: "Courses",
   description:
-    "The Department of Electrical Engineering offers a flexible and wide course structure that aims to establish a strong foundation in all domains of Electrical Engineering. The students are also offered a basket of Electives to further pursue their domain of interests.",
+    "The Department of Electrical Engineering offers a flexible and wide course structure that aims to establish a strong foundation in all the domains of Electrical & Electronics Engineering. The students are also offered a basket of Electives to further pursue their domain of interests.",
   image: "/Images/pg_lab.png",
 };
-// const about = {
-//   title: "About",
-//   description: "This is a simple react app that uses the MUI framework.",
-//   image: "/Images/AboutPage.jpg",
-// };
 
-// const about = {
-//   title: "About",
-//   description: "This is a simple react app that uses the MUI framework.",
-//   image: "/Images/AboutPage.jpg",
-// };
+export const booksAchievements = {
+  title: "Books Published ",
+  description: "",
+};
+
+export const facultyAchievements = {
+  title: "Achievements of Faculty Members",
+  description:
+    "some of many awards & recognitions received by the team of faculty members",
+};
+
+export const studentAchievements = {
+  title: "Student Achievements",
+  description:
+    "several accolades won by the students  of the department over the years",
+};
+
+export const stats = {
+  title: "Statistics",
+  description: "EE IITI in figures and stats...",
+};

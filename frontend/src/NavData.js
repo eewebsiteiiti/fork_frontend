@@ -7,7 +7,7 @@ const navs = {
     Faculty: "/people/Faculty",
     Staff: "/people/Staff",
     
-    "Ph.D students": {
+    "Ph.D. students": {
       2018: "/people/PhD/2018",
       2019: "/people/PhD/2019",
       2020: "/people/PhD/2020",
@@ -15,21 +15,21 @@ const navs = {
       2022: "/people/PhD/2022",
       2023: "/people/PhD/2023",
     },
-    "M S (Research)": {
+    "M. S. Research": {
       // 2019: "/people/MS/2019",
       // 2020: "/people/MS/2020",
       // 2021: "/people/MS/2021",
       2022: "/people/MS/2022",
       2023: "/people/MS/2023",
     },
-    "M. Tech students": {
+    "M. Tech. students": {
       // 2020: "/people/MTech/2020",
       // 2021: "/people/MTech/2021",
       2022:"/people/MTech/2022",
       2023:"/people/MTech/2023",
     },
     
-    "B. Tech students": {
+    "B. Tech. students": {
       2020: "/people/BTech/2020",
       2021: "/people/BTech/2021",
       2022: "/people/BTech/2022",
@@ -73,7 +73,7 @@ const navs = {
   },
 
   Academics: {
-    "Courses": { "B. Tech. (before 2023)": "/courses/BTech/old", "B. Tech. (after 2023)": "/courses/BTech", "M.Tech.": "/courses/MTech" },
+    "Courses": { "B. Tech. (before 2023)": "/courses/BTech", "B. Tech. (after 2023)": "/courses/BTech/new", "M.Tech.": "/courses/MTech" },
     Laboratories: {
       UG: "/labs/ug",
       Research: "/labs/pg",

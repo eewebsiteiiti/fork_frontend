@@ -19,7 +19,7 @@ class Faculty(models.Model):
     title = models.CharField(max_length=50)
     subtitle = models.CharField(max_length=50, blank=True)
     email = models.EmailField(max_length=254)
-    phone = models.CharField(max_length=16, blank=True)
+    phone = models.CharField(max_length=30, blank=True)
     details = models.CharField(max_length=10000)
     address = models.CharField(max_length=500, blank=True)
     link = models.URLField(blank=True)

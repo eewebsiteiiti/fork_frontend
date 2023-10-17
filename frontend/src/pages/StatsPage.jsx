@@ -20,7 +20,8 @@ import axios from "axios";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import MobileNavbar from "../components/HomePage/MobileNavbar";
-
+import { courses } from "../HeaderData";
+import SchoolIcon from "@mui/icons-material/School";
 
 export default function StatsPage() {
   const param = useParams();
@@ -44,7 +45,10 @@ export default function StatsPage() {
         <center className="bg_border">
           {param?.program === "Faculty" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <img
                 alt="not_found"
                 width="50%"
@@ -56,7 +60,10 @@ export default function StatsPage() {
           )}
           {param?.program === "Students" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <img
                 alt="not_found"
                 width="50%"
@@ -68,7 +75,10 @@ export default function StatsPage() {
           )}
           {param?.program === "Publications" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <center>
                 <img alt="not_found" width="50%" src="/Images/journals.jpg" />
               </center>
@@ -78,7 +88,10 @@ export default function StatsPage() {
           )}
           {param?.program === "Placements" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <Box
                 sx={{
                   display: "flex",
@@ -103,7 +116,10 @@ export default function StatsPage() {
           )}
           {param?.program === "Patents" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <img alt="not_found" width="50%" src="/Images/patent_data.png" />
 
               <Typography textAlign="center" fontWeight="bold" variant="h1">
@@ -126,7 +142,7 @@ export default function StatsPage() {
                         </TableCell>
                         <TableCell align="left">
                           <Typography color="white">
-                            Project Instructor
+                            People
                           </Typography>
                         </TableCell>
                         <TableCell align="left">
@@ -166,7 +182,10 @@ export default function StatsPage() {
           {param?.program === "Projects" ? (
             <>
               <center>
-                <Header title="Statistics" />
+                <Header
+                  description="EE IITI in figures and stats..."
+                  title="Statistics"
+                />
                 <img
                   alt="not_found"
                   width="50%"
@@ -179,7 +198,10 @@ export default function StatsPage() {
           )}
           {param?.program === "Grants" ? (
             <>
-              <Header title="Statistics" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Statistics"
+              />
               <img
                 alt="not_found"
                 width="50%"
@@ -192,9 +214,16 @@ export default function StatsPage() {
 
           {param?.program === "citations" ? (
             <>
-              <Header title="Google Scholar Citations" />
+              <Header
+                description="EE IITI in figures and stats..."
+                title="Google Scholar Citations"
+              />
               {/* <img alt="not_found" width="50%" src="/Images/patent_data.jpg" /> */}
-              <Typography variant="h1" color="secondary.main" sx={{fontSize:"7rem"}}>
+              <Typography
+                variant="h1"
+                color="secondary.main"
+                sx={{ fontSize: "7rem" }}
+              >
                 <CountUp end={44150} duration={5}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
@@ -202,9 +231,16 @@ export default function StatsPage() {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-                +
+                <br/>
+                ... & Counting!
               </Typography>
-              <Typography variant="p" color="secondary.main" sx={{fontSize:"2rem"}}>
+              <Typography
+                variant="p"
+                color="secondary.main"
+                sx={{ fontSize: "2rem" }}
+                textAlign="center"
+              >
+                <SchoolIcon sx={{ fontSize: 40 }} />
                 Citations
               </Typography>
             </>

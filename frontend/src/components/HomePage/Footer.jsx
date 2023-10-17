@@ -13,12 +13,12 @@ import {
   CurrencyRupee,
   FacebookOutlined,
   Instagram,
-  aedIn,
   Mail,
   School,
   SupervisedUserCircle,
   Timeline,
   Twitter,
+  ReportGmailerrorredOutlined,
 } from "@mui/icons-material";
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
               marginBottom: 3,
             }}
           >
-            ACHIEVEMENTS
+            Department in Numbers
           </Typography>
 
           <Box sx={{ px: 4 }}>
@@ -98,7 +98,9 @@ const Footer = () => {
                     </CountUp>
                     +
                   </Typography>
-                  <Typography color="white">Students Graduated</Typography>
+                  <Typography color="white" textAlign={"center"}>
+                    Students Graduated
+                  </Typography>
                 </Box>
               </Grid>
               <Grid item sx={{ alignItems: "center" }} xs={12} sm={6} md={1.5}>
@@ -143,7 +145,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={96} duration={2}>
+                    <CountUp end={95} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -170,7 +172,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={19} duration={2}>
+                    <CountUp end={22} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -231,7 +233,7 @@ const Footer = () => {
                         </VisibilitySensor>
                       )}
                     </CountUp>
-                    .7 Cr
+                    .6 Cr +
                   </Typography>
                   <Typography color="white">Project Grants</Typography>
                 </Box>
@@ -287,17 +289,21 @@ const Footer = () => {
             >
               <Box className="footer-info" sx={{ mx: 3 }}>
                 <Typography variant="h1" color="secondary.main" sx={{}}>
-                  IIT Indore Department of Electrical Engineering
+                  Department of Electrical Engineering IIT Indore
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
-                  Contact: Head, Electrical Engineering Scandium Building,
+                  Contact: Head, Electrical Engineering Silicon Building,
                   <br />
-                  Academic POD Indian Institute of Technology Indore Khandwa
-                  Road,
+                  Pod 1A, Indian Institute of Technology Indore Khandwa Road,
                   <br />
                   Simrol Indore, Madhya Pradesh, India 453552
                   <br />
-                  Email: hodee@iiti.ac.in
+                  <a href="mailto:hodee@iiti.ac.in" style={{ color: "white" }}>
+                    <Typography fontWeight="bold" sx={{ display: "flex" }}>
+                      {" "}
+                      <Mail sx={{ width: "20px" }} /> hodee@iiti.ac.in
+                    </Typography>
+                  </a>
                 </Typography>
               </Box>
 
@@ -307,7 +313,7 @@ const Footer = () => {
                   variant="h1"
                   color="secondary.main"
                 >
-                  Important as
+                  Important Links
                 </Typography>
                 <Box sx={{ display: "flex" }}>
                   <Box sx={{ px: 2, borderRight: "1px solid gray" }}>
@@ -382,7 +388,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          PhD - students
+                          Ph .D. - students
                         </Typography>
                       </a>
                       <a href="/people/PhD/2021">
@@ -391,7 +397,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          M S Research - students
+                          M. S. Research - students
                         </Typography>
                       </a>
                       <a href="/people/MTech/2023">
@@ -400,7 +406,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          M.Tech. - students
+                          M. Tech. - students
                         </Typography>
                       </a>
                       <a href="/people/BTech/2023">
@@ -443,7 +449,7 @@ const Footer = () => {
 
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
                     <Typography varient="p" sx={{ color: "white" }}>
-                      Academics
+                      Academics @ IITI
                     </Typography>
                     <Box>
                       <a href="https://academic.iiti.ac.in/" target="_blank">
@@ -452,7 +458,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          Academics
+                          Academics @ IITI
                         </Typography>
                       </a>
 
@@ -527,7 +533,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          Faculty Recognition
+                          Faculty Recognitions
                         </Typography>
                       </a>
                       <a href="/achievements/students">
@@ -557,7 +563,7 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="http://www.iiti.ac.in/Careers/faculty_appointments.htm">
+                      <a href="http://www.iiti.ac.in/Careers/faculty_appointments.htm" target="_blank">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -567,7 +573,7 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="http://ee.iiti.ac.in/seminars.html">
+                      <a href="http://ee.iiti.ac.in/seminars.html" target="_blank">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -603,25 +609,37 @@ const Footer = () => {
                       Links
                     </Typography>
                     <Box>
-                      <a>
+                      <a
+                        href="https://www.facebook.com/people/IIT-Indore/100064798209779/"
+                        target="_blank"
+                      >
                         <FacebookOutlined sx={{ color: "#B7B7c7" }} />
                       </a>
-                      <a>
+                      <a
+                        href="https://in.linkedin.com/school/iit-indore/"
+                        target="_blank"
+                      >
                         <aedIn sx={{ color: "#B7B7c7" }} />
                       </a>
-                      <br/>
-                      <a>
+                      <br />
+                      <a
+                        href="https://instagram.com/eesa_iiti?igshid=NzZlODBkYWE4Ng"
+                        target="_black"
+                      >
                         <Instagram sx={{ color: "#B7B7c7" }} />
                       </a>
-                      <br/>
-                      <a>
+                      <br />
+                      <a
+                        href="https://twitter.com/IITIOfficial"
+                        target="_blank"
+                      >
                         <Twitter sx={{ color: "#B7B7c7" }} />
                       </a>
-                      <br/>
-                      <a>
+                      <br />
+                      <a href="mailto:hodee.iiti.ac.in" target="_blank">
                         <Mail sx={{ color: "#B7B7c7" }} />
                       </a>
-                      <br/>
+                      <br />
                     </Box>
                   </Box>
                 </Box>

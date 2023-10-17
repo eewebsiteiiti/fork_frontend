@@ -22,7 +22,7 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"Communications and Signal Processing"}
+              specialisation={"Communications and Signal Processing (CSP)"}
               description={
                 "Communication and signal processing group works in areas related to wireless communication technologies and various signal/image processing techniques."
               }
@@ -37,7 +37,7 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"VLSI Design and Nano Electronics"}
+              specialisation={"VLSI Design and Nano Electronics (VDN)"}
               description={
                 "VLSI Design and Nano Electronics focuses on design and fabrication of various electronic devices having applications in memory, communication, sensors, IoT, and wearable electronics"
               }
@@ -52,7 +52,7 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"Power Electronics and Power Systems"}
+              specialisation={"Power Electronics and Power Systems (PEPS)"}
               description={
                 "Power Electronics and Power Systems group works on efficient and optimal generation, transmission, distribution, and use of electrical energy."
               }
@@ -67,7 +67,7 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"RF and Microwave"}
+              specialisation={"RF and Microwave (RFM)"}
               description={
                 "RF (Radio Frequency) and microwave engineering are a particular domain of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems."
               }

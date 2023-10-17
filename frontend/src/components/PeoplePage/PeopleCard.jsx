@@ -86,7 +86,7 @@ export default function PeopleCard(props) {
                             >
                               <p>{item.roll_no}</p>
                               <p> {item.year}</p>
-                              <p> {item.program}</p>
+                              {/* <p> {item.program}</p> */}
                               <p> {item.date}</p>
                               <p>{item.title}</p>
 

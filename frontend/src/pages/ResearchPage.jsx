@@ -31,9 +31,9 @@ const ResearchPage = () => {
                   <Typography fontWeight="bold">Faculty Involved:</Typography>
                   <list>
                     <li>Prof. Ram Bilas Pachori</li>
-                    <li>Dr. Sumit Gautam</li>
                     <li>Prof. Prabhat Kumar Upadhyay </li>
                     <li>Prof. Vimal Bhatia</li>
+                    <li>Dr. Sumit Gautam</li>
                     <li>Dr. Swaminathan R.</li>
                     <li>Dr. Appina Balasubramanyam</li>
                   </list>
@@ -238,4 +238,3 @@ const ResearchPage = () => {
 };
 
 export default ResearchPage;
-// KYAA HUAAAAA

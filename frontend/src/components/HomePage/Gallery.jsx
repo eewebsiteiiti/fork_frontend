@@ -12,7 +12,7 @@ export default function WovenImageList() {
         variant="h1"
         component="h2"
       >
-        Electrical Engineering is vital in our Lives!
+        Electrical Engineering is vital in our lives!
       </Typography>
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}

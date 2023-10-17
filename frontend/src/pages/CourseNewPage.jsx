@@ -36,7 +36,7 @@ export default function CourseNewPage() {
       if (!isError) {
         setIsError("Not Available");
       }
-    });
+    },[param.program, isError]);
   }, [param.program, isError]);
   useEffect(() => {
     setTimeout(() => {
@@ -51,7 +51,7 @@ export default function CourseNewPage() {
   }, [param.program, isError]);
   return (
     <div>
-      <Navbar />
+      <Navbar /> 
       {/* <MobileNavbar /> */}
       <Header
         title={courses.title}
@@ -61,10 +61,18 @@ export default function CourseNewPage() {
       <div className="bg_border">
         <Container sx={{ py: 2 }}>
           <br />
-
-          <Typography variant="h1" color="primary.main" textAlign="center">
-            {param.program == "BTech" ? "B. Tech." : "M. Tech."}
-          </Typography>
+          <a
+            target="_blank"
+            href={
+              param.program === "BTech"
+                ? "https://academic.iiti.ac.in/Document/2020-November-UG-Rules+Policies+Curriculum+Syllabi-of-Courses%205%20Nov%202020.pdf"
+                : "https://academic.iiti.ac.in/Document/2017-June-PG-Rules+Policies+Curriculum+Syllabi-of-Courses_19062017.pdf"
+            }
+          >
+            <Typography variant="h1" color="primary.main" textAlign="center">
+              {param.program == "BTech" ? "B. Tech." : "M. Tech."}
+            </Typography>
+          </a>
           <Box sx={{ py: 4 }}>
             {data ? (
               <>
@@ -230,7 +238,6 @@ export default function CourseNewPage() {
                                   sx={{ backgroundColor: "secondary.main" }}
                                 >
                                   <TableRow>
-                                   
                                     <TableCell align="left">
                                       <Typography color="white">
                                         Course Code
@@ -269,7 +276,6 @@ export default function CourseNewPage() {
                                     >
                                       {row.semester === first ? (
                                         <>
-                                          
                                           <TableCell align="left">
                                             {row.code}
                                           </TableCell>

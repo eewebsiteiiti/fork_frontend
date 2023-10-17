@@ -20,6 +20,9 @@ export default function Events() {
     if (!isError) {
       setEvent("Not Available");
     }
+    console.log(event);
+    // event.reverse();
+    console.log(event);
   }, [isError]);
   useEffect(() => {
     axios
@@ -77,29 +80,30 @@ export default function Events() {
                 <Grid
                   container
                   justifyContent="space-around"
-                  direction="row-reverse"
+                  direction="row"
                   alignItems="top"
                   spacing={2}
                 >
-                  {event?.map((item, key) => (
-                    <>
-                      <Grid item sm={12} md={4} my={3}>
-                        <Event
-                          description={item.description}
-                          title={item.title}
-                          image={item.image}
-                          day={item.day}
-                          year={item.year}
-                          date={item.date}
-                          month={item.month}
-                          time={item.time}
-                          link={item.link}
-                        />
-                    
-                      </Grid>
-                      
-                    </>
-                  ))}
+                  {event
+                    ?.slice(0)
+                    .reverse().slice(0,6)
+                    .map((item, key) => (
+                      <>
+                        <Grid item sm={12} md={4} my={3}>
+                          <Event
+                            description={item.description}
+                            title={item.title}
+                            image={item.image}
+                            day={item.day}
+                            year={item.year}
+                            date={item.date}
+                            month={item.month}
+                            time={item.time}
+                            link={item.link}
+                          />
+                        </Grid>
+                      </>
+                    ))}
                 </Grid>
               </Grid>
               <Grid item>
@@ -149,7 +153,7 @@ export default function Events() {
             backgroundColor={"#EEE"}
             borderTop={"4px solid #B2103F"}
             padding={2}
-            sx={{marginY:{xs:4,md:0}}}
+            sx={{ marginY: { xs: 4, md: 0 } }}
             // spacing={1}
           >
             <Typography

@@ -8,6 +8,10 @@ import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
 import MobileNavbar from "../components/HomePage/MobileNavbar";
 
+//importing data
+import {studentAchievements ,booksAchievements, facultyAchievements} from "../HeaderData";
+
+ 
 
 const BooksPage = () => {
   const [data, setData] = useState();
@@ -32,11 +36,20 @@ const BooksPage = () => {
       <Header
         title={`${
           params.achievement === "books"
-            ? "Books Published"
+            ? booksAchievements.title
             : params.achievement === "students"
-            ? "Students Achievement"
+            ? studentAchievements.title
             : params.achievement === "faculty"
-            ? "Faculty Achievement"
+            ? facultyAchievements.title
+            : ""
+        }`}
+        description={`${
+          params.achievement === "books"
+            ? booksAchievements.description
+            : params.achievement === "students"
+            ? studentAchievements.description
+            : params.achievement === "faculty"
+            ? facultyAchievements.description
             : ""
         }`}
       />
@@ -102,8 +115,10 @@ const BooksPage = () => {
               </Grid>
             </Grid>
             <Typography color={"primary.main"}>{item.award}</Typography>
-            <hr color="rgb(50,50,50,.1)" />
             </Grid>
+            <br/>
+            <hr color="rgb(50,50,50,.1)" />
+            <br/>
           </>
         ))}
         </Grid>

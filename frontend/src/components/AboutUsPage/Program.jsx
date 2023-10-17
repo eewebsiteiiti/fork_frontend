@@ -102,7 +102,7 @@ export default function Program() {
               color={"white"}
               sx={{ width: "150px" }}
             >
-              M.S.
+              M. S.
             </Typography>
           </div>
         </Grid>

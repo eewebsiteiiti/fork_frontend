@@ -6,7 +6,7 @@ export default function KeyPoint() {
       <div>
           <Box sx={{backgroundColor:"secondary.main", padding:"4%"}}>
               <Container>
-              <Typography variant="h1" color={"white"} pb={3}>PLANS AND VISIONS</Typography>
+              <Typography variant="h1" color={"white"} pb={3}>PLAN AND VISION</Typography>
               <List sx={{color:"white"}}>
                 <ListItem>
                   <ListItemIcon>
@@ -29,7 +29,7 @@ export default function KeyPoint() {
                     <FlashOnIcon sx={{color:"#FFC107"}}/>
                   </ListItemIcon>
                   <Typography variant='p' color={"white"}>
-                  Renewable Energy Integration and Smart Grid, Cyber-security aspects, System on Chip Biomedical Devices for diagnostics and therapy 
+                  Renewable Energy Integration and Smart Grids, Cyber-security aspects, System on Chip Biomedical Devices for diagnostics and therapy 
                   </Typography>
                   
                 </ListItem>

@@ -32,9 +32,9 @@ function App() {
             <Route path="/projects" element={<ProjectsPage/>}/>
             <Route path="/eesa" element={<EESAPage/>}/>
             <Route path="/labs/:type" element={<LabPage/>}/>
-            <Route path="/courses/:program/old" element={<CoursePage/>}/>
+            <Route path="/courses/:program" element={<CoursePage/>}/>
             <Route path="/courses/:program/:year/old" element={<CoursePage/>}/>
-            <Route path="/courses/:program" element={<CourseNewPage />}/>
+            <Route path="/courses/:program/new" element={<CourseNewPage />}/>
             <Route path="/courses/:program/:year" element={<CourseNewPage />}/>
             <Route path="/achievements/:achievement" element={<BooksPage />}/>
             <Route path="/research/stats/:program" element={<StatsPage />}/>
