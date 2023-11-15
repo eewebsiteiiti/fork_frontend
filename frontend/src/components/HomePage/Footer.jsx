@@ -37,7 +37,7 @@ const Footer = () => {
               marginBottom: 3,
             }}
           >
-            Department Stats
+            Department Statistics
           </Typography>
 
           <Box sx={{ px: 4 }}>
