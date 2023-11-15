@@ -20,8 +20,8 @@ class GalleryPage extends React.Component {
     this.setState({ innerWidth: window.innerWidth });
   }
   getWidth(innerWidth) {
-    if (innerWidth <= 700) return [1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1];
-    return [1, 3, 2, 3, 2, 3, 2, 2, 2];
+    if (innerWidth <= 700) return [3,3, 2, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1];
+    return [3, 3, 2, 3, 2, 3, 2, 2, 2];
   }
   render() {
     const setting = {
@@ -31,7 +31,19 @@ class GalleryPage extends React.Component {
       layout: this.getWidth(this.state.innerWidth),
       photos: [
         {
-          source: "Images/gallery/IMG_6913.JPG",
+          source: "Images/gallery/mtech20.jpg",
+        },
+        {
+          source: "Images/gallery/btech19.jpg",
+        },
+        {
+          source: "Images/gallery/btech20.jpg",
+        },
+        {
+          source: "Images/gallery/btech21.jpg",
+        },
+        {
+          source: "Images/gallery/btech22.jpg",
         },
         {
           source: "Images/gallery/1.JPG",
@@ -39,9 +51,7 @@ class GalleryPage extends React.Component {
         {
           source: "Images/gallery/13.JPG",
         },
-        {
-          source: "Images/gallery/btech25.JPG",
-        },
+        
         {
           source: "Images/gallery/2.JPG",
         },

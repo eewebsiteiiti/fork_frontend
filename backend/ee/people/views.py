@@ -5,7 +5,6 @@ from rest_framework import status
 from .models import BTech, Faculty, Staff, MTech, Alumni, Phd, MS
 # from .manager import btech
 # Create your views here.
-import pandas as pd
 import os
 from .models import BTech, MTech, Faculty, Staff, Alumni, Phd
 from PIL import Image

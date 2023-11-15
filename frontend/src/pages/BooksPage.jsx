@@ -6,7 +6,6 @@ import { api, image_api } from "../Api";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
 
 //importing data
 import {studentAchievements ,booksAchievements, facultyAchievements} from "../HeaderData";
@@ -50,6 +49,15 @@ const BooksPage = () => {
             ? studentAchievements.description
             : params.achievement === "faculty"
             ? facultyAchievements.description
+            : ""
+        }`}
+        image={`${
+          params.achievement === "books"
+            ? booksAchievements.image
+            : params.achievement === "students"
+            ? studentAchievements.image
+            : params.achievement === "faculty"
+            ? facultyAchievements.image
             : ""
         }`}
       />

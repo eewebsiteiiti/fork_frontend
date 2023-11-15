@@ -42,63 +42,69 @@ export default function StatsPage() {
         <Navbar />
         {/* <MobileNavbar /> */}
         <br />
-        <center className="bg_border">
-          {param?.program === "Faculty" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
-              />
+        {param?.program === "Faculty" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            {/* <center className="bg_border"> */}
+
+            <center>
               <img
                 alt="not_found"
                 width="50%"
                 src="/Images/faculty_number.jpg"
               />
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Students" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
-              />
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Students" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <center>
               <img
                 alt="not_found"
                 width="50%"
                 src="/Images/degree_awarded.jpg"
               />
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Publications" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
-              />
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Publications" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <center>
+              <img alt="not_found" width="50%" src="/Images/journals.jpg" />
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Placements" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <Box
+              sx={{
+                display: "flex",
+                textAlign: "center",
+                justifyContent: "center",
+              }}
+            >
               <center>
-                <img alt="not_found" width="50%" src="/Images/journals.jpg" />
-              </center>
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Placements" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
-              />
-              <Box
-                sx={{
-                  display: "flex",
-                  textAlign: "center",
-                  justifyContent: "center",
-                }}
-              >
                 <img
                   alt="not_found"
                   width="40%"
@@ -109,145 +115,152 @@ export default function StatsPage() {
                   width="40%"
                   src="/Images/pg_placements.jpg"
                 />
-              </Box>
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Patents" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
-              />
-              <img alt="not_found" width="50%" src="/Images/patent_data.png" />
-
-              <Typography textAlign="center" fontWeight="bold" variant="h1">
-                Patents
-              </Typography>
-              <Container>
-                <br />
-                <br />
-                <TableContainer component={Paper}>
-                  <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                    <TableHead sx={{ backgroundColor: "secondary.main" }}>
-                      <TableRow>
-                        <TableCell align="left">
-                          <Typography color="white">
-                            Application Number
-                          </Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                          <Typography color="white">Patent Name</Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                          <Typography color="white">
-                            People
-                          </Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                          <Typography color="white">Year</Typography>
-                        </TableCell>
-                        <TableCell align="left">
-                          <Typography color="white">Status</Typography>
-                        </TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {patent?.map((row, key) => (
-                        <TableRow
-                          key={key}
-                          sx={{
-                            backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
-                            "&:last-child td, &:last-child th": {
-                              border: 0,
-                            },
-                          }}
-                        >
-                          <TableCell align="left">{row.uuid}</TableCell>
-                          <TableCell align="left">{row.name}</TableCell>
-                          <TableCell align="left">{row.pi}</TableCell>
-                          <TableCell align="left">{row.year}</TableCell>
-                          <TableCell align="left">{row.status}</TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Container>
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Projects" ? (
-            <>
-              <center>
-                <Header
-                  description="EE IITI in figures and stats..."
-                  title="Statistics"
-                />
-                <img
-                  alt="not_found"
-                  width="50%"
-                  src="/Images/projects_number.jpg"
-                />
               </center>
-            </>
-          ) : (
-            <></>
-          )}
-          {param?.program === "Grants" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Statistics"
+            </Box>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Patents" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <center>
+              <img alt="not_found" width="50%" src="/Images/patent_data.png" />
+            </center>
+            <Typography textAlign="center" fontWeight="bold" variant="h1">
+              Patents
+            </Typography>
+            <Container>
+              <br />
+              <br />
+              <TableContainer component={Paper}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                  <TableHead sx={{ backgroundColor: "secondary.main" }}>
+                    <TableRow>
+                      <TableCell align="left">
+                        <Typography color="white">
+                          Application Number
+                        </Typography>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Typography color="white">Patent Name</Typography>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Typography color="white">People</Typography>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Typography color="white">Year</Typography>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Typography color="white">Status</Typography>
+                      </TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {patent?.map((row, key) => (
+                      <TableRow
+                        key={key}
+                        sx={{
+                          backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
+                          "&:last-child td, &:last-child th": {
+                            border: 0,
+                          },
+                        }}
+                      >
+                        <TableCell align="left">{row.uuid}</TableCell>
+                        <TableCell align="left">{row.name}</TableCell>
+                        <TableCell align="left">{row.pi}</TableCell>
+                        <TableCell align="left">{row.year}</TableCell>
+                        <TableCell align="left">{row.status}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Container>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Projects" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <center>
+              <img
+                alt="not_found"
+                width="50%"
+                src="/Images/projects_number.jpg"
               />
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
+        {param?.program === "Grants" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Statistics"
+            />
+            <center>
               <img
                 alt="not_found"
                 width="50%"
                 src="/Images/project_grant.jpg"
               />
-            </>
-          ) : (
-            <></>
-          )}
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
 
-          {param?.program === "citations" ? (
-            <>
-              <Header
-                description="EE IITI in figures and stats..."
-                title="Google Scholar Citations"
-              />
-              {/* <img alt="not_found" width="50%" src="/Images/patent_data.jpg" /> */}
-              <Typography
-                variant="h1"
-                color="secondary.main"
-                sx={{ fontSize: "7rem" }}
-              >
-                <CountUp end={44150} duration={5}>
-                  {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                      <span ref={countUpRef} />
-                    </VisibilitySensor>
-                  )}
-                </CountUp>
-                <br/>
-                ... & Counting!
-              </Typography>
-              <Typography
-                variant="p"
-                color="secondary.main"
-                sx={{ fontSize: "2rem" }}
-                textAlign="center"
-              >
-                <SchoolIcon sx={{ fontSize: 40 }} />
-                Citations
-              </Typography>
-            </>
-          ) : (
-            <></>
-          )}
-        </center>
+        {param?.program === "citations" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Google Scholar Citations"
+            />
+            {/* <img alt="not_found" width="50%" src="/Images/patent_data.jpg" /> */}
+            <center>
+            <Typography
+              variant="h1"
+              color="secondary.main"
+              sx={{ fontSize: "7rem" }}
+            >
+              <CountUp end={44150} duration={5}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
+              <br />
+              ... & Counting!
+            </Typography>
+            <Typography
+              variant="p"
+              color="secondary.main"
+              sx={{ fontSize: "2rem" }}
+              textAlign="center"
+              display={"flex"}
+              justifyContent="center"
+            >
+              <SchoolIcon sx={{ fontSize: 40 }} />
+              &nbsp;
+              Citations
+            </Typography>
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
+        {/* </center> */}
         <br />
       </>
     </div>

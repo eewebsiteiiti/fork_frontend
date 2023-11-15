@@ -15,6 +15,7 @@ import CoursePage from "./pages/CoursePage";
 import BooksPage from "./pages/BooksPage";
 import CourseNewPage from "./pages/CourseNewPage";
 import StatsPage from "./pages/StatsPage";
+import RedirectToAPIs from "./RedirectToAPIs";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/courses/:program/:year" element={<CourseNewPage />}/>
             <Route path="/achievements/:achievement" element={<BooksPage />}/>
             <Route path="/research/stats/:program" element={<StatsPage />}/>
+            <Route path="/admin_ee" element={<RedirectToAPIs />}/>
           </Routes>
           <Footer />
         </BrowserRouter>

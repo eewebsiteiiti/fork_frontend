@@ -25,7 +25,7 @@ const PeoplePage = () => {
             image={btech.image}
           />
           <div className="bg_border">
-            <Container>
+            <Container sx={{m:"auto"}}>
               <Grid
                 container
                 justifyContent={"space-around"}

@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # MEDIA_ROOT = BASE_DIR+MEDIA_URL
 # Application definition
 
+ALLOWED_IP_BLOCKS = [""]
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -62,7 +64,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = ['http://localhost:3000','https://iiti-ee-test.netlify.app']
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = ["https://ee.iiti.ac.in"]
+
+# CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = "ee.urls"
 
 TEMPLATES = [
@@ -130,6 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 

@@ -19,6 +19,7 @@ import {
   Timeline,
   Twitter,
   ReportGmailerrorredOutlined,
+  LinkedIn,
 } from "@mui/icons-material";
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
               marginBottom: 3,
             }}
           >
-            Department in Numbers
+            Department Stats
           </Typography>
 
           <Box sx={{ px: 4 }}>
@@ -289,7 +290,8 @@ const Footer = () => {
             >
               <Box className="footer-info" sx={{ mx: 3 }}>
                 <Typography variant="h1" color="secondary.main" sx={{}}>
-                  Department of Electrical Engineering IIT Indore
+                  Department of Electrical Engineering
+                  <br/> IIT Indore
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
                   Contact: Head, Electrical Engineering Silicon Building,
@@ -634,6 +636,13 @@ const Footer = () => {
                         target="_blank"
                       >
                         <Twitter sx={{ color: "#B7B7c7" }} />
+                      </a>
+                      <br />
+                      <a
+                        href="https://www.linkedin.com/company/electrical-engineering-students-association/"
+                        target="_blank"
+                      >
+                        <LinkedIn sx={{ color: "#B7B7c7" }} />
                       </a>
                       <br />
                       <a href="mailto:hodee.iiti.ac.in" target="_blank">

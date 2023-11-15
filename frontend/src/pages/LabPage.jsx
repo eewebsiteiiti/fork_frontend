@@ -19,13 +19,16 @@ export default function LabPage() {
       .get(`${api}/research/labs/${params.type}/read`)
       .then((response) => setLabs(response.data))
       .catch((error) => setIsError(error.message));
+
     if (!isError) {
       setLabs("Not Available");
     }
-  }, [isError, params?.type]);
+  }, [isError, params]);
   return (
     <div>
       <Navbar />
+      {console.log(labs)}
+      {console.log(params.type)}
       {/* <MobileNavbar /> */}
       {params.type === "ug" ? (
         <>
@@ -86,25 +89,23 @@ export default function LabPage() {
                   padding={1}
                 >
                   <>
-                    
-
                     {labs?.map((item, key) =>
                       active === key ? (
                         <>
                           <Typography
-                      textAlign={"center"}
-                      color="secondary.main"
-                      fontWeight={600}
-                      variant="h1"
-                    >
-                      {item.name}
-                    </Typography>
+                            textAlign={"center"}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            {item.name}
+                          </Typography>
                           <img
-                              src={`${image_api}${item.image}`}
-                              alt={item.image}
-                              width={"100%"}
-                              style={{ padding: 0 }}
-                            />
+                            src={`${image_api}${item.image}`}
+                            alt={item.image}
+                            width={"100%"}
+                            style={{ padding: 0 }}
+                          />
                           <Typography
                             textAlign={"center"}
                             mt={3}
@@ -115,11 +116,19 @@ export default function LabPage() {
                             Experiments
                           </Typography>
                           <Grid item sx={{ textAlign: "left" }}>
-                            {item?.experiments["experiments"]?.map((exp, i) => (
+                            {item?.experiments ? (
                               <>
-                                <Grid item> • {exp}</Grid>
+                                {item?.experiments["experiments"]?.map(
+                                  (exp, i) => (
+                                    <>
+                                      <Grid item> • {exp}</Grid>
+                                    </>
+                                  )
+                                )}
                               </>
-                            ))}
+                            ) : (
+                              <></>
+                            )}
                           </Grid>
                           <Typography
                             textAlign={"center"}
@@ -215,16 +224,16 @@ export default function LabPage() {
                       {labs?.map((item, key) =>
                         active === key ? (
                           <>
-                          <Typography
-                      textAlign={"center"}
-                      color="secondary.main"
-                      fontWeight={600}
-                      variant="h1"
-                    >
-                      {item.name}
-                    </Typography>
-                    <br />
-                    <br />
+                            <Typography
+                              textAlign={"center"}
+                              color="secondary.main"
+                              fontWeight={600}
+                              variant="h1"
+                            >
+                              {item.name}
+                            </Typography>
+                            <br />
+                            <br />
                             <Grid
                               item
                               sx={{ textAlign: "left", fontWeight: "800" }}
@@ -282,24 +291,36 @@ export default function LabPage() {
                               Research Highlights
                             </Typography>
                             <Grid item sx={{ textAlign: "left" }}>
-                              {Object.keys(item?.review)?.map((exp, i) => (
+                              {item.review ? (
                                 <>
-                                  <Grid item>
-                                    <strong>{exp}</strong>
-                                  </Grid>
-                                  <Grid item>
-                                    <ul>
-                                      {item?.review[exp]?.map((item2, key2) => (
-                                        <li style={{ listStyleType: "circle" }}>
-                                          <Typography variant="p">
-                                            {item2}
-                                          </Typography>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  </Grid>
+                                  {Object.keys(item.review)?.map((exp, i) => (
+                                    <>
+                                      <Grid item>
+                                        <strong>{exp}</strong>
+                                      </Grid>
+                                      <Grid item>
+                                        <ul>
+                                          {item?.review[exp]?.map(
+                                            (item2, key2) => (
+                                              <li
+                                                style={{
+                                                  listStyleType: "circle",
+                                                }}
+                                              >
+                                                <Typography variant="p">
+                                                  {item2}
+                                                </Typography>
+                                              </li>
+                                            )
+                                          )}
+                                        </ul>
+                                      </Grid>
+                                    </>
+                                  ))}
                                 </>
-                              ))}
+                              ) : (
+                                <></>
+                              )}
                             </Grid>
                             <Typography
                               textAlign={"center"}

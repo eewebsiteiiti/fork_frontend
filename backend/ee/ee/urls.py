@@ -21,7 +21,9 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    # path(r'^admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
+    # path(r'^secret/', include(admin.site.urls)),
+    path("iiti-ee-admin-login/", admin.site.urls),
     path("api/announcement/", include('announcements.urls'), name="announcement"),
     path("api/events/", include('events.urls'), name='event'),
     path("api/news/", include('news.urls'), name='news'),

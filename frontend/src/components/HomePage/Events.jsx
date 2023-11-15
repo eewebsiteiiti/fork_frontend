@@ -86,21 +86,24 @@ export default function Events() {
                 >
                   {event
                     ?.slice(0)
-                    .reverse().slice(0,6)
+                    .reverse()
+                    .slice(0, 6)
                     .map((item, key) => (
                       <>
                         <Grid item sm={12} md={4} my={3}>
+                          {/* {item.link ? <></> : <></>} */}
+                          <a href={item.link} target="_blank" style={{pointerEvents:item.link?"auto":"none"}}>
                           <Event
-                            description={item.description}
-                            title={item.title}
-                            image={item.image}
-                            day={item.day}
-                            year={item.year}
-                            date={item.date}
-                            month={item.month}
-                            time={item.time}
-                            link={item.link}
-                          />
+                              description={item.description}
+                              title={item.title}
+                              image={item.image}
+                              day={item.day}
+                              year={item.year}
+                              date={item.date}
+                              month={item.month}
+                              time={item.time}
+                            />
+                          </a>
                         </Grid>
                       </>
                     ))}
@@ -124,23 +127,27 @@ export default function Events() {
                   alignItems="center"
                   spacing={4}
                 >
-                  {dates?.map((item, key) => (
-                    <>
-                      <Grid item sm={12} md={4} key={key}>
-                        <Dates
-                          description={item.description}
-                          title={item.title}
-                          image={item.image}
-                          day={item.day}
-                          year={item.year}
-                          date={item.date}
-                          month={item.month}
-                          time={item.time}
-                          link={item.link}
-                        />
-                      </Grid>
-                    </>
-                  ))}
+                  {dates
+                    .slice(0)
+                    .reverse()
+                    .slice(0, 6)
+                    ?.map((item, key) => (
+                      <>
+                        <Grid item sm={12} md={4} key={key}>
+                          <Dates
+                            description={item.description}
+                            title={item.title}
+                            image={item.image}
+                            day={item.day}
+                            year={item.year}
+                            date={item.date}
+                            month={item.month}
+                            time={item.time}
+                            link={item.link}
+                          />
+                        </Grid>
+                      </>
+                    ))}
                 </Grid>
               </Grid>
             </Grid>
@@ -173,7 +180,7 @@ export default function Events() {
               alignItems="center"
               // spapaddingY={0}cing={1}
             >
-              {announcement?.map((item, key) => (
+              {announcement.slice(0, 10)?.map((item, key) => (
                 <>
                   <Grid
                     item

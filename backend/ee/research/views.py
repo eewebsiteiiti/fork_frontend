@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Research, Projects, Papers, PGLabs, UGLabs
 from achievements.models import Books
-import pandas as pd
 from people.models import MTech, Phd, BTech
 from achievements.models import Patent
 
