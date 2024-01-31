@@ -1,9 +1,7 @@
 from rest_framework.views import APIView
-from .serializer import BananaSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from news.models import News
-from django.http import JsonResponse
 
 # Create your views here.
 
