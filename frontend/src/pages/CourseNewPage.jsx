@@ -87,7 +87,7 @@ export default function CourseNewPage() {
                             fontWeight="bold"
                             color="primary.main"
                           >
-                            Semester: {first}
+                            Semester {first}
                           </Typography>
                           <Container>
                             <br />

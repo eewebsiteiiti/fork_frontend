@@ -25,20 +25,21 @@ const ResearchPage = () => {
               Communications
             </Typography>
             <div id="rectangle-l-outside">
-              {" "}
+              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Ram Bilas Pachori</li>
                     <li>Prof. Prabhat Kumar Upadhyay </li>
                     <li>Prof. Vimal Bhatia</li>
-                    <li>Dr. Sumit Gautam</li>
-                    <li>Dr. Swaminathan R.</li>
-                    <li>Dr. Appina Balasubramanyam</li>
+                    <li>Prof. Sumit Gautam</li>
+                    <li>Prof. Swaminathan R.</li>
+                    <li>Prof. Appina Balasubramanyam</li>
+                    <li>Prof. Dibbendu Roy</li>
                   </list>
                 </Typography>
-              </div>{" "}
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -53,13 +54,13 @@ const ResearchPage = () => {
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Ram Bilas Pachori</li>
                     <li>Prof. Prabhat Kumar Upadhyay</li>
                     <li>Prof. Vimal Bhatia</li>
                     <li>Prof. Vivek Kanhangad</li>
-                    <li>Dr. Appinaa Balasubramanyam</li>
+                    <li>Prof. Appina Balasubramanyam</li>
                   </list>
                 </Typography>
               </div>
@@ -74,16 +75,17 @@ const ResearchPage = () => {
               Power Systems
             </Typography>
             <div id="rectangle-l-outside">
-              {" "}
+              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Trapti Jain</li>
-                    <li>Dr. Shubhadeep Paladhi</li>
+                    <li>Prof. Shubhadeep Paladhi</li>
+                    <li>Prof. Lokesh Kumar Dewangan</li>
                   </list>
                 </Typography>
-              </div>{" "}
+              </div>
             </div>
           </Grid>
           
@@ -99,13 +101,12 @@ const ResearchPage = () => {
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Santosh Kumar Vishvakarma</li>
                     <li>Prof. Shaibal Mukherjee</li>
                     <li>Prof. Vipul Singh</li>
                     <li>Prof. Abhinav Kranti</li>
-
                     <li>Prof. Mukesh Kumar</li>
                   </list>
                 </Typography>
@@ -120,16 +121,16 @@ const ResearchPage = () => {
               Power Electronics
             </Typography>
             <div id="rectangle-l-outside">
-              {" "}
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Amod C. Umarikar</li>
-                    <li>Dr. Vijay A. S.</li>
+                    <li>Prof. Vijay A. S.</li>
+                    <li>Prof. Lokesh Kumar Dewangan</li>
                   </list>
                 </Typography>
-              </div>{" "}
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -144,10 +145,10 @@ const ResearchPage = () => {
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                    <li>Dr. Saptrishi Ghosh</li>
-                    <li>Dr. Rinkee Chopra</li>
+                    <li>Prof. Saptrishi Ghosh</li>
+                    <li>Prof. Rinkee Chopra</li>
                   </list>
                 </Typography>
               </div>
@@ -161,10 +162,10 @@ const ResearchPage = () => {
               Photonics
             </Typography>
             <div id="rectangle-l-outside">
-              {" "}
+              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Srivathsan Vasudevan</li>
                     <li>Prof. Mukesh Kumar</li>
@@ -172,7 +173,7 @@ const ResearchPage = () => {
                     <li>Prof. Vipul Singh</li>
                   </list>
                 </Typography>
-              </div>{" "}
+              </div>
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -187,7 +188,7 @@ const ResearchPage = () => {
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                     <li>Prof. Shaibal Mukherjee</li>
                     <li>Prof. Srivathsan Vasudevan</li>
@@ -206,10 +207,9 @@ const ResearchPage = () => {
               Machine Learning and Deep Learning
             </Typography>
             <div id="rectangle-l-outside">
-              {" "}
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
-                  <Typography fontWeight="bold">Faculty Involved:</Typography>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
 
                   <list>
                     <li>Prof. Ram Bilas Pachori</li>
@@ -218,10 +218,30 @@ const ResearchPage = () => {
                     <li>Prof. Vimal Bhatia</li>
                   </list>
                 </Typography>
-              </div>{" "}
+              </div>
             </div>
           </Grid>
-          
+          <Grid item xs={12} sm={6}>
+            <Typography
+              variant="h4"
+              align="right"
+              paddingRight="40%"
+              color={"secondary.main"}
+            >
+              Control Systems
+            </Typography>
+            <div id="rectangle-r-outside">
+              <div id="rectangle-r-inside">
+                <Typography variant="p" fontSize={"0.8rem"}>
+                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
+                  <list>
+                    <li>Prof. Sharad Kumar Singh</li>
+                  </list>
+                </Typography>
+              </div>
+            </div>
+          </Grid>
+         
           <Grid item xs={12} sm={6}>
             {/* <Typography variant='h4' align="right" paddingRight="40%" color={"secondary.main"}>Radio Frequency and Microwave</Typography>
    <div id="rectangle-r-outside">

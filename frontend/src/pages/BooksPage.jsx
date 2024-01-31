@@ -83,11 +83,7 @@ const BooksPage = () => {
                   />
                 </Grid>
               ) : (
-                <><img
-                src={"/Images/profile_placeholder.jpg"}
-                alt={item.image}
-                width={50}
-              /></>
+                <></>
               )}
               <Grid item xs={12} md={11}>
                 <Grid

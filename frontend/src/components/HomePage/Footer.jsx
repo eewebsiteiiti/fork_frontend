@@ -501,6 +501,18 @@ const Footer = () => {
                         </Typography>
                       </a>
                       <a
+                        href="https://academic.iiti.ac.in/app/login"
+                        target="_blank"
+                      >
+                        <Typography
+                          fontSize="0.7rem"
+                          varient="p"
+                          sx={{ color: "#B7B7c7" }}
+                        >
+                          AROL (New)
+                        </Typography>
+                      </a>
+                      <a
                         href="https://academic.iiti.ac.in:8443/index1.html"
                         target="_blank"
                       >

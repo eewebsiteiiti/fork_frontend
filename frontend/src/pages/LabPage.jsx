@@ -281,7 +281,7 @@ export default function LabPage() {
                               </Typography>
                             </Grid>
 
-                            <Typography
+                            {/* <Typography
                               textAlign={"center"}
                               mt={3}
                               color="secondary.main"
@@ -321,7 +321,7 @@ export default function LabPage() {
                               ) : (
                                 <></>
                               )}
-                            </Grid>
+                            </Grid> */}
                             <Typography
                               textAlign={"center"}
                               mt={3}
