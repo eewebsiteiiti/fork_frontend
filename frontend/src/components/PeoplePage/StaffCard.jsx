@@ -12,6 +12,7 @@ const Staff_Card = (props) => {
   const [isError, setIsError] = useState();
 
   useEffect(() => {
+    
     axios
       .get(`${api}/people/${props.name}/read`)
       .then((response) => setData(response.data))
