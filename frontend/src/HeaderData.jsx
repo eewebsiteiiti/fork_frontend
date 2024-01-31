@@ -5,14 +5,14 @@ export const about = {
   image: "/Images/header_images/aboutPage.JPG",
 };
 export const btech = {
-  title: "B. Tech.",
+  title: "B.Tech.",
   description:
     "The Department of Electrical Engineering offers the 4-year Bachelor of Technology in EE, with the first batch having passed out in 2013. The admission to this program is based on the results of the JEE Advanced exam. The Department intakes 80 UG students every year. The students are actively involved in various Academic and Co-Cirrucular activities.",
 };
 export const faculty = {
   title: "Faculty Members",
   description:
-    "The Department currently has 19 faculty members who's expertise falls under five main areas : Communications and Signal Processing (CSP), VLSI and Nano electronic devices (VDN), Power Electronics and Power Systems (PEPS), RF and Microwave, and Controls and Instrumentation.",
+    "The Department currently has 19 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics and Power Systems (PEPS), RF and Microwave, and Controls and Instrumentation.",
   image: "/Images/header_images/faculty.JPG",
   };
 
@@ -23,7 +23,7 @@ export const staff = {
 };
 
 export const mtech = {
-  title: "M. Tech.",
+  title: "M.Tech.",
   description:
     "The Department offers two Master of Technology Programs in the following specialisations : M. Tech. in Communications and Signal Processing (CSP) and M. Tech. in VLSI and Nano Electronics(VDN). There are 15 seats in each of these specialisations.",
   image: "/Images/header_images/mtech.JPG",
@@ -36,14 +36,14 @@ export const alumni = {
 };
 
 export const ms = {
-  title: "M. S. Research",
+  title: "M.S.",
   description:
     "To enable students to get a flavour of Research during their Masters degree, the MS (Research) has been started by the Department since 2019. This program has an intake of 10 students across the different specialisations.",
 };
 export const phd = {
   title: "Ph.D.",
   description:
-    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times in a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Financially Assisted (FA). The first Ph. D. student from the Department graduated in 2014, and the Department currently has around 50 students actively engaged in research and pursuing their Doctoral Degrees.",
+    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times in a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Fellowship Award (FA). The first Ph. D. student from the Department graduated in 2014, and the Department currently has around 70 students actively engaged in research and pursuing their Doctoral Degrees.",
 };
 
 export const gallery = {

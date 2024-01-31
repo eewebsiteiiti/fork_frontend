@@ -228,7 +228,7 @@ const PeoplePage = () => {
                       padding: "20px",
                     }}
                   >
-                    B. Tech
+                    B.Tech.
                   </button>
                 </Grid>
                 <Grid
@@ -256,7 +256,7 @@ const PeoplePage = () => {
                       padding: "20px",
                     }}
                   >
-                    M. Tech
+                    M.Tech.
                   </button>
                 </Grid>
                 <Grid
