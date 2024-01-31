@@ -58,7 +58,8 @@ export default function Events() {
           padding={2}
           spacing={1}
         >
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} sm={12} md={8}>
+            
             <Grid
               container
               justifyContent="center"
@@ -90,10 +91,16 @@ export default function Events() {
                     .slice(0, 6)
                     .map((item, key) => (
                       <>
-                        <Grid item sm={12} md={4} my={3}>
+                        <Grid item sm={6} md={4} my={3}>
                           {/* {item.link ? <></> : <></>} */}
-                          <a href={item.link} target="_blank" style={{pointerEvents:item.link?"auto":"none"}}>
-                          <Event
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            style={{
+                              pointerEvents: item.link ? "auto" : "none",
+                            }}
+                          >
+                            <Event
                               description={item.description}
                               title={item.title}
                               image={item.image}
@@ -122,10 +129,12 @@ export default function Events() {
                 </Typography>
                 <Grid
                   container
-                  justifyContent="space-around"
+                  // justifyContent="space-around"
                   direction="row"
                   alignItems="center"
                   spacing={4}
+                  // p={4}
+                  // m={"auto"}
                 >
                   {dates
                     .slice(0)

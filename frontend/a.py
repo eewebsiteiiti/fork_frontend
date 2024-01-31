@@ -33,7 +33,6 @@ ALLOWED_HOSTS = ['*']
 
 ALLOWED_IP_BLOCKS = [""]
 
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -42,32 +41,27 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "corsheaders",
-    "news",
-    "announcements",
-    "events",
-    "people",
-    "research",
-    "course",
-    "achievements",
-    "banana"
+    'corsheaders',
+    'banana'
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     'django.middleware.common.CommonMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'corsheaders.middleware.CorsMiddleware',   
+    'corsheaders.middleware.CorsMiddleware',
+    
 ]
 
-# CORS_ORIGIN_WHITELIST = ['http://localhost:3000','https://iiti-ee-test.netlify.app']
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000','https://iiti-ee-test.netlify.app']
 # CORS_ORIGIN_WHITELIST = ["https://ee.iiti.ac.in"]
 
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = "ee.urls"
 
 TEMPLATES = [

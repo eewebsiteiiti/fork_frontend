@@ -111,10 +111,6 @@ const itemData1 = [
 ];
 const itemData2 = [
   {
-    img: "/Images/carousel/6.JPG",
-    type: "img",
-  },
-  {
     img: "/Images/carousel/7.JPG",
     type: "img",
   },
@@ -128,6 +124,10 @@ const itemData2 = [
   },
   {
     img: "/Images/carousel/10.JPG",
+    type: "img",
+  },
+  {
+    img: "/Images/carousel/11.JPG",
     type: "img",
   },
 ];

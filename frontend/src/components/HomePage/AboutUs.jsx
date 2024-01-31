@@ -15,7 +15,7 @@ export default function AboutUs() {
                 alignItems={"center"}
                 direction={"row"}
               >
-                <Grid item xs={12} sm={7}>
+                <Grid item xs={12} sm={7} >
                   <Typography
                     variant="h1"
                     sx={{

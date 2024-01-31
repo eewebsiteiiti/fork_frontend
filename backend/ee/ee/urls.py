@@ -21,8 +21,6 @@ from django.conf import settings
 
 
 urlpatterns = [
-    # path(r'^admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
-    # path(r'^secret/', include(admin.site.urls)),
     path("iiti-ee-admin-login/", admin.site.urls),
     path("api/announcement/", include('announcements.urls'), name="announcement"),
     path("api/events/", include('events.urls'), name='event'),
@@ -30,7 +28,8 @@ urlpatterns = [
     path("api/people/", include('people.urls'), name='people'),
     path("api/research/", include('research.urls'), name='research'),
     path("api/course/", include('course.urls'), name='course'),
-    path("api/achievements/", include('achievements.urls'), name='achievements')
+    path("api/achievements/", include('achievements.urls'), name='achievements'),
+    path("api/banana/", include('banana.urls'), name='banana'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
