@@ -63,7 +63,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white ">
-                    <CountUp end={18} duration={2}>
+                    <CountUp end={22} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -173,7 +173,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={22} duration={2}>
+                    <CountUp end={24} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -254,7 +254,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={44150} duration={2}>
+                    <CountUp end={45000} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
