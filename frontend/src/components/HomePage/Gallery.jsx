@@ -40,8 +40,8 @@ export default function WovenImageList() {
         spacing={2}
         sx={{ p: 2 }}
       >
-        <Grid item xs={12} md={4} lg={4}>
-          <img width="320" height="240" src="/Images/carousel/4.JPG" alt="" />
+        <Grid item xs={12} md={4} lg={4} sx={{ display: { xs: "none", sm:"none", md:"block"} }}>
+          <img height="240" src="/Images/carousel/4.JPG" alt="" />
         </Grid>
         <Grid item xs={12} md={4} lg={4}>
           <center>
@@ -57,8 +57,8 @@ export default function WovenImageList() {
             </video>
           </center>
         </Grid>
-        <Grid item xs={12} md={4} lg={4}>
-          <img width="320" height="240" src="/Images/carousel/6.JPG" alt="" />
+        <Grid item xs={12} md={4} lg={4} sx={{ display: { xs: "none", sm:"none", md:"block"} }}>
+          <img height="240" src="/Images/carousel/6.JPG" alt="" />
         </Grid>
       </Grid>
 

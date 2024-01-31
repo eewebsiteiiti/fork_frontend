@@ -129,7 +129,7 @@ export default function Events() {
                 </Typography>
                 <Grid
                   container
-                  // justifyContent="space-around"
+                  justifyContent="space-around"
                   direction="row"
                   alignItems="center"
                   spacing={4}
@@ -165,7 +165,9 @@ export default function Events() {
           <Grid
             item
             xs={12}
+            sm={10}
             md={3}
+
             backgroundColor={"#EEE"}
             borderTop={"4px solid #B2103F"}
             padding={2}
@@ -195,6 +197,7 @@ export default function Events() {
                     item
                     sm={12}
                     md={3}
+                    width={1}
                     key={key}
                     borderBottom={"2px solid #BBBBBB"}
                     padding={1}

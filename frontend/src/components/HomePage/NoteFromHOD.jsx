@@ -8,7 +8,7 @@ const NoteFromHOD = () => {
         className="hod-note"
         sx={{
           backgroundColor: "#b2103f",
-          padding: "4% 2%",
+          padding: "2% 2%",
           marginLeft: { xs: "0", md: "100px" },
         }}
       >
@@ -50,6 +50,9 @@ const NoteFromHOD = () => {
                 learn more about what we have to offer, please do not hesitate
                 to contact us. Thank you for your interest in the Electrical
                 Enginnering Department at IIT Indore.
+              </Typography>
+              <Typography variant="h6" color={"white"} fontWeight={600}>
+                ~ Vivek Kanangad
               </Typography>
             </div>
           </Grid>

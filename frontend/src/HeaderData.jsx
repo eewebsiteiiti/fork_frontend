@@ -1,7 +1,7 @@
 export const about = {
   title: "ABOUT US",
   description:
-    "Department faculty members, 19 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
+    "Department faculty members, 22 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
   image: "/Images/header_images/aboutPage.JPG",
 };
 export const btech = {
@@ -12,7 +12,7 @@ export const btech = {
 export const faculty = {
   title: "Faculty Members",
   description:
-    "The Department currently has 19 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics and Power Systems (PEPS), RF and Microwave, and Controls and Instrumentation.",
+    "The Department currently has 22 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics and Power Systems (PEPS), RF and Microwave, and Controls and Instrumentation.",
   image: "/Images/header_images/faculty.JPG",
   };
 
@@ -43,7 +43,7 @@ export const ms = {
 export const phd = {
   title: "Ph.D.",
   description:
-    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times in a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Fellowship Award (FA). The first Ph. D. student from the Department graduated in 2014, and the Department currently has around 70 students actively engaged in research and pursuing their Doctoral Degrees.",
+    "The Department has a very strong research focus and admits students for the Doctoral Program in Electrical Engineering 4 times in a year. Students are admitted under two main categories : Teaching Assistantship (TA) and Fellowship Awardees (FA). The first Ph. D. student from the Department graduated in 2014, and the Department currently has around 150 students actively engaged in research and pursuing their Doctoral Degrees.",
 };
 
 export const gallery = {
