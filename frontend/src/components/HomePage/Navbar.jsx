@@ -1,8 +1,8 @@
-import React from "react";
-import { Box, Divider, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
-import "../styles/navbar.css";
-import navs from "../../NavData";
+import React from "react"
+import { Box, Divider, Typography } from "@mui/material"
+import { Link } from "react-router-dom"
+import "../styles/navbar.css"
+import navs from "../../NavData"
 export default function Navbar() {
   return (
     <div>
@@ -10,7 +10,11 @@ export default function Navbar() {
         <div className="navdiv">
           <nav className="naviiii">
             <div className="logo-text">
-              <a href="https://www.iiti.ac.in/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://www.iiti.ac.in/"
+                target="_blank"
+              >
                 <img
                   src="/Images/logo/blue_logo.png"
                   alt="logo_png"
@@ -120,5 +124,5 @@ export default function Navbar() {
         </div>
       </Box>
     </div>
-  );
+  )
 }

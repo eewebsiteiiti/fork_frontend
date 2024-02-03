@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Card, CardMedia } from "@mui/material";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
-import axios from "axios";
-import LoadingPage from "../../pages/LoadingPage";
-import { api, image_api } from "../../Api";
+import React, { useEffect, useState } from "react"
+import { Card, CardMedia } from "@mui/material"
+import CardContent from "@mui/material/CardContent"
+import Typography from "@mui/material/Typography"
+import { Grid } from "@mui/material"
+import axios from "axios"
+import { api, image_api } from "../../Api"
 export default function PeopleCard(props) {
-  const [data, setData] = useState();
-  console.log(props.program);
-  const [isError, setIsError] = useState([]);
+  const [data, setData] = useState()
+  console.log(props.program)
+  const [isError, setIsError] = useState([])
   useEffect(() => {
     setTimeout(() => {
       axios
@@ -17,12 +16,12 @@ export default function PeopleCard(props) {
           mode: "cors",
         })
         .then((response) => setData(response.data))
-        .catch((error) => setIsError(error.message));
+        .catch((error) => setIsError(error.message))
       if (!isError) {
-        setData("Not Available");
+        setData("Not Available")
       }
-    }, 3000);
-  }, [props.year, isError, props.program]);
+    }, 3000)
+  }, [props.year, isError, props.program])
   return (
     <div>
       {data ? (
@@ -106,5 +105,5 @@ export default function PeopleCard(props) {
         <></>
       )}
     </div>
-  );
+  )
 }

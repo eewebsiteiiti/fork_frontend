@@ -1,41 +1,41 @@
-import React from "react";
-import { Box, Divider, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Box, Divider, Typography } from "@mui/material"
+import { Link } from "react-router-dom"
 // import "../styles/navbar.css";
-import styles from "../styles/bodyHeader.module.css";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListSubheader from "@mui/material/ListSubheader";
-import ListItemText from "@mui/material/ListItemText";
-import Collapse from "@mui/material/Collapse";
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
-import AppBar from "@mui/material/AppBar";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import Drawer from "@mui/material/Drawer";
+import styles from "../styles/bodyHeader.module.css"
+import List from "@mui/material/List"
+import ListItemButton from "@mui/material/ListItemButton"
+import ListSubheader from "@mui/material/ListSubheader"
+import ListItemText from "@mui/material/ListItemText"
+import Collapse from "@mui/material/Collapse"
+import ExpandLess from "@mui/icons-material/ExpandLess"
+import ExpandMore from "@mui/icons-material/ExpandMore"
+import AppBar from "@mui/material/AppBar"
+import IconButton from "@mui/material/IconButton"
+import MenuIcon from "@mui/icons-material/Menu"
+import Drawer from "@mui/material/Drawer"
 
-import navs from "../../NavData";
+import navs from "../../NavData"
 export default function Navbar() {
-  const [ani, setAni] = React.useState(-1);
-  const [aniani, setAniani] = React.useState(0);
-  const [toggle1, setToggle1] = React.useState(0);
-  const [toggle2, setToggle2] = React.useState(0);
+  const [ani, setAni] = React.useState(-1)
+  const [aniani, setAniani] = React.useState(0)
+  const [toggle1, setToggle1] = React.useState(0)
+  const [toggle2, setToggle2] = React.useState(0)
   const [state, setState] = React.useState({
     top: false,
     left: false,
     bottom: false,
     right: false,
-  });
+  })
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
-      return;
+      return
     }
-    setState({ ...state, [anchor]: open });
-  };
+    setState({ ...state, [anchor]: open })
+  }
   const list = (anchor) => (
     <Box
       sx={{
@@ -77,8 +77,8 @@ export default function Navbar() {
                     {setAni(i)}{" "}
                     {toggle1 === 0 ? setToggle1(!toggle1) : setToggle1(1)}
                   </>
-                );
-                setAniani(0);
+                )
+                setAniani(0)
               }}
             >
               <ListItemText primary={key} />
@@ -102,8 +102,8 @@ export default function Navbar() {
                         <ListItemButton
                           sx={{ pl: 4 }}
                           onClick={() => {
-                            setAniani(i1);
-                            setToggle2(!toggle2);
+                            setAniani(i1)
+                            setToggle2(!toggle2)
                           }}
                         >
                           <Link className="nav-link" to={navs[key][key1]}>
@@ -137,8 +137,8 @@ export default function Navbar() {
                                           <ListItemButton
                                             sx={{ pl: 6 }}
                                             onClick={() => {
-                                              setAniani(i1);
-                                              setToggle2(0);
+                                              setAniani(i1)
+                                              setToggle2(0)
                                             }}
                                           >
                                             <Link
@@ -177,7 +177,7 @@ export default function Navbar() {
         ))}
       </List>
     </Box>
-  );
+  )
   return (
     <div>
       <Box>
@@ -245,12 +245,16 @@ export default function Navbar() {
           </Drawer>
         </Box>
       </Box>
-      
+
       <Box sx={{ pt: 2, display: { xs: "none", md: "block" } }}>
         <div className={styles.navdiv}>
           <nav className={styles.naviiii}>
             <div className={styles.logo_text}>
-              <a href="https://www.iiti.ac.in/" target="_blank">
+              <a
+                href="https://www.iiti.ac.in/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src="/Images/logo/blue_logo.png"
                   alt="logo_png"
@@ -349,5 +353,5 @@ export default function Navbar() {
         </div>
       </Box>
     </div>
-  );
+  )
 }

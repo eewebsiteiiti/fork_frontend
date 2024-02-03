@@ -3,7 +3,6 @@ import Navbar from "../components/BodyNavbar/BodyNavbar";
 import Header from "../components/Header";
 import { research } from "../HeaderData";
 import { Grid, Typography } from "@mui/material";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
 
 const ResearchPage = () => {
   return (

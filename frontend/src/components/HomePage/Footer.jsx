@@ -1,14 +1,13 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import { Divider, Grid, Typography } from "@mui/material";
-import { a } from "react-router-dom";
-import VisibilitySensor from "react-visibility-sensor";
-import CountUp from "react-countup";
-import "../styles/footer.css";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import PublicIcon from "@mui/icons-material/Public";
-import ExtensionIcon from "@mui/icons-material/Extension";
-import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import React from "react"
+import Box from "@mui/material/Box"
+import { Divider, Grid, Typography } from "@mui/material"
+import VisibilitySensor from "react-visibility-sensor"
+import CountUp from "react-countup"
+import "../styles/footer.css"
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks"
+import PublicIcon from "@mui/icons-material/Public"
+import ExtensionIcon from "@mui/icons-material/Extension"
+import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount"
 import {
   CurrencyRupee,
   FacebookOutlined,
@@ -18,9 +17,8 @@ import {
   SupervisedUserCircle,
   Timeline,
   Twitter,
-  ReportGmailerrorredOutlined,
   LinkedIn,
-} from "@mui/icons-material";
+} from "@mui/icons-material"
 
 const Footer = () => {
   return (
@@ -291,7 +289,7 @@ const Footer = () => {
               <Box className="footer-info" sx={{ mx: 3 }}>
                 <Typography variant="h1" color="secondary.main" sx={{}}>
                   Department of Electrical Engineering
-                  <br/> IIT Indore
+                  <br /> IIT Indore
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
                   Contact: Head, Electrical Engineering Silicon Building,
@@ -454,7 +452,11 @@ const Footer = () => {
                       Academics @ IITI
                     </Typography>
                     <Box>
-                      <a href="https://academic.iiti.ac.in/" target="_blank">
+                      <a
+                        rel="noreferrer"
+                        href="https://academic.iiti.ac.in/"
+                        target="_blank"
+                      >
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -501,6 +503,7 @@ const Footer = () => {
                         </Typography>
                       </a>
                       <a
+                        rel="noreferrer"
                         href="https://academic.iiti.ac.in/app/login"
                         target="_blank"
                       >
@@ -513,6 +516,7 @@ const Footer = () => {
                         </Typography>
                       </a>
                       <a
+                        rel="noreferrer"
                         href="https://academic.iiti.ac.in:8443/index1.html"
                         target="_blank"
                       >
@@ -577,7 +581,11 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="http://www.iiti.ac.in/Careers/faculty_appointments.htm" target="_blank">
+                      <a
+                        rel="noreferrer"
+                        href="http://www.iiti.ac.in/Careers/faculty_appointments.htm"
+                        target="_blank"
+                      >
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -587,7 +595,11 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="http://ee.iiti.ac.in/seminars.html" target="_blank">
+                      <a
+                        rel="noreferrer"
+                        href="http://ee.iiti.ac.in/seminars.html"
+                        target="_blank"
+                      >
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -624,12 +636,14 @@ const Footer = () => {
                     </Typography>
                     <Box>
                       <a
+                        rel="noreferrer"
                         href="https://www.facebook.com/people/IIT-Indore/100064798209779/"
                         target="_blank"
                       >
                         <FacebookOutlined sx={{ color: "#B7B7c7" }} />
                       </a>
                       <a
+                        rel="noreferrer"
                         href="https://in.linkedin.com/school/iit-indore/"
                         target="_blank"
                       >
@@ -637,6 +651,7 @@ const Footer = () => {
                       </a>
                       <br />
                       <a
+                        rel="noreferrer"
                         href="https://instagram.com/eesa_iiti?igshid=NzZlODBkYWE4Ng"
                         target="_black"
                       >
@@ -644,6 +659,7 @@ const Footer = () => {
                       </a>
                       <br />
                       <a
+                        rel="noreferrer"
                         href="https://twitter.com/IITIOfficial"
                         target="_blank"
                       >
@@ -651,13 +667,18 @@ const Footer = () => {
                       </a>
                       <br />
                       <a
+                        rel="noreferrer"
                         href="https://www.linkedin.com/company/electrical-engineering-students-association/"
                         target="_blank"
                       >
                         <LinkedIn sx={{ color: "#B7B7c7" }} />
                       </a>
                       <br />
-                      <a href="mailto:hodee.iiti.ac.in" target="_blank">
+                      <a
+                        rel="noreferrer"
+                        href="mailto:hodee.iiti.ac.in"
+                        target="_blank"
+                      >
                         <Mail sx={{ color: "#B7B7c7" }} />
                       </a>
                       <br />
@@ -682,7 +703,7 @@ const Footer = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

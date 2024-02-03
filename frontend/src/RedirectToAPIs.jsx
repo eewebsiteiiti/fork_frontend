@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react"
 
 const RedirectToAPIs = () => {
   useEffect(() => {
-    window.location.replace("https://ee.iiti.ac.in/admin_ee");
-  });
-};
+    window.location.replace("https://ee.iiti.ac.in/admin_ee")
+  })
+}
 
-export default RedirectToAPIs;
+export default RedirectToAPIs

@@ -1,29 +1,29 @@
-import React from "react";
-import { Typography, Box, Container, Grid, ButtonBase } from "@mui/material";
-import axios from "axios";
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { api } from "../Api";
-import Header from "../components/Header";
-import { ug, pg } from "../HeaderData";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import { image_api } from "../Api";
+import React from "react"
+import { Typography, Container, Grid, ButtonBase } from "@mui/material"
+import axios from "axios"
+import { useParams } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { api } from "../Api"
+import Header from "../components/Header"
+import { ug, pg } from "../HeaderData"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import { image_api } from "../Api"
 
 export default function LabPage() {
-  const [labs, setLabs] = useState([]);
-  const [isError, setIsError] = useState([]);
-  const [active, setActive] = useState(0);
-  const params = useParams();
+  const [labs, setLabs] = useState([])
+  const [isError, setIsError] = useState([])
+  const [active, setActive] = useState(0)
+  const params = useParams()
   useEffect(() => {
     axios
       .get(`${api}/research/labs/${params.type}/read`)
       .then((response) => setLabs(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
 
     if (!isError) {
-      setLabs("Not Available");
+      setLabs("Not Available")
     }
-  }, [isError, params]);
+  }, [isError, params])
   return (
     <div>
       <Navbar />
@@ -64,7 +64,7 @@ export default function LabPage() {
                     {labs?.map((item, key) => (
                       <ButtonBase
                         onClick={() => {
-                          setActive(key);
+                          setActive(key)
                         }}
                         // sx={{padding:"3"}}
                         sx={{ borderBottom: "2px solid white" }}
@@ -197,7 +197,7 @@ export default function LabPage() {
                       {labs?.map((item, key) => (
                         <ButtonBase
                           onClick={() => {
-                            setActive(key);
+                            setActive(key)
                           }}
                           sx={{ padding: "3", borderBottom: "2px solid white" }}
                         >
@@ -246,6 +246,7 @@ export default function LabPage() {
                                   href={`${item.link}`}
                                   style={{ color: "black" }}
                                   target="_blank"
+                                  rel="noreferrer"
                                 >
                                   {item.person}
                                 </a>
@@ -374,5 +375,5 @@ export default function LabPage() {
         <></>
       )}
     </div>
-  );
+  )
 }

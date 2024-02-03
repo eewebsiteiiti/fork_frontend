@@ -1,23 +1,21 @@
-import React from "react";
-import { Container, Grid, Divider } from "@mui/material";
-import { useParams } from "react-router-dom";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
-import Header from "../components/Header";
-import { btech, faculty, staff, mtech, phd, alumni } from "../HeaderData";
-import StaffCard from "../components/PeoplePage/StaffCard";
-import PeopleCard from "../components/PeoplePage/PeopleCard";
-import { ms } from "../HeaderData";
+import React from "react"
+import { Container, Grid, Divider } from "@mui/material"
+import { useParams } from "react-router-dom"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import Header from "../components/Header"
+import { btech, faculty, staff, mtech, phd, alumni } from "../HeaderData"
+import StaffCard from "../components/PeoplePage/StaffCard"
+import PeopleCard from "../components/PeoplePage/PeopleCard"
+import { ms } from "../HeaderData"
 const PeoplePage = () => {
-  const params = useParams();
-  console.log(params.program);
-  console.log(params.year);
-  const [news, setNews] = React.useState(1);
+  const params = useParams()
+  console.log(params.program)
+  console.log(params.year)
+  const [news, setNews] = React.useState(1)
   return (
     <div>
       <Navbar />
-      {/* <MobileNavbar /> */}
-      {params.program == "BTech" ? (
+      {params.program === "BTech" ? (
         <>
           <Header
             title={btech.title + " Batch " + params.year}
@@ -25,7 +23,7 @@ const PeoplePage = () => {
             image={btech.image}
           />
           <div className="bg_border">
-            <Container sx={{m:"auto"}}>
+            <Container sx={{ m: "auto" }}>
               <Grid
                 container
                 justifyContent={"space-around"}
@@ -43,7 +41,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program == "Faculty" ? (
+      {params.program === "Faculty" ? (
         <>
           <Header
             title={faculty.title}
@@ -69,7 +67,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program == "Staff" ? (
+      {params.program === "Staff" ? (
         <>
           <Header
             title={staff.title}
@@ -95,7 +93,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program == "MTech" ? (
+      {params.program === "MTech" ? (
         <>
           <Header
             title={mtech.title + " Batch " + params.year}
@@ -118,7 +116,7 @@ const PeoplePage = () => {
       ) : (
         <></>
       )}
-      {params.program == "MS" ? (
+      {params.program === "MS" ? (
         <>
           <Header
             title={ms.title + " Batch " + params.year}
@@ -142,7 +140,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program == "PhD" ? (
+      {params.program === "PhD" ? (
         <>
           <Header
             title={phd.title + " Batch " + params.year}
@@ -168,7 +166,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program == "Alumni" ? (
+      {params.program === "Alumni" ? (
         <>
           <div className="bg_border">
             <Container>
@@ -370,7 +368,7 @@ const PeoplePage = () => {
         <></>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default PeoplePage;
+export default PeoplePage

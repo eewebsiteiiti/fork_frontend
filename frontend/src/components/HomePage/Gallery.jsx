@@ -1,7 +1,7 @@
 import * as React from "react"
 import ImageList from "@mui/material/ImageList"
 import ImageListItem from "@mui/material/ImageListItem"
-import { Box, Container, Grid, Typography } from "@mui/material"
+import {  Container, Grid, Typography } from "@mui/material"
 
 export default function WovenImageList() {
   return (

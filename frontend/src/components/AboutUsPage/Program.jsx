@@ -1,6 +1,6 @@
-import { Container, Typography, Grid } from "@mui/material";
-import React from "react";
-import "../styles/program.css";
+import { Container, Typography, Grid } from "@mui/material"
+import React from "react"
+import "../styles/program.css"
 export default function Program() {
   return (
     <div>
@@ -94,9 +94,6 @@ export default function Program() {
                     height: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    width: "150px",
-                    height: "150px",
-                    alignContent: "center",
                   }}
                 >
                   <Typography
@@ -126,9 +123,6 @@ export default function Program() {
                     height: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    width: "150px",
-                    height: "150px",
-                    alignContent: "center",
                   }}
                 >
                   <Typography
@@ -146,5 +140,5 @@ export default function Program() {
         </Container>
       </div>
     </div>
-  );
+  )
 }

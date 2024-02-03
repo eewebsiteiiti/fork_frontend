@@ -1,38 +1,37 @@
-import { React, useEffect, useState } from "react";
-import { Link, Paper } from "@mui/material";
-import { Container } from "@mui/material";
-import { Typography } from "@mui/material";
-import { Email, Phone, Business } from "@mui/icons-material";
-import axios from "axios";
-import { Box } from "@mui/material";
-import { api, image_api } from "../../Api";
+import { React, useEffect, useState } from "react"
+import { Link, Paper } from "@mui/material"
+import { Container } from "@mui/material"
+import { Typography } from "@mui/material"
+import { Email, Phone, Business } from "@mui/icons-material"
+import axios from "axios"
+import { Box } from "@mui/material"
+import { api, image_api } from "../../Api"
 
 const Staff_Card = (props) => {
-  const [data, setData] = useState();
-  const [isError, setIsError] = useState();
+  const [data, setData] = useState()
+  const [isError, setIsError] = useState()
 
   useEffect(() => {
-    
     axios
       .get(`${api}/people/${props.name}/read`)
       .then((response) => setData(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setIsError("Not Available");
+      setIsError("Not Available")
     }
-  }, []);
+  }, [isError, props.name])
 
   useEffect(() => {
     axios
       .get(`${api}/people/${props.name}/read/${props.year}`)
       .then((response) => setData(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setIsError("Not Available");
+      setIsError("Not Available")
     }
-  }, []);
+  }, [isError, props.year, props.name])
 
-  console.log(data);
+  console.log(data)
 
   return (
     <>
@@ -134,16 +133,20 @@ const Staff_Card = (props) => {
                       </Typography>
                     </a>
                   </Typography>
-                  {props.name=="Staff"?<></>:<Typography fontSize="0.8rem">
-                    <Business
-                      sx={{
-                        verticalAlign: "bottom",
-                        paddingRight: "3px",
-                        fontSize: "1.5rem",
-                      }}
-                    />
-                    Address:&nbsp;{item.address}
-                  </Typography>}
+                  {props.name === "Staff" ? (
+                    <></>
+                  ) : (
+                    <Typography fontSize="0.8rem">
+                      <Business
+                        sx={{
+                          verticalAlign: "bottom",
+                          paddingRight: "3px",
+                          fontSize: "1.5rem",
+                        }}
+                      />
+                      Address:&nbsp;{item.address}
+                    </Typography>
+                  )}
                 </Box>
               </Box>
             </>
@@ -243,7 +246,7 @@ const Staff_Card = (props) => {
         ))}
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Staff_Card;
+export default Staff_Card

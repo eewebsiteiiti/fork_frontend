@@ -1,52 +1,52 @@
-import React from "react";
-import Event from "./Event";
-import { useEffect } from "react";
-import axios from "axios";
-import Dates from "./Dates";
-import { api } from "../../Api";
-import { Container, Typography, Grid } from "@mui/material";
+import React from "react"
+import Event from "./Event"
+import { useEffect } from "react"
+import axios from "axios"
+import Dates from "./Dates"
+import { api } from "../../Api"
+import { Container, Typography, Grid } from "@mui/material"
 export default function Events() {
-  const [event, setEvent] = React.useState([]);
-  const [isError, setIsError] = React.useState([]);
-  const [announcement, setAnnouncement] = React.useState([]);
-  const [dates, setDates] = React.useState([]);
+  const [event, setEvent] = React.useState([])
+  const [isError, setIsError] = React.useState([])
+  const [announcement, setAnnouncement] = React.useState([])
+  const [dates, setDates] = React.useState([])
   useEffect(() => {
     axios
       .get(`${api}/events/read`, {
         mode: "cors",
       })
       .then((response) => setEvent(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setEvent("Not Available");
+      setEvent("Not Available")
     }
-    console.log(event);
+    console.log(event)
     // event.reverse();
-    console.log(event);
-  }, [isError]);
+    console.log(event)
+  }, [isError, event])
   useEffect(() => {
     axios
       .get(`${api}/announcement/read`, {
         mode: "cors",
       })
       .then((response) => setAnnouncement(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setEvent("Not Available");
+      setEvent("Not Available")
     }
-  }, [isError]);
-  console.log(announcement);
+  }, [isError])
+  console.log(announcement)
   useEffect(() => {
     axios
       .get(`${api}/news/read`, {
         mode: "cors",
       })
       .then((response) => setDates(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setEvent("Not Available");
+      setEvent("Not Available")
     }
-  }, [isError]);
+  }, [isError])
   return (
     <div>
       <Container sx={{ my: 5 }}>
@@ -59,7 +59,6 @@ export default function Events() {
           spacing={1}
         >
           <Grid item xs={12} sm={12} md={8}>
-            
             <Grid
               container
               justifyContent="center"
@@ -94,6 +93,7 @@ export default function Events() {
                         <Grid item sm={6} md={4} my={3}>
                           {/* {item.link ? <></> : <></>} */}
                           <a
+                            rel="noreferrer"
                             href={item.link}
                             target="_blank"
                             style={{
@@ -167,7 +167,6 @@ export default function Events() {
             xs={12}
             sm={10}
             md={3}
-
             backgroundColor={"#EEE"}
             borderTop={"4px solid #B2103F"}
             padding={2}
@@ -222,5 +221,5 @@ export default function Events() {
         </Grid>
       </Container>
     </div>
-  );
+  )
 }

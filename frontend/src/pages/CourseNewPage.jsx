@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useEffect, useState } from "react"
+import axios from "axios"
 import {
   Typography,
   Box,
@@ -10,48 +10,46 @@ import {
   TableHead,
   TableRow,
   TableCell,
-} from "@mui/material";
-import { TableContainer } from "@mui/material";
-import { useParams } from "react-router-dom";
-import { api } from "../Api";
-import LoadingPage from "./LoadingPage";
-import Header from "../components/Header";
-import { courses } from "../HeaderData";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
+} from "@mui/material"
+import { TableContainer } from "@mui/material"
+import { useParams } from "react-router-dom"
+import { api } from "../Api"
+import Header from "../components/Header"
+import { courses } from "../HeaderData"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
 
 export default function CourseNewPage() {
-  const param = useParams();
-  const [data, setData] = useState();
-  const [isError, setIsError] = useState();
+  const param = useParams()
+  const [data, setData] = useState()
+  const [isError, setIsError] = useState()
 
-  const [elective, setElective] = useState();
+  // const [elective, setElective] = useState()
 
   useEffect(() => {
     setTimeout(() => {
       axios
         .get(`${api}/course/read/${param.program}/new`, { timeout: 50000 })
         .then((response) => setData(response.data))
-        .catch((error) => setIsError(error.message));
+        .catch((error) => setIsError(error.message))
       if (!isError) {
-        setIsError("Not Available");
+        setIsError("Not Available")
       }
-    },[param.program, isError]);
-  }, [param.program, isError]);
-  useEffect(() => {
-    setTimeout(() => {
-      axios
-        .get(`${api}/course/read/elective/${param.program}`)
-        .then((response) => setElective(response.data))
-        .catch((error) => setIsError(error.message));
-      if (!isError) {
-        setIsError("Not Available");
-      }
-    }, 3000);
-  }, [param.program, isError]);
+    }, [param.program, isError])
+  }, [param.program, isError])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     axios
+  //       .get(`${api}/course/read/elective/${param.program}`)
+  //       .then((response) => setElective(response.data))
+  //       .catch((error) => setIsError(error.message))
+  //     if (!isError) {
+  //       setIsError("Not Available")
+  //     }
+  //   }, 3000)
+  // }, [param.program, isError])
   return (
     <div>
-      <Navbar /> 
+      <Navbar />
       {/* <MobileNavbar /> */}
       <Header
         title={courses.title}
@@ -62,6 +60,7 @@ export default function CourseNewPage() {
         <Container sx={{ py: 2 }}>
           <br />
           <a
+            rel="noreferrer"
             target="_blank"
             href={
               param.program === "BTech"
@@ -70,7 +69,7 @@ export default function CourseNewPage() {
             }
           >
             <Typography variant="h1" color="primary.main" textAlign="center">
-              {param.program == "BTech" ? "B. Tech." : "M. Tech."}
+              {param.program === "BTech" ? "B. Tech." : "M. Tech."}
             </Typography>
           </a>
           <Box sx={{ py: 4 }}>
@@ -268,7 +267,7 @@ export default function CourseNewPage() {
                                       sx={{
                                         color: "black",
                                         backgroundColor:
-                                          key % 2 != 0 ? "#ffd6dd7c" : "",
+                                          key % 2 !== 0 ? "#ffd6dd7c" : "",
                                         "&:last-child td, &:last-child th": {
                                           border: 0,
                                         },
@@ -335,5 +334,5 @@ export default function CourseNewPage() {
         </Container>
       </div>
     </div>
-  );
+  )
 }

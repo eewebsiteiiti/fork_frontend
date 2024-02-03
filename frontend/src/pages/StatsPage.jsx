@@ -1,9 +1,8 @@
-import React from "react";
+import React from "react"
 import {
   Typography,
   Box,
   Container,
-  Grid,
   Table,
   Paper,
   TableBody,
@@ -11,31 +10,29 @@ import {
   TableRow,
   TableCell,
   TableContainer,
-} from "@mui/material";
-import { useParams } from "react-router-dom";
-import Header from "../components/Header";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import { api } from "../Api";
-import axios from "axios";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
-import { courses } from "../HeaderData";
-import SchoolIcon from "@mui/icons-material/School";
+} from "@mui/material"
+import { useParams } from "react-router-dom"
+import Header from "../components/Header"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import { api } from "../Api"
+import axios from "axios"
+import CountUp from "react-countup"
+import VisibilitySensor from "react-visibility-sensor"
+import SchoolIcon from "@mui/icons-material/School"
 
 export default function StatsPage() {
-  const param = useParams();
-  console.log(param.program === "Faculty");
-  const [patent, setPatent] = React.useState();
+  const param = useParams()
+  console.log(param.program === "Faculty")
+  const [patent, setPatent] = React.useState()
   React.useEffect(() => {
     axios
       .get(`${api}/achievements/patent/read`, {
         mode: "cors",
       })
       .then((response) => setPatent(response.data))
-      .catch((error) => console.log(error.message));
-  }, []);
-  console.log(patent);
+      .catch((error) => console.log(error.message))
+  }, [])
+  console.log(patent)
   return (
     <div>
       <>
@@ -164,7 +161,7 @@ export default function StatsPage() {
                       <TableRow
                         key={key}
                         sx={{
-                          backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
+                          backgroundColor: key % 2 !== 0 ? "#ffd6dd7c" : "",
                           "&:last-child td, &:last-child th": {
                             border: 0,
                           },
@@ -228,33 +225,32 @@ export default function StatsPage() {
             />
             {/* <img alt="not_found" width="50%" src="/Images/patent_data.jpg" /> */}
             <center>
-            <Typography
-              variant="h1"
-              color="secondary.main"
-              sx={{ fontSize: "7rem" }}
-            >
-              <CountUp end={44150} duration={5}>
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-              </CountUp>
-              <br />
-              ... & Counting!
-            </Typography>
-            <Typography
-              variant="p"
-              color="secondary.main"
-              sx={{ fontSize: "2rem" }}
-              textAlign="center"
-              display={"flex"}
-              justifyContent="center"
-            >
-              <SchoolIcon sx={{ fontSize: 40 }} />
-              &nbsp;
-              Citations
-            </Typography>
+              <Typography
+                variant="h1"
+                color="secondary.main"
+                sx={{ fontSize: "7rem" }}
+              >
+                <CountUp end={44150} duration={5}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+                <br />
+                ... & Counting!
+              </Typography>
+              <Typography
+                variant="p"
+                color="secondary.main"
+                sx={{ fontSize: "2rem" }}
+                textAlign="center"
+                display={"flex"}
+                justifyContent="center"
+              >
+                <SchoolIcon sx={{ fontSize: 40 }} />
+                &nbsp; Citations
+              </Typography>
             </center>
           </>
         ) : (
@@ -264,5 +260,5 @@ export default function StatsPage() {
         <br />
       </>
     </div>
-  );
+  )
 }

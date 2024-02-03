@@ -1,35 +1,34 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Typography, Box, Container } from "@mui/material";
-import { api } from "../Api";
-import Header from "../components/Header";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import { projects } from "../HeaderData";
-import "../components/styles/projects.css";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
+import { useEffect, useState } from "react"
+import axios from "axios"
+import { Typography, Container } from "@mui/material"
+import { api } from "../Api"
+import Header from "../components/Header"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import { projects } from "../HeaderData"
+import "../components/styles/projects.css"
+import Table from "@mui/material/Table"
+import TableBody from "@mui/material/TableBody"
+import TableCell from "@mui/material/TableCell"
+import TableContainer from "@mui/material/TableContainer"
+import TableHead from "@mui/material/TableHead"
+import TableRow from "@mui/material/TableRow"
+import Paper from "@mui/material/Paper"
 
-import "../components/styles/program.css";
+import "../components/styles/program.css"
 export default function ProjectsPage() {
-  const [data, setData] = useState();
-  const [isError, setIsError] = useState();
+  const [data, setData] = useState()
+  const [isError, setIsError] = useState()
 
   useEffect(() => {
     axios
       .get(`${api}/research/project/read`)
       .then((response) => setData(response.data))
-      .catch((error) => setIsError(error.message));
+      .catch((error) => setIsError(error.message))
     if (!isError) {
-      setIsError("Not Available");
+      setIsError("Not Available")
     }
-  }, [isError]);
-  console.log(data);
+  }, [isError])
+  console.log(data)
   return (
     <>
       <Navbar />
@@ -95,7 +94,7 @@ export default function ProjectsPage() {
                     <TableRow
                       key={key}
                       sx={{
-                        backgroundColor: key % 2 != 0 ? "#ffd6dd7c" : "",
+                        backgroundColor: key % 2 !== 0 ? "#ffd6dd7c" : "",
                         "&:last-child td, &:last-child th": { border: 0 },
                       }}
                     >
@@ -113,5 +112,5 @@ export default function ProjectsPage() {
         </div>
       </div>
     </>
-  );
+  )
 }
