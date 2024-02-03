@@ -1,7 +1,7 @@
-import * as React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import * as React from "react"
+import ImageList from "@mui/material/ImageList"
+import ImageListItem from "@mui/material/ImageListItem"
+import { Box, Container, Grid, Typography } from "@mui/material"
 
 export default function WovenImageList() {
   return (
@@ -40,8 +40,14 @@ export default function WovenImageList() {
         spacing={2}
         sx={{ p: 2 }}
       >
-        <Grid item xs={12} md={4} lg={4} sx={{ display: { xs: "none", sm:"none", md:"block"} }}>
-          <img height="240" src="/Images/carousel/4.JPG" alt="" />
+        <Grid
+          item
+          xs={12}
+          md={4}
+          lg={4}
+          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+        >
+          <img height="240" src="/Images/gallery/ps.JPG" alt="" />
         </Grid>
         <Grid item xs={12} md={4} lg={4}>
           <center>
@@ -57,8 +63,14 @@ export default function WovenImageList() {
             </video>
           </center>
         </Grid>
-        <Grid item xs={12} md={4} lg={4} sx={{ display: { xs: "none", sm:"none", md:"block"} }}>
-          <img height="240" src="/Images/carousel/6.JPG" alt="" />
+        <Grid
+          item
+          xs={12}
+          md={4}
+          lg={4}
+          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+        >
+          <img height="240" src="/Images/gallery/csp.JPG" alt="" />
         </Grid>
       </Grid>
 
@@ -84,7 +96,7 @@ export default function WovenImageList() {
       <br />
       <br />
     </Container>
-  );
+  )
 }
 
 const itemData1 = [
@@ -105,13 +117,13 @@ const itemData1 = [
     type: "img",
   },
   {
-    img: "/Images/carousel/5.JPG",
+    img: "/Images/gallery/vdn.JPG",
     type: "img",
   },
-];
+]
 const itemData2 = [
   {
-    img: "/Images/carousel/7.JPG",
+    img: "/Images/gallery/makerspace.jpg",
     type: "img",
   },
   {
@@ -119,7 +131,7 @@ const itemData2 = [
     type: "img",
   },
   {
-    img: "/Images/carousel/9.JPG",
+    img: "/Images/gallery/9K6A6843.JPG",
     type: "img",
   },
   {
@@ -127,7 +139,7 @@ const itemData2 = [
     type: "img",
   },
   {
-    img: "/Images/carousel/11.JPG",
+    img: "/Images/gallery/IMG_6892.JPG",
     type: "img",
   },
-];
+]

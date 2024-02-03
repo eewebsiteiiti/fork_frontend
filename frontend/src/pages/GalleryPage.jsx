@@ -1,27 +1,28 @@
-import React from "react";
-import { ReactPhotoCollage } from "react-photo-collage";
-import { Container } from "@mui/material";
-import LazyLoad from "react-lazyload";
-import { gallery } from "../HeaderData";
-import Header from "../components/Header";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import "../components/styles/gallery.css";
+import React from "react"
+import { ReactPhotoCollage } from "react-photo-collage"
+import { Container } from "@mui/material"
+import LazyLoad from "react-lazyload"
+import { gallery } from "../HeaderData"
+import Header from "../components/Header"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import "../components/styles/gallery.css"
 class GalleryPage extends React.Component {
   state = {
     innerWidth: window.innerWidth,
-  };
+  }
 
   componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-    this.resize();
+    window.addEventListener("resize", this.resize.bind(this))
+    this.resize()
   }
 
   resize() {
-    this.setState({ innerWidth: window.innerWidth });
+    this.setState({ innerWidth: window.innerWidth })
   }
   getWidth(innerWidth) {
-    if (innerWidth <= 700) return [3,3, 2, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1];
-    return [3, 3, 2, 3, 2, 3, 2, 2, 2];
+    if (innerWidth <= 700)
+      return [3, 3, 2, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2]
+    return [3, 3, 2, 3, 2, 3]
   }
   render() {
     const setting = {
@@ -37,10 +38,34 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/btech19.jpg",
         },
         {
+          source: "Images/gallery/csp.JPG",
+        },
+        {
+          source: "Images/gallery/ps.JPG",
+        },
+        {
+          source: "Images/gallery/DUGC.JPG",
+        },
+        {
+          source: "Images/gallery/FC1.JPG",
+        },
+        {
+          source: "Images/gallery/FC2.JPG",
+        },
+        {
+          source: "Images/gallery/staffCombo.JPG",
+        },
+        {
+          source: "Images/gallery/vdn.JPG",
+        },
+        {
           source: "Images/gallery/btech20.jpg",
         },
         {
           source: "Images/gallery/btech21.jpg",
+        },
+        {
+          source: "Images/gallery/makerspace.jpg",
         },
         {
           source: "Images/gallery/btech22.jpg",
@@ -51,7 +76,6 @@ class GalleryPage extends React.Component {
         {
           source: "Images/gallery/13.JPG",
         },
-        
         {
           source: "Images/gallery/2.JPG",
         },
@@ -99,7 +123,7 @@ class GalleryPage extends React.Component {
         },
       ],
       showNumOfRemainingPhotos: true,
-    };
+    }
 
     return (
       <>
@@ -117,8 +141,8 @@ class GalleryPage extends React.Component {
           </Container>
         </div>
       </>
-    );
+    )
   }
 }
 
-export default GalleryPage;
+export default GalleryPage

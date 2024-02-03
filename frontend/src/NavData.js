@@ -6,6 +6,7 @@ const navs = {
   People: {
     Faculty: "/people/Faculty",
     Staff: "/people/Staff",
+    "Department Commitees": "/people/Committees",
     
     "Ph.D. students": {
       2018: "/people/PhD/2018",
@@ -81,11 +82,11 @@ const navs = {
   },
   Achievements: {
     "Books Published": "/achievements/books",
-    "Faculty Recognition": "/achievements/faculty",
+    "Faculty Recognitions": "/achievements/faculty",
     "Student Achievements": "/achievements/students",
   },
   Activities:{
-    'EESA' : "/eesa",
+    "EE Student's Association (EESA)" : "/eesa",
     'Upcoming seminars' : "#",
     'Interesting reads': "#"
   }

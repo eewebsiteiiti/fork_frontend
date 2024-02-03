@@ -8,15 +8,15 @@
 
 @keyframes changeImage {
   0% {
-    background-image: url("/public/Images/carousel/3.JPG");
+    background-image: url("/public/Images/carousel/1.JPG");
   }
 
   10% {
-    background-image: url("/public/Images/carousel/13.JPG");
+    background-image: url("/public/Images/carousel/2.JPG");
   }
 
   20% {
-    background-image: url("/public/Images/carousel/1.JPG");
+    background-image: url("/public/Images/carousel/3.JPG");
   }
 
   30% {
@@ -28,27 +28,27 @@
   }
 
   50% {
-    background-image: url("/public/Images/carousel/7.JPG");
+    background-image: url("/public/Images/carousel/6.JPG");
   }
 
   60% {
-    background-image: url("/public/Images/carousel/6.JPG  ");
+    background-image: url("/public/Images/carousel/7.JPG  ");
   }
 
   70% {
-    background-image: url("/public/Images/carousel/9.JPG");
+    background-image: url("/public/Images/carousel/8.JPG");
   }
 
   80% {
-    background-image: url("/public/Images/carousel/10.JPG");
+    background-image: url("/public/Images/carousel/9.JPG");
   }
 
   90% {
-    background-image: url("/public/Images/carousel/11.JPG");
+    background-image: url("/public/Images/carousel/10.JPG");
   }
 
   100% {
-    background-image: url("/public/Images/carousel/12.JPG");
+    background-image: url("/public/Images/carousel/11.JPG");
   }
 } 
 
