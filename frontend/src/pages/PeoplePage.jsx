@@ -9,8 +9,6 @@ import PeopleCard from "../components/PeoplePage/PeopleCard"
 import { ms } from "../HeaderData"
 const PeoplePage = () => {
   const params = useParams()
-  console.log(params.program)
-  console.log(params.year)
   const [news, setNews] = React.useState(1)
   return (
     <div>

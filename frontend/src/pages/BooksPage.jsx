@@ -29,7 +29,6 @@ const BooksPage = () => {
       setData("Not Available")
     }
   }, [params, isError])
-  console.log(data)
   return (
     <>
       <Navbar />

@@ -20,7 +20,6 @@ export default function Dates(props) {
         }}
         elevation={1}
       >
-        {console.log(props)}
         {/* <CardMedia
           component="img"
           sx={{ height: 140 }}

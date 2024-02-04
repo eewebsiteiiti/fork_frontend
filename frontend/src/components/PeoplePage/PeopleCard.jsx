@@ -7,7 +7,6 @@ import axios from "axios"
 import { api, image_api } from "../../Api"
 export default function PeopleCard(props) {
   const [data, setData] = useState()
-  console.log(props.program)
   const [isError, setIsError] = useState([])
   useEffect(() => {
     setTimeout(() => {
@@ -35,14 +34,11 @@ export default function PeopleCard(props) {
           >
             {data?.map((item, i) => (
               <>
-                {console.log(item.program)}
                 {props.prog === item.program ? (
                   <>
                     <>
-                      {console.log(item.image)}
                       <Grid item mt={5}>
                         <Card sx={{ width: 150, height: 280 }}>
-                          {console.log(item.image)}
                           {item.image ? (
                             <CardMedia
                               sx={{ height: "150px" }}

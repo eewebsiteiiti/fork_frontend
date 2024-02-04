@@ -31,7 +31,6 @@ const Staff_Card = (props) => {
     }
   }, [isError, props.year, props.name])
 
-  console.log(data)
 
   return (
     <>

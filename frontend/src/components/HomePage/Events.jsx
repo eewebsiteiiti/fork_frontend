@@ -20,9 +20,7 @@ export default function Events() {
     if (!isError) {
       setEvent("Not Available")
     }
-    console.log(event)
     // event.reverse();
-    console.log(event)
   }, [isError, event])
   useEffect(() => {
     axios
@@ -35,7 +33,6 @@ export default function Events() {
       setEvent("Not Available")
     }
   }, [isError])
-  console.log(announcement)
   useEffect(() => {
     axios
       .get(`${api}/news/read`, {

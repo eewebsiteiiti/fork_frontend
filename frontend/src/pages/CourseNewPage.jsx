@@ -260,7 +260,6 @@ export default function CourseNewPage() {
                                   </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                  {console.log(data)}
                                   {data?.map((row, key) => (
                                     <TableRow
                                       key={key}

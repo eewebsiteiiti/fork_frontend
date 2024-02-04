@@ -22,7 +22,6 @@ import SchoolIcon from "@mui/icons-material/School"
 
 export default function StatsPage() {
   const param = useParams()
-  console.log(param.program === "Faculty")
   const [patent, setPatent] = React.useState()
   React.useEffect(() => {
     axios
@@ -32,7 +31,6 @@ export default function StatsPage() {
       .then((response) => setPatent(response.data))
       .catch((error) => console.log(error.message))
   }, [])
-  console.log(patent)
   return (
     <div>
       <>

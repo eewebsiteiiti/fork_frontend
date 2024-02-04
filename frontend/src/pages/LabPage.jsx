@@ -27,8 +27,6 @@ export default function LabPage() {
   return (
     <div>
       <Navbar />
-      {console.log(labs)}
-      {console.log(params.type)}
       {/* <MobileNavbar /> */}
       {params.type === "ug" ? (
         <>
@@ -351,7 +349,6 @@ export default function LabPage() {
                             {/* {Object?.keys(labs?.equipments)?.map(
                                   (item3, key3) => (
                                     <>
-                                      {console.log(item3)}
                                       <Grid item>{item3}</Grid>
                                     </>
                                   )

@@ -28,7 +28,6 @@ export default function ProjectsPage() {
       setIsError("Not Available")
     }
   }, [isError])
-  console.log(data)
   return (
     <>
       <Navbar />
