@@ -31,7 +31,6 @@ const Staff_Card = (props) => {
     }
   }, [isError, props.year, props.name])
 
-
   return (
     <>
       <Container
@@ -60,9 +59,13 @@ const Staff_Card = (props) => {
                   />
                 </Box>
                 <Box sx={{ p: 2, width: "100%" }}>
-                  <Link href={item.link}>
+                  {/* <Link href={item.link}>
+                    fdkjsj
                     <Typography variant="h3">{item.name}</Typography>
-                  </Link>
+                  </Link> */}
+                  <a rel="noreferrer" target="_blank" href={item.link}>
+                    <Typography variant="h3">{item.name}</Typography>
+                  </a>
                   {props.name === "Faculty" ? (
                     <Typography color="grey" variant="p" fontSize="0.8rem">
                       {item.place}

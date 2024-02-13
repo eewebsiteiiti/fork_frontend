@@ -165,7 +165,7 @@ export default function LabPage() {
         <>
           <>
             <Header
-              title="Research Lab"
+              title="Research Labs"
               description={pg.description}
               image={pg.image}
             />

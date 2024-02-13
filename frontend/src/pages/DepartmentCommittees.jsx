@@ -79,7 +79,7 @@ export default function DepartmentCommittees() {
                 color={"secondary"}
                 component="div"
               >
-                DPGC - Department Under Post-Graduate Committee
+                DPGC - Department Post Graduate Committee
               </Typography>
               <CardActions sx={{ float: "right" }}>
                 <Email /> Email: &nbsp;
@@ -90,18 +90,18 @@ export default function DepartmentCommittees() {
                 </a>
               </CardActions>
               <Typography variant="body2" color="text.secondary">
-                The department has a DUGC to deal with all issues related to UG
-                students, academic programs, UG curriculum and courses, academic
+                The department has a DPGC to deal with all issues related to PG
+                students, academic programs, PG curriculum and courses, academic
                 performance, academic indiscipline, academic malpractices of
-                individual UG students Revising the UG curriculum, assessment of
+                individual PG students Revising the PG curriculum, assessment of
                 the academic programs and suggests appropriate revisions or
                 modifications.
               </Typography>
             </CardContent>
             <CardContent>
               <Typography variant="body2" color="primary">
-                The current DUGC comprises of <br /> Prof. Saptarshi
-                Ghosh(Convener) <br /> Prof. Amod C. Umarikar
+                The current DPGC comprises of <br /> Prof. Saptarshi Ghosh
+                (Convener) <br /> Prof. Amod C. Umarikar
                 <br /> Prof. Santosh Kumar Vishvakarma
               </Typography>
             </CardContent>
