@@ -117,7 +117,7 @@ const itemData1 = [
     type: "img",
   },
   {
-    img: "/Images/gallery/vdn.JPG",
+    img: "/Images/gallery/14.JPG",
     type: "img",
   },
 ]

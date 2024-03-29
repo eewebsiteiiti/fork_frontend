@@ -215,6 +215,7 @@ const ResearchPage = () => {
                     <li>Prof. Shaibal Mukherjee</li>
                     <li>Prof. Vivek Kanhangad</li>
                     <li>Prof. Vimal Bhatia</li>
+                    <li>Prof. Dibbendu Roy</li>
                   </list>
                 </Typography>
               </div>
