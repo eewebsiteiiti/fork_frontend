@@ -56,13 +56,16 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/DUGC.JPG",
         },
         {
+          source: "Images/gallery/2.JPG",
+        },
+        {
           source: "Images/gallery/staffCombo.JPG",
         },
         {
-          source: "Images/gallery/13.JPG",
+          source: "Images/gallery/vdn.JPG",
         },
         {
-          source: "Images/gallery/vdn.JPG",
+          source: "Images/gallery/13.JPG",
         },
         {
           source: "Images/gallery/btech20.jpg",
@@ -75,9 +78,6 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/btech22.jpg",
-        },
-        {
-          source: "Images/gallery/2.JPG",
         },
         {
           source: "Images/gallery/IMG_6925.JPG",

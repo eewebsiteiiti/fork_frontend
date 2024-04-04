@@ -17,7 +17,7 @@ export default function WovenImageList() {
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
-        cols={5}
+        cols={4}
         gap={20}
       >
         {itemData1.map((item) => (
@@ -63,24 +63,50 @@ export default function WovenImageList() {
             </video>
           </center>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          md={4}
-          lg={4}
-          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
-        >
-          <img height="240" src="/Images/gallery/csp.JPG" alt="" />
+        <Grid item xs={12} md={4} lg={4}>
+          <center>
+            <video
+              style={{ padding: "10px 0px" }}
+              width="100%"
+              height="240"
+              autoPlay
+              muted
+              controls
+            >
+              <source src={`Videos/Grad_Batch_24_EE.mp4`} type="video/mp4" />
+            </video>
+          </center>
         </Grid>
       </Grid>
 
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
-        cols={5}
+        cols={4}
         gap={20}
       >
         {itemData2.map((item) => (
+          <ImageListItem key={item.img} sx={{ overflow: "hidden" }}>
+            <img
+              src={`${item.img}`} // srcSet={`${item.img}`}
+              className="MuiImageListItem-img"
+              alt={item.type}
+              imgloading="lazy"
+              width="200"
+              height="100"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+      <br />
+
+      <ImageList
+        sx={{ width: "100%", height: "20%", margin: "auto" }}
+        variant="woven"
+        cols={4}
+        gap={20}
+      >
+        {itemData3.map((item) => (
           <ImageListItem key={item.img} sx={{ overflow: "hidden" }}>
             <img
               src={`${item.img}`} // srcSet={`${item.img}`}
@@ -116,12 +142,12 @@ const itemData1 = [
     img: "/Images/carousel/4.JPG",
     type: "img",
   },
+]
+const itemData2 = [
   {
     img: "/Images/gallery/vdn.JPG",
     type: "img",
   },
-]
-const itemData2 = [
   {
     img: "/Images/gallery/makerspace.jpg",
     type: "img",
@@ -134,7 +160,9 @@ const itemData2 = [
     img: "/Images/gallery/9K6A6843.JPG",
     type: "img",
   },
-  {
+]
+const itemData3 = [
+    {
     img: "/Images/carousel/10.JPG",
     type: "img",
   },
@@ -142,4 +170,8 @@ const itemData2 = [
     img: "/Images/gallery/IMG_6892.JPG",
     type: "img",
   },
+  {
+      img: "/Images/gallery/csp.JPG",
+      type: "img",
+    },
 ]
