@@ -136,9 +136,9 @@ export default function DepartmentCommittees() {
             </CardContent>
             <CardContent>
               <Typography variant="body2" color="primary">
-                The current DWC comprises of <br /> Prof. A
-                (Convener) <br /> Prof. B
-                <br /> Prof. C
+                The current DWC comprises of <br /> Dr. Vijay A S
+                (Convener) <br /> Prof. Saptarshi Ghosh
+                <br /> Prof. Sumit Gautam
               </Typography>
             </CardContent>
           </Card>
