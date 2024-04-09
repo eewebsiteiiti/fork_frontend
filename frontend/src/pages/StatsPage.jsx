@@ -66,7 +66,7 @@ export default function StatsPage() {
               <img
                 alt="not_found"
                 width="50%"
-                src="/Images/degree_awarded.jpg"
+                src="/Images/degree.png"
               />
             </center>
           </>
@@ -80,7 +80,7 @@ export default function StatsPage() {
               title="Statistics"
             />
             <center>
-              <img alt="not_found" width="50%" src="/Images/journals.jpg" />
+              <img alt="not_found" width="70%" src="/Images/journals2.png" />
             </center>
           </>
         ) : (
@@ -189,8 +189,8 @@ export default function StatsPage() {
             <center>
               <img
                 alt="not_found"
-                width="50%"
-                src="/Images/projects_number.jpg"
+                width="70%"
+                src="/Images/projects3.png"
               />
             </center>
           </>
@@ -228,13 +228,14 @@ export default function StatsPage() {
                 color="secondary.main"
                 sx={{ fontSize: "7rem" }}
               >
-                <CountUp end={44150} duration={5}>
+                <CountUp end={45000} duration={5}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />
                     </VisibilitySensor>
                   )}
-                </CountUp>
+                </CountUp> 
+                <span>+</span>
                 <br />
                 ... & Counting!
               </Typography>
