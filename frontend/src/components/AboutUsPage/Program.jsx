@@ -79,7 +79,7 @@ export default function Program() {
                 }}
                 className="programBg2"
                 onClick={() =>
-                  handleClickOpen("B.Tech.", "Images/mtech25.JPG")
+                  handleClickOpen("M.Tech.", "Images/mtech25.JPG")
                   }
               >
                 <div
@@ -115,7 +115,7 @@ export default function Program() {
                 }}
                 className="programBg3"
                 onClick={() =>
-                  handleClickOpen("B.Tech.", "/Images/about.jpg")
+                  handleClickOpen("M.S.", "/Images/about.jpg")
                   }
               >
                 <div
@@ -149,7 +149,7 @@ export default function Program() {
                 }}
                 className="programBg4"
                 onClick={() =>
-                  handleClickOpen("B.Tech.", "/Images/about.jpg")
+                  handleClickOpen("Ph. D.", "/Images/gallery/phd_23.jpg")
                   }
               >
                 <div
@@ -169,7 +169,7 @@ export default function Program() {
                     color={"white"}
                     sx={{ width: "150px" }}
                   >
-                    Ph.D.
+                    Ph. D.
                   </Typography>
                 </div>
               </Grid>

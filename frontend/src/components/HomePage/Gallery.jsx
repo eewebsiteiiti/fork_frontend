@@ -17,7 +17,7 @@ export default function WovenImageList() {
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
-        cols={4}
+        cols={3}
         gap={20}
       >
         {itemData1.map((item) => (
@@ -47,8 +47,9 @@ export default function WovenImageList() {
           lg={4}
           sx={{ display: { xs: "none", sm: "none", md: "block" } }}
         >
-          <img height="240" src="/Images/gallery/ps.JPG" alt="" />
+          <img height="245" src="Images/gallery/FC2.JPG" alt="" />
         </Grid>
+        
         <Grid item xs={12} md={4} lg={4}>
           <center>
             <video
@@ -59,21 +60,7 @@ export default function WovenImageList() {
               muted
               controls
             >
-              <source src={`Videos/video.mp4`} type="video/mp4" />
-            </video>
-          </center>
-        </Grid>
-        <Grid item xs={12} md={4} lg={4}>
-          <center>
-            <video
-              style={{ padding: "10px 0px" }}
-              width="100%"
-              height="240"
-              autoPlay
-              muted
-              controls
-            >
-              <source src={`Videos/Grad_Batch_24_EE.mp4`} type="video/mp4" />
+              <source src={`Videos/DepartmentalVideo.mp4`} type="video/mp4" />
             </video>
           </center>
         </Grid>
@@ -82,7 +69,7 @@ export default function WovenImageList() {
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
-        cols={4}
+        cols={3}
         gap={20}
       >
         {itemData2.map((item) => (
@@ -103,7 +90,7 @@ export default function WovenImageList() {
       <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
-        cols={4}
+        cols={3}
         gap={20}
       >
         {itemData3.map((item) => (
@@ -119,8 +106,34 @@ export default function WovenImageList() {
           </ImageListItem>
         ))}
       </ImageList>
+      
       <br />
+      <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        spacing={2}
+        sx={{ p: 2 }}
+      >
+
+        
+        <Grid item xs={12} md={4} lg={4}>
+          <center>
+            <video
+              style={{ padding: "10px 0px" }}
+              width="100%"
+              height="240"
+              autoPlay
+              muted
+              controls
+            >
+              <source src={`Videos/video.mp4`} type="video/mp4" />
+            </video>
+          </center>
+        </Grid>
+      </Grid>
       <br />
+      
     </Container>
   )
 }
@@ -135,13 +148,10 @@ const itemData1 = [
     type: "img",
   },
   {
-    img: "/Images/carousel/3.JPG",
+    img: "/Images/gallery/ps.JPG",
     type: "img",
   },
-  {
-    img: "/Images/carousel/4.JPG",
-    type: "img",
-  },
+  
 ]
 const itemData2 = [
   {
@@ -149,7 +159,7 @@ const itemData2 = [
     type: "img",
   },
   {
-    img: "/Images/gallery/makerspace.jpg",
+    img: "/Images/carousel/4.JPG",
     type: "img",
   },
   {
@@ -157,13 +167,7 @@ const itemData2 = [
     type: "img",
   },
   {
-    img: "/Images/gallery/9K6A6843.JPG",
-    type: "img",
-  },
-]
-const itemData3 = [
-    {
-    img: "/Images/carousel/10.JPG",
+    img: "/Images/gallery/csp.JPG",
     type: "img",
   },
   {
@@ -171,7 +175,22 @@ const itemData3 = [
     type: "img",
   },
   {
-      img: "/Images/gallery/csp.JPG",
-      type: "img",
-    },
+    img: "/Images/gallery/9K6A6843.JPG",
+    type: "img",
+  },
+]
+ 
+const itemData3 = [
+    {
+    img: "/Images/carousel/10.JPG",
+    type: "img",
+  },
+  {
+    img: "/Images/gallery/makerspace.jpg",
+    type: "img",
+  },
+  {
+    img: "/Images/carousel/3.JPG",
+    type: "img",
+  },
 ]
