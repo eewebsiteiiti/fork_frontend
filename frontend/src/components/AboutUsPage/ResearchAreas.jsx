@@ -75,12 +75,30 @@ const ResearchAreas = () => {
               action={"#"}
             />
           </Grid>
+
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <ResearchCard
+              specialisation={"Control and Optimisation"}
+              description={
+                
+                "Control optimization involves the meticulous management of system behavior and the strategic refinement of processes to attain optimal outcomes. By monitoring variables, making informed decisions, and applying adjustments, control optimization ensures efficiency and effectiveness."
+              }
+              action={"#"}
+              photo={""}
+            />
+          </Grid>
         </Grid>
         <Typography
           sx={{ textAlign: "center", fontSize: "2.3rem", py: 1 }}
           variant="h1"
           component="h2"
         >
+          
           Our Journey...
         </Typography>
         <center>
