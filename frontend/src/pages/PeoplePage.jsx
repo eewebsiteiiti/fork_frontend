@@ -191,6 +191,8 @@ const PeoplePage = () => {
             title={alumni.title + " Batch " + params.year}
             description={alumni.description}
             image={alumni.image}
+            link={alumni.link}
+            nextDescription={alumni.nextDescription}
           />
           <div className="bg_border">
             <Container>
