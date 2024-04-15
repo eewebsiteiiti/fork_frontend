@@ -163,7 +163,9 @@ const itemData2 = [
     type: "img",
   },
   {
-    img: "/Images/carousel/8.JPG",
+
+    img: "/Images/carousel/14.JPG",
+
     type: "img",
   },
   {
