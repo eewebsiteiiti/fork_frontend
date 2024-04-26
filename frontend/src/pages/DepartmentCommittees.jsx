@@ -142,6 +142,43 @@ export default function DepartmentCommittees() {
               </Typography>
             </CardContent>
           </Card>
+
+          <Card>
+            <CardMedia
+              sx={{ height: 400 }}
+              image="/Images/profile_placeholder.jpg"
+              title="DPGC Team"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                color={"secondary"}
+                component="div"
+              >
+                DSC-Department Space Committee
+              </Typography>
+              <CardActions sx={{ float: "right" }}>
+                <Email /> Email: &nbsp;
+                <a href="mailto:dugcee@iiti.ac.in">
+                  <Typography variant="p" color={"primary"}>
+                    dpgcee@iiti.ac.in
+                  </Typography>
+                </a>
+              </CardActions>
+              <Typography variant="body2" color="text.secondary">
+                The Committee will put forward departmental space requirements related to UG and PG programs,assess requests for space from indivisual faculty members and make recommendations to the Head of the department of Electrical Enginnering.
+              </Typography>
+            </CardContent>
+            <CardContent>
+              <Typography variant="body2" color="primary">
+                The current DSC comprises of <br /> Dr.Swaminathan R
+                (Convener) <br /> Prof.Srivathsan Vasudevan
+                <br /> Dr.Subhadeep Paladhi
+              </Typography>
+            </CardContent>
+          </Card>
+
         </Container>
       </div>
     </>
