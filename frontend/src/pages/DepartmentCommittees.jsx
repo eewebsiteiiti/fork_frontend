@@ -172,7 +172,7 @@ export default function DepartmentCommittees() {
             </CardContent>
             <CardContent>
               <Typography variant="body2" color="primary">
-                The current DSC comprises of <br /> Dr.Swaminathan R
+                The current DSC comprises of- <br /> Dr.Swaminathan R
                 (Convener) <br /> Prof.Srivathsan Vasudevan
                 <br /> Dr.Subhadeep Paladhi
               </Typography>
