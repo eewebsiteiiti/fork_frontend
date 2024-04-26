@@ -156,7 +156,7 @@ export default function DepartmentCommittees() {
                 color={"secondary"}
                 component="div"
               >
-                DSC-Department Space Committee
+                DPGC - Department Post Graduate Committee
               </Typography>
               <CardActions sx={{ float: "right" }}>
                 <Email /> Email: &nbsp;
@@ -167,17 +167,23 @@ export default function DepartmentCommittees() {
                 </a>
               </CardActions>
               <Typography variant="body2" color="text.secondary">
-                The Committee will put forward departmental space requirements related to UG and PG programs,assess requests for space from indivisual faculty members and make recommendations to the Head of the department of Electrical Enginnering.
+                The department has a DPGC to deal with all issues related to PG
+                students, academic programs, PG curriculum and courses, academic
+                performance, academic indiscipline, academic malpractices of
+                individual PG students Revising the PG curriculum, assessment of
+                the academic programs and suggests appropriate revisions or
+                modifications.
               </Typography>
             </CardContent>
             <CardContent>
               <Typography variant="body2" color="primary">
-                The current DSC comprises of- <br /> Dr.Swaminathan R
-                (Convener) <br /> Prof.Srivathsan Vasudevan
-                <br /> Dr.Subhadeep Paladhi
+                The current DPGC comprises of <br /> Prof. Saptarshi Ghosh
+                (Convener) <br /> Prof. Amod C. Umarikar
+                <br /> Prof. Santosh Kumar Vishvakarma
               </Typography>
             </CardContent>
           </Card>
+
 
         </Container>
       </div>
