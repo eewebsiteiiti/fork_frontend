@@ -30,8 +30,15 @@ export default function KeyPoint() {
                   </ListItemIcon>
                   <Typography variant='p' color={"white"}>
                   Renewable Energy Integration and Smart Grids, Cyber-security aspects, System on Chip Biomedical Devices for diagnostics and therapy 
+                  </Typography>  
+                </ListItem>
+                <ListItem>
+                  <ListItemIcon>
+                    <FlashOnIcon sx={{color:"#FFC107"}}/>
+                  </ListItemIcon>
+                  <Typography variant='p' color={"white"}>
+                  Novel Algorithms in Control and Optimisation, Drones and Robotics
                   </Typography>
-                  
                 </ListItem>
               </List>
               </Container>

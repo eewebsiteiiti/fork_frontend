@@ -32,31 +32,40 @@ class GalleryPage extends React.Component {
       layout: this.getWidth(this.state.innerWidth),
       photos: [
         {
+          source: "Images/gallery/FC1.JPG",
+        },
+        {
+          source: "Images/gallery/csp.JPG",
+        },
+        {
+          source: "Images/gallery/1.JPG",
+        },
+        {
+          source: "Images/gallery/ps.JPG",
+        },
+        {
+          source: "Images/gallery/FC2.JPG",
+        },
+        {
           source: "Images/gallery/mtech20.jpg",
         },
         {
           source: "Images/gallery/btech19.jpg",
         },
         {
-          source: "Images/gallery/csp.JPG",
-        },
-        {
-          source: "Images/gallery/ps.JPG",
-        },
-        {
           source: "Images/gallery/DUGC.JPG",
         },
         {
-          source: "Images/gallery/FC1.JPG",
-        },
-        {
-          source: "Images/gallery/FC2.JPG",
+          source: "Images/gallery/2.JPG",
         },
         {
           source: "Images/gallery/staffCombo.JPG",
         },
         {
           source: "Images/gallery/vdn.JPG",
+        },
+        {
+          source: "Images/gallery/13.JPG",
         },
         {
           source: "Images/gallery/btech20.jpg",
@@ -69,15 +78,6 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/btech22.jpg",
-        },
-        {
-          source: "Images/gallery/1.JPG",
-        },
-        {
-          source: "Images/gallery/13.JPG",
-        },
-        {
-          source: "Images/gallery/2.JPG",
         },
         {
           source: "Images/gallery/IMG_6925.JPG",

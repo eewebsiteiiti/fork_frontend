@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Link } from "@mui/material";
 import "./styles/template.css";
+
 export default function Header(props) {
   const im_path = process.env.PUBLIC_URL + props.image;
   return (
@@ -22,10 +23,18 @@ export default function Header(props) {
             </Typography>
             <Typography variant="p" color="white">
               {props.description}
+              {props.link && (
+                <>
+                  {" "}
+                  <Link href={props.link} target="_blank" rel="noopener noreferrer" style={{variant:"p", color: "white", textDecoration: 'underline', fontWeight: 'bold' }}>
+                    Alumni Portal
+                  </Link>{" "}
+                  {props.nextDescription}
+                </>
+              )}
             </Typography>
           </Container>
         </Grid>
-        
 
         <Grid
           item
