@@ -1,7 +1,7 @@
 export const about = {
   title: "ABOUT US",
   description:
-    "Department faculty members, 22 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
+    "Department faculty members, 22 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics, Very Large Scale Integration (VLSI) and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
   image: "/Images/header_images/aboutPage.JPG",
 }
 export const btech = {
@@ -32,7 +32,9 @@ export const mtech = {
 export const alumni = {
   title: "Alumni",
   description:
-    "The Alumni are an integral part to the growth of an Institute, and our Department believes in cultivating a strong and vibrant relationship with the Alumni. You can visit alumni.iiti.ac.in to set up your profile and get in touch with your alma mater.",
+    "The Alumni are an integral part to the growth of an Institute, and our Department believes in cultivating a strong and vibrant relationship with the Alumni. You can visit ",
+  link: "https://alumni.iiti.ac.in",
+  nextDescription: " to set up your profile and get in touch with your alma mater.",
 }
 
 export const ms = {
