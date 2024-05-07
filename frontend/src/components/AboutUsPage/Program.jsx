@@ -1,22 +1,29 @@
-import React, { useState } from "react";
-import {Container, Typography, Grid, Dialog, DialogContent, IconButton} from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close'; // Import CloseIcon
-import "../styles/program.css";
+import React, { useState } from "react"
+import {
+  Container,
+  Typography,
+  Grid,
+  Dialog,
+  DialogContent,
+  IconButton,
+} from "@mui/material"
+import CloseIcon from "@mui/icons-material/Close" // Import CloseIcon
+import "../styles/program.css"
 
 export default function Program() {
-  const [open, setOpen] = useState(false);
-  const [selectedProgram, setSelectedProgram] = useState("");
-  const [imagePath, setImagePath] = useState("");
+  const [open, setOpen] = useState(false)
+  const [selectedProgram, setSelectedProgram] = useState("")
+  const [imagePath, setImagePath] = useState("")
 
   const handleClickOpen = (program, imagePath) => {
-    setSelectedProgram(program);
-    setImagePath(imagePath);
-    setOpen(true);
-  };
+    setSelectedProgram(program)
+    setImagePath(imagePath)
+    setOpen(true)
+  }
 
   const handleClose = () => {
-    setOpen(false);
-  };
+    setOpen(false)
+  }
 
   return (
     <div>
@@ -38,12 +45,12 @@ export default function Program() {
                   width: "150px",
                   height: "150px",
                   marginY: "10px",
-                  borderRadius: "8px",
+                  // borderRadius: "8px",
                 }}
                 className="programBg1"
                 onClick={() =>
                   handleClickOpen("B.Tech.", "/Images/gallery/btech22.jpg")
-                  }
+                }
               >
                 <div
                   className="programBgColor"
@@ -53,7 +60,7 @@ export default function Program() {
                     width: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    borderRadius: "8px",
+                    // borderRadius: "8px",
                   }}
                 >
                   <Typography
@@ -74,13 +81,10 @@ export default function Program() {
                   width: "150px",
                   height: "150px",
                   marginY: "10px",
-                  borderRadius: "8px",
-
+                  // borderRadius: "8px",
                 }}
                 className="programBg2"
-                onClick={() =>
-                  handleClickOpen("M.Tech.", "Images/mtech25.JPG")
-                  }
+                onClick={() => handleClickOpen("M.Tech.", "Images/mtech25.JPG")}
               >
                 <div
                   className="programBgColor"
@@ -90,7 +94,7 @@ export default function Program() {
                     height: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    borderRadius: "8px",
+                    // borderRadius: "8px",
                   }}
                 >
                   <Typography
@@ -110,13 +114,10 @@ export default function Program() {
                   width: "150px",
                   height: "150px",
                   marginY: "10px",
-                  borderRadius: "8px",
-
+                  // borderRadius: "8px",
                 }}
                 className="programBg3"
-                onClick={() =>
-                  handleClickOpen("M.S.", "/Images/about.jpg")
-                  }
+                onClick={() => handleClickOpen("M.S.", "/Images/about.jpg")}
               >
                 <div
                   className="programBgColor"
@@ -126,7 +127,7 @@ export default function Program() {
                     height: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    borderRadius: "8px",
+                    // borderRadius: "8px",
                   }}
                 >
                   <Typography
@@ -145,12 +146,12 @@ export default function Program() {
                   width: "150px",
                   height: "150px",
                   marginY: "10px",
-                  borderRadius: "8px",
+                  // borderRadius: "8px",
                 }}
                 className="programBg4"
                 onClick={() =>
                   handleClickOpen("Ph. D.", "/Images/gallery/phd_23.jpg")
-                  }
+                }
               >
                 <div
                   className="programBgColor"
@@ -160,7 +161,7 @@ export default function Program() {
                     height: "150px",
                     alignContent: "center",
                     alignItems: "center",
-                    borderRadius: "8px",
+                    // borderRadius: "8px",
                   }}
                 >
                   <Typography
@@ -179,13 +180,15 @@ export default function Program() {
 
         <Dialog
           open={open}
-          onClose={handleClose} 
-          fullWidth maxWidth="md"   
+          onClose={handleClose}
+          fullWidth
+          maxWidth="md"
           PaperProps={{
-           sx: {
-            borderRadius: "16px",
-               },
-             }}>
+            sx: {
+              // borderRadius: "16px",
+            },
+          }}
+        >
           <DialogContent
             sx={{
               padding: 0,
@@ -230,9 +233,9 @@ export default function Program() {
               onClick={handleClose}
               sx={{
                 position: "absolute",
-                top: 5 ,
+                top: 5,
                 right: 10,
-                color: '#f5f5f5',
+                color: "#f5f5f5",
                 zIndex: 1,
               }}
             >
@@ -240,7 +243,6 @@ export default function Program() {
             </IconButton>
           </DialogContent>
         </Dialog>
-        
       </div>
     </div>
   )

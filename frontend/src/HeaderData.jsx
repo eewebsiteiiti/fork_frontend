@@ -18,7 +18,7 @@ export const faculty = {
 
 export const staff = {
   title: "Staff",
-  description: "The Department currently has 6 Support Staff Members.",
+  description: "The Department currently has 7 Support Staff Members.",
   // image:"/Images/header_images/staff.JPG"
 }
 
