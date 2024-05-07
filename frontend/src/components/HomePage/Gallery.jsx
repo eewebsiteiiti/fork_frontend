@@ -1,7 +1,7 @@
 import * as React from "react"
 import ImageList from "@mui/material/ImageList"
 import ImageListItem from "@mui/material/ImageListItem"
-import {  Container, Grid, Typography } from "@mui/material"
+import { Container, Grid, Typography } from "@mui/material"
 
 export default function WovenImageList() {
   return (
@@ -49,10 +49,10 @@ export default function WovenImageList() {
         >
           <img height="245" src="Images/gallery/FC2.JPG" alt="" />
         </Grid>
-        
+
         <Grid item xs={12} md={4} lg={4}>
           <center>
-            <video
+            {/* <video
               style={{ padding: "10px 0px" }}
               width="100%"
               height="240"
@@ -61,8 +61,23 @@ export default function WovenImageList() {
               controls
             >
               <source src={`Videos/DepartmentalVideo.mp4`} type="video/mp4" />
-            </video>
+            </video> */}
+            <iframe
+              title="Departmental Video"
+              width="350"
+              height={240}
+              src="https://www.youtube.com/embed/4ZBnNHY2Bpk"
+            ></iframe>
           </center>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          lg={4}
+          sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+        >
+          <img height="245" src="Images/gallery/FC2.JPG" alt="" />
         </Grid>
       </Grid>
 
@@ -87,7 +102,7 @@ export default function WovenImageList() {
       </ImageList>
       <br />
 
-      <ImageList
+      {/* <ImageList
         sx={{ width: "100%", height: "20%", margin: "auto" }}
         variant="woven"
         cols={3}
@@ -105,9 +120,9 @@ export default function WovenImageList() {
             />
           </ImageListItem>
         ))}
-      </ImageList>
-      
-      <br />
+      </ImageList> */}
+
+      {/* <br />
       <Grid
         container
         justifyContent="center"
@@ -133,7 +148,7 @@ export default function WovenImageList() {
         </Grid>
       </Grid>
       <br />
-      
+       */}
     </Container>
   )
 }
@@ -151,7 +166,6 @@ const itemData1 = [
     img: "/Images/gallery/ps.JPG",
     type: "img",
   },
-  
 ]
 const itemData2 = [
   {
@@ -163,36 +177,20 @@ const itemData2 = [
     type: "img",
   },
   {
-
     img: "/Images/carousel/14.JPG",
 
     type: "img",
   },
-  {
-    img: "/Images/gallery/csp.JPG",
-    type: "img",
-  },
-  {
-    img: "/Images/gallery/IMG_6892.JPG",
-    type: "img",
-  },
-  {
-    img: "/Images/gallery/9K6A6843.JPG",
-    type: "img",
-  },
-]
- 
-const itemData3 = [
-    {
-    img: "/Images/carousel/10.JPG",
-    type: "img",
-  },
-  {
-    img: "/Images/gallery/makerspace.jpg",
-    type: "img",
-  },
-  {
-    img: "/Images/carousel/3.JPG",
-    type: "img",
-  },
+  // {
+  //   img: "/Images/gallery/csp.JPG",
+  //   type: "img",
+  // },
+  // {
+  //   img: "/Images/gallery/IMG_6892.JPG",
+  //   type: "img",
+  // },
+  // {
+  //   img: "/Images/gallery/9K6A6843.JPG",
+  //   type: "img",
+  // },
 ]
