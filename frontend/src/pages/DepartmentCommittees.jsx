@@ -265,7 +265,7 @@ export default function DepartmentCommittees() {
 
   <div class="row ">
     <div class="col row4 col1">
-      DWC-Department Website Committee
+      DWC-Department Website Committee 
     </div>
     <div class="col row4">
     The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website
