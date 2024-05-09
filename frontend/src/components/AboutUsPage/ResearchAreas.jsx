@@ -83,13 +83,13 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"Control and Optimisation"}
+              specialisation={"Control and Optimization"}
               description={
                 
                 "Control optimization involves the meticulous management of system behavior and the strategic refinement of processes to attain optimal outcomes. By monitoring variables, making informed decisions, and applying adjustments, control optimization ensures efficiency and effectiveness."
               }
               action={"#"}
-              photo={""}
+              photo={"https://thumbs.dreamstime.com/b/computer-repair-service-vector-business-logo-template-concept-illustration-wrench-gears-symbols-search-engine-optimization-130160615.jpg"}
             />
           </Grid>
         </Grid>
