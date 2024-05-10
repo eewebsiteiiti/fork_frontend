@@ -77,7 +77,7 @@ export default function WovenImageList() {
           lg={4}
           sx={{ display: { xs: "none", sm: "none", md: "block" } }}
         >
-          <img height="245" src="Images/gallery/FC2.JPG" alt="" />
+          <img height="245" src="Images/gallery/vdn.JPG" alt="" />
         </Grid>
       </Grid>
 
@@ -169,18 +169,19 @@ const itemData1 = [
 ]
 const itemData2 = [
   {
-    img: "/Images/gallery/vdn.JPG",
+    img: "/Images/gallery/staffCombo.JPG",
     type: "img",
   },
   {
-    img: "/Images/carousel/4.JPG",
+    img: "/Images/gallery/btech22.jpg",
     type: "img",
   },
   {
-    img: "/Images/carousel/14.JPG",
+    img: "/Images/gallery/IMG_6892.JPG",
 
     type: "img",
   },
+  
   // {
   //   img: "/Images/gallery/csp.JPG",
   //   type: "img",
