@@ -162,7 +162,7 @@ const ResearchPage = () => {
         <Grid container>
         <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Nanoelectronoic Devices
+              Nanoelectronic Devices
             </Typography>
             <div id="rectangle-l-outside">
               
