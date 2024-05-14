@@ -51,11 +51,12 @@ const navs = {
     Projects: "/projects",
 
     "Recent Publications": { 
-      2024:"",
-      2023:"",
+      2024:"https://drive.google.com/file/d/1A69R_pPSK4CsZG5jy3TOd36eJe8JXBHp/view?usp=drivesdk",
+      2023:"https://drive.google.com/file/d/1A6hnS8lyZG3yE_M9uNd6CsRTGYljM3_a/view?usp=drivesdk",
       2022:"https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link",
       2021:"https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
       2020:"https://drive.google.com/file/d/1AdItcw39RjYkTghByPXJagN4d9G5jEg_/view?usp=drive_link",
+     
      // 2019:"https://drive.google.com/file/d/1PJRvrW1mYMiH_c2mc5c29X7m7HWg0C1d/view?usp=drive_link",
      // 2018:"https://drive.google.com/file/d/1HebJ78hV2jKNL0rji-m9OV5oBo2UwMvu/view?usp=drive_link",
       //2017:"https://drive.google.com/file/d/1Ko1KkCOytsKazm3zjvB7S1W2wc2wVpp6/view?usp=drive_link",
