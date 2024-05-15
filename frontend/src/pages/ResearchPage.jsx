@@ -95,18 +95,18 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              VLSI Design
+              
+              Power Electronics
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                    <li>Prof. Santosh Kumar Vishvakarma</li>
-                    <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Vipul Singh</li>
-                    <li>Prof. Abhinav Kranti</li>
-                    <li>Prof. Mukesh Kumar</li>
+                  <li>Prof. Amod C. Umarikar</li>
+                    <li>Prof. Vijay A. S.</li>
+                    <li>Prof. Lokesh Kumar Dewangan</li>
+                   
                   </list>
                 </Typography>
               </div>
@@ -117,16 +117,20 @@ const ResearchPage = () => {
         <Grid container>
         <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Power Electronics
+              
+              VLSI Design
             </Typography>
             <div id="rectangle-l-outside">
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                    <li>Prof. Amod C. Umarikar</li>
-                    <li>Prof. Vijay A. S.</li>
-                    <li>Prof. Lokesh Kumar Dewangan</li>
+                   
+                    <li>Prof. Santosh Kumar Vishvakarma</li>
+                    <li>Prof. Shaibal Mukherjee</li>
+                    <li>Prof. Vipul Singh</li>
+                    <li>Prof. Abhinav Kranti</li>
+                    <li>Prof. Mukesh Kumar</li>
                   </list>
                 </Typography>
               </div>
@@ -228,7 +232,9 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              Control and Optimisation
+
+              Control And Optimization
+
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">

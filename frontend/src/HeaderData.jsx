@@ -69,7 +69,7 @@ export const eesa = {
 export const research = {
   title: "Research",
   description:
-    "In line with the vision of the pursuit of excellence, the Department actively engages in cutting-edge research in the field of Electronics, Electrical and Communcation Engineering. We strive to develop a vibrant research culture with strong industry-alumni-academia connects.",
+    "In line with the vision of  pursuit of excellence, the Department actively engages in cutting-edge research in the various domains of Electronics, Electrical and Communcation Engineering. We strive to develop a vibrant research culture with strong industry-alumni-academia connects.",
   image: "/Images/header_images/research.jpg",
 }
 
