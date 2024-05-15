@@ -67,8 +67,8 @@ export default function Navbar() {
                                           </Typography>
                                         </Link>
                                         <ul className="aniani-menu">
-                                          {Object.keys(navs[key][key2]).map(
-                                            (key3, i3) => (
+                                          {Object.keys(navs[key][key2])
+                                            .map((key3, i3) => (
                                               <>
                                                 <li>
                                                   <div className="link-button">
@@ -85,8 +85,8 @@ export default function Navbar() {
                                                   </div>
                                                 </li>
                                               </>
-                                            )
-                                          )}
+                                            ))
+                                            .reverse()}
                                         </ul>
                                       </div>
                                     </li>
