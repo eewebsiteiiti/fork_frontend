@@ -162,7 +162,7 @@ const ResearchPage = () => {
         <Grid container>
         <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Photonics
+              Nanoelectronic Devices
             </Typography>
             <div id="rectangle-l-outside">
               
@@ -186,16 +186,18 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              Bio-Photonics
+              Machine Learning and Deep Learning
             </Typography>
             <div id="rectangle-r-outside">
               <div id="rectangle-r-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
+                  <li>Prof. Ram Bilas Pachori</li>
                     <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Srivathsan Vasudevan</li>
-                    <li>Prof. Mukesh Kumar</li>
+                    <li>Prof. Vivek Kanhangad</li>
+                    <li>Prof. Vimal Bhatia</li>
+                    <li> Prof. Dibbendu Roy</li>
                   </list>
                 </Typography>
               </div>
@@ -207,7 +209,7 @@ const ResearchPage = () => {
         <Grid container>
         <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              Machine Learning and Deep Learning
+            Control And Optimization
             </Typography>
             <div id="rectangle-l-outside">
               <div id="rectangle-l-inside">
@@ -215,47 +217,13 @@ const ResearchPage = () => {
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
 
                   <list>
-                    <li>Prof. Ram Bilas Pachori</li>
-                    <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Vivek Kanhangad</li>
-                    <li>Prof. Vimal Bhatia</li>
-                    <li>Prof. Dibbendu Roy</li>
-                  </list>
-                </Typography>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography
-              variant="h4"
-              align="right"
-              paddingRight="40%"
-              color={"secondary.main"}
-            >
-
-              Control And Optimization
-
-            </Typography>
-            <div id="rectangle-r-outside">
-              <div id="rectangle-r-inside">
-                <Typography variant="p" fontSize={"0.8rem"}>
-                  {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
-                  <list>
-                    <li>Prof. Sharad Kumar Singh</li>
+                  <li>Prof. Sharad Kumar Singh</li>
                   </list>
                 </Typography>
               </div>
             </div>
           </Grid>
          
-          <Grid item xs={12} sm={6}>
-            {/* <Typography variant='h4' align="right" paddingRight="40%" color={"secondary.main"}>Radio Frequency and Microwave</Typography>
-   <div id="rectangle-r-outside">
-    <div id="rectangle-r-inside">
-    jsgfhsfahgfkg
-    </div>
-   </div> */}
-          </Grid>
         </Grid>
         <br />
       </div>

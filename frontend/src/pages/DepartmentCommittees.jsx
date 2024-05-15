@@ -214,7 +214,7 @@ export default function DepartmentCommittees() {
 
   <div class="row ">
     <div class="col row2 col1">
-      DUGC-Department Under Graduate Committee
+      DUGC - Department Under Graduate Committee
     </div>
     <div class="col row2">
     The department has a DUGC to deal with all issues related to UG
@@ -240,7 +240,7 @@ export default function DepartmentCommittees() {
 
   <div class="row ">
     <div class="col  row3 col1">
-    DPGC-Department Post Graduate Committee
+    DPGC - Department Post Graduate Committee
     </div>
     <div class="col row3">
     The department has a DPGC to deal with all issues related to PG
@@ -265,7 +265,7 @@ export default function DepartmentCommittees() {
 
   <div class="row ">
     <div class="col row4 col1">
-      DWC-Department Website Committee 
+      DWC - Department Website Committee 
     </div>
     <div class="col row4">
     The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website
@@ -284,10 +284,10 @@ export default function DepartmentCommittees() {
 
   <div class="row">
     <div class="col row5 col1">
-      DSC-Department Space Committee
+      DSC - Department Space Committee
     </div>
     <div class="col row5">
-    The committee will put forward departmental space requirements related to UG and PG programs, assess requests for space from individual faculty members, and make recommendations to the Head of the Department of Electrical Engineering
+    The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same
     </div>
     <div class="col row5">
     <ol style={{color:"black"}}>
