@@ -1,7 +1,7 @@
 export const about = {
   title: "ABOUT US",
   description:
-    "Department faculty members, 22 in number currently, have excellent academic credentials and are well known for their contributions. Their diverse areas range from Power Systems and Power Electronics, Integration of Renewable Energy Sources, Smart Grid, Nanotechnology and Nanoelectronics, Communications and Networking to Signal Processing, Optoelectronics, Very Large Scale Integration (VLSI) and Bio-photonics. They have been conferred with several awards and fellowships at both the national and international levels. Many of them serve as technical and organizing committee members of several international symposia and conferences. Some faculty have excelled in teaching and have been conferred awards and recognitions for their contributions. Some also have books and monographs to their credit.",
+    "From starting out as one of the founding departments of the Institute from 2009, the Department of Electrical Engineering at IIT Indore has grown in leaps and bounds. Apart from 22 faculty members, 7 support staff the EE Department currently has around 380 UG students, 50 PG and about 120 Doctoral students. The department is ranked highly at the national level, with 1500+ publications having a combined citation count of 45000+ citations. In the short span of 15 years, since inception, the department has successfully executed 100+  research projects sponsored by various national and international agencies with a combined funding  to the tune of INR 32 Crores.  Furthermore, around 24 patents have been granted and several more have been filed.  The department has proudly graduated a total of around 1100 students to date and hopes to continue its journey onward in the pursuit of excellence.",
   image: "/Images/header_images/aboutPage.JPG",
 }
 export const btech = {
@@ -12,7 +12,7 @@ export const btech = {
 export const faculty = {
   title: "Faculty Members",
   description:
-    "The Department currently has 22 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics, Power Systems and Controls (PEPS), RF and Microwave & Control and Optimisation. The faculty members are actively engaged in cutting-edge research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact.",
+    "The Department currently has 22 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics, Power Systems and Controls (PEPS), RF and Microwave & Control and Optimisation. We faculty members are actively engaged in cutting-edge research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact.",
   image: "/Images/header_images/faculty.JPG",
 }
 

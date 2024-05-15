@@ -1,0 +1,21 @@
+.row1
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 140%;
+    background-color: #b2103e;
+    color: white;
+    border-top: 1px solid black;
+}
+.col
+{
+    /* font-size: 100%; */
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.col1
+{
+    border-left: 1px solid black;
+}
