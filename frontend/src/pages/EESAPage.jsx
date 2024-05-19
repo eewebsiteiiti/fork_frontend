@@ -19,7 +19,7 @@ const EESAPage = () => {
         <Email /> Email: &nbsp;
         <a href="mailto:dugcee@iiti.ac.in">
           <Typography variant="p" color={"primary"}>
-            dpgcee@iiti.ac.in
+            eesa@iiti.ac.in
           </Typography>
         </a>
         <img src="Images/eesa.JPG" alt="not found" width="100%" />
