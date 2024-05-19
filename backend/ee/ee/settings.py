@@ -23,7 +23,7 @@ print(BASE_DIR)
 SECRET_KEY = "django-insecure-6h$kt=xh^%oj9qr8@gbuw7&=*p^a&%2tyc#v4w2(y1zff3%##c"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # BASE_DIR = r'D:/projects/EE Website'
@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     "research",
     "course",
     "achievements",
-    "banana"
+    "banana",
+    "reads",
 ]
 
 MIDDLEWARE = [
