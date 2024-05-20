@@ -17,7 +17,9 @@ import CourseNewPage from "./pages/CourseNewPage";
 import StatsPage from "./pages/StatsPage";
 import RedirectToAPIs from "./RedirectToAPIs";
 import DepartmentCommittees from "./pages/DepartmentCommittees";
-
+import ActivitiesPage from "./pages/ActivitiesPage";
+import SeminarPage from "./pages/SeminarPage";
+import Reads from "./pages/Reads";
 function App() {
   return (
     <div className="App ">
@@ -32,7 +34,10 @@ function App() {
             <Route path="/research/stats" element={<StatsPage/>}/>
             <Route path="/gallery" element={<GalleryPage/>}/>
             <Route path="/projects" element={<ProjectsPage/>}/>
-            <Route path="/eesa" element={<EESAPage/>}/>
+            <Route path="/activities/upcoming" element={<ActivitiesPage />}/>
+            <Route path="/activities/eesa" element={<EESAPage/>}/>
+            <Route path="/activities/seminars" element={<SeminarPage/>}/> 
+            <Route path ="/activities/reads" element={<Reads/>}/>
             <Route path="/labs/:type" element={<LabPage/>}/>
             <Route path="/courses/:program" element={<CoursePage/>}/>
             <Route path="/courses/:program/:year/old" element={<CoursePage/>}/>
@@ -41,8 +46,8 @@ function App() {
             <Route path="/achievements/:achievement" element={<BooksPage />}/>
             <Route path="/research/stats/:program" element={<StatsPage />}/>
             <Route path="/admin_ee" element={<RedirectToAPIs />}/>
-            <Route path="/people/Committees" element={<DepartmentCommittees />}/> 
-          </Routes>
+            <Route path="/people/Committees" element={<DepartmentCommittees />}/>  
+         </Routes>
           <Footer />
         </BrowserRouter>
       </ThemeProvider>
