@@ -93,8 +93,10 @@ export default function Navbar() {
                                                   </div>
                                                 </li>
                                               </>
+
                                             ))
                                             .reverse()}
+
                                         </ul>
                                       </div>
                                     </li>
