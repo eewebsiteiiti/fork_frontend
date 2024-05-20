@@ -28,8 +28,16 @@ export default function Navbar() {
                     INDIAN INSTITUTE OF TECHNOLOGY INDORE
                     <br /> DEPARTMENT OF ELECTRICAL ENGINEERING
                   </Typography>
+
                 </div>
               </Link>
+              {/* <img src={EE_LOGO} height={"100%"} width={"100%"}/> */}
+              <img
+                  src="/Images/logo/EE_logo.jpg"
+                  alt="logo_png"
+                  width="100px"
+                  style={{"margin-left":"auto"}}
+                ></img>
             </div>
             <div className="menu-wrapper">
               <ul className="nav-links">
