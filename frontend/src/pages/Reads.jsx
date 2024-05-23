@@ -1,41 +1,41 @@
-import React, { useState,useEffect } from "react";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import Header from "../components/Header";
-import { reads, Grid } from "../HeaderData";
-import { Typography} from "@mui/material";
-import axios from "axios";
-import { reads_api } from "../Api";
+import React, { useState, useEffect } from "react"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import Header from "../components/Header"
+import { reads } from "../HeaderData"
+import { Typography } from "@mui/material"
+import axios from "axios"
+import { reads_api } from "../Api"
 export default function Reads() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([])
   useEffect(() => {
     const getPosts = async () => {
       try {
-        const response = await axios.get(`${reads_api}/api/reads/post`);
-        setPosts(response.data);
+        const response = await axios.get(`${reads_api}/api/reads/post`)
+        setPosts(response.data)
       } catch (error) {
-        console.error("Failed to fetch posts:", error);
+        console.error("Failed to fetch posts:", error)
       }
-    };
+    }
 
-    getPosts();
-  }, []);
+    getPosts()
+  }, [])
 
   const handlePostSubmit = async (post) => {
     try {
-      const response = await axios.post(`${reads_api}/api/reads/create`, post);
-      setPosts([...posts, response.data]);
+      const response = await axios.post(`${reads_api}/api/reads/create`, post)
+      setPosts([...posts, response.data])
     } catch (error) {
-      console.error("Failed to create post:", error);
+      console.error("Failed to create post:", error)
     }
-  };
+  }
   const handlePostDelete = async (id) => {
     try {
-      const response = await axios.delete(`${reads_api}/api/reads/delete/${id}/`);
-      setPosts(posts.filter((post) => post.id !== id));
+      // const response = await axios.delete(`${reads_api}/api/reads/delete/${id}/`);
+      setPosts(posts.filter((post) => post.id !== id))
     } catch (error) {
-      console.error('Failed to delete post:', error);
+      console.error("Failed to delete post:", error)
     }
-  };
+  }
   return (
     <>
       <Navbar />
@@ -56,7 +56,11 @@ export default function Reads() {
             }}
           >
             {posts.map((post) => (
-              <BlogPost key={post.id} {...post} onDelete={() => handlePostDelete(post.id)} />
+              <BlogPost
+                key={post.id}
+                {...post}
+                onDelete={() => handlePostDelete(post.id)}
+              />
             ))}
           </div>
         </div>
@@ -68,21 +72,21 @@ export default function Reads() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 function BlogForm({ onSubmit }) {
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState("")
+  const [content, setContent] = useState("")
+  const [author, setAuthor] = useState("")
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit({ title, content, author });
-    setTitle("");
-    setContent("");
-    setAuthor("");
-  };
+    e.preventDefault()
+    onSubmit({ title, content, author })
+    setTitle("")
+    setContent("")
+    setAuthor("")
+  }
 
   return (
     <form
@@ -163,7 +167,7 @@ function BlogForm({ onSubmit }) {
         <Typography>Submit</Typography>
       </button>
     </form>
-  );
+  )
 }
 
 function BlogPost({ title, content, author, onDelete }) {
@@ -182,8 +186,8 @@ function BlogPost({ title, content, author, onDelete }) {
       <Typography>{content}</Typography>
       <Typography>By {author}</Typography>
       <button
-        onClick={onDelete} 
-        style={{ 
+        onClick={onDelete}
+        style={{
           backgroundColor: "#000249",
           color: "#fff",
           border: "none",
@@ -191,13 +195,13 @@ function BlogPost({ title, content, author, onDelete }) {
           padding: "10px 20px",
           fontSize: "13px",
           cursor: "pointer",
-          height:"40px",
-          marginTop:"10px",
+          height: "40px",
+          marginTop: "10px",
           transition: "background-color 0.3s",
         }}
       >
-      <Typography> Delete</Typography>
+        <Typography> Delete</Typography>
       </button>
     </div>
-  );
+  )
 }
