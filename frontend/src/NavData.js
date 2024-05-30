@@ -86,10 +86,10 @@ const navs = {
     "Student Achievements": "/achievements/students",
   },
   Activities:{
-    'Upcoming Activities' : "/activities/upcoming",
-    'Upcoming Seminars' : "/activities/seminars",
     "EE Student's Association (EESA)" : "/activities/eesa",
-    'Interesting reads': "/activities/reads"
+    'Interesting reads': "/activities/reads",
+    'Upcoming Seminars' : "/activities/seminars",
+    'Upcoming Activities' : "/activities/upcoming"
   }
 };
 
