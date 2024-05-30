@@ -30,6 +30,13 @@ export default function Navbar() {
                   </Typography>
                 </div>
               </Link>
+              {/* <img src={EE_LOGO} height={"100%"} width={"100%"}/> */}
+              <img
+                src="/Images/logo/ee_logo.jpg"
+                alt="logo_png"
+                width="100px"
+                style={{ "margin-left": "auto" }}
+              ></img>
             </div>
             <div className="menu-wrapper">
               <ul className="nav-links">
@@ -67,8 +74,8 @@ export default function Navbar() {
                                           </Typography>
                                         </Link>
                                         <ul className="aniani-menu">
-                                          {Object.keys(navs[key][key2]).map(
-                                            (key3, i3) => (
+                                          {Object.keys(navs[key][key2])
+                                            .map((key3, i3) => (
                                               <>
                                                 <li>
                                                   <div className="link-button">
@@ -85,8 +92,8 @@ export default function Navbar() {
                                                   </div>
                                                 </li>
                                               </>
-                                            )
-                                          )}
+                                            ))
+                                            .reverse()}
                                         </ul>
                                       </div>
                                     </li>
