@@ -324,7 +324,7 @@ export default function Navbar() {
                                                 </li>
                                               </>
                                             )
-                                          )}
+                                          ).reverse()}
                                         </ul>
                                       </div>
                                     </li>
