@@ -323,7 +323,9 @@ export default function CoursePage() {
                           </Container>
 
                           <br />
+                          
                         </div>
+                    
 
                         {/* 
 
