@@ -82,7 +82,7 @@ export default function CoursePage() {
             }
           >
             <Typography variant="h1" color="primary.main" textAlign="center">
-              {param.program === "BTech" ? "B. Tech." : "M. Tech."}
+              {param.program === "BTech" ? "B. Tech." : "M. Tech.(CSP)"}
             </Typography>
           </a>
           <Box sx={{ py: 4 }}>
@@ -323,7 +323,9 @@ export default function CoursePage() {
                           </Container>
 
                           <br />
+                          
                         </div>
+                    
 
                         {/* 
 
