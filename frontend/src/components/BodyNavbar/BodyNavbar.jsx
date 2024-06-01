@@ -269,6 +269,12 @@ export default function Navbar() {
                   </Typography>
                 </div>
               </Link>
+              <img
+                src="/Images/logo/ee_logo.jpg"
+                alt="logo_png"
+                width="80px"
+                style={{ "margin-left": "auto" }}
+              ></img>
             </div>
             <div className={styles.menu_wrapper}>
               <ul className={styles.nav_links}>
@@ -318,7 +324,7 @@ export default function Navbar() {
                                                 </li>
                                               </>
                                             )
-                                          )}
+                                          ).reverse()}
                                         </ul>
                                       </div>
                                     </li>

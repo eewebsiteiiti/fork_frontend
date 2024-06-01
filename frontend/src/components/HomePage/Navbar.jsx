@@ -30,6 +30,13 @@ export default function Navbar() {
                   </Typography>
                 </div>
               </Link>
+              {/* <img src={EE_LOGO} height={"100%"} width={"100%"}/> */}
+              <img
+                src="/Images/logo/ee_logo.jpg"
+                alt="logo_png"
+                width="100px"
+                style={{ "margin-left": "auto" }}
+              ></img>
             </div>
             <div className="menu-wrapper">
               <ul className="nav-links">
