@@ -131,9 +131,10 @@ const ResearchPage = () => {
                    
                     <li>Prof. Santosh Kumar Vishvakarma</li>
                     <li>Prof. Shaibal Mukherjee</li>
-                    
+                    <li>Prof. Vipul Singh</li>
+                    <li>Prof. Abhinav Kranti</li>
                     <li>Prof. Mukesh Kumar</li>
-                  </list>
+                    </list>
                 </Typography>
               </div>
             </div>
@@ -197,7 +198,6 @@ const ResearchPage = () => {
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
                   <li>Prof. Ram Bilas Pachori</li>
-                    <li>Prof. Shaibal Mukherjee</li>
                     <li>Prof. Vivek Kanhangad</li>
                     <li>Prof. Vimal Bhatia</li>
                     <li> Prof. Dibbendu Roy</li>

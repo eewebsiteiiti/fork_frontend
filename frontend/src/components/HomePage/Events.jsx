@@ -21,7 +21,7 @@ export default function Events() {
       setEvent("Not Available")
     }
     // event.reverse();
-  }, [isError, event])
+  }, [isError])
   useEffect(() => {
     axios
       .get(`${api}/announcement/read`, {
