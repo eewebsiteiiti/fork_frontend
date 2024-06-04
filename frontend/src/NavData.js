@@ -7,7 +7,7 @@ const navs = {
     Faculty: "/people/Faculty",
     Staff: "/people/Staff",
     "Department Commitees": "/people/Committees",
-    
+
     "Ph.D. students": {
       2018: "/people/PhD/2018",
       2019: "/people/PhD/2019",
@@ -26,10 +26,10 @@ const navs = {
     "M. Tech. students": {
       // 2020: "/people/MTech/2020",
       // 2021: "/people/MTech/2021",
-      2022:"/people/MTech/2022",
-      2023:"/people/MTech/2023",
+      2022: "/people/MTech/2022",
+      2023: "/people/MTech/2023",
     },
-    
+
     "B. Tech. students": {
       2020: "/people/BTech/2020",
       2021: "/people/BTech/2021",
@@ -44,37 +44,44 @@ const navs = {
       2018: "/people/Alumni/2018",
       // 2019: "/people/BTech/2019",
     },
-   
   },
   Research: {
     "Research Areas": "/research",
     Projects: "/projects",
     "Recent Publications": {
-      2014:"https://drive.google.com/file/d/1bhcsUNNprMQWvOudCRydlQem3SrqC6uE/view?usp=drive_link",
-      2015:"https://drive.google.com/file/d/14p1cSxLUf1T34CS6O5tq_ldWfiSfXbJw/view?usp=drive_link",
-      2016:"https://drive.google.com/file/d/1YwQpv_7aSAkH9IEXIcBAIdSiwetO1hce/view?usp=drive_link",
-      2017:"https://drive.google.com/file/d/1Ko1KkCOytsKazm3zjvB7S1W2wc2wVpp6/view?usp=drive_link",
-      2018:"https://drive.google.com/file/d/1HebJ78hV2jKNL0rji-m9OV5oBo2UwMvu/view?usp=drive_link",
-      2019:"https://drive.google.com/file/d/1PJRvrW1mYMiH_c2mc5c29X7m7HWg0C1d/view?usp=drive_link",
-      2020:"https://drive.google.com/file/d/1AdItcw39RjYkTghByPXJagN4d9G5jEg_/view?usp=drive_link",
-      2021:"https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
-      2022:"https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link"
+     //  2014: "https://drive.google.com/file/d/1bhcsUNNprMQWvOudCRydlQem3SrqC6uE/view?usp=drive_link",
+     // 2015: "https://drive.google.com/file/d/14p1cSxLUf1T34CS6O5tq_ldWfiSfXbJw/view?usp=drive_link",
+    //  2016: "https://drive.google.com/file/d/1YwQpv_7aSAkH9IEXIcBAIdSiwetO1hce/view?usp=drive_link",
+    //  2017: "https://drive.google.com/file/d/1Ko1KkCOytsKazm3zjvB7S1W2wc2wVpp6/view?usp=drive_link",
+    //  2018: "https://drive.google.com/file/d/1HebJ78hV2jKNL0rji-m9OV5oBo2UwMvu/view?usp=drive_link",
+    //  2019: "https://drive.google.com/file/d/1PJRvrW1mYMiH_c2mc5c29X7m7HWg0C1d/view?usp=drive_link",
+      2020: "https://drive.google.com/file/d/1AdItcw39RjYkTghByPXJagN4d9G5jEg_/view?usp=drive_link",
+      2021: "https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
+      2022: "https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link",
+      2023: "https://drive.google.com/file/d/1A6hnS8lyZG3yE_M9uNd6CsRTGYljM3_a/view?usp=drivesdk",
+      2024: "https://drive.google.com/file/d/1A69R_pPSK4CsZG5jy3TOd36eJe8JXBHp/view?usp=drivesdk",
     },
-    "Stats":{
-      "Degrees": "/research/stats/Students",
+    Stats: {
+      Degrees: "/research/stats/Students",
       // "Faculty": "/research/stats/Faculty",
-      "Publications": "/research/stats/Publications",
-      "Projects": "/research/stats/Projects",
-      "Patents": "/research/stats/Patents",
-      "Placements":"/research/stats/Placements",
-      "Grants":"/research/stats/Grants",
-      "Citations":"/research/stats/citations"
-    }
-    
+      Publications: "/research/stats/Publications",
+      Projects: "/research/stats/Projects",
+      Patents: "/research/stats/Patents",
+      Placements: "/research/stats/Placements",
+      Grants: "/research/stats/Grants",
+      Citations: "/research/stats/citations",
+    },
   },
 
   Academics: {
-    "Courses": { "B. Tech. (before 2023)": "/courses/BTech", "B. Tech. (after 2023)": "/courses/BTech/new", "M.Tech.": "/courses/MTech" },
+
+    Courses: {
+      "B. Tech. (before 2023)": "/courses/BTech",
+      "B. Tech. (after 2023)": "/courses/BTech/new",
+      "M.Tech.(CSP)": "/courses/MTechCSP",
+      "M.Tech.(VDN)": "/courses/MTechVDN",
+    },
+
     Laboratories: {
       UG: "/labs/ug",
       Research: "/labs/pg",
@@ -85,12 +92,12 @@ const navs = {
     "Faculty Recognitions": "/achievements/faculty",
     "Student Achievements": "/achievements/students",
   },
-  Activities:{
-    "EE Student's Association (EESA)" : "/activities/eesa",
-    'Interesting reads': "/activities/reads",
-    'Upcoming Seminars' : "/activities/seminars",
-    'Upcoming Activities' : "/activities/upcoming"
-  }
-};
+  Activities: {
+    "EE Student's Association (EESA)": "/activities/eesa",
+    "Interesting reads": "/activities/reads",
+    "Upcoming Seminars": "/activities/seminars",
+    "Upcoming Activities": "/activities/upcoming",
+  },
+}
 
-export default navs;
+export default navs

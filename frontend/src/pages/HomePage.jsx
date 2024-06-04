@@ -1,11 +1,11 @@
-import React from "react";
-import Carousel from "../components/HomePage/Carousel";
-import Navbar from "../components/HomePage/Navbar";
-import MobileNavbar from "../components/HomePage/MobileNavbar";
-import Events from "../components/HomePage/Events";
-import Gallery from "../components/HomePage/Gallery";
-import NoteFromHOD from "../components/HomePage/NoteFromHOD";
-import AboutUs from "../components/HomePage/AboutUs";
+import React from "react"
+import Carousel from "../components/HomePage/Carousel"
+import Navbar from "../components/HomePage/Navbar"
+import MobileNavbar from "../components/HomePage/MobileNavbar"
+import Events from "../components/HomePage/Events"
+import Gallery from "../components/HomePage/Gallery"
+import NoteFromHOD from "../components/HomePage/NoteFromHOD"
+import AboutUs from "../components/HomePage/AboutUs"
 
 export default function HomePage() {
   return (
@@ -30,5 +30,5 @@ export default function HomePage() {
         </section>
       </div>
     </>
-  );
+  )
 }

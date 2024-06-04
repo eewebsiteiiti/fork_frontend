@@ -52,9 +52,9 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"Power Electronics and Power Systems (PEPS)"}
+              specialisation={"Power Electronics, Machines and Power Systems (PEPS)"}
               description={
-                "Power Electronics and Power Systems group works on efficient and optimal generation, transmission, distribution, and use of electrical energy."
+                "Power Electronics, Machines and Power Systems group works on efficient and optimal generation, transmission, distribution, use of electrical energy and efficient electric drives."
               }
               photo={"/Images/logo/power.png"}
               action={"#"}
@@ -83,7 +83,7 @@ const ResearchAreas = () => {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <ResearchCard
-              specialisation={"Control and Optimization"}
+              specialisation={"Control Instrumentation And Optimization"}
               description={
                 
                 "Control optimization involves the meticulous management of system behavior and the strategic refinement of processes to attain optimal outcomes. By monitoring variables, making informed decisions, and applying adjustments, control optimization ensures efficiency and effectiveness."

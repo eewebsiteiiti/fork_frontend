@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import Navbar from "../components/BodyNavbar/BodyNavbar";
-import Event from "../components/HomePage/Event";
 import { activity } from "../HeaderData";
 import { Container, Grid } from "@mui/material";
 
