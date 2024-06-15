@@ -193,7 +193,7 @@ export default function Navbar() {
           >
             <Link to={"/"}>
               <Box>
-                <img src="/Images/logo/blue_logo.png" alt="logo" width="50" />
+                <img src="/Images/logo/IITI_Logo_Refined" alt="logo" width="50" />
               </Box>
             </Link>
             <Link to={"/"}>
@@ -256,7 +256,7 @@ export default function Navbar() {
                 rel="noreferrer"
               >
                 <img
-                  src="/Images/logo/blue_logo.png"
+                  src="/Images/logo/IITI_Logo_Refined.png"
                   alt="logo_png"
                   width="50px"
                 ></img>
