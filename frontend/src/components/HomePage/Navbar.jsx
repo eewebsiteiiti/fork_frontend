@@ -16,7 +16,7 @@ export default function Navbar() {
                 target="_blank"
               >
                 <img
-                  src="/Images/logo/blue_logo.png"
+                  src="/Images/logo/IITI_Logo_Refined.png"
                   alt="logo_png"
                   width="100px"
                 ></img>
