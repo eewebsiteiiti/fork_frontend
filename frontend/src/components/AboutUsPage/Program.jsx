@@ -117,7 +117,7 @@ export default function Program() {
                   // borderRadius: "8px",
                 }}
                 className="programBg3"
-                onClick={() => handleClickOpen("M.S.", "/Images/about.jpg")}
+                onClick={() => handleClickOpen("M.S.", "/Images/about.JPG")}
               >
                 <div
                   className="programBgColor"
@@ -150,7 +150,7 @@ export default function Program() {
                 }}
                 className="programBg4"
                 onClick={() =>
-                  handleClickOpen("Ph. D.", "/Images/gallery/phd_23.jpg")
+                  handleClickOpen("Ph. D.", "/Images/gallery/phd_23.JPG")
                 }
               >
                 <div

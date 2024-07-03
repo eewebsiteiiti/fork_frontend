@@ -161,6 +161,8 @@ export default function CourseNewPage() {
                           <br />
                         </div>
                       </>
+
+                    
                     ))}
 
                     {/* <Typography textAlign="center" fontWeight="bold" variant="h1">
