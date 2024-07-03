@@ -20,6 +20,7 @@ import DepartmentCommittees from "./pages/DepartmentCommittees";
 import ActivitiesPage from "./pages/ActivitiesPage";
 import SeminarPage from "./pages/SeminarPage";
 import Reads from "./pages/Reads";
+import Fauna from "./pages/FaunaPage";
 function App() {
   return (
     <div className="App ">
@@ -38,6 +39,7 @@ function App() {
             <Route path="/activities/eesa" element={<EESAPage/>}/>
             <Route path="/activities/seminars" element={<SeminarPage/>}/> 
             <Route path ="/activities/reads" element={<Reads/>}/>
+            <Route path = "/activities/flaura" element= {<Fauna/>}/>
             <Route path="/labs/:type" element={<LabPage/>}/>
             <Route path="/courses/:program" element={<CoursePage/>}/>
             <Route path="/courses/:program/:year/old" element={<CoursePage/>}/>

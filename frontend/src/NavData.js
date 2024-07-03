@@ -92,12 +92,12 @@ const navs = {
     "Faculty Recognitions": "/achievements/faculty",
     "Student Achievements": "/achievements/students",
   },
-  Activities: {
-    "EE Student's Association (EESA)": "/activities/eesa",
-    "Interesting reads": "/activities/reads",
-    "Upcoming Seminars": "/activities/seminars",
-    "Upcoming Activities": "/activities/upcoming",
-  },
-}
+  Activities:{
+    "EE Student's Association (EESA)" : "/activities/eesa",
+    'Interesting reads': "/activities/reads",
+    'Upcoming Seminars' : "/activities/seminars",
+    'Upcoming Activities' : "/activities/upcoming"
+  }
+};
 
 export default navs
