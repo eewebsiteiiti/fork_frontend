@@ -140,3 +140,7 @@ export const reads = {
   //"The Department has several committees to ensure smooth functioning of various activities.",
   // image: "/Images/header_images/committees.jpg",
 };
+
+export const fauna = {
+  title : "Glimpses of Life at IIT Indore",
+};

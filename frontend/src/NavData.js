@@ -89,7 +89,8 @@ const navs = {
     "EE Student's Association (EESA)" : "/activities/eesa",
     'Interesting reads': "/activities/reads",
     'Upcoming Seminars' : "/activities/seminars",
-    'Upcoming Activities' : "/activities/upcoming"
+    'Upcoming Activities' : "/activities/upcoming",
+    'Flaura & Fauna' : "/activities/flaura",
   }
 };
 
