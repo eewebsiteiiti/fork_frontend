@@ -341,11 +341,19 @@ export default function DepartmentCommittees() {
     </tr>
     <tr>
       <th scope="row">DSC - Department Space Committee</th>
-      <th>The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same</th>
+      <th>The committee looks into the space related requirements regarding UG and PG research labs and for individual faculty members and makes suitable recommendations regarding the same</th>
       <th><li>-Dr. Swaminathan R. (Convener)</li>
       <li>-Prof. Srivathsan Vasudevan</li>
-      <li>-Prof. Sumit Gautam</li></th>
-      <th>@fat</th>
+      <li>-Dr. Shubadeep Paladhi</li></th>
+      <th>-</th>
+    </tr>
+    <tr>
+      <th scope="row">DBAC - Department Budget Advisory Committee</th>
+      <th>The department Budget Advisory Committee advices HoD EE in matters related to annual plans for expenditures procurements and appropriate utilisation of the allocated budget</th>
+      <th><li>-Dr. Saptarshi Ghosh (Convenor)</li>
+      <li>-Prof. Trapti Jain</li>
+      <li>-Dr. Swaminathan R</li></th>
+      <th>-</th>
     </tr>
   </tbody>
 </table>
