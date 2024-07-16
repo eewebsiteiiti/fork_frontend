@@ -13,14 +13,13 @@ export default function ActivitiesPage() {
       <Container sx={{ my: 5 }}>
         <Grid item>
          
-              <>
-                <Grid item sm={6} md={4} my={3}>
+                {/* <Grid item sm={6} md={4} my={3}>
                   <a
                     rel="noreferrer"
                     href
                     target="_blank"
                   >
-                    {/* <Event
+                    <Event
                       description
                       title
                       image
@@ -29,10 +28,9 @@ export default function ActivitiesPage() {
                       date
                       month
                       time
-                    /> */}
+                    />
                   </a>
-                </Grid>
-              </>
+                </Grid> */}
         </Grid>
       </Container>
     </>
