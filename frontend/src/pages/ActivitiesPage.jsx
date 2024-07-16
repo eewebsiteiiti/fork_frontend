@@ -20,7 +20,7 @@ export default function ActivitiesPage() {
                     href
                     target="_blank"
                   >
-                    <Event
+                    {/* <Event
                       description
                       title
                       image
@@ -29,7 +29,7 @@ export default function ActivitiesPage() {
                       date
                       month
                       time
-                    />
+                    /> */}
                   </a>
                 </Grid>
               </>
