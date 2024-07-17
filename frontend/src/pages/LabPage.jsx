@@ -59,6 +59,84 @@ export default function LabPage() {
         ],
       },
     },
+    {
+      name: "Embedded Systems Lab",
+      person: "Prof. Anil Kumar Vuppala",
+      link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
+      keywords: "Embedded Systems, IoT, Robotics, Computer Vision",
+      description:
+        "The Embedded Systems Lab is focused on the development of embedded systems and their applications in various domains such as IoT, Robotics, and Computer Vision. The lab is equipped with high-end computing resources and FPGA boards.",
+      image: "/images/labs/embedded.jpg",
+      equipments: {
+        equipments: [
+          "Raspberry Pi 4",
+          "Raspberry Pi 3",
+          "Raspberry Pi Zero",
+          "Arduino Uno",
+          "Arduino Mega",
+          "Arduino Nano",
+          "Arduino Due",
+          "NVIDIA Jetson Nano",
+          "NVIDIA Jetson Xavier NX",
+          "NVIDIA Jetson Xavier AGX",
+          "NVIDIA Jetson TX2",
+          "NVIDIA Jetson TX1",
+          "NVIDIA Jetson TK1",]
+        },
+    },
+    {
+      name: "Data Science Lab",
+      person: "Prof. Anil Kumar Vuppala",
+      link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
+      keywords: "Data Science, Big Data, Data Analytics, Data Mining",
+      description:
+        "The Data Science Lab is focused on the development of data science algorithms and their applications in various domains such as big data, data analytics, and data mining. The lab is equipped with high-end computing resources and GPU servers.",
+      image: "/images/labs/data.jpg",
+      equipments: {
+        equipments: [
+          "NVIDIA DGX-1",
+          "NVIDIA DGX-2",
+          "NVIDIA RTX 8000",
+          "NVIDIA RTX 6000",
+          "NVIDIA RTX 2080 Ti",
+          "NVIDIA RTX 2080 Super",
+          "NVIDIA RTX 2070 Super",
+          "NVIDIA RTX 2060 Super",
+          "NVIDIA GTX 1080 Ti",
+          "NVIDIA GTX 1080",
+          "NVIDIA GTX 1070",
+          "NVIDIA GTX 1060",
+          "NVIDIA GTX 1050 Ti",
+          "NVIDIA GTX 1050",
+          "NVIDIA Jetson Nano",
+          "NVIDIA Jetson Xavier NX",
+          "NVIDIA Jetson Xavier AGX",
+          "NVIDIA Jetson TX2",
+          "NVIDIA Jetson TX1",
+          "NVIDIA Jetson TK1",
+          "NVIDIA Jetson Nano",
+        ],
+      },
+    },
+    {
+      name: "Cybersecurity Lab",
+      person: "Prof. Anil Kumar Vuppala",
+      link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
+      keywords: "Cybersecurity, Network Security, Information Security, Cryptography",
+      description:
+        "The Cybersecurity Lab is focused on the development of cybersecurity algorithms and their applications in various domains such as network security, information security, and cryptography. The lab is equipped with high-end computing resources and network security tools.",
+      image: "/images/labs/cyber.jpg",
+      equipments: {
+        equipments: [
+          "Wireshark",
+          "Nmap",
+          "Metasploit",
+          "Burp Suite",
+          "Kali Linux",
+          "Parrot Security OS",
+          "BackBox",]
+        },
+    }
   ]
   return (
     <div>
