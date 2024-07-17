@@ -355,6 +355,14 @@ export default function DepartmentCommittees() {
       <li>-Dr. Swaminathan R</li></th>
       <th>-</th>
     </tr>
+    <tr>
+      <th scope="row">DOC - Department Outreach Committee</th>
+      <th> This committee disseminates information related to activities within the department to all concerned within and outside the institute</th>
+      <th><li>-Member 1</li>
+      <li>-Member 2</li>
+      <li>-Member 3</li></th>
+      <th> ee_outreach.ac.in </th>
+    </tr>
   </tbody>
 </table>
 
