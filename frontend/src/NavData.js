@@ -49,12 +49,12 @@ const navs = {
     "Research Areas": "/research",
     Projects: "/projects",
     "Recent Publications": {
-     //  2014: "https://drive.google.com/file/d/1bhcsUNNprMQWvOudCRydlQem3SrqC6uE/view?usp=drive_link",
-     // 2015: "https://drive.google.com/file/d/14p1cSxLUf1T34CS6O5tq_ldWfiSfXbJw/view?usp=drive_link",
-    //  2016: "https://drive.google.com/file/d/1YwQpv_7aSAkH9IEXIcBAIdSiwetO1hce/view?usp=drive_link",
-    //  2017: "https://drive.google.com/file/d/1Ko1KkCOytsKazm3zjvB7S1W2wc2wVpp6/view?usp=drive_link",
-    //  2018: "https://drive.google.com/file/d/1HebJ78hV2jKNL0rji-m9OV5oBo2UwMvu/view?usp=drive_link",
-    //  2019: "https://drive.google.com/file/d/1PJRvrW1mYMiH_c2mc5c29X7m7HWg0C1d/view?usp=drive_link",
+      //  2014: "https://drive.google.com/file/d/1bhcsUNNprMQWvOudCRydlQem3SrqC6uE/view?usp=drive_link",
+      // 2015: "https://drive.google.com/file/d/14p1cSxLUf1T34CS6O5tq_ldWfiSfXbJw/view?usp=drive_link",
+      //  2016: "https://drive.google.com/file/d/1YwQpv_7aSAkH9IEXIcBAIdSiwetO1hce/view?usp=drive_link",
+      //  2017: "https://drive.google.com/file/d/1Ko1KkCOytsKazm3zjvB7S1W2wc2wVpp6/view?usp=drive_link",
+      //  2018: "https://drive.google.com/file/d/1HebJ78hV2jKNL0rji-m9OV5oBo2UwMvu/view?usp=drive_link",
+      //  2019: "https://drive.google.com/file/d/1PJRvrW1mYMiH_c2mc5c29X7m7HWg0C1d/view?usp=drive_link",
       2020: "https://drive.google.com/file/d/1AdItcw39RjYkTghByPXJagN4d9G5jEg_/view?usp=drive_link",
       2021: "https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
       2022: "https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link",
@@ -74,7 +74,6 @@ const navs = {
   },
 
   Academics: {
-
     Courses: {
       "B. Tech. (before 2023)": "/courses/BTech",
       "B. Tech. (after 2023)": "/courses/BTech/new",
@@ -83,8 +82,9 @@ const navs = {
     },
 
     Laboratories: {
-      UG: "/labs/ug",
       Research: "/labs/pg",
+      PG: "/labs/postgraduate", /////// temoporary  ,
+      UG: "/labs/ug",
     },
   },
   Achievements: {
@@ -92,12 +92,12 @@ const navs = {
     "Faculty Recognitions": "/achievements/faculty",
     "Student Achievements": "/achievements/students",
   },
-  Activities:{
-    "EE Student's Association (EESA)" : "/activities/eesa",
-    'Interesting reads': "/activities/reads",
-    'Upcoming Seminars' : "/activities/seminars",
-    'Upcoming Activities' : "/activities/upcoming"
-  }
-};
+  Activities: {
+    "EE Student's Association (EESA)": "/activities/eesa",
+    "Interesting reads": "/activities/reads",
+    "Upcoming Seminars": "/activities/seminars",
+    "Upcoming Activities": "/activities/upcoming",
+  },
+}
 
 export default navs
