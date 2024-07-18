@@ -315,17 +315,17 @@ export default function DepartmentCommittees() {
   <tbody>
     <tr>
       <th scope="row">DUGC - Department Under Graduate Committee</th>
-      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of individual UG students Revising the UG curriculum, assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  UG students. The committee regularly revises the UG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
       <th><li>-Dr. Vijay A S (Convener)</li>
       <li>-Dr. Swaminathan R</li>
       <li>-Prof. Srivathsan Vasudevan</li>
-      <li>-Mr. Rishabh Patil (3rd year EE)</li></th>
+      </th>
       <th>dugcee@iiti.ac.in</th>
     </tr>
     <tr>
       <th scope="row">DPGC - Department Post Graduate Committee</th>
-      <th>The department has a DPGC to deal with all issues related to PG students, academic programs, PG curriculum and courses, academic performance, academic indiscipline, academic malpractices of individual PG students Revising the PG curriculum, assessment of the academic programs and suggests appropriate revisions or modifications.</th>
-      <th><li>-Prof. Saptarshi Ghosh (Convener)</li>
+      <th>The department has a DPGC to deal with all issues related to PG students, academic programs, PG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  PG students. The committee regularly revises the PG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Dr. Saptarshi Ghosh (Convener)</li>
       <li>-Prof. Amod C. Umarikar</li>
       <li>-Prof. Santosh Kumar Vishvakarma</li>
       </th>
@@ -335,8 +335,8 @@ export default function DepartmentCommittees() {
       <th scope="row">DWC - Department Website Committee</th>
       <th>The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website</th>
       <th><li>-Dr. Vijay A S (Convener)</li>
-      <li>-Prof. Saptarshi Ghosh</li>
-      <li>-Prof. Sumit Gautam</li></th>
+      <li>-Dr. Saptarshi Ghosh</li>
+      <li>-Dr. Sumit Gautam</li></th>
       <th>website.ee@iiti.ac.in</th>
     </tr>
     <tr>
