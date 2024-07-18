@@ -189,7 +189,7 @@ const MobileNavbar = () => {
         >
           <Link to={"/"}>
             <Box>
-              <img src="/Images/logo/blue_logo.png" alt="logo" width="50" />
+              <img src="/Images/logo/IITI_Logo_Refined.png" alt="logo" width="50" />
             </Box>
           </Link>
           <Link to={"/"}>

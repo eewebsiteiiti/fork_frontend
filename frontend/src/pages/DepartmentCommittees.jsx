@@ -188,17 +188,14 @@ export default function DepartmentCommittees() {
 
         </Container> */}
 
-<div class="container text-center" style={{
+{/* <div class="container text-center" style={{
   // margin:"1%"
   marginTop:"0.5%",
   
 }}>
-<link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      />
-  <div class="row ">
-    <div class="col row1 col1">
+
+  <div class="row rowdc">
+    <div class="col row1 col1" >
       COMMITTEE NAME
     </div>
     <div class="col row1">
@@ -300,7 +297,58 @@ export default function DepartmentCommittees() {
     </div>
     <div class="col row5">-</div>
   </div>
-</div>
+</div> */}
+<link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr className="rowdc">
+      <th scope="col"className="centerify">COMMITTEE NAME</th>
+      <th scope="col"className="centerify">FUNCTION</th>
+      <th scope="col"className="centerify">MEMBERS</th>
+      <th scope="col"className="centerify">EMAIL ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">DUGC - Department Under Graduate Committee</th>
+      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of individual UG students Revising the UG curriculum, assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Dr. Vijay A S (Convener)</li>
+      <li>-Dr. Swaminathan R</li>
+      <li>-Prof. Srivathsan Vasudevan</li>
+      <li>-Mr. Rishabh Patil (3rd year EE)</li></th>
+      <th>dugcee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DPGC - Department Post Graduate Committee</th>
+      <th>The department has a DPGC to deal with all issues related to PG students, academic programs, PG curriculum and courses, academic performance, academic indiscipline, academic malpractices of individual PG students Revising the PG curriculum, assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Prof. Saptarshi Ghosh (Convener)</li>
+      <li>-Prof. Amod C. Umarikar</li>
+      <li>-Prof. Santosh Kumar Vishvakarma</li>
+      </th>
+      <th>dpgcee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DWC - Department Website Committee</th>
+      <th>The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website</th>
+      <th><li>-Dr. Vijay A S (Convener)</li>
+      <li>-Prof. Saptarshi Ghosh</li>
+      <li>-Prof. Sumit Gautam</li></th>
+      <th>website.ee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DSC - Department Space Committee</th>
+      <th>The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same</th>
+      <th><li>-Dr. Swaminathan R. (Convener)</li>
+      <li>-Prof. Srivathsan Vasudevan</li>
+      <li>-Prof. Sumit Gautam</li></th>
+      <th>@fat</th>
+    </tr>
+  </tbody>
+</table>
 
       </div>
     </>

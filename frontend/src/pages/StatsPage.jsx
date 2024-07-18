@@ -115,7 +115,8 @@ export default function StatsPage() {
           </>
         ) : (
           <></>
-        )}
+        )} 
+        
         {param?.program === "Patents" ? (
           <>
             <Header
@@ -123,7 +124,7 @@ export default function StatsPage() {
               title="Statistics"
             />
             <center>
-              <img alt="not_found" width="50%" src="/Images/patent_data.png" />
+              <img alt="not_found" width="50%" src="/Images/patent_data3.png" />
             </center>
             <Typography textAlign="center" fontWeight="bold" variant="h1">
               Patents
