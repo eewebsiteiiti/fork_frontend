@@ -15,7 +15,8 @@ export default function Reads() {
   return (
     <>
       <Navbar />
-      <Header title={reads.title} />
+      <Header title={reads.title}
+         description ={reads.description} />
       <br/>
       <br/>
       <Container>
@@ -25,11 +26,11 @@ export default function Reads() {
                   <TableCell></TableCell>
                       <TableCell></TableCell>
                       <TableCell></TableCell>
-                      <TableCell  ><Typography fontWeight={600} color = "primary">By Rakshit Jangid 2022 BTech</Typography></TableCell>
+                      <TableCell  ><Typography fontWeight={600} color = "primary">By Rakshit Jangid 2022 B.Tech.</Typography></TableCell>
                       <TableCell></TableCell>
                       <TableCell></TableCell>
                       <TableCell></TableCell>
-                      <TableCell ><Typography fontWeight={600} color = "primary">By Tejas Chaudhari 2022 BTech</Typography></TableCell>
+                      <TableCell ><Typography fontWeight={600} color = "primary">By Tejas Chaudhari 2022 B.Tech.</Typography></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell></TableCell>

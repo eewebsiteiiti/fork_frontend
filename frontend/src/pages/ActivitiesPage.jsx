@@ -12,13 +12,27 @@ export default function ActivitiesPage() {
       <Header title={activity.title} />
       <Container sx={{ my: 5 }}>
         <Grid item>
-          <>
-            <Grid item sm={6} md={4} my={3}>
-              <a rel="noreferrer" href target="_blank">
-                <Event description title image day year date month time />
-              </a>
-            </Grid>
-          </>
+
+         
+                {/* <Grid item sm={6} md={4} my={3}>
+                  <a
+                    rel="noreferrer"
+                    href
+                    target="_blank"
+                  >
+                    <Event
+                      description
+                      title
+                      image
+                      day
+                      year
+                      date
+                      month
+                      time
+                    />
+                  </a>
+                </Grid> */}
+
         </Grid>
       </Container>
     </>

@@ -60,7 +60,7 @@ export const projects = {
 export const eesa = {
   title: "EESA: Electrical Engineering Student's Association",
   description:
-    "The Electrical Engineering Students' Association (EESA) unites undergraduates, postgraduates, PhD candidates, and alumni from the department, promoting collaborative culture. Our mission is to facilitate student coordination, cultivate valuable connections, and enhance the academic and social experience within the department and institute. EESA fosters a vibrant community through both academic support and enjoyable informal activities, creating a lively social atmosphere for all members.EESA organizes and executes informative trips to help students better understand the fundamentals and applications of electrical engineering.EESA also serves as a vital link between students and professors, facilitating project assignments and ensuring effective communication and collaboration throughout the project's lifecycle. Apart from academics, EESA organizes enjoyable informal activities like department trips, and cultural programs to foster a lively social atmosphere and instill a sense of community and belonging in its members.",
+    "The Electrical Engineering Students' Association (EESA) unites undergraduates, postgraduates, PhD candidates, and alumni from the department, promoting collaborative culture. Our mission is to facilitate student coordination, cultivate valuable connections, and enhance the academic and social experience within the department and institute. EESA fosters a vibrant community through both academic support and enjoyable informal activities, creating a lively social atmosphere for all members. EESA organizes and executes informative trips to help students better understand the fundamentals and applications of electrical engineering. EESA also serves as a vital link between students and professors, facilitating project assignments and ensuring effective communication and collaboration throughout the project's lifecycle. Apart from academics, EESA organizes enjoyable informal activities like department trips, and cultural programs to foster a lively social atmosphere and instill a sense of community and belonging in its members.",
   image: "/Images/header_images/eesa_logo.jpeg",
 };
 
@@ -128,7 +128,7 @@ export const activity = {
   // image: "/Images/header_images/committees.jpg",
 };
 export const seminar = {
-  title: "Upcoming Seminars",
+  title: "Upcoming Seminars / Talks",
   //description:
   //"The Department has several committees to ensure smooth functioning of various activities.",
   // image: "/Images/header_images/committees.jpg",
@@ -136,11 +136,10 @@ export const seminar = {
 
 export const reads = {
   title: "Interesting reads",
-  //description:
-  //"The Department has several committees to ensure smooth functioning of various activities.",
+  description: "Some articles by the students....",
   // image: "/Images/header_images/committees.jpg",
 };
 
 export const fauna = {
-  title : "Glimpses of Life at IIT Indore",
+  title: "Glimpses of Life at IIT Indore",
 };
