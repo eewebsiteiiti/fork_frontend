@@ -82,7 +82,7 @@ export default function LabPage() {
         //   "NVIDIA Jetson TX2",
         //   "NVIDIA Jetson TX1",
         //   "NVIDIA Jetson TK1"]
-        },
+        // },
     },
     {
       name: "Analog and Mixed Signal IC design Laboratory",
