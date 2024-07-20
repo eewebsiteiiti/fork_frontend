@@ -16,6 +16,7 @@ export default function HomePage() {
           <MobileNavbar />
           <Carousel />
         </section>
+
         <section className="news">
           <Events />
           <br /> <br />

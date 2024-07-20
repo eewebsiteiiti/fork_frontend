@@ -20,6 +20,16 @@ import {
   LinkedIn,
 } from "@mui/icons-material"
 
+const footerStats = {
+  Faculty: 22,
+  StudentsGraduated: 1050,
+  Publications: 1500,
+  Placement: 94,
+  Patents: 26,
+  Projects: 100,
+  ProjectGrants: 32.6,
+  GoogleScholarCitations: 45000,
+}
 const Footer = () => {
   return (
     <>
@@ -61,7 +71,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white ">
-                    <CountUp end={21} duration={2}>
+                    <CountUp end={footerStats.Faculty} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -88,7 +98,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={1115} duration={2}>
+                    <CountUp end={footerStats.StudentsGraduated} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -117,7 +127,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={1500} duration={2}>
+                    <CountUp end={footerStats.Publications} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -144,7 +154,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={95} duration={2}>
+                    <CountUp end={footerStats.Placement} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -171,7 +181,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={24} duration={2}>
+                    <CountUp end={footerStats.Patents} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -198,7 +208,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={100} duration={2}>
+                    <CountUp end={footerStats.Projects} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -225,7 +235,7 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={32} duration={2}>
+                    <CountUp end={footerStats.ProjectGrants} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -252,7 +262,10 @@ const Footer = () => {
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={45000} duration={2}>
+                    <CountUp
+                      end={footerStats.GoogleScholarCitations}
+                      duration={2}
+                    >
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -292,7 +305,7 @@ const Footer = () => {
                   <br /> IIT Indore
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
-                  Contact: Head, Electrical Engineering Silicon Building,
+                  Contact: Head, Electrical Engineering, Silicon Building,
                   <br />
                   Pod 1A, Indian Institute of Technology Indore Khandwa Road,
                   <br />
@@ -541,7 +554,7 @@ const Footer = () => {
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          Books
+                          Books Published
                         </Typography>
                       </a>
 
@@ -632,7 +645,7 @@ const Footer = () => {
                   </Box>
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
                     <Typography varient="p" sx={{ color: "white" }}>
-                      Links
+                      Connect
                     </Typography>
                     <Box>
                       <a

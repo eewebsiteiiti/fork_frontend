@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import axios from "axios"
 import Dates from "./Dates"
 import { api } from "../../Api"
-import { Container, Typography, Grid } from "@mui/material"
+import { Container, Typography, Grid, Button } from "@mui/material"
 export default function Events() {
   const [event, setEvent] = React.useState([])
   const [isError, setIsError] = React.useState([])
@@ -47,6 +47,12 @@ export default function Events() {
   return (
     <div>
       <Container sx={{ my: 5 }}>
+        {/* link to old website  */}
+        <section>
+          <a href="https://ee.iiti.ac.in" target="_blank" rel="noreferrer">
+            <Button variant="outlined">Link to old Website</Button>
+          </a>
+        </section>
         <Grid
           container
           justifyContent="space-around"
