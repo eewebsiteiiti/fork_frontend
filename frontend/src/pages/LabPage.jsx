@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { api } from "../Api"
 import Header from "../components/Header"
-import { ug, pg } from "../HeaderData"
+import { ug, pg, postgraduate } from "../HeaderData"
 import Navbar from "../components/BodyNavbar/BodyNavbar"
 import { image_api } from "../Api"
 
@@ -24,120 +24,48 @@ export default function LabPage() {
       setLabs("Not Available")
     }
   }, [isError, params])
+
   const PostgraduateData = [
     {
       name: "Digital Circuit Design Laboratory",
-      // person: "Prof. Anil Kumar Vuppala",
-      // link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
-      // keywords: "Machine Learning, Deep Learning, Computer Vision, NLP",
-      description:
-        "Functional and design parameter analysis of basic digital circuits, design and analysis of standard cells for combinational and sequential circuits and design the digital blocks using HDL (Verilog/VHDL) to generate its DSII.",
-      // image: "/images/labs/ml.jpg",
+
+      image: "/Images/Labs/DigitalCircuitDesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Functional and design parameter analysis of basic digital circuits, design and analysis of standard cells for combinational and sequential circuits and design the digital blocks using HDL (Verilog/VHDL) to generate its DSII.",
+        ],
+      },
       equipments: {
-      // //   equipments: [
-      // //     "NVIDIA DGX-1",
-      // //     "NVIDIA DGX-2",
-      // //     "NVIDIA RTX 8000",
-      // //     "NVIDIA RTX 6000",
-      // //     "NVIDIA RTX 2080 Ti",
-      // //     "NVIDIA RTX 2080 Super",
-      // //     "NVIDIA RTX 2070 Super",
-      // //     "NVIDIA RTX 2060 Super",
-      // //     "NVIDIA GTX 1080 Ti",
-      // //     "NVIDIA GTX 1080",
-      // //     "NVIDIA GTX 1070",
-      // //     "NVIDIA GTX 1060",
-      // //     "NVIDIA GTX 1050 Ti",
-      // //     "NVIDIA GTX 1050",
-      // //     "NVIDIA Jetson Nano",
-      // //     "NVIDIA Jetson Xavier NX",
-      // //     "NVIDIA Jetson Xavier AGX",
-      // //     "NVIDIA Jetson TX2",
-      // //     "NVIDIA Jetson TX1",
-      // //     "NVIDIA Jetson TK1",
-      // //     "NVIDIA Jetson Nano",
-      //   ],
+        equipments: [],
       },
     },
-
     {
       name: "System on Programmable Chip Design Laboratory",
-      // person: "Prof. Anil Kumar Vuppala",
-      // link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
-      // keywords: "Embedded Systems, IoT, Robotics, Computer Vision",
-      description:
-        "Building a Zynq-700 processor design in the Vivado IDE, designing a Microblaze processor using Xilinx Vivado, interfacing of designed Microblaze with available peripherals and design of custom peripherals using HDL. ",
-      image: "/images/labs/embedded.jpg",
+
+      image: "/Images/Labs/SystemonProgrammableChipDesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Building a Zynq-700 processor design in the Vivado IDE, designing a Microblaze processor using Xilinx Vivado, interfacing of designed Microblaze with available peripherals and design of custom peripherals using HDL.",
+        ],
+      },
       equipments: {
-        // equipments: [
-          // "Raspberry Pi 4",
-          // "Raspberry Pi 3",
-          // "Raspberry Pi Zero",
-          // "Arduino Uno",
-          // "Arduino Mega",
-          // "Arduino Nano",
-          // "Arduino Due",
-          // "NVIDIA Jetson Nano",
-          // "NVIDIA Jetson Xavier NX",
-          // "NVIDIA Jetson Xavier AGX",
-          // "NVIDIA Jetson TX2",
-          // "NVIDIA Jetson TX1",
-          // "NVIDIA Jetson TK1"]
-        },
+        equipments: [],
+      },
     },
     {
       name: "Analog and Mixed Signal IC design Laboratory",
-      // person: "Prof. Anil Kumar Vuppala",
-      // link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
-      // keywords: "Data Science, Big Data, Data Analytics, Data Mining",
       description:
-        "Switches, active resistors, current sources, current mirrors, current and voltage sources,Wilson and Widlar current mirrors, basic bipolar and CMOS process technology, D-A and A-D converters, filter design considerations. CMOS based differential and operational amplifiers, multipliers, modulators, quasi differential amplifier, errors due to mismatch, replication principle, qualitative analysis, common mode response, frequency response, noise performance of differential amplifiers.",
-      image: "/images/labs/data.jpg",
+        "The lab is equipped with high-end computing resources and software tools for the design and analysis of digital signal processing algorithms. The lab is used for the implementation of various signal processing algorithms such as filtering, spectral analysis, and image processing.",
+      image: "/Images/Labs/AnalogandMixedSignalICdesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Switches, active resistors, current sources, current mirrors, current and voltage sources,Wilson and Widlar current mirrors, basic bipolar and CMOS process technology, D-A and A-D converters, filter design considerations. CMOS based differential and operational amplifiers, multipliers, modulators, quasi differential amplifier, errors due to mismatch, replication principle, qualitative analysis, common mode response, frequency response, noise performance of differential amplifiers.",
+        ],
+      },
       equipments: {
-        // equipments: [
-        //   "NVIDIA DGX-1",
-        //   "NVIDIA DGX-2",
-        //   "NVIDIA RTX 8000",
-        //   "NVIDIA RTX 6000",
-        //   "NVIDIA RTX 2080 Ti",
-        //   "NVIDIA RTX 2080 Super",
-        //   "NVIDIA RTX 2070 Super",
-        //   "NVIDIA RTX 2060 Super",
-        //   "NVIDIA GTX 1080 Ti",
-        //   "NVIDIA GTX 1080",
-        //   "NVIDIA GTX 1070",
-        //   "NVIDIA GTX 1060",
-        //   "NVIDIA GTX 1050 Ti",
-        //   "NVIDIA GTX 1050",
-        //   "NVIDIA Jetson Nano",
-        //   "NVIDIA Jetson Xavier NX",
-        //   "NVIDIA Jetson Xavier AGX",
-        //   "NVIDIA Jetson TX2",
-        //   "NVIDIA Jetson TX1",
-        //   "NVIDIA Jetson TK1",
-        //   "NVIDIA Jetson Nano",
-        // ],
+        equipments: [],
       },
     },
-    // {
-    //   name: "Cybersecurity Lab",
-    //   person: "Prof. Anil Kumar Vuppala",
-    //   link: "https://www.iiit.ac.in/people/faculty/anilkumarv/",
-    //   keywords: "Cybersecurity, Network Security, Information Security, Cryptography",
-    //   description:
-    //     "The Cybersecurity Lab is focused on the development of cybersecurity algorithms and their applications in various domains such as network security, information security, and cryptography. The lab is equipped with high-end computing resources and network security tools.",
-    //   image: "/images/labs/cyber.jpg",
-    //   equipments: {
-    //     equipments: [
-    //       "Wireshark",
-    //       "Nmap",
-    //       "Metasploit",
-    //       "Burp Suite",
-    //       "Kali Linux",
-    //       "Parrot Security OS",
-    //       "BackBox",]
-    //     },
-    // }
   ]
   return (
     <div>
@@ -488,216 +416,133 @@ export default function LabPage() {
       )}
       {params.type === "postgraduate" ? (
         <>
-          {" "}
-          <>
-            <>
-              <Header
-                title="PG Labs"
-                description={pg.description}
-                image={pg.image}
-              />
-              <br /> <br />
-              <Container margin={5}>
+          <Header
+            title={postgraduate.title}
+            description={postgraduate.description}
+            image={postgraduate.image}
+          />
+          <br />
+          <br />
+          <Container margin={5}>
+            <Grid
+              container
+              justifyContent="space-between"
+              direction="row"
+              alignItems="top"
+            >
+              <Grid item xs="11" md="3">
                 <Grid
                   container
-                  justifyContent="space-between"
-                  direction="row"
+                  justifyContent="center"
+                  direction="column"
                   alignItems="top"
+                  sx={{
+                    backgroundColor: "secondary.main",
+                    color: "white",
+                    borderRadius: 1,
+                  }}
+                  spacing={2}
+                  margin={1}
                 >
-                  <Grid item xs="11" md="3">
-                    <Grid
-                      container
-                      justifyContent="center"
-                      direction="column"
-                      alignItems="top"
-                      sx={{
-                        backgroundColor: "secondary.main",
-                        color: "white",
-                        borderRadius: 1,
-                      }}
-                      spacing={2}
-                      margin={1}
-                    >
-                      <>
-                        {PostgraduateData?.map((item, key) => (
-                          <ButtonBase
-                            onClick={() => {
-                              setActive(key)
-                            }}
-                            sx={{
-                              padding: "3",
-                              borderBottom: "2px solid white",
-                            }}
+                  <>
+                    {PostgraduateData?.map((item, key) => (
+                      <ButtonBase
+                        onClick={() => {
+                          setActive(key)
+                        }}
+                        // sx={{padding:"3"}}
+                        sx={{ borderBottom: "2px solid white" }}
+                      >
+                        <Grid item padding={1} sx={{ textAlign: "center" }}>
+                          <Typography variant="h5" color="white">
+                            {item.name}
+                          </Typography>
+                        </Grid>
+                      </ButtonBase>
+                    ))}
+                  </>
+                </Grid>
+              </Grid>
+              <Grid item xs="12" md="8">
+                <Grid
+                  container
+                  justifyContent="center"
+                  direction="column"
+                  alignItems="top"
+                  // spacing = {2}
+                  padding={1}
+                >
+                  <>
+                    {PostgraduateData?.map((item, key) =>
+                      active === key ? (
+                        <>
+                          <Typography
+                            textAlign={"center"}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
                           >
-                            <Grid item padding={1} sx={{ textAlign: "center" }}>
-                              <Typography variant="h5" color="white">
-                                {item.name}
-                              </Typography>
-                            </Grid>
-                          </ButtonBase>
-                        ))}
-                      </>
-                    </Grid>
-                  </Grid>
-                  <Grid item xs="12" md="8">
-                    <Grid
-                      container
-                      justifyContent="center"
-                      direction="column"
-                      alignItems="top"
-                      // spacing = {2}
-                      padding={1}
-                    >
-                      <>
-                        {PostgraduateData?.map((item, key) =>
-                          active === key ? (
-                            <>
-                              <Typography
-                                textAlign={"center"}
-                                color="secondary.main"
-                                fontWeight={600}
-                                variant="h1"
-                              >
-                                {item.name}
-                              </Typography>
-                              <br />
-                              <br />
-                              <Grid
-                                item
-                                sx={{ textAlign: "left", fontWeight: "800" }}
-                              >
-                                <Typography variant="h5" color="secondary.main">
-                                  Prof. In-Charge:
-                                </Typography>
-                                <Typography variant="h3">
-                                  <a
-                                    href={`${item.link}`}
-                                    style={{ color: "black" }}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                  >
-                                    {item.person}
-                                  </a>
-                                </Typography>
-                              </Grid>
-                              <br />
-                              <Grid item sx={{ textAlign: "left" }}>
-                                <Typography variant="h5" color="secondary.main">
-                                  Research Keywords:
-                                </Typography>
-                                <Typography variant="p" fontWeight={500}>
-                                  {item.keywords}
-                                </Typography>
-                              </Grid>
-                              <br />
-                              <Typography
-                                textAlign={"center"}
-                                color="secondary.main"
-                                fontWeight={600}
-                                variant="h1"
-                              >
-                                About
-                              </Typography>
-                              <img
-                                src={`${image_api}${item.image}`}
-                                alt={item.image}
-                                width={"100%"}
-                                style={{ padding: 0 }}
-                              />
-                              <Grid item sx={{ textAlign: "left" }}>
-                                <Typography variant="p">
-                                  {item.description}
-                                </Typography>
-                              </Grid>
-
-                              {/* <Typography
-                              textAlign={"center"}
-                              mt={3}
-                              color="secondary.main"
-                              fontWeight={600}
-                              variant="h1"
-                            >
-                              Research Highlights
-                            </Typography>
-                            <Grid item sx={{ textAlign: "left" }}>
-                              {item.review ? (
-                                <>
-                                  {Object.keys(item.review)?.map((exp, i) => (
+                            {item.name}
+                          </Typography>
+                          <img
+                            // src={`${image_api}${item.image}`} when backend is ready and sending data
+                            src={item.image}
+                            alt={item.image}
+                            width={"100%"}
+                            style={{ padding: 0 }}
+                          />
+                          <Typography
+                            textAlign={"center"}
+                            mt={3}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            Experiments
+                          </Typography>
+                          <Grid item sx={{ textAlign: "left" }}>
+                            {item?.experiments ? (
+                              <>
+                                {item?.experiments["experiments"]?.map(
+                                  (exp, i) => (
                                     <>
-                                      <Grid item>
-                                        <strong>{exp}</strong>
-                                      </Grid>
-                                      <Grid item>
-                                        <ul>
-                                          {item?.review[exp]?.map(
-                                            (item2, key2) => (
-                                              <li
-                                                style={{
-                                                  listStyleType: "circle",
-                                                }}
-                                              >
-                                                <Typography variant="p">
-                                                  {item2}
-                                                </Typography>
-                                              </li>
-                                            )
-                                          )}
-                                        </ul>
-                                      </Grid>
-                                    </>
-                                  ))}
-                                </>
-                              ) : (
-                                <></>
-                              )}
-                            </Grid> */}
-                              <Typography
-                                textAlign={"center"}
-                                mt={3}
-                                color="secondary.main"
-                                fontWeight={600}
-                                variant="h1"
-                              >
-                                Equipment
-                              </Typography>
-                              {/* {item.equipments["equipments"][0]} */}
-                              {item?.equipments["equipments"]?.map((eq, j) => (
-                                <>
-                                  <Typography variant="p">• {eq}</Typography>
-                                  <br />
-                                </>
-                              ))}
-
-                              {/* .equipments["equipments"][0] */}
-                              {/* {labs?.map((item, key) => {
-                              <Grid item sx={{ textAlign: "left" }}>
-                                {item.equipments["equipments"]?.map((eq, j) => (
-                                  <>
-                                    <Grid item>{eq}dfdsbfhh</Grid>
-                                  </>
-                                ))} */}
-                              {/* {Object?.keys(labs?.equipments)?.map(
-                                  (item3, key3) => (
-                                    <>
-                                      <Grid item>{item3}</Grid>
+                                      <Grid item> • {exp}</Grid>
                                     </>
                                   )
-                                )} */}
-                              {/* </Grid>; */}
-                              {/* })} */}
-                            </>
-                          ) : (
-                            <></>
-                          )
-                        )}
-                      </>
-                    </Grid>
-                  </Grid>
+                                )}
+                              </>
+                            ) : (
+                              <></>
+                            )}
+                          </Grid>
+                          <Typography
+                            textAlign={"center"}
+                            mt={3}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            Equipment
+                          </Typography>
+                          <Grid item sx={{ textAlign: "left" }}>
+                            {item?.equipments["equipments"]?.map((eq, j) => (
+                              <>
+                                <Grid item> • {eq}</Grid>
+                              </>
+                            ))}
+                          </Grid>
+                        </>
+                      ) : (
+                        <></>
+                      )
+                    )}
+                  </>
                 </Grid>
-              </Container>
-              <br /> <br />
-            </>
-          </>
+              </Grid>
+            </Grid>
+          </Container>
+          <br />
+          <br />
         </>
       ) : (
         <></>

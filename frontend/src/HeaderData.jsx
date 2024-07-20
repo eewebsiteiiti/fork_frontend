@@ -74,15 +74,21 @@ export const research = {
 export const ug = {
   title: "UG LABS",
   description:
-    "The Department currently hosts around 8 undergraduate laboratories for students pursuing the Bachelor of Technology degree. The Laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learnt in class. These labs host modern equipment and facilities to familiarise students with industry-level practical skills.",
+    "The Department currently hosts 8 undergraduate laboratories for students pursuing the Bachelor of Technology degree. The Laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learnt in class. These labs host modern equipment and facilities to familiarise students with industry-level practical skills.",
   image: "/Images/header_images/labs.jpg",
 }
 
 export const pg = {
-  title: "PG LABS",
+  title: "REASEARCH LABS",
   description:
     "The Department currently hosts 14 Research Laboratories for students pursuing higher studies. The labs range across the spectrum areas of Electrical Engineering, from nano-electronics and microprocessors to power systems and smart grids.",
   image: "/Images/header_images/labs.jpg",
+}
+export const postgraduate = {
+  title: "PG LABS",
+  description:
+    "The Department currently hosts 3 postgraduate laboratories for students pursuing advanced degrees. The laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learned in class. These labs are equipped with modern equipment and facilities to familiarize students with industry-level practical skills.",
+  image: "/Images/header_images/mtech.JPG",
 }
 
 export const courses = {
@@ -102,7 +108,7 @@ export const booksAchievements = {
 export const facultyAchievements = {
   title: "Achievements of Faculty Members",
   description:
-    "some of many awards & recognitions received by the team of faculty members",
+    "Some of many awards & recognitions received by the team of faculty members",
 }
 
 export const studentAchievements = {
