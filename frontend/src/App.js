@@ -3,7 +3,7 @@ import theme from "./Theme"
 import Footer from "./components/HomePage/Footer"
 import HomePage from "./pages/HomePage"
 import { ThemeProvider } from "@mui/material/styles"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
 import AboutPage from "./pages/AboutPage"
 import PeoplePage from "./pages/PeoplePage"
 import GalleryPage from "./pages/GalleryPage"
@@ -25,7 +25,8 @@ function App() {
   return (
     <div className="App ">
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <HashRouter>
+        {/* <BrowserRouter/> */}
           <Routes>
             <Route path="" element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
@@ -42,10 +43,7 @@ function App() {
             <Route path="activities/flaura" element={<Fauna />} />
             <Route path="labs/:type" element={<LabPage />} />
             <Route path="courses/:program" element={<CoursePage />} />
-            <Route
-              path="courses/:program/:year/old"
-              element={<CoursePage />}
-            />
+            <Route path="courses/:program/:year/old" element={<CoursePage />} />
             <Route path="/courses/:program/new" element={<CourseNewPage />} />
             <Route path="/courses/:program/:year" element={<CourseNewPage />} />
             <Route path="/achievements/:achievement" element={<BooksPage />} />
@@ -57,7 +55,8 @@ function App() {
             />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
+        </HashRouter>
       </ThemeProvider>
     </div>
   )

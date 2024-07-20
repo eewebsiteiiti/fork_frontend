@@ -87,7 +87,7 @@ export const pg = {
 export const postgraduate = {
   title: "PG LABS",
   description:
-    "The Department currently hosts 3 postgraduate laboratories for students pursuing advanced degrees. The laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learned in class. These labs are equipped with modern equipment and facilities to familiarize students with industry-level practical skills.",
+    "The Department currently hosts 4 postgraduate laboratories for students pursuing advanced degrees. The laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learned in class. These labs are equipped with modern equipment and facilities to familiarize students with industry-level practical skills.",
   image: "/Images/header_images/mtech.JPG",
 }
 
