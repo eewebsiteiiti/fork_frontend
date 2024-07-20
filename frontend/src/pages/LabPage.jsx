@@ -40,6 +40,20 @@ export default function LabPage() {
       },
     },
     {
+      name: "Discrete Device Fabrication and Characterization Laboratory",
+
+      image:
+        "/Images/Labs/DiscreteDeviceFabricationandCharacterizationLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Functional and design parameter analysis of basic digital circuits, design and analysis of standard cells for combinational and sequential circuits and design the digital blocks using HDL (Verilog/VHDL) to generate its DSII.",
+        ],
+      },
+      equipments: {
+        equipments: [],
+      },
+    },
+    {
       name: "System on Programmable Chip Design Laboratory",
 
       image: "/Images/Labs/SystemonProgrammableChipDesignLaboratory.jpg",
