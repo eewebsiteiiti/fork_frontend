@@ -62,9 +62,11 @@ export default function AboutUs() {
                     Optoelectronics, Microwave and Satellite Communication,
                     Internet of Things (IoT) Networks, Design of Photovoltaic
                     systems, Structural power systems, Design and Analysis of
-                    Communication Networks, etc. The faculty are also engaged in
-                    teaching courses for the interdisciplinary programs in
-                    Electric Vehicle, Defence technology.
+                    Communication Networks, etc. The faculty are also engaged 
+                    in teaching courses for the interdisciplinary programs in 
+                    electric vehicles and futuristic defense and space technologies 
+                    and tailored executive post graduate programs for industry. Some 
+                    of these are in collaborations with IIM Indore, RRCAT and MCTE Mhow.
                   </Typography>
                 </Grid>
                 <Grid
