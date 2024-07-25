@@ -140,7 +140,7 @@ class GalleryPage extends React.Component {
           source: "Images/flaura_fauna/IITI_Owl_Guest_House.JPG",
         },
         {
-          source: "Images/flaura_fauna/IITI_Peacock.JPG",
+          source: "Images/flaura_fauna/IITI_peacock.JPG",
         },
         {
           source: "Images/flaura_fauna/IITI_Plum_Headed.JPG",

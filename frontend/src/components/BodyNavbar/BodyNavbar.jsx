@@ -270,7 +270,7 @@ export default function Navbar() {
                 </div>
               </Link>
               <img
-                src="/Images/logo/ee_logo.jpg"
+                src="/Images/logo/EE_Logo.jpg"
                 alt="logo_png"
                 width="80px"
                 style={{ "margin-left": "auto" }}

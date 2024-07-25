@@ -78,7 +78,7 @@ export default function AboutUs() {
                 >
                   <img
                     className="about-img"
-                    src="/Images/about.jpg"
+                    src="/Images/about.JPG"
                     alt=""
                     width="100%"
                     style={{ position: "relative" }}

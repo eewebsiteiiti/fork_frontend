@@ -32,7 +32,7 @@ export default function Navbar() {
               </Link>
               {/* <img src={EE_LOGO} height={"100%"} width={"100%"}/> */}
               <img
-                src="/Images/logo/ee_logo.jpg"
+                src="/Images/logo/EE_Logo.jpg"
                 alt="logo_png"
                 width="100px"
                 style={{ "margin-left": "auto" }}

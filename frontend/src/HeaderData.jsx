@@ -68,21 +68,21 @@ export const research = {
   title: "Research",
   description:
     "In line with the vision of the pursuit of excellence, the Department actively engages in cutting-edge research in the field of Electronics, Electrical and Communcation Engineering. We strive to develop a vibrant research culture with strong industry-alumni-academia connects.",
-  image: "/Images/header_images/research.jpg",
+  image: "/Images/header_images/research.JPG",
 }
 
 export const ug = {
   title: "UG LABS",
   description:
     "The Department currently hosts 8 undergraduate laboratories for students pursuing the Bachelor of Technology degree. The Laboratory courses supplement the theoretical courses and provide students with practical applications of the concepts learnt in class. These labs host modern equipment and facilities to familiarise students with industry-level practical skills.",
-  image: "/Images/header_images/labs.jpg",
+  image: "/Images/header_images/labs.JPG",
 }
 
 export const pg = {
   title: "REASEARCH LABS",
   description:
     "The Department currently hosts 14 Research Laboratories for students pursuing higher studies. The labs range across the spectrum areas of Electrical Engineering, from nano-electronics and microprocessors to power systems and smart grids.",
-  image: "/Images/header_images/labs.jpg",
+  image: "/Images/header_images/labs.JPG",
 }
 export const postgraduate = {
   title: "PG LABS",

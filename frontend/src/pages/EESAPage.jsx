@@ -47,7 +47,7 @@ class EESAPage extends React.Component {
           source: "/Images/eesa/eesa2.jpg",
         },
         {
-          source: "/Images/eesa/eesa15.JPG",
+          source: "/Images/eesa/eesa15.jpg",
         },
         {
           source: "/Images/eesa/eesa3.jpg",
@@ -71,13 +71,13 @@ class EESAPage extends React.Component {
           source: "/Images/eesa/eesa5.jpg",
         },
         {
-          source: "/Images/eesa/eesa4.JPG",
+          source: "/Images/eesa/eesa4.jpg",
         },
         {
-          source: "/Images/eesa/eesa12.jpg",
+          source: "/Images/eesa/eesa12.JPG",
         },
         {
-          source: "/Images/eesa/eesa13.jpg",
+          source: "/Images/eesa/eesa13.JPG",
         },
         {
           source: "/Images/eesa/eesa14.jpg",
@@ -89,7 +89,7 @@ class EESAPage extends React.Component {
           source: "/Images/eesa/eesa17.jpg",
         },
         {
-          source: "/Images/eesa/eesa18.jpg",
+          source: "/Images/eesa/eesa18.jpeg",
         },
 
 
