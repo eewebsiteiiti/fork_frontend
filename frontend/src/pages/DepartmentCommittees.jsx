@@ -361,7 +361,7 @@ export default function DepartmentCommittees() {
       <th><li>-Member 1</li>
       <li>-Member 2</li>
       <li>-Member 3</li></th>
-      <th> ee_outreach.ac.in </th>
+      <th> ee_outreach@iiti.ac.in </th>
     </tr>
   </tbody>
 </table>
