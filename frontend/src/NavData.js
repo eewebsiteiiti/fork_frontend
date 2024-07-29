@@ -31,7 +31,6 @@ const navs = {
     },
 
     "B. Tech. students": {
-      // 2020: "/people/BTech/2020",
       2021: "/people/BTech/2021",
       2022: "/people/BTech/2022",
       2023: "/people/BTech/2023",
@@ -42,7 +41,8 @@ const navs = {
       2016: "/people/Alumni/2016",
       2017: "/people/Alumni/2017",
       2018: "/people/Alumni/2018",
-      // 2019: "/people/BTech/2019",
+      2019: "/people/BTech/2019",
+      2020: "/people/BTech/2020",
     },
   },
   Research: {
@@ -87,9 +87,12 @@ const navs = {
       UG: "/labs/ug",
     },
     Timetable: {
-      "B. Tech. (4th yr) & PG-PHD": "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
-      "B. Tech. (2nd & 3rd yr)" : "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
-      "Time slots" : "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk"
+      "B. Tech. (4th yr) & PG-PHD":
+        "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
+      "B. Tech. (2nd & 3rd yr)":
+        "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
+      "Time slots":
+        "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk",
     },
   },
   Achievements: {
