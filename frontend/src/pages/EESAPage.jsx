@@ -35,7 +35,7 @@ class EESAPage extends React.Component {
       layout: this.getWidth(this.state.innerWidth),
       photos: [
         {
-          source: "Images/gallery/Tesla_Coil.jpeg",
+          source: "/Images/gallery/Tesla_Coil.jpeg",
         },
         {
           source: "/Images/eesa/eesa.JPG",
