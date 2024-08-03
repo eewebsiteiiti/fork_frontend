@@ -59,7 +59,7 @@ const navs = {
       2021: "https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
       2022: "https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link",
       2023: "https://drive.google.com/file/d/1A6hnS8lyZG3yE_M9uNd6CsRTGYljM3_a/view?usp=drivesdk",
-      2024: "https://drive.google.com/file/d/1A69R_pPSK4CsZG5jy3TOd36eJe8JXBHp/view?usp=drivesdk",
+      2024: "https://drive.google.com/file/d/1zRiBxQpUkRS0zG37ev_LVGd2oC0k8YDs/view?usp=drivesdk",
     },
     Stats: {
       Degrees: "/research/stats/Students",
