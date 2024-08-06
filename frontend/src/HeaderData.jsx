@@ -101,20 +101,20 @@ export const courses = {
 export const booksAchievements = {
   title: "Books Published ",
   description:
-    "The faculty are actively engaged in publishing books & monographs in their respective domains",
+    "The faculty are actively engaged in publishing books & monographs in their respective domains.",
   image: "/Images/header_images/books.jpg",
 }
 
 export const facultyAchievements = {
   title: "Achievements of Faculty Members",
   description:
-    "Some of many awards & recognitions received by the team of faculty members",
+    "Some of many awards & recognitions received by the team of faculty members.",
 }
 
 export const studentAchievements = {
   title: "Student Achievements",
   description:
-    "A non-exhaustive list of several accolades won by the students  of the department over the years",
+    "A non-exhaustive list of several accolades won by the students  of the department over the years.",
 }
 
 export const stats = {
