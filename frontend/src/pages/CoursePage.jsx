@@ -59,14 +59,14 @@ export default function CoursePage() {
         <Container sx={{ py: 2 }}>
           <br />
           <a
-            href="https://academic.iiti.ac.in/Document/new2023/2023-July-UG-Rules+Policies+Curriculum+Syllabi-of-Courses%2023%20July%202023.pdf"
+            href="https://academic.iiti.ac.in/New_student/2024/2024-July-UG-Rules+Policies+Curriculum+Syllabi-of-Courses%20dated%2020.07.2024%20-%20Copy.pdf"
             target="_blank"
             rel="noreferrer"
           >
             <Typography variant="h4">👉Academics @ IIT Indore (UG)</Typography>
           </a>
           <a
-            href="https://academic.iiti.ac.in/Document/new2023/2023-July-PG-PhD-Rules+Policies+Curriculum+Syllabi-of-Courses%2029%20August%202023.pdf"
+            href="https://academic.iiti.ac.in/Admission/2024-July-PG-PhD-Rules+Policies+Curriculum+Syllabi-of-Courses%2022%20July%202024_to%20upload.pdf"
             target="_blank"
             rel="noreferrer"
           >
