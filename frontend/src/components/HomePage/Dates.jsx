@@ -9,12 +9,13 @@ export default function Dates(props) {
       <Card
         sx={{
           width: "240px",
-          height:"150px",
+          height:"180px",
+          // height:"auto",
           borderRight: 3,
           borderTop: 3,
-          whiteSpace: "nowrap",
-          overflow:"hidden",
-          textOverflow: "ellipsis",
+          // whiteSpace: "nowrap",
+          // overflow:"hidden",
+          // textOverflow: "ellipsis",
           borderRadius: 0,
           borderColor: "primary.main",
         }}
