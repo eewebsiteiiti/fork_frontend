@@ -23,7 +23,9 @@ const BooksPage = () => {
       .get(`${api}/achievements/${params.achievement}/read`, {
         mode: "cors",
       })
-      .then((response) => setData(response.data))
+      .then((response) => {
+        const sortedData = response.data.sort((a, b) => a.year - b.year);
+        setData(sortedData);})
       .catch((error) => setIsError(error.message))
     if (!isError) {
       setData("Not Available")
@@ -31,7 +33,7 @@ const BooksPage = () => {
   }, [params, isError])
   return (
     <>
-      <Navbar />
+       <Navbar />
       {/* <MobileNavbar /> */}
       <Header
         title={`${
