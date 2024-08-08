@@ -1,6 +1,6 @@
 const navs = {
   About: {
-    Department: "/about",
+    "The Department": "/about",
     Gallery: "/gallery",
   },
   People: {
@@ -26,7 +26,6 @@ const navs = {
     "M. Tech. students": {
       // 2020: "/people/MTech/2020",
       // 2021: "/people/MTech/2021",
-      2022: "/people/MTech/2022",
       2023: "/people/MTech/2023",
     },
 
@@ -43,6 +42,7 @@ const navs = {
       2018: "/people/Alumni/2018",
       2019: "/people/Alumni/2019",
       2020: "/people/Alumni/2020",
+      2022: "/people/MTech/2022",
     },
   },
   Research: {
