@@ -1,6 +1,8 @@
 const navs = {
   About: {
-    'The Department': "/about",
+
+    "The Department": "/about",
+
     Gallery: "/gallery",
   },
   People: {
@@ -26,7 +28,6 @@ const navs = {
     "M. Tech. students": {
       // 2020: "/people/MTech/2020",
       // 2021: "/people/MTech/2021",
-      2022: "/people/MTech/2022",
       2023: "/people/MTech/2023",
     },
 
@@ -43,6 +44,7 @@ const navs = {
       2018: "/people/Alumni/2018",
       2019: "/people/Alumni/2019",
       2020: "/people/Alumni/2020",
+      2022: "/people/MTech/2022",
     },
   },
   Research: {
@@ -59,7 +61,7 @@ const navs = {
       2021: "https://drive.google.com/file/d/1P0OZHrPs0-XzbO8rDsOWS0Nf-iO6UPpd/view?usp=drive_link",
       2022: "https://drive.google.com/file/d/1aTR3rYd3fIdJvB7UR0oG7uuiQ_Z9Ih59/view?usp=drive_link",
       2023: "https://drive.google.com/file/d/1A6hnS8lyZG3yE_M9uNd6CsRTGYljM3_a/view?usp=drivesdk",
-      2024: "https://drive.google.com/file/d/1A69R_pPSK4CsZG5jy3TOd36eJe8JXBHp/view?usp=drivesdk",
+      2024: "https://drive.google.com/file/d/1zRiBxQpUkRS0zG37ev_LVGd2oC0k8YDs/view?usp=drivesdk",
     },
     Stats: {
       Degrees: "/research/stats/Students",
@@ -105,6 +107,7 @@ const navs = {
     "Interesting reads": "/activities/reads",
     "Upcoming Seminars": "/activities/seminars",
     "Upcoming Activities": "/activities/upcoming",
+    "Flaura & Fauna": "/activities/flaura",
   },
 }
 

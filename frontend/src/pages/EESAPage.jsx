@@ -1,31 +1,31 @@
-import React from "react";
-import Header from "../components/Header";
-import { eesa } from "../HeaderData";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import { Container } from "@mui/material";
-import Typography from "@mui/material/Typography";
-import Email from "@mui/icons-material/Email";
-import LazyLoad from "react-lazyload";
-import { ReactPhotoCollage } from "react-photo-collage";
-import Instagram from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import React from "react"
+import Header from "../components/Header"
+import { eesa } from "../HeaderData"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import { Container } from "@mui/material"
+import Typography from "@mui/material/Typography"
+import Email from "@mui/icons-material/Email"
+import LazyLoad from "react-lazyload"
+import { ReactPhotoCollage } from "react-photo-collage"
+import Instagram from "@mui/icons-material/Instagram"
+import YouTubeIcon from "@mui/icons-material/YouTube"
 
 class EESAPage extends React.Component {
   state = {
     innerWidth: window.innerWidth,
-  };
+  }
 
   componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-    this.resize();
+    window.addEventListener("resize", this.resize.bind(this))
+    this.resize()
   }
 
   resize() {
-    this.setState({ innerWidth: window.innerWidth });
+    this.setState({ innerWidth: window.innerWidth })
   }
   getWidth(innerWidth) {
-    if (innerWidth <= 700) return [2, 2, 1, 2, 1, 2];
-    return [3, 2, 3, 3, 2, 3,3];
+    if (innerWidth <= 700) return [2, 2, 1, 2, 1, 2]
+    return [3, 2, 3, 3, 2, 3, 3]
   }
   render() {
     const setting = {
@@ -34,6 +34,9 @@ class EESAPage extends React.Component {
 
       layout: this.getWidth(this.state.innerWidth),
       photos: [
+        {
+          source: "/Images/gallery/Tesla_Coil.jpeg",
+        },
         {
           source: "/Images/eesa/eesa.JPG",
         },
@@ -91,19 +94,16 @@ class EESAPage extends React.Component {
         {
           source: "/Images/eesa/eesa18.jpeg",
         },
-
-
-
       ],
       showNumOfRemainingPhotos: true,
-    };
+    }
 
     return (
       <div>
         <Navbar />
-        <Header 
+        <Header
           title={eesa.title}
-          description={eesa.description }
+          description={eesa.description}
           image={eesa.image}
         />
         <Container>
@@ -127,8 +127,14 @@ class EESAPage extends React.Component {
               </a>
             </div>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <Email sx={{ color: "primary.main", fontSize: "35px",marginLeft:"10px" }} /> Email:
-              &nbsp;
+              <Email
+                sx={{
+                  color: "primary.main",
+                  fontSize: "35px",
+                  marginLeft: "10px",
+                }}
+              />{" "}
+              Email: &nbsp;
               <a href="mailto:eesa@iiti.ac.in">
                 <Typography variant="p" color={"primary"}>
                   eesa@iiti.ac.in
@@ -145,8 +151,8 @@ class EESAPage extends React.Component {
           </div>
         </Container>
       </div>
-    );
+    )
   }
 }
 
-export default EESAPage;
+export default EESAPage

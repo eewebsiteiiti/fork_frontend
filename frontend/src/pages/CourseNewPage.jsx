@@ -79,7 +79,7 @@ export default function CourseNewPage() {
             href={
               param.program === "BTech"
                 ? "https://academic.iiti.ac.in/Document/2020-November-UG-Rules+Policies+Curriculum+Syllabi-of-Courses%205%20Nov%202020.pdf"
-                : "https://academic.iiti.ac.in/Document/2017-June-PG-Rules+Policies+Curriculum+Syllabi-of-Courses_19062017.pdf"
+                : "https://academic.iiti.ac.in/Document/2017-June-PG-+Policies+Curriculum+Syllabi-of-Courses_19062017.pdf"
             }
           >
             <Typography variant="h1" color="primary.main" textAlign="center">
