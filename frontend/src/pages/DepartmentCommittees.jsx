@@ -314,15 +314,6 @@ export default function DepartmentCommittees() {
   </thead>
   <tbody>
     <tr>
-      <th scope="row">DUGC - Department Under Graduate Committee</th>
-      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  UG students. The committee regularly revises the UG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
-      <th><li>-Dr. Vijay A S (Convener)</li>
-      <li>-Dr. Swaminathan R</li>
-      <li>-Prof. Srivathsan Vasudevan</li>
-      </th>
-      <th>dugcee@iiti.ac.in</th>
-    </tr>
-    <tr>
       <th scope="row">DPGC - Department Post Graduate Committee</th>
       <th>The department has a DPGC to deal with all issues related to PG students, academic programs, PG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  PG students. The committee regularly revises the PG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
       <th><li>-Dr. Saptarshi Ghosh (Convener)</li>
@@ -330,6 +321,15 @@ export default function DepartmentCommittees() {
       <li>-Prof. Santosh Kumar Vishvakarma</li>
       </th>
       <th>dpgcee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DUGC - Department Under Graduate Committee</th>
+      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  UG students. The committee regularly revises the UG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Dr. Vijay A S (Convener)</li>
+      <li>-Dr. Swaminathan R</li>
+      <li>-Prof. Srivathsan Vasudevan</li>
+      </th>
+      <th>dugcee@iiti.ac.in</th>
     </tr>
     <tr>
       <th scope="row">DWC - Department Website Committee</th>
