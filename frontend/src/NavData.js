@@ -1,6 +1,8 @@
 const navs = {
   About: {
+
     "The Department": "/about",
+
     Gallery: "/gallery",
   },
   People: {
