@@ -107,7 +107,7 @@ const navs = {
     "Interesting reads": "/activities/reads",
     "Upcoming Seminars": "/activities/seminars",
     "Upcoming Activities": "/activities/upcoming",
-    "Flaura & Fauna": "/activities/flaura",
+    "Flora & Fauna": "/activities/flaura",
   },
 }
 
