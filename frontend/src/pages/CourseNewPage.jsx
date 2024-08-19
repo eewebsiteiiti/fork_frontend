@@ -11,6 +11,7 @@ import {
   TableRow,
   TableCell,
 } from "@mui/material"
+import { CircularProgress } from "@mui/material"
 import { TableContainer } from "@mui/material"
 import { useParams } from "react-router-dom"
 import { api } from "../Api"
@@ -26,15 +27,15 @@ export default function CourseNewPage() {
   // const [elective, setElective] = useState()
 
   useEffect(() => {
-    setTimeout(() => {
-      axios
-        .get(`${api}/course/read/${param.program}/new`, { timeout: 50000 })
-        .then((response) => setData(response.data))
-        .catch((error) => setIsError(error.message))
-      if (!isError) {
-        setIsError("Not Available")
-      }
-    }, [param.program, isError])
+    // setTimeout(() => {
+    axios
+      .get(`${api}/course/read/${param.program}/new`, { timeout: 50000 })
+      .then((response) => setData(response.data))
+      .catch((error) => setIsError(error.message))
+    if (!isError) {
+      setIsError("Not Available")
+    }
+    // }, [param.program, isError])
   }, [param.program, isError])
   // useEffect(() => {
   //   setTimeout(() => {
@@ -176,7 +177,7 @@ export default function CourseNewPage() {
                         </div>
                       </>
 
-                    
+
                     ))}
 
                     {/* <Typography textAlign="center" fontWeight="bold" variant="h1">
@@ -343,7 +344,13 @@ export default function CourseNewPage() {
               </>
             ) : (
               // <LoadingPage />
-              <></>
+              <>
+                <Box sx={{ display: "flex", height: "40vh" }}>
+                  <Box sx={{ margin: 'auto' }}>
+                    <CircularProgress />
+                  </Box>
+                </Box>
+              </>
             )}
           </Box>
         </Container>
