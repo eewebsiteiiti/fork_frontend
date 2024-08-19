@@ -45,7 +45,6 @@ const navs = {
       2018: "/people/Alumni/2018",
       2019: "/people/Alumni/2019",
       2020: "/people/Alumni/2020",
-      2022: "/people/MTech/2022",
     },
   },
   Research: {

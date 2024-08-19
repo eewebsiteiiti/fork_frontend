@@ -164,7 +164,7 @@ const PeoplePage = () => {
         <></>
       )}
 
-      {params.program === "Alumni" ? (
+      {/* {params.program === "Alumni" ? (
         <>
           <div className="bg_border">
             <Container>
@@ -183,7 +183,7 @@ const PeoplePage = () => {
         </>
       ) : (
         <></>
-      )}
+      )} */}
 
       {params.program === "Alumni" ? (
         <>
