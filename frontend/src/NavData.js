@@ -35,6 +35,7 @@ const navs = {
       2021: "/people/BTech/2021",
       2022: "/people/BTech/2022",
       2023: "/people/BTech/2023",
+      2024: "/people/BTech/2024",
     },
     Alumni: {
       2014: "/people/Alumni/2014",
