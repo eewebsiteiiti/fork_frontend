@@ -77,8 +77,8 @@ const navs = {
     Courses: {
       "B. Tech. (before 2023)": "/courses/BTech",
       "B. Tech. (after 2023)": "/courses/BTech/new",
-      "M.Tech.(CSP)": "/courses/MTechCSP",
-      "M.Tech.(VDN)": "/courses/MTechVDN",
+      "M. Tech.(CSP)": "/courses/MTechCSP",
+      "M. Tech.(VDN)": "/courses/MTechVDN",
     },
     Laboratories: {
       UG: "/labs/ug",
@@ -87,7 +87,7 @@ const navs = {
     Timetable: {
       "B. Tech. (4th yr) & PG-PHD": "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
       "B. Tech. (2nd & 3rd yr)" : "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
-      "Time slots" : "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk"
+      "Course slots" : "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk"
     },
   },
   Achievements: {
