@@ -10,7 +10,7 @@ const navs = {
     Staff: "/people/Staff",
     "Department Commitees": "/people/Committees",
 
-    "Ph.D. students": {
+    "Ph. D. students": {
       2018: "/people/PhD/2018",
       2019: "/people/PhD/2019",
       2020: "/people/PhD/2020",
@@ -79,8 +79,8 @@ const navs = {
     Courses: {
       "B. Tech. (before 2023)": "/courses/BTech",
       "B. Tech. (after 2023)": "/courses/BTech/new",
-      "M.Tech.(CSP)": "/courses/MTechCSP",
-      "M.Tech.(VDN)": "/courses/MTechVDN",
+      "M. Tech.(CSP)": "/courses/MTechCSP",
+      "M. Tech.(VDN)": "/courses/MTechVDN",
     },
 
     Laboratories: {
@@ -89,11 +89,11 @@ const navs = {
       UG: "/labs/ug",
     },
     Timetable: {
-      "B. Tech. (4th yr) & PG-PHD":
+      "B. Tech. (4th yr) & PG-Ph. D.":
         "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
       "B. Tech. (2nd & 3rd yr)":
         "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
-      "Time slots":
+      "Course slots":
         "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk",
     },
   },
