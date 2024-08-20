@@ -24,11 +24,13 @@ const navs = {
       // 2021: "/people/MS/2021",
       2022: "/people/MS/2022",
       2023: "/people/MS/2023",
+      2024: "/people/MS/2024",
     },
     "M. Tech. students": {
       // 2020: "/people/MTech/2020",
       // 2021: "/people/MTech/2021",
       2023: "/people/MTech/2023",
+      2024: "/people/MTech/2024",
     },
 
     "B. Tech. students": {
