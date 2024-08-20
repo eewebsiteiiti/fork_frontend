@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Card, CardMedia } from "@mui/material"
 import CardContent from "@mui/material/CardContent"
 import Typography from "@mui/material/Typography"
+import { Box } from "@mui/system"
+import CircularProgress from "@mui/material/CircularProgress"
 import { Grid } from "@mui/material"
 import axios from "axios"
 import { api, image_api } from "../../Api"
@@ -9,17 +11,17 @@ export default function PeopleCard(props) {
   const [data, setData] = useState()
   const [isError, setIsError] = useState([])
   useEffect(() => {
-    setTimeout(() => {
-      axios
-        .get(`${api}/people/${props.program}/read/${props.year}`, {
-          mode: "cors",
-        })
-        .then((response) => setData(response.data))
-        .catch((error) => setIsError(error.message))
-      if (!isError) {
-        setData("Not Available")
-      }
-    }, 3000)
+
+    axios
+      .get(`${api}/people/${props.program}/read/${props.year}`, {
+        mode: "cors",
+      })
+      .then((response) => setData(response.data))
+      .catch((error) => setIsError(error.message))
+    if (!isError) {
+      setData("Not Available")
+    }
+
   }, [props.year, isError, props.program])
   return (
     <div>
@@ -98,7 +100,13 @@ export default function PeopleCard(props) {
         </>
       ) : (
         // <LoadingPage />
-        <></>
+        <>
+          <Box sx={{ display: "flex", height: "40vh" }}>
+            <Box sx={{ margin: 'auto' }}>
+              <CircularProgress />
+            </Box>
+          </Box>
+        </>
       )}
     </div>
   )
