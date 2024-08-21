@@ -17,6 +17,7 @@ const navs = {
       2021: "/people/PhD/2021",
       2022: "/people/PhD/2022",
       2023: "/people/PhD/2023",
+      2024: "/people/PhD/2024"
     },
     "M. S. Research": {
       // 2019: "/people/MS/2019",
