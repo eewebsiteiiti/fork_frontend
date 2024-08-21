@@ -192,7 +192,7 @@ const PeoplePage = () => {
             description={alumni.description}
             image={alumni.image}
             link={alumni.link}
-            nextDescription={alumni.nextDescription}
+            nextDescription={alumni.nextdescription}
           />
           <div className="bg_border">
             <Container>
@@ -226,7 +226,7 @@ const PeoplePage = () => {
                       padding: "20px",
                     }}
                   >
-                    B.Tech.
+                    B. Tech.
                   </button>
                 </Grid>
                 <Grid
@@ -254,7 +254,7 @@ const PeoplePage = () => {
                       padding: "20px",
                     }}
                   >
-                    M.Tech.
+                    M. Tech.
                   </button>
                 </Grid>
                 <Grid
