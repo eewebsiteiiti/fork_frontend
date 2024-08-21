@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { api } from "../Api"
 import Header from "../components/Header"
-import { ug, pg } from "../HeaderData"
+import { ug, pg, postgraduate } from "../HeaderData"
 import Navbar from "../components/BodyNavbar/BodyNavbar"
 import { image_api } from "../Api"
 
@@ -24,6 +24,63 @@ export default function LabPage() {
       setLabs("Not Available")
     }
   }, [isError, params])
+
+  const PostgraduateData = [
+    {
+      name: "Digital Circuit Design Laboratory",
+
+      image: "/Images/Labs/DigitalCircuitDesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Functional and design parameter analysis of basic digital circuits, design and analysis of standard cells for combinational and sequential circuits and design the digital blocks using HDL (Verilog/VHDL) to generate its DSII.",
+        ],
+      },
+      equipments: {
+        equipments: [],
+      },
+    },
+    {
+      name: "Discrete Device Fabrication and Characterization Laboratory",
+
+      image:
+        "/Images/Labs/DiscreteDeviceFabricationandCharacterizationLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Functional and design parameter analysis of basic digital circuits, design and analysis of standard cells for combinational and sequential circuits and design the digital blocks using HDL (Verilog/VHDL) to generate its DSII.",
+        ],
+      },
+      equipments: {
+        equipments: [],
+      },
+    },
+    {
+      name: "System on Programmable Chip Design Laboratory",
+
+      image: "/Images/Labs/SystemonProgrammableChipDesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Building a Zynq-700 processor design in the Vivado IDE, designing a Microblaze processor using Xilinx Vivado, interfacing of designed Microblaze with available peripherals and design of custom peripherals using HDL.",
+        ],
+      },
+      equipments: {
+        equipments: [],
+      },
+    },
+    {
+      name: "Analog and Mixed Signal IC design Laboratory",
+      description:
+        "The lab is equipped with high-end computing resources and software tools for the design and analysis of digital signal processing algorithms. The lab is used for the implementation of various signal processing algorithms such as filtering, spectral analysis, and image processing.",
+      image: "/Images/Labs/AnalogandMixedSignalICdesignLaboratory.jpg",
+      experiments: {
+        experiments: [
+          "Switches, active resistors, current sources, current mirrors, current and voltage sources,Wilson and Widlar current mirrors, basic bipolar and CMOS process technology, D-A and A-D converters, filter design considerations. CMOS based differential and operational amplifiers, multipliers, modulators, quasi differential amplifier, errors due to mismatch, replication principle, qualitative analysis, common mode response, frequency response, noise performance of differential amplifiers.",
+        ],
+      },
+      equipments: {
+        equipments: [],
+      },
+    },
+  ]
   return (
     <div>
       <Navbar />
@@ -367,6 +424,139 @@ export default function LabPage() {
             </Container>
             <br /> <br />
           </>
+        </>
+      ) : (
+        <></>
+      )}
+      {params.type === "postgraduate" ? (
+        <>
+          <Header
+            title={postgraduate.title}
+            description={postgraduate.description}
+            image={postgraduate.image}
+          />
+          <br />
+          <br />
+          <Container margin={5}>
+            <Grid
+              container
+              justifyContent="space-between"
+              direction="row"
+              alignItems="top"
+            >
+              <Grid item xs="11" md="3">
+                <Grid
+                  container
+                  justifyContent="center"
+                  direction="column"
+                  alignItems="top"
+                  sx={{
+                    backgroundColor: "secondary.main",
+                    color: "white",
+                    borderRadius: 1,
+                  }}
+                  spacing={2}
+                  margin={1}
+                >
+                  <>
+                    {PostgraduateData?.map((item, key) => (
+                      <ButtonBase
+                        onClick={() => {
+                          setActive(key)
+                        }}
+                        // sx={{padding:"3"}}
+                        sx={{ borderBottom: "2px solid white" }}
+                      >
+                        <Grid item padding={1} sx={{ textAlign: "center" }}>
+                          <Typography variant="h5" color="white">
+                            {item.name}
+                          </Typography>
+                        </Grid>
+                      </ButtonBase>
+                    ))}
+                  </>
+                </Grid>
+              </Grid>
+              <Grid item xs="12" md="8">
+                <Grid
+                  container
+                  justifyContent="center"
+                  direction="column"
+                  alignItems="top"
+                  // spacing = {2}
+                  padding={1}
+                >
+                  <>
+                    {PostgraduateData?.map((item, key) =>
+                      active === key ? (
+                        <>
+                          <Typography
+                            textAlign={"center"}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            {item.name}
+                          </Typography>
+                          <img
+                            // src={`${image_api}${item.image}`} when backend is ready and sending data
+                            src={item.image}
+                            alt={item.image}
+                            width={"100%"}
+                            style={{ padding: 0 }}
+                          />
+                          <Typography
+                            textAlign={"center"}
+                            mt={3}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            Experiments
+                          </Typography>
+                          <Grid item sx={{ textAlign: "left" }}>
+                            {item?.experiments ? (
+                              <>
+                                {item?.experiments["experiments"]?.map(
+                                  (exp, i) => (
+                                    <>
+                                      <Grid item> • {exp}</Grid>
+                                    </>
+                                  )
+                                )}
+                              </>
+                            ) : (
+                              <></>
+                            )}
+                          </Grid>
+                          <Typography
+                            textAlign={"center"}
+                            mt={3}
+                            color="secondary.main"
+                            fontWeight={600}
+                            variant="h1"
+                          >
+                            Equipment
+                          </Typography>
+                          <Grid item sx={{ textAlign: "left" }}>
+                            {item?.equipments["equipments"]?.map((eq, j) => (
+                              <>
+                                <Grid item> • {eq}</Grid>
+                              </>
+                            ))}
+                          </Grid>
+                        </>
+                      ) : (
+                        <></>
+                      )
+                    )}
+                  </>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Container>
+          <br />
+          <br />
         </>
       ) : (
         <></>

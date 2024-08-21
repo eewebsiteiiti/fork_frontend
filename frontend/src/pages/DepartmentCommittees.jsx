@@ -188,17 +188,14 @@ export default function DepartmentCommittees() {
 
         </Container> */}
 
-<div class="container text-center" style={{
+{/* <div class="container text-center" style={{
   // margin:"1%"
   marginTop:"0.5%",
   
 }}>
-<link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      />
-  <div class="row ">
-    <div class="col row1 col1">
+
+  <div class="row rowdc">
+    <div class="col row1 col1" >
       COMMITTEE NAME
     </div>
     <div class="col row1">
@@ -300,7 +297,74 @@ export default function DepartmentCommittees() {
     </div>
     <div class="col row5">-</div>
   </div>
-</div>
+</div> */}
+<link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr className="rowdc">
+      <th scope="col"className="centerify">COMMITTEE NAME</th>
+      <th scope="col"className="centerify">FUNCTION</th>
+      <th scope="col"className="centerify">MEMBERS</th>
+      <th scope="col"className="centerify">EMAIL ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">DPGC - Department Post Graduate Committee</th>
+      <th>The department has a DPGC to deal with all issues related to PG students, academic programs, PG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  PG students. The committee regularly revises the PG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Dr. Saptarshi Ghosh (Convener)</li>
+      <li>-Prof. Amod C. Umarikar</li>
+      <li>-Prof. Santosh Kumar Vishvakarma</li>
+      </th>
+      <th>dpgcee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DUGC - Department Under Graduate Committee</th>
+      <th>The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of  UG students. The committee regularly revises the UG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.</th>
+      <th><li>-Dr. Vijay A S (Convener)</li>
+      <li>-Dr. Swaminathan R</li>
+      <li>-Prof. Srivathsan Vasudevan</li>
+      </th>
+      <th>dugcee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DWC - Department Website Committee</th>
+      <th>The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website</th>
+      <th><li>-Dr. Vijay A S (Convener)</li>
+      <li>-Dr. Saptarshi Ghosh</li>
+      <li>-Dr. Sumit Gautam</li></th>
+      <th>website.ee@iiti.ac.in</th>
+    </tr>
+    <tr>
+      <th scope="row">DSC - Department Space Committee</th>
+      <th>The committee looks into the space related requirements regarding UG and PG research labs and for individual faculty members and makes suitable recommendations regarding the same</th>
+      <th><li>-Dr. Swaminathan R. (Convener)</li>
+      <li>-Prof. Srivathsan Vasudevan</li>
+      <li>-Dr. Shubadeep Paladhi</li></th>
+      <th>-</th>
+    </tr>
+    <tr>
+      <th scope="row">DBAC - Department Budget Advisory Committee</th>
+      <th>The department Budget Advisory Committee advices HoD EE in matters related to annual plans for expenditures procurements and appropriate utilisation of the allocated budget</th>
+      <th><li>-Dr. Saptarshi Ghosh (Convenor)</li>
+      <li>-Prof. Trapti Jain</li>
+      <li>-Dr. Swaminathan R</li></th>
+      <th>-</th>
+    </tr>
+    <tr>
+      <th scope="row">DOC - Department Outreach Committee</th>
+      <th> This committee disseminates information related to activities within the department to all concerned within and outside the institute</th>
+      <th><li>-Member 1</li>
+      <li>-Member 2</li>
+      <li>-Member 3</li></th>
+      <th> ee_outreach@iiti.ac.in </th>
+    </tr>
+  </tbody>
+</table>
 
       </div>
     </>

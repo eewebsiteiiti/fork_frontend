@@ -48,22 +48,25 @@ export default function AboutUs() {
                     The department offers four academic programs, all in
                     Electrical Engineering.: <br />
                     1) B. Tech. (EE),
-                    <br /> 
-                    2) M. S. 
-                    (by Research) 
                     <br />
-                    3) M. Tech (CSP, VDN) <br /> 
-                     4) Ph. D. <br /> 
-                      The current annual intake of the Department
-                    is 80 in B. Tech., 30 in M. Tech and 15-20 Ph. D. students
-                    per year. A wide spectrum of courses is being offered at
-                    levels ranging from the undergraduate to the doctoral degree
-                    program. These include Special Semiconductor
-                    Devices, IC Fabrication Technology, Advanced Micro-processes
-                    and Nanotechnology,
+                    2) M. S. (by Research)
+                    <br />
+                    3) M. Tech (CSP, VDN) <br />
+                    4) Ph. D. <br />
+                    The current annual intake of the Department is 80 in B.
+                    Tech., 30 in M. Tech and 15-20 Ph. D. students per year. A
+                    wide spectrum of courses is being offered at levels ranging
+                    from the undergraduate to the doctoral degree program. These
+                    include Special Semiconductor Devices, IC Fabrication
+                    Technology, Advanced Micro-processes and Nanotechnology,
                     Optoelectronics, Microwave and Satellite Communication,
-                    Internet of Things (IoT) Networks, Design of Photovoltaic systems, Structural power systems, Design and Analysis of Communication Networks, etc. are currently being
-                    offered as electives.
+                    Internet of Things (IoT) Networks, Design of Photovoltaic
+                    systems, Structural power systems, Design and Analysis of
+                    Communication Networks, etc. The faculty are also engaged 
+                    in teaching courses for the interdisciplinary programs in 
+                    electric vehicles and futuristic defense and space technologies 
+                    and tailored executive post graduate programs for industry. Some 
+                    of these are in collaborations with IIM Indore, RRCAT and MCTE Mhow.
                   </Typography>
                 </Grid>
                 <Grid
@@ -75,7 +78,7 @@ export default function AboutUs() {
                 >
                   <img
                     className="about-img"
-                    src="/Images/about.jpg"
+                    src="/Images/about.JPG"
                     alt=""
                     width="100%"
                     style={{ position: "relative" }}

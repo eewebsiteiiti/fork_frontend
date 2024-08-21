@@ -1,8 +1,8 @@
-import React from "react";
-import Navbar from "../components/BodyNavbar/BodyNavbar";
-import Header from "../components/Header";
-import { research } from "../HeaderData";
-import { Grid, Typography } from "@mui/material";
+import React from "react"
+import Navbar from "../components/BodyNavbar/BodyNavbar"
+import Header from "../components/Header"
+import { research } from "../HeaderData"
+import { Grid, Typography } from "@mui/material"
 
 const ResearchPage = () => {
   return (
@@ -19,12 +19,11 @@ const ResearchPage = () => {
         <br />
         <br />
         <Grid container>
-        <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
               Communications
             </Typography>
             <div id="rectangle-l-outside">
-              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
@@ -69,28 +68,25 @@ const ResearchPage = () => {
         <br />
 
         <Grid container>
-        <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              
-              Power Electronics and Machines
+              Power Electronics and Electric Machines
             </Typography>
             <div id="rectangle-l-outside">
-              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                  <li>Prof. Amod C. Umarikar</li>
+                    <li>Prof. Amod C. Umarikar</li>
                     <li>Prof. Vijay A. S.</li>
                     <li>Prof. Lokesh Kumar Dewangan</li>
-                    <li>Dr. B Prathap Reddy</li>
-                    
+                    <li>Prof. B Prathap Reddy</li>
                   </list>
                 </Typography>
               </div>
             </div>
           </Grid>
-          
+
           <Grid item xs={12} sm={6}>
             <Typography
               variant="h4"
@@ -98,7 +94,6 @@ const ResearchPage = () => {
               paddingRight="40%"
               color={"secondary.main"}
             >
-              
               Power Systems
             </Typography>
             <div id="rectangle-r-outside">
@@ -106,10 +101,9 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                  <li>Prof. Trapti Jain</li>
+                    <li>Prof. Trapti Jain</li>
                     <li>Prof. Shubhadeep Paladhi</li>
                     <li>Prof. Lokesh Kumar Dewangan</li>
-                   
                   </list>
                 </Typography>
               </div>
@@ -118,9 +112,8 @@ const ResearchPage = () => {
         </Grid>
         <br />
         <Grid container>
-        <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-              
               VLSI Design
             </Typography>
             <div id="rectangle-l-outside">
@@ -128,13 +121,10 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                   
                     <li>Prof. Santosh Kumar Vishvakarma</li>
                     <li>Prof. Shaibal Mukherjee</li>
-                    <li>Prof. Vipul Singh</li>
-                    <li>Prof. Abhinav Kranti</li>
                     <li>Prof. Mukesh Kumar</li>
-                    </list>
+                  </list>
                 </Typography>
               </div>
             </div>
@@ -163,12 +153,11 @@ const ResearchPage = () => {
         </Grid>
         <br />
         <Grid container>
-        <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
               Nanoelectronic Devices
             </Typography>
             <div id="rectangle-l-outside">
-              
               <div id="rectangle-l-inside">
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
@@ -197,7 +186,7 @@ const ResearchPage = () => {
                 <Typography variant="p" fontSize={"0.8rem"}>
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
                   <list>
-                  <li>Prof. Ram Bilas Pachori</li>
+                    <li>Prof. Ram Bilas Pachori</li>
                     <li>Prof. Vivek Kanhangad</li>
                     <li>Prof. Vimal Bhatia</li>
                     <li> Prof. Dibbendu Roy</li>
@@ -206,13 +195,12 @@ const ResearchPage = () => {
               </div>
             </div>
           </Grid>
-         
         </Grid>
         <br />
         <Grid container>
-        <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h4" paddingLeft="40%" color={"secondary.main"}>
-            Control Instrumentation And Optimization
+              Control Instrumentation And Optimization
             </Typography>
             <div id="rectangle-l-outside">
               <div id="rectangle-l-inside">
@@ -220,20 +208,18 @@ const ResearchPage = () => {
                   {/* <Typography fontWeight="bold">Faculty Involved:</Typography> */}
 
                   <list>
-                  
-                  <li>Prof. Sharad Kumar Singh</li>
-                  <li>Prof. Srivathsan Vasudevan</li>
+                    <li>Prof. Sharad Kumar Singh</li>
+                    <li>Prof. Srivathsan Vasudevan</li>
                   </list>
                 </Typography>
               </div>
             </div>
           </Grid>
-         
         </Grid>
         <br />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ResearchPage;
+export default ResearchPage

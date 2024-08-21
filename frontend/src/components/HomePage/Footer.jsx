@@ -20,6 +20,16 @@ import {
   LinkedIn,
 } from "@mui/icons-material"
 
+const footerStats = {
+  Faculty: 22,
+  StudentsGraduated: 1050,
+  Publications: 1500,
+  Placement: 94,
+  Patents: 26,
+  Projects: 100,
+  ProjectGrants: 32.6,
+  GoogleScholarCitations: 45000,
+}
 const Footer = () => {
   return (
     <>
@@ -54,14 +64,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/people/Faculty">
+                  <a href="/#/people/Faculty">
                     <SupervisedUserCircle
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white ">
-                    <CountUp end={21} duration={2}>
+                    <CountUp end={footerStats.Faculty} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -81,14 +91,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Students">
+                  <a href="/#/research/stats/Students">
                     <SupervisorAccountIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={1115} duration={2}>
+                    <CountUp end={footerStats.StudentsGraduated} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -110,14 +120,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Publications">
+                  <a href="/#/research/stats/Publications">
                     <LibraryBooksIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={1500} duration={2}>
+                    <CountUp end={footerStats.Publications} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -137,14 +147,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Placements">
+                  <a href="/#/research/stats/Placements">
                     <Timeline
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={95} duration={2}>
+                    <CountUp end={footerStats.Placement} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -164,14 +174,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Patents">
+                  <a href="/#/research/stats/Patents">
                     <PublicIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={24} duration={2}>
+                    <CountUp end={footerStats.Patents} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -191,14 +201,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Projects">
+                  <a href="/#/research/stats/Projects">
                     <ExtensionIcon
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={100} duration={2}>
+                    <CountUp end={footerStats.Projects} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -218,14 +228,14 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/Grants">
+                  <a href="/#/research/stats/Grants">
                     <CurrencyRupee
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={32} duration={2}>
+                    <CountUp end={footerStats.ProjectGrants} duration={2}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -245,14 +255,17 @@ const Footer = () => {
                     flexDirection: "column",
                   }}
                 >
-                  <a href="/research/stats/citations">
+                  <a href="/#/research/stats/citations">
                     <School
                       color="quaternary"
                       sx={{ fontSize: 40, "&:hover": { color: "#105297" } }}
                     />
                   </a>
                   <Typography color="white">
-                    <CountUp end={45000} duration={2}>
+                    <CountUp
+                      end={footerStats.GoogleScholarCitations}
+                      duration={2}
+                    >
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -292,7 +305,7 @@ const Footer = () => {
                   <br /> IIT Indore
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#B7B7c7" }}>
-                  Contact: Head, Electrical Engineering Silicon Building,
+                  Contact: Head, Electrical Engineering, Silicon Building,
                   <br />
                   Pod 1A, Indian Institute of Technology Indore Khandwa Road,
                   <br />
@@ -321,7 +334,7 @@ const Footer = () => {
                       About Us
                     </Typography>
                     <Box>
-                      <a href="/about">
+                      <a href="/#/about">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -330,7 +343,7 @@ const Footer = () => {
                           Department
                         </Typography>
                       </a>
-                      {/* <a href="/administration">
+                      {/* <a href="/#/administration">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -339,7 +352,7 @@ const Footer = () => {
                           Administration
                         </Typography>
                       </a> */}
-                      {/* <a href="/contact">
+                      {/* <a href="/#/contact">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -348,7 +361,7 @@ const Footer = () => {
                           Contact Us
                         </Typography>
                       </a> */}
-                      <a href="/gallery">
+                      <a href="/#/gallery">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -364,7 +377,7 @@ const Footer = () => {
                       People
                     </Typography>
                     <Box>
-                      <a href="/people/Faculty">
+                      <a href="/#/people/Faculty">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -373,7 +386,7 @@ const Footer = () => {
                           Faculty
                         </Typography>
                       </a>
-                      <a href="/people/Staff">
+                      <a href="/#/people/Staff">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -382,7 +395,7 @@ const Footer = () => {
                           Staff
                         </Typography>
                       </a>
-                      <a href="/people/PhD/2021">
+                      <a href="/#/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -391,7 +404,7 @@ const Footer = () => {
                           Ph .D. - students
                         </Typography>
                       </a>
-                      <a href="/people/PhD/2021">
+                      <a href="/#/people/PhD/2021">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -400,7 +413,7 @@ const Footer = () => {
                           M. S. Research - students
                         </Typography>
                       </a>
-                      <a href="/people/MTech/2023">
+                      <a href="/#/people/MTech/2023">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -409,7 +422,7 @@ const Footer = () => {
                           M. Tech. - students
                         </Typography>
                       </a>
-                      <a href="/people/BTech/2023">
+                      <a href="/#/people/BTech/2023">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -426,7 +439,7 @@ const Footer = () => {
                       Research
                     </Typography>
                     <Box>
-                      <a href="/research">
+                      <a href="/#/research">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -435,7 +448,7 @@ const Footer = () => {
                           Research Areas
                         </Typography>
                       </a>
-                      <a href="/projects">
+                      <a href="/#/projects">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -466,7 +479,7 @@ const Footer = () => {
                         </Typography>
                       </a>
 
-                      <a href="/courses/BTech">
+                      <a href="/#/courses/BTech">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -475,7 +488,7 @@ const Footer = () => {
                           Courses - UG
                         </Typography>
                       </a>
-                      <a href="/courses/MTech/old">
+                      <a href="/#/courses/MTech/old">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -484,7 +497,7 @@ const Footer = () => {
                           Courses - PG
                         </Typography>
                       </a>
-                      <a href="/labs/ug">
+                      <a href="/#/labs/ug">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -493,7 +506,7 @@ const Footer = () => {
                           Laboratories - UG
                         </Typography>
                       </a>
-                      <a href="/labs/pg">
+                      <a href="/#/labs/pg">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -535,17 +548,17 @@ const Footer = () => {
                       Achievements
                     </Typography>
                     <Box>
-                      <a href="/achievements/books">
+                      <a href="/#/achievements/books">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
                           sx={{ color: "#B7B7c7" }}
                         >
-                          Books
+                          Books Published
                         </Typography>
                       </a>
 
-                      <a href="/achievements/faculty">
+                      <a href="/#/achievements/faculty">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -554,7 +567,7 @@ const Footer = () => {
                           Faculty Recognitions
                         </Typography>
                       </a>
-                      <a href="/achievements/students">
+                      <a href="/#/achievements/students">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -619,7 +632,7 @@ const Footer = () => {
                         </Typography>
                       </a> */}
 
-                      <a href="/stats/Placements">
+                      <a href="/#/stats/Placements">
                         <Typography
                           fontSize="0.7rem"
                           varient="p"
@@ -632,7 +645,7 @@ const Footer = () => {
                   </Box>
                   <Box sx={{ px: 2, borderRight: "1px solid gray " }}>
                     <Typography varient="p" sx={{ color: "white" }}>
-                      Links
+                      Connect
                     </Typography>
                     <Box>
                       <a

@@ -21,8 +21,8 @@ class GalleryPage extends React.Component {
   }
   getWidth(innerWidth) {
     if (innerWidth <= 700)
-      return [3, 3, 2, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2]
-    return [3, 3, 2, 3, 2, 3]
+      return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2,  2, 2, 2, 2, 2, 2, 2, 2]
   }
   render() {
     const setting = {
@@ -98,6 +98,9 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/9K6A6855.JPG",
         },
         {
+          source: "Images/UG_EMPEL_Lab.JPG",
+        },
+        {
           source: "Images/gallery/IMG_6892.JPG",
         },
         {
@@ -120,6 +123,33 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/9K6A6861.JPG",
+        },
+        {
+          source: "Images/gallery/Tesla_Coil.jpeg",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Bird_KV.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Fox.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Lapwing.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Leopard-2.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Owl_Guest_House.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_peacock.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Plum_Headed.JPG",
+        },
+        {
+          source: "Images/flaura_fauna/IITI_Roller_Kshipra.JPG",
         },
       ],
       showNumOfRemainingPhotos: true,
