@@ -82,8 +82,8 @@ const navs = {
     Courses: {
       "B. Tech. (before 2023)": "/courses/BTech",
       "B. Tech. (after 2023)": "/courses/BTech/new",
-      "M. Tech.(CSP)": "/courses/MTechCSP",
-      "M. Tech.(VDN)": "/courses/MTechVDN",
+      "M. Tech. (CSP)": "/courses/MTechCSP",
+      "M. Tech. (VDN)": "/courses/MTechVDN",
     },
 
     Laboratories: {

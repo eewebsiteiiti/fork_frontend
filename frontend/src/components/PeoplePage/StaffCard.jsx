@@ -116,25 +116,7 @@ const Staff_Card = (props) => {
                     />
                     Phone: {item.phone ? item.phone : 1234567890}
                   </Typography>
-                  <Typography fontSize="0.8rem">
-                    <Email
-                      sx={{
-                        verticalAlign: "bottom",
-                        paddingRight: "3px",
-                        fontSize: "1.5rem",
-                      }}
-                    />
-                    Email:&nbsp;
-                    <a href={`mailto:${item.email}`}>
-                      <Typography
-                        variant="body"
-                        fontSize={"0.8rem"}
-                        color="secondary.main"
-                      >
-                        {item.email}
-                      </Typography>
-                    </a>
-                  </Typography>
+                 
                   {item.title === "Junior Assistant, HoD Office" ? (
                     <>
                       <Typography fontSize="0.8rem">
@@ -156,6 +138,25 @@ const Staff_Card = (props) => {
                           </Typography>
                         </a>
                       </Typography>
+                       <Typography fontSize="0.8rem">
+                    <Email
+                      sx={{
+                        verticalAlign: "bottom",
+                        paddingRight: "3px",
+                        fontSize: "1.5rem",
+                      }}
+                    />
+                    Email:&nbsp;
+                    <a href={`mailto:${item.email}`}>
+                      <Typography
+                        variant="body"
+                        fontSize={"0.8rem"}
+                        color="secondary.main"
+                      >
+                        {item.email}
+                      </Typography>
+                    </a>
+                  </Typography>
                     </>
                   ) : (
                     <></>

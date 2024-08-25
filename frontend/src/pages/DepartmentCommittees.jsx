@@ -265,7 +265,7 @@ export default function DepartmentCommittees() {
       DWC - Department Website Committee 
     </div>
     <div class="col row4">
-    The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website
+    The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website.
     </div>
     <div class="col row4">
     <ol>
@@ -284,7 +284,7 @@ export default function DepartmentCommittees() {
       DSC - Department Space Committee
     </div>
     <div class="col row5">
-    The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same
+    The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same.
     </div>
     <div class="col row5">
     <ol style={{color:"black"}}>
@@ -333,7 +333,7 @@ export default function DepartmentCommittees() {
     </tr>
     <tr>
       <th scope="row">DWC - Department Website Committee</th>
-      <th>The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website</th>
+      <th>The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website.</th>
       <th><li>-Dr. Vijay A S (Convener)</li>
       <li>-Dr. Saptarshi Ghosh</li>
       <li>-Dr. Sumit Gautam</li></th>
@@ -341,7 +341,7 @@ export default function DepartmentCommittees() {
     </tr>
     <tr>
       <th scope="row">DSC - Department Space Committee</th>
-      <th>The committee looks into the space related requirements regarding UG and PG research labs and for individual faculty members and makes suitable recommendations regarding the same</th>
+      <th>The committee looks into the space related requirements regarding UG and PG research labs and for individual faculty members and makes suitable recommendations regarding the same.</th>
       <th><li>-Dr. Swaminathan R. (Convener)</li>
       <li>-Prof. Srivathsan Vasudevan</li>
       <li>-Dr. Shubadeep Paladhi</li></th>
@@ -349,7 +349,7 @@ export default function DepartmentCommittees() {
     </tr>
     <tr>
       <th scope="row">DBAC - Department Budget Advisory Committee</th>
-      <th>The department Budget Advisory Committee advices HoD EE in matters related to annual plans for expenditures procurements and appropriate utilisation of the allocated budget</th>
+      <th>The department Budget Advisory Committee advices HoD EE in matters related to annual plans for expenditures procurements and appropriate utilisation of the allocated budget.</th>
       <th><li>-Dr. Saptarshi Ghosh (Convenor)</li>
       <li>-Prof. Trapti Jain</li>
       <li>-Dr. Swaminathan R</li></th>
@@ -357,7 +357,7 @@ export default function DepartmentCommittees() {
     </tr>
     <tr>
       <th scope="row">DOC - Department Outreach Committee</th>
-      <th> This committee disseminates information related to activities within the department to all concerned within and outside the institute</th>
+      <th> This committee disseminates information related to activities within the department to all concerned within and outside the institute.</th>
       <th><li>-Member 1</li>
       <li>-Member 2</li>
       <li>-Member 3</li></th>
