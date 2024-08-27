@@ -124,7 +124,7 @@ export default function StatsPage() {
               title="Statistics"
             />
             <center>
-              <img alt="not_found" width="50%" src="/Images/patents.png" />
+              <img alt="not_found" width="50%" src="/Images/patentss.png" />
               
             </center>
             <Typography textAlign="center" fontWeight="bold" variant="h1">
