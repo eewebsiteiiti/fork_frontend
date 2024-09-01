@@ -17,7 +17,6 @@ const navs = {
       2021: "/people/PhD/2021",
       2022: "/people/PhD/2022",
       2023: "/people/PhD/2023",
-      2024: "/people/PhD/2024"
     },
     "M. S. Research": {
       // 2019: "/people/MS/2019",
@@ -92,9 +91,12 @@ const navs = {
       UG: "/labs/ug",
     },
     Timetable: {
-      "B. Tech. (4th yr) & PG-PHD": "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
-      "B. Tech. (2nd & 3rd yr)" : "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
-      "Course slots" : "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk"
+      "B. Tech. (4th yr) & PG-Ph. D.":
+        "https://drive.google.com/file/d/1hdJBYR3bS31bJzRlZ9dNlcuKXnuzAXif/view?usp=drivesdk",
+      "B. Tech. (2nd & 3rd yr)":
+        "https://drive.google.com/file/d/1hbacL_gul_YK2FSiU1ecnPDATSaTUJqX/view?usp=drivesdk",
+      "Course slots":
+        "https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view?usp=drivesdk",
     },
   },
   Achievements: {
