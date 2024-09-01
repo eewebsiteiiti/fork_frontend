@@ -84,8 +84,8 @@ export default function CoursePage() {
           >
             <Typography variant="h1" color="primary.main" textAlign="center">
               {param.program === "BTech" ? "B. Tech." : ""}
-              {param.program === "MTechCSP" ? "M. Tech. (CSP) " : ""}
-              {param.program === "MTechVDN" ? "M. Tech. (VDN) " : ""}
+              {param.program === "MTechCSP" ? "M. Tech. (CSP)" : ""}
+              {param.program === "MTechVDN" ? "M. Tech. (VDN)" : ""}
             </Typography>
           </a>
           <Box sx={{ py: 4 }}>

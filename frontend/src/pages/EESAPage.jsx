@@ -94,6 +94,15 @@ class EESAPage extends React.Component {
         {
           source: "/Images/eesa/eesa18.jpeg",
         },
+        {
+          source: "Images/gallery/NCP07849.JPG",
+        },
+        {
+          source: "Images/gallery/NCP07860.JPG",
+        },
+        {
+          source: "Images/gallery/NCP07919.JPG",
+        },
       ],
       showNumOfRemainingPhotos: true,
     }

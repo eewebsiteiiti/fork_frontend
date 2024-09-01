@@ -265,7 +265,7 @@ export default function DepartmentCommittees() {
       DWC - Department Website Committee 
     </div>
     <div class="col row4">
-    The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website.
+    The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website
     </div>
     <div class="col row4">
     <ol>
@@ -284,7 +284,7 @@ export default function DepartmentCommittees() {
       DSC - Department Space Committee
     </div>
     <div class="col row5">
-    The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same.
+    The committee looks into the space related requirements related to UG and PG programs and individual faculty members and makes suitable recommendations regarding the same
     </div>
     <div class="col row5">
     <ol style={{color:"black"}}>
