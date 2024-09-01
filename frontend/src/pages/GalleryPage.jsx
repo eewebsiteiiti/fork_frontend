@@ -80,6 +80,15 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/btech22.jpg",
         },
         {
+          source: "Images/gallery/NCP07849.JPG",
+        },
+        {
+          source: "Images/gallery/NCP07860.JPG",
+        },
+        {
+          source: "Images/gallery/NCP07919.JPG",
+        },
+        {
           source: "Images/gallery/IMG_6925.JPG",
         },
         {
