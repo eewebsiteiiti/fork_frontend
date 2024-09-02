@@ -66,7 +66,9 @@ export default function WovenImageList() {
               title="Departmental Video"
               width="350"
               height={240}
-              src="https://www.youtube.com/embed/4ZBnNHY2Bpk"
+              src="https://www.youtube.com/embed/s8f3N_14HeQ"
+              referrerpolicy="no-referrer" allow="autoplay; encrypted-media" allowfullscreen
+
             ></iframe>
           </center>
         </Grid>
@@ -181,7 +183,7 @@ const itemData2 = [
 
     type: "img",
   },
-  
+
   // {
   //   img: "/Images/gallery/csp.JPG",
   //   type: "img",
