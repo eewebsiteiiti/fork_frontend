@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Grid, Typography, Link } from "@mui/material";
-import "./styles/template.css";
 
 export default function Header(props) {
   const im_path = process.env.PUBLIC_URL + props.image;
@@ -26,7 +25,7 @@ export default function Header(props) {
               {props.link && (
                 <>
                   {" "}
-                  <Link href={props.link} target="_blank" rel="noopener noreferrer" style={{variant:"p", color: "white", textDecoration: 'underline', fontWeight: 'bold' }}>
+                  <Link href={props.link} target="_blank" rel="noopener noreferrer" style={{ variant: "p", color: "white", textDecoration: 'underline', fontWeight: 'bold' }}>
                     Alumni Portal
                   </Link>{" "}
                   {props.nextDescription}

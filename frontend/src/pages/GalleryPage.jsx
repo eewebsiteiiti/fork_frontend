@@ -5,7 +5,6 @@ import LazyLoad from "react-lazyload"
 import { gallery } from "../HeaderData"
 import Header from "../components/Header"
 import Navbar from "../components/BodyNavbar/BodyNavbar"
-import "../components/styles/gallery.css"
 class GalleryPage extends React.Component {
   state = {
     innerWidth: window.innerWidth,
@@ -22,7 +21,7 @@ class GalleryPage extends React.Component {
   getWidth(innerWidth) {
     if (innerWidth <= 700)
       return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-    return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2,  2, 2, 2, 2, 2, 2, 2, 2]
+    return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   }
   render() {
     const setting = {
