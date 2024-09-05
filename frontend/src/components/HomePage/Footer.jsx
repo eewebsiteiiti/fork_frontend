@@ -25,7 +25,7 @@ const footerStats = {
   StudentsGraduated: 1050,
   Publications: 1500,
   Placement: 94,
-  Patents: 26,
+  Patents: 27,
   Projects: 100,
   ProjectGrants: 32.6,
   GoogleScholarCitations: 45000,
