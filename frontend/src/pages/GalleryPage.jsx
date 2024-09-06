@@ -118,9 +118,6 @@ class GalleryPage extends React.Component {
           source: "Images/gallery/9K6A6843.JPG",
         },
         {
-          source: "Images/gallery/9K6A6862.JPG",
-        },
-        {
           source: "Images/gallery/9K6A6826.JPG",
         },
         {
