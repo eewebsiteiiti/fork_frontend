@@ -20,8 +20,8 @@ class GalleryPage extends React.Component {
   }
   getWidth(innerWidth) {
     if (innerWidth <= 700)
-      return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-    return [3, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+      return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2]
+    return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2]
   }
   render() {
     const setting = {
