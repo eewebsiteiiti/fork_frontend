@@ -20,8 +20,8 @@ class GalleryPage extends React.Component {
   }
   getWidth(innerWidth) {
     if (innerWidth <= 700)
-      return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2]
-    return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 2, 2]
+      return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2]
+    return [3, 3, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2]
   }
   render() {
     const setting = {
@@ -131,6 +131,21 @@ class GalleryPage extends React.Component {
         },
         {
           source: "Images/gallery/Tesla_Coil.jpeg",
+        },
+        {
+          source: "Images/eesa/NCP08410.JPG",
+        },
+        {
+          source: "Images/eesa/NCP08454.JPG",
+        },
+        {
+          source: "Images/eesa/NCP08459.JPG",
+        },
+        {
+          source: "Images/eesa/NCP08525.JPG",
+        },
+        {
+          source: "Images/eesa/NCP08579.JPG",
         },
         {
           source: "Images/flaura_fauna/IITI_Bird_KV.JPG",
