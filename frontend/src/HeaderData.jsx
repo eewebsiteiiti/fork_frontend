@@ -63,7 +63,7 @@ export const eesa = {
   title: "EESA: Electrical Engineering Student's Association",
   description:
     "The Electrical Engineering Students' Association (EESA) unites undergraduates, postgraduates, PhD candidates, and alumni from the department, promoting collaborative culture. Our mission is to facilitate student coordination, cultivate valuable connections, and enhance the academic and social experience within the department and institute. EESA fosters a vibrant community through both academic support and enjoyable informal activities, creating a lively social atmosphere for all members. EESA organizes and executes informative trips to help students better understand the fundamentals and applications of electrical engineering. EESA also serves as a vital link between students and professors, facilitating project assignments and ensuring effective communication and collaboration throughout the project's lifecycle. Apart from academics, EESA organizes enjoyable informal activities like department trips, and cultural programs to foster a lively social atmosphere and instill a sense of community and belonging in its members.",
-  image: "/Images/header_images/eesa_logo.jpeg",
+  image: "/Images/header_images/eesalogo.jpeg",
 }
 
 export const research = {
