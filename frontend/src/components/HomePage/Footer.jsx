@@ -28,7 +28,7 @@ const footerStats = {
   Patents: 27,
   Projects: 100,
   ProjectGrants: 32.6,
-  GoogleScholarCitations: 45000,
+  GoogleScholarCitations: 52250,
 }
 const Footer = () => {
   return (
