@@ -230,7 +230,7 @@ export default function StatsPage() {
                 color="secondary.main"
                 sx={{ fontSize: "7rem" }}
               >
-                <CountUp end={45000} duration={5}>
+                <CountUp end={52250} duration={5}>
                   {({ countUpRef, start }) => (
                     <VisibilitySensor onChange={start} delayedCall>
                       <span ref={countUpRef} />
