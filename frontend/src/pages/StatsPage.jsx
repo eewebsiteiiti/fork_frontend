@@ -56,6 +56,19 @@ export default function StatsPage() {
         ) : (
           <></>
         )}
+        {param?.program === "Funding" ? (
+          <>
+            <Header
+              description="EE IITI in figures and stats..."
+              title="Funding Agencies and Collaborators"
+            />
+            <center>
+              <img alt="not_found" width="70%" src="/Images/AcadFundingLogos_page-0001.jpg" />
+            </center>
+          </>
+        ) : (
+          <></>
+        )}
         {param?.program === "Students" ? (
           <>
             <Header
@@ -86,36 +99,38 @@ export default function StatsPage() {
         ) : (
           <></>
         )}
-        {param?.program === "Placements" ? (
-          <>
-            <Header
-              description="EE IITI in figures and stats..."
-              title="Statistics"
-            />
-            <Box
-              sx={{
-                display: "flex",
-                textAlign: "center",
-                justifyContent: "center",
-              }}
-            >
-              <center>
-                <img
-                  alt="not_found"
-                  width="40%"
-                  src="/Images/ug_placements.jpg"
-                />
-                <img
-                  alt="not_found"
-                  width="40%"
-                  src="/Images/pg_placements.jpg"
-                />
-              </center>
-            </Box>
-          </>
-        ) : (
-          <></>
-        )} 
+{param?.program === "Placements" ? (
+  <>
+    <Header description="EE IITI in figures and stats..." title="Statistics" />
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center", 
+        textAlign: "center",
+        justifyContent: "center",
+      }}
+    >
+      <center>
+        <img alt="UG placements" width="40%" src="/Images/ug_placements.jpg" />
+        <img alt="PG placements" width="40%" src="/Images/pg_placements.jpg" />
+        <img
+          alt="EE Placement Companies"
+          width="40%"
+          src="/Images/ee_placement_companies.png"
+          style={{
+            marginTop: "10px", 
+            border: "1px solid black", 
+            borderRadius: "4px", 
+          }}
+        />
+      </center>
+    </Box>
+  </>
+) : (
+  <></>
+)}
+
         
         {param?.program === "Patents" ? (
           <>

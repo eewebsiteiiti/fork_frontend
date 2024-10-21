@@ -24,8 +24,8 @@ class EESAPage extends React.Component {
     this.setState({ innerWidth: window.innerWidth })
   }
   getWidth(innerWidth) {
-    if (innerWidth <= 700) return [3, 2, 3, 2, 3, 2, 2, 3, 2, 3,3 ,2 ,3,]
-    return [3, 2, 3, 2, 3, 2, 2, 3, 2, 3,3 ,2 ,3,]
+    if (innerWidth <= 700) return [3, 2, 3, 2, 3, 2, 2, 3, 2, 3,3 ,2 ,3,3]
+    return [3, 2, 3, 2, 3, 2, 2, 3, 2, 3,3 ,2 ,3,3]
   }
   render() {
     const setting = {
@@ -130,7 +130,19 @@ class EESAPage extends React.Component {
         {
           source: "Images/eesa/NCP08596.JPG",
         },
-      
+        {
+          source: "Images/gallery/TRIP1.jpg",
+        },
+        {
+          source: "Images/gallery/TRIP3.jpg",
+        },
+        {
+          source: "Images/gallery/TRIP4.jpg",
+        },
+        {
+          source: "Images/gallery/TRIP5.jpg",
+        },
+
       ],
       showNumOfRemainingPhotos: true,
     }
