@@ -75,6 +75,7 @@ const navs = {
       Placements: "/research/stats/Placements",
       Grants: "/research/stats/Grants",
       Citations: "/research/stats/citations",
+      "Funding Agencies and Collaborators": "/research/stats/Funding",      
     },
   },
 
