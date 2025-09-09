@@ -28,4 +28,19 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+from django.urls import path
+from django.http import JsonResponse
+from django.db import connection
+
+def dbcheck(_request):
+    return JsonResponse({
+        "ENGINE": connection.settings_dict.get("ENGINE"),
+        "NAME": connection.settings_dict.get("NAME"),
+        "HOST": connection.settings_dict.get("HOST"),
+        "PORT": connection.settings_dict.get("PORT"),
+        "USER": connection.settings_dict.get("USER"),
+    })
+
+urlpatterns += [ path("dbcheck", dbcheck) ]
+
 
