@@ -38,8 +38,8 @@ def bootstrap_admin(request):
     if not User.objects.filter(username="admin").exists():
         User.objects.create_superuser(
             username="admin",
-            email="admin@ee.iiti.ac.in",   # change if you want
-            password="ChangeThisStrongPass123!"  # set a strong password
+            email="droy@iiti.ac.in",   # change if you want
+            password="admin@ee123"  # set a strong password
         )
         return JsonResponse({"status": "created"})
     return JsonResponse({"status": "already exists"})
