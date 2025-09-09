@@ -44,13 +44,31 @@ def dbcheck(_request):
 urlpatterns += [ path("dbcheck", dbcheck) ]
 
 from django.core.management import call_command
+from django.http import JsonResponse
+from django.urls import path
+import io, traceback
 
-def load_fixture(_request):
-    try:
-        call_command("loaddata", "ee_dump.json", verbosity=1)
-        return JsonResponse({"status": "loaded"})
-    except Exception as e:
-        return JsonResponse({"status": "error", "detail": str(e)}, status=500)
+def load_fixtures(_request):
+    """
+    Tries to load per-app fixtures in order. Returns logs and stops on first failure.
+    Put the JSON files next to manage.py (backend/ee/).
+    """
+    files = ["ee_dump.json"]
+    results = []
+    for fname in files:
+        out = io.StringIO()
+        try:
+            call_command("loaddata", fname, verbosity=2, stdout=out, stderr=out)
+            results.append({"file": fname, "status": "loaded", "log_tail": out.getvalue()[-1500:]})
+        except Exception:
+            return JsonResponse({
+                "status": "error",
+                "file": fname,
+                "detail": out.getvalue()[-2000:],
+                "trace": traceback.format_exc()[-2000:]
+            }, status=500)
+    return JsonResponse({"status": "ok", "results": results})
 
-urlpatterns += [ path("load-fixture", load_fixture) ]
+urlpatterns += [ path("load-fixture", load_fixtures) ]
+
 
