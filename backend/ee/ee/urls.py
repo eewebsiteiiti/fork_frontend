@@ -29,22 +29,3 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
 
-
-from django.contrib.auth import get_user_model
-from django.http import JsonResponse
-
-def bootstrap_admin(request):
-    User = get_user_model()
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser(
-            username="admin",
-            email="droy@iiti.ac.in",   # change if you want
-            password="admin@ee123"  # set a strong password
-        )
-        return JsonResponse({"status": "created"})
-    return JsonResponse({"status": "already exists"})
-
-urlpatterns += [
-    path("make-admin/", bootstrap_admin),
-]
-
