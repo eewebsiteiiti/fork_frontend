@@ -94,12 +94,29 @@ WSGI_APPLICATION = "ee.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+# Database: use Postgres if DATABASE_URL is present; else fall back to SQLite
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+_db_url = os.getenv("DATABASE_URL")
+if _db_url:
+    import dj_database_url
+    # Internal DB URL on Render usually doesn't need SSL.
+    # External URL requires SSL. Control via env flag below.
+    ssl_require = os.getenv("DATABASE_SSL_REQUIRE", "True") == "True"
+    DATABASES["default"] = dj_database_url.parse(
+        _db_url, conn_max_age=600, ssl_require=ssl_require
+    )
 
 
 # Password validation
