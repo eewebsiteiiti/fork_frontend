@@ -53,7 +53,7 @@ def load_fixtures(_request):
     Tries to load per-app fixtures in order. Returns logs and stops on first failure.
     Put the JSON files next to manage.py (backend/ee/).
     """
-    files = ["ee_dump.json"]
+    files = ["ee_dump.json","ee_auth_user.json"]
     results = []
     for fname in files:
         out = io.StringIO()
