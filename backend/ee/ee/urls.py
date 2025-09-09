@@ -11,7 +11,7 @@ def ping(_request):
     return JsonResponse({"ok": True})
 
 urlpatterns = [
-    path("iiti-ee-admin-login/", admin.site.urls),
+    # path("iiti-ee-admin-login/", admin.site.urls),
     path("api/announcement/", include('announcements.urls'), name="announcement"),
     path("api/events/", include('events.urls'), name='event'),
     path("api/news/", include('news.urls'), name='news'),
@@ -43,4 +43,14 @@ def dbcheck(_request):
 
 urlpatterns += [ path("dbcheck", dbcheck) ]
 
+from django.core.management import call_command
+
+def load_fixture(_request):
+    try:
+        call_command("loaddata", "ee_dump.json", verbosity=1)
+        return JsonResponse({"status": "loaded"})
+    except Exception as e:
+        return JsonResponse({"status": "error", "detail": str(e)}, status=500)
+
+urlpatterns += [ path("load-fixture", load_fixture) ]
 
