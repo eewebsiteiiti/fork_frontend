@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 (
                     "person",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="people.people"
+                        on_delete=django.db.models.deletion.CASCADE, to="people.Faculty"
                     ),
                 ),
             ],
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                 (
                     "worker",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="people.people"
+                        on_delete=django.db.models.deletion.CASCADE, to="people.Faculty"
                     ),
                 ),
             ],
@@ -76,7 +76,7 @@ class Migration(migrations.Migration):
                 (
                     "person",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="people.people"
+                        on_delete=django.db.models.deletion.CASCADE, to="people.Faculty"
                     ),
                 ),
             ],
@@ -98,7 +98,7 @@ class Migration(migrations.Migration):
                 (
                     "person",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="people.people"
+                        on_delete=django.db.models.deletion.CASCADE, to="people.Faculty"
                     ),
                 ),
             ],
