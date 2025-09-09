@@ -4,9 +4,10 @@ from django.db import models
 class News(models.Model):
     title = models.TextField(max_length=100)
     description = models.CharField(max_length=1000)
-    date = models.IntegerField()
+    date = models.DateField()
+    # date = models.IntegerField()
     month = models.CharField(max_length=50)
-    day = models.CharField(max_length=15)
+    day = models.CharField(max_length=255)
     time = models.TimeField()
     link = models.URLField(blank=True)
 
