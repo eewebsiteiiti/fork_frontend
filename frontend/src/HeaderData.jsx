@@ -25,7 +25,7 @@ export const staff = {
 export const mtech = {
   title: "M. Tech.",
   description:
-    "The Department offers two Master of Technology Programs in the following specialisations : M. Tech. in Communications and Signal Processing (CSP) and M. Tech. in VLSI and Nano Electronics(VDN). There are 15 seats in each of these specialisations.",
+    "The Department offers three Master of Technology Programs in the following specialisations : M. Tech. in Communications and Signal Processing (CSP), M. Tech. in VLSI and Nano Electronics(VDN), and M.Tech in Power Systems and Power Electronics (PEPS). There are 15 seats in CSP and VDN, and 10 in PEPS.",
   image: "/Images/header_images/mtech.JPG",
 }
 
