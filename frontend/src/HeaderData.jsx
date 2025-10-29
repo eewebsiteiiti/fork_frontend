@@ -12,13 +12,13 @@ export const btech = {
 export const faculty = {
   title: "Faculty Members",
   description:
-    "The Department currently has 23 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics, Electrical Machines, Power Systems and Controls (PEPS) & RF and Microwave. The faculty members are actively engaged in cutting-edge research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact.",
+    "The Department currently has 24 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics, Electrical Machines, Power Systems and Controls (PEPS) & RF and Microwave. The faculty members are actively engaged in cutting-edge research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact.",
   image: "/Images/header_images/faculty.JPG",
 }
 
 export const staff = {
   title: "Staff",
-  description: "The Department currently has 7 Support Staff Members.",
+  description: "The Department currently has 8 Support Staff Members.",
   // image:"/Images/header_images/staff.JPG"
 }
 
