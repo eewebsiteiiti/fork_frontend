@@ -59,6 +59,7 @@ const ResearchPage = () => {
                     <li>Prof. Vimal Bhatia</li>
                     <li>Prof. Vivek Kanhangad</li>
                     <li>Prof. Appina Balasubramanyam</li>
+                    <li> Prof. Ayush Tripathi</li>
                   </list>
                 </Typography>
               </div>
@@ -190,6 +191,7 @@ const ResearchPage = () => {
                     <li>Prof. Vivek Kanhangad</li>
                     <li>Prof. Vimal Bhatia</li>
                     <li> Prof. Dibbendu Roy</li>
+                    <li> Prof. Ayush Tripathi</li>
                   </list>
                 </Typography>
               </div>
