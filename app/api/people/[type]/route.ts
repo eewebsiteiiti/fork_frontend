@@ -22,18 +22,57 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const year = searchParams.get('year');
+    const page = parseInt(searchParams.get('page') || '0');
+    const limit = parseInt(searchParams.get('limit') || '0');
+    const search = searchParams.get('search') || '';
 
-    let query = `SELECT * FROM ${type}`;
+    let whereClause = '';
     const queryParams: (string | number)[] = [];
 
+    // Build WHERE clause
+    const conditions: string[] = [];
+
     if (year && ['btech', 'mtech', 'phd', 'alumni', 'ms'].includes(type)) {
-      query += ' WHERE year = ?';
+      conditions.push('year = ?');
       queryParams.push(parseInt(year));
     }
 
-    query += ' ORDER BY id DESC';
+    if (search) {
+      conditions.push('name LIKE ?');
+      queryParams.push(`%${search}%`);
+    }
 
-    const data = db.prepare(query).all(...queryParams);
+    if (conditions.length > 0) {
+      whereClause = ' WHERE ' + conditions.join(' AND ');
+    }
+
+    // Get total count
+    const countQuery = `SELECT COUNT(*) as total FROM ${type}${whereClause}`;
+    const countResult = db.prepare(countQuery).get(...queryParams) as { total: number };
+    const total = countResult.total;
+
+    // Get paginated data
+    let dataQuery = `SELECT * FROM ${type}${whereClause} ORDER BY id DESC`;
+
+    if (limit > 0) {
+      dataQuery += ` LIMIT ? OFFSET ?`;
+      queryParams.push(limit, page * limit);
+    }
+
+    const data = db.prepare(dataQuery).all(...queryParams);
+
+    // If pagination is requested, return with metadata
+    if (limit > 0) {
+      return NextResponse.json({
+        data,
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      });
+    }
+
+    // Otherwise return just the data (for backward compatibility)
     return NextResponse.json(data);
   } catch (error) {
     console.error('Error fetching people:', error);

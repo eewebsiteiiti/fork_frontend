@@ -2,14 +2,33 @@ import { NextRequest, NextResponse } from 'next/server';
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 
+// Valid folders for image uploads
+const VALID_FOLDERS: Record<string, string> = {
+  faculty: 'images/people/faculty',
+  staff: 'images/people/staff',
+  btech: 'images/people/students/btech',
+  mtech: 'images/people/students/mtech',
+  phd: 'images/people/students/phd',
+  ms: 'images/people/students/ms',
+  alumni: 'images/people/students/alumni',
+  labs: 'images/labs',
+  events: 'images/events',
+  books: 'images/books',
+  uploads: 'uploads',
+};
+
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
     const file = formData.get('file') as File;
+    const folder = (formData.get('folder') as string) || 'uploads';
 
     if (!file) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 });
     }
+
+    // Validate folder
+    const targetFolder = VALID_FOLDERS[folder] || VALID_FOLDERS['uploads'];
 
     // Validate file type
     const validTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp', 'image/jpg'];
@@ -29,13 +48,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create unique filename
-    const timestamp = Date.now();
-    const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-    const filename = `${timestamp}-${originalName}`;
+    // Create filename - use custom name if provided, otherwise sanitize original
+    const customFilename = formData.get('filename') as string;
+    let filename: string;
+    if (customFilename) {
+      // Use custom filename (sanitized)
+      filename = customFilename.replace(/[^a-zA-Z0-9.-]/g, '_').toLowerCase();
+    } else {
+      // Use original name (sanitized)
+      filename = file.name.replace(/[^a-zA-Z0-9.-]/g, '_').toLowerCase();
+    }
 
-    // Ensure uploads directory exists
-    const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
+    // Ensure target directory exists
+    const uploadsDir = path.join(process.cwd(), 'public', targetFolder);
     await mkdir(uploadsDir, { recursive: true });
 
     // Write file
@@ -45,9 +70,9 @@ export async function POST(request: NextRequest) {
     await writeFile(filePath, buffer);
 
     // Return the public URL
-    const url = `/uploads/${filename}`;
+    const url = `/${targetFolder}/${filename}`;
 
-    return NextResponse.json({ url, filename });
+    return NextResponse.json({ url, filename, folder: targetFolder });
   } catch (error) {
     console.error('Upload error:', error);
     return NextResponse.json({ error: 'Upload failed' }, { status: 500 });

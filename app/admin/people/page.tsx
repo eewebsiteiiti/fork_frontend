@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Box,
@@ -13,6 +13,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  TablePagination,
   Paper,
   IconButton,
   Button,
@@ -24,8 +25,9 @@ import {
   Alert,
   CircularProgress,
   Chip,
+  Avatar,
 } from '@mui/material';
-import { Edit, Delete, Add, Search } from '@mui/icons-material';
+import { Edit, Delete, Add, Search, CloudUpload } from '@mui/icons-material';
 
 const PEOPLE_TYPES = [
   { value: 'faculty', label: 'Faculty' },
@@ -76,15 +78,25 @@ export default function PeopleAdminPage() {
 
   const [activeTab, setActiveTab] = useState(PEOPLE_TYPES.findIndex(t => t.value === initialType) || 0);
   const [data, setData] = useState<Person[]>([]);
+  const [totalCount, setTotalCount] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [search, setSearch] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   // Dialog state
   const [dialogOpen, setDialogOpen] = useState(false);
   const [editingItem, setEditingItem] = useState<Person | null>(null);
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
+
+  // Image upload state
+  const [uploading, setUploading] = useState(false);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [pendingImageFile, setPendingImageFile] = useState<File | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Delete dialog
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
@@ -102,9 +114,19 @@ export default function PeopleAdminPage() {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch(`/api/people/${currentType}`);
+      const params = new URLSearchParams({
+        page: page.toString(),
+        limit: rowsPerPage.toString(),
+      });
+      if (debouncedSearch) {
+        params.set('search', debouncedSearch);
+      }
+
+      const res = await fetch(`/api/people/${currentType}?${params}`);
       const json = await res.json();
-      setData(json);
+
+      setData(json.data);
+      setTotalCount(json.total);
     } catch {
       setError('Failed to fetch data');
     } finally {
@@ -112,19 +134,88 @@ export default function PeopleAdminPage() {
     }
   };
 
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(search);
+      setPage(0);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  // Fetch data when dependencies change
   useEffect(() => {
     fetchData();
-  }, [currentType]);
+  }, [currentType, page, rowsPerPage, debouncedSearch]);
 
   const handleTabChange = (_: React.SyntheticEvent, newValue: number) => {
     setActiveTab(newValue);
+    setPage(0);
+    setSearch('');
+    setDebouncedSearch('');
     router.push(`/admin/people?type=${PEOPLE_TYPES[newValue].value}`);
+  };
+
+  const handleChangePage = (_: unknown, newPage: number) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
   };
 
   const handleAdd = () => {
     setEditingItem(null);
     setFormData({});
+    setImagePreview(null);
+    setPendingImageFile(null);
     setDialogOpen(true);
+  };
+
+  const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    // Store file for later upload
+    setPendingImageFile(file);
+
+    // Show preview
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImagePreview(reader.result as string);
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const uploadImage = async (filename: string): Promise<string | null> => {
+    if (!pendingImageFile) return null;
+
+    setUploading(true);
+    try {
+      const uploadData = new FormData();
+      uploadData.append('file', pendingImageFile);
+      uploadData.append('folder', currentType);
+      uploadData.append('filename', filename);
+
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: uploadData,
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.error || 'Upload failed');
+      }
+
+      const { url } = await res.json();
+      return url;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to upload image');
+      return null;
+    } finally {
+      setUploading(false);
+    }
   };
 
   const handleEdit = (item: Person) => {
@@ -135,25 +226,68 @@ export default function PeopleAdminPage() {
       data[f.key] = String(item[f.key] || '');
     });
     setFormData(data);
+    setImagePreview(item.image ? String(item.image) : null);
+    setPendingImageFile(null);
     setDialogOpen(true);
   };
 
+  const getImageFilename = (): string => {
+    const isStudent = ['btech', 'mtech', 'phd', 'ms', 'alumni'].includes(currentType);
+
+    if (isStudent && formData.roll_no) {
+      // For students, use roll number as filename
+      return `${formData.roll_no}.jpg`;
+    } else if (formData.name) {
+      // For faculty/staff, use slugified name
+      const slug = formData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return `${slug}.jpg`;
+    }
+    // Fallback to timestamp
+    return `upload-${Date.now()}.jpg`;
+  };
+
   const handleSave = async () => {
+    // Validate required fields
+    const isStudent = ['btech', 'mtech', 'phd', 'ms', 'alumni'].includes(currentType);
+    if (isStudent && pendingImageFile && !formData.roll_no) {
+      setError('Roll number is required when uploading an image for students');
+      return;
+    }
+
     setSaving(true);
+    setError('');
+
     try {
+      // Upload image first if there's a pending file
+      let imageUrl = formData.image;
+      if (pendingImageFile) {
+        const filename = getImageFilename();
+        const uploadedUrl = await uploadImage(filename);
+        if (uploadedUrl) {
+          imageUrl = uploadedUrl;
+        }
+      }
+
+      // Save the person data
       const url = editingItem
         ? `/api/people/${currentType}/${editingItem.id}`
         : `/api/people/${currentType}`;
 
+      const payload = { ...formData };
+      if (imageUrl) {
+        payload.image = imageUrl;
+      }
+
       const res = await fetch(url, {
         method: editingItem ? 'PUT' : 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (!res.ok) throw new Error('Failed to save');
 
       setDialogOpen(false);
+      setPendingImageFile(null);
       fetchData();
     } catch {
       setError('Failed to save');
@@ -179,10 +313,6 @@ export default function PeopleAdminPage() {
       setError('Failed to delete');
     }
   };
-
-  const filteredData = data.filter(item =>
-    item.name.toLowerCase().includes(search.toLowerCase())
-  );
 
   return (
     <Box>
@@ -241,7 +371,7 @@ export default function PeopleAdminPage() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {filteredData.map((item) => (
+              {data.map((item) => (
                 <TableRow key={item.id}>
                   <TableCell>{item.id}</TableCell>
                   <TableCell>{item.name}</TableCell>
@@ -271,7 +401,7 @@ export default function PeopleAdminPage() {
                   </TableCell>
                 </TableRow>
               ))}
-              {filteredData.length === 0 && (
+              {data.length === 0 && (
                 <TableRow>
                   <TableCell colSpan={6} align="center">
                     No records found
@@ -280,6 +410,15 @@ export default function PeopleAdminPage() {
               )}
             </TableBody>
           </Table>
+          <TablePagination
+            component="div"
+            count={totalCount}
+            page={page}
+            onPageChange={handleChangePage}
+            rowsPerPage={rowsPerPage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
+            rowsPerPageOptions={[5, 10, 25, 50]}
+          />
         </TableContainer>
       )}
 
@@ -291,23 +430,64 @@ export default function PeopleAdminPage() {
         <DialogContent>
           <Box sx={{ pt: 2, display: 'flex', flexDirection: 'column', gap: 2 }}>
             {getFields().map((field) => (
-              <TextField
-                key={field.key}
-                label={field.label}
-                value={formData[field.key] || ''}
-                onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
-                required={field.required}
-                multiline={field.multiline}
-                rows={field.multiline ? 3 : 1}
-                type={field.type || 'text'}
-                fullWidth
-              />
+              field.key === 'image' ? (
+                <Box key={field.key}>
+                  <Typography variant="subtitle2" sx={{ mb: 1 }}>
+                    Photo
+                  </Typography>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                    <Avatar
+                      src={imagePreview || formData.image || ''}
+                      sx={{ width: 80, height: 80 }}
+                    />
+                    <Box>
+                      <input
+                        type="file"
+                        accept="image/*"
+                        onChange={handleImageSelect}
+                        ref={fileInputRef}
+                        style={{ display: 'none' }}
+                      />
+                      <Button
+                        variant="outlined"
+                        startIcon={uploading ? <CircularProgress size={16} /> : <CloudUpload />}
+                        onClick={() => fileInputRef.current?.click()}
+                        disabled={uploading}
+                      >
+                        {uploading ? 'Uploading...' : 'Upload Image'}
+                      </Button>
+                      {pendingImageFile && (
+                        <Typography variant="caption" display="block" sx={{ mt: 0.5, color: 'success.main' }}>
+                          Will be saved as: {getImageFilename()}
+                        </Typography>
+                      )}
+                      {!pendingImageFile && formData.image && (
+                        <Typography variant="caption" display="block" sx={{ mt: 0.5, color: 'text.secondary' }}>
+                          Current: {formData.image}
+                        </Typography>
+                      )}
+                    </Box>
+                  </Box>
+                </Box>
+              ) : (
+                <TextField
+                  key={field.key}
+                  label={field.label}
+                  value={formData[field.key] || ''}
+                  onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
+                  required={field.required}
+                  multiline={field.multiline}
+                  rows={field.multiline ? 3 : 1}
+                  type={field.type || 'text'}
+                  fullWidth
+                />
+              )
             ))}
           </Box>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setDialogOpen(false)}>Cancel</Button>
-          <Button onClick={handleSave} variant="contained" disabled={saving}>
+          <Button onClick={handleSave} variant="contained" disabled={saving || uploading}>
             {saving ? <CircularProgress size={20} /> : 'Save'}
           </Button>
         </DialogActions>

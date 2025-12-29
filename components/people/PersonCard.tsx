@@ -4,7 +4,6 @@ import { Box, Card, CardContent, CardMedia, Typography, Chip } from '@mui/materi
 import { Email, Phone, Language, LocationOn } from '@mui/icons-material';
 import Link from 'next/link';
 import { getStudentImagePath, getFacultyImagePath, getStaffImagePath, PLACEHOLDER_IMAGE } from '@/lib/images';
-import { get } from 'http';
 
 interface PersonCardProps {
   name: string;
@@ -19,6 +18,7 @@ interface PersonCardProps {
   roll_no?: string;
   year?: number;
   program?: string; // btech, mtech, phd, ms, alumni
+  image?: string; // Image path from database
   type: 'faculty' | 'staff' | 'student' | 'alumni';
 }
 
@@ -35,20 +35,21 @@ export default function PersonCard({
   roll_no,
   year,
   program,
+  image,
   type,
 }: PersonCardProps) {
-  // Derive image path from identifiers - no DB storage needed
+  // Get image URL - database image takes precedence over derived paths
   const getImageUrl = () => {
     if (type === 'student' && roll_no && program) {
-      return getStudentImagePath(program, roll_no);
+      return getStudentImagePath(program, roll_no, image);
     }
     if (type === 'faculty') {
-      return getFacultyImagePath(name);
+      return getFacultyImagePath(name, image);
     }
     if (type === 'staff') {
-      return getStaffImagePath(name);
+      return getStaffImagePath(name, image);
     }
-    return PLACEHOLDER_IMAGE;
+    return image || PLACEHOLDER_IMAGE;
   };
 
   const imageUrl = getImageUrl();

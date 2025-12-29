@@ -3,13 +3,13 @@ import { Box, Container, Grid, Typography, ImageList, ImageListItem } from '@mui
 const itemData1 = [
   { img: '/images/carousel/1.jpg' },
   { img: '/images/carousel/2.jpg' },
-  { img: '/images/gallery/ps.JPG' },
+  { img: '/images/gallery/department/ps.jpg' },
 ];
 
 const itemData2 = [
-  { img: '/images/gallery/staffCombo.JPG' },
-  { img: '/images/gallery/btech22.jpg' },
-  { img: '/images/gallery/IMG_6892.JPG' },
+  { img: '/images/gallery/department/staffcombo.jpg' },
+  { img: '/images/gallery/batches/btech22.jpg' },
+  { img: '/images/gallery/department/img-6892.jpg' },
 ];
 
 export default function Gallery() {
@@ -49,7 +49,7 @@ export default function Gallery() {
         <Grid size={{ xs: 12, md: 4 }} sx={{ display: { xs: 'none', md: 'block' } }}>
           <Box
             component="img"
-            src="/images/gallery/FC2.JPG"
+            src="/images/gallery/department/fc2.jpg"
             alt=""
             sx={{ height: 245, width: '100%', objectFit: 'cover' }}
           />
@@ -72,7 +72,7 @@ export default function Gallery() {
         <Grid size={{ xs: 12, md: 4 }} sx={{ display: { xs: 'none', md: 'block' } }}>
           <Box
             component="img"
-            src="/images/gallery/vdn.JPG"
+            src="/images/gallery/department/vdn.jpg"
             alt=""
             sx={{ height: 245, width: '100%', objectFit: 'cover' }}
           />

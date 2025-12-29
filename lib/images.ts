@@ -1,8 +1,8 @@
 /**
  * Image path utilities
  *
- * Instead of storing image paths in the database, we derive them from identifiers.
- * This makes the codebase more maintainable and reduces database complexity.
+ * Images can be stored in the database (uploaded via admin) or derived from mappings.
+ * Database paths take precedence over mappings.
  */
 
 // Slugify a name for use in file paths
@@ -13,8 +13,17 @@ export function slugify(name: string): string {
     .replace(/^-|-$/g, '');
 }
 
+// Check if image path is valid (uploaded or exists)
+function isValidImagePath(path: string | null | undefined): path is string {
+  return Boolean(path && path.trim() !== '' && path !== 'null' && path !== 'undefined');
+}
+
 // Get student image path based on program and roll number
-export function getStudentImagePath(program: string, rollNo: string): string {
+export function getStudentImagePath(program: string, rollNo: string, dbImage?: string | null): string {
+  // If there's an image stored in database, use it
+  if (isValidImagePath(dbImage)) {
+    return dbImage;
+  }
   const programDir = program.toLowerCase();
   return `/images/people/students/${programDir}/${rollNo}.jpg`;
 }
@@ -51,7 +60,12 @@ const facultyImageMap: Record<string, string> = {
   'Prof. Vijay A. S.': 'vijay.jpg',
 };
 
-export function getFacultyImagePath(name: string): string {
+export function getFacultyImagePath(name: string, dbImage?: string | null): string {
+  // If there's an image stored in database, use it
+  if (isValidImagePath(dbImage)) {
+    return dbImage;
+  }
+  // Try mapping
   const imageName = facultyImageMap[name];
   if (imageName) {
     return `/images/people/faculty/${imageName}`;
@@ -72,7 +86,12 @@ const staffImageMap: Record<string, string> = {
   'Ms. Shrashti Sharma': 'shrashti.jpg',
 };
 
-export function getStaffImagePath(name: string): string {
+export function getStaffImagePath(name: string, dbImage?: string | null): string {
+  // If there's an image stored in database, use it
+  if (isValidImagePath(dbImage)) {
+    return dbImage;
+  }
+  // Try mapping
   const imageName = staffImageMap[name];
   if (imageName) {
     return `/images/people/staff/${imageName}`;
@@ -105,3 +124,12 @@ export function getLabImagePath(type: 'ug' | 'pg' | 'research', labName: string)
 
 // Placeholder image
 export const PLACEHOLDER_IMAGE = '/images/logos/profile-placeholder.jpg';
+
+// Event placeholder
+export const EVENT_PLACEHOLDER = '/images/logos/event-placeholder.jpg';
+
+// Get event image path based on event ID
+// Images should be placed in /public/images/events/event-{id}.jpg
+export function getEventImagePath(eventId: number): string {
+  return `/images/events/event-${eventId}.jpg`;
+}

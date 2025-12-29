@@ -15,10 +15,11 @@ interface Faculty {
   link: string;
   subtitle: string;
   place: string;
+  image?: string;
 }
 
 export default function FacultyCard({ faculty }: { faculty: Faculty }) {
-  const imageUrl = getFacultyImagePath(faculty.name);
+  const imageUrl = getFacultyImagePath(faculty.name, faculty.image);
 
   return (
     <Paper

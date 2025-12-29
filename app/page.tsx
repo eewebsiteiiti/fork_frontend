@@ -10,6 +10,7 @@ import Gallery from '@/components/home/Gallery';
 import NoteFromHOD from '@/components/home/NoteFromHOD';
 import db from '@/lib/db';
 import { initializeDatabase, checkTablesExist } from '@/lib/schema';
+import { getEventImagePath } from '@/lib/images';
 
 // Ensure database is initialized
 if (!checkTablesExist()) {
@@ -122,7 +123,7 @@ export default function HomePage() {
                         <EventCard
                           title={event.title}
                           description={event.description}
-                          image="/images/logos/profile-placeholder.jpg"
+                          image={getEventImagePath(event.id)}
                           date={event.date}
                           month={event.month}
                           day={event.day}
@@ -134,7 +135,7 @@ export default function HomePage() {
                       <EventCard
                         title={event.title}
                         description={event.description}
-                        image="/images/logos/profile-placeholder.jpg"
+                        image={getEventImagePath(event.id)}
                         date={event.date}
                         month={event.month}
                         day={event.day}

@@ -1,4 +1,9 @@
+'use client';
+
+import { useState } from 'react';
 import { Box, Typography, CardMedia, Grid } from '@mui/material';
+
+const EVENT_PLACEHOLDER = '/images/logos/event-placeholder.jpg';
 
 interface EventCardProps {
   title: string;
@@ -22,6 +27,8 @@ export default function EventCard({
   time,
   year,
 }: EventCardProps) {
+  const [imgSrc, setImgSrc] = useState(image || EVENT_PLACEHOLDER);
+
   return (
     <Box>
       <Grid container direction="column" alignItems="flex-start">
@@ -29,7 +36,8 @@ export default function EventCard({
           <CardMedia
             component="img"
             sx={{ height: 140, width: '100%', objectFit: 'cover' }}
-            image={image || '/images/profile_placeholder.jpg'}
+            image={imgSrc}
+            onError={() => setImgSrc(EVENT_PLACEHOLDER)}
           />
         </Grid>
         <Grid size={12}>
