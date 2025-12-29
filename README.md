@@ -1,36 +1,252 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EE Department Website - IIT Indore
+
+Next.js website for the Electrical Engineering Department at IIT Indore.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Library**: Material-UI (MUI) v7
+- **Database**: SQLite (better-sqlite3)
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Seed the database (first time only)
+npm run seed
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run seed` | Seed/reset the database |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── app/                    # Next.js App Router pages
+│   ├── about/              # About page
+│   ├── achievements/       # Books, awards, patents
+│   ├── activities/         # EESA, reads, seminars, events
+│   ├── admin/              # Admin dashboard
+│   ├── api/                # API routes
+│   ├── courses/            # Course listings
+│   ├── gallery/            # Photo gallery
+│   ├── labs/               # UG and Research labs
+│   ├── people/             # Faculty, staff, students
+│   └── research/           # Research areas, projects
+├── components/             # Reusable React components
+├── config/                 # Configuration files
+│   ├── nav-data.ts         # Navigation menu structure
+│   └── theme.ts            # MUI theme customization
+├── data/seed/              # JSON seed data files
+├── lib/                    # Utilities and database
+│   ├── db.ts               # Database connection
+│   ├── schema.ts           # Database schema
+│   ├── seed.ts             # Seeding logic
+│   └── images.ts           # Image path mappings
+├── public/images/          # Static images
+└── database.sqlite         # SQLite database file
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Schema
 
-## Deploy on Vercel
+The database includes the following tables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Table | Description |
+|-------|-------------|
+| `faculty` | Faculty members |
+| `staff` | Staff members |
+| `btech`, `mtech`, `phd`, `ms` | Students by program |
+| `alumni` | Alumni records |
+| `courses`, `courses_new` | Course listings |
+| `electives` | Elective courses |
+| `ug_labs`, `pg_labs` | Laboratory information |
+| `research` | Research areas |
+| `projects` | Research projects |
+| `events` | Department events |
+| `announcements` | Announcements |
+| `news` | News items |
+| `reads` | Student articles |
+| `books` | Published books |
+| `faculty_awards`, `student_awards` | Awards |
+| `patents` | Patents |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Seeding the Database
+
+The database is seeded from JSON files in `data/seed/`. To reset and reseed:
+
+```bash
+# Delete existing database
+rm database.sqlite database.sqlite-shm database.sqlite-wal
+
+# Reseed
+npm run seed
+```
+
+### Updating Data
+
+#### Option 1: Edit JSON seed files
+
+1. Edit the relevant file in `data/seed/`:
+   - `people_faculty.json` - Faculty
+   - `people_staff.json` - Staff
+   - `people_btech.json`, `people_mtech.json`, etc. - Students
+   - `course_course.json`, `course_coursenew.json` - Courses
+   - `events_events.json` - Events
+   - `announcements_announcements.json` - Announcements
+   - `research_uglabs.json`, `research_pglabs.json` - Labs
+   - `achievements_books.json`, `achievements_patent.json` - Achievements
+
+2. Delete and reseed:
+   ```bash
+   rm database.sqlite*
+   npm run seed
+   ```
+
+#### Option 2: Use Admin Panel
+
+1. Navigate to `/admin/login`
+2. Login with admin credentials (set in `.env.local`)
+3. Use the admin interface to manage data
+
+#### Option 3: Direct Database Edit
+
+```bash
+# Open SQLite CLI
+sqlite3 database.sqlite
+
+# Example queries
+.tables                          # List all tables
+SELECT * FROM faculty;           # View faculty
+INSERT INTO faculty (name, title, email) VALUES ('Name', 'Professor', 'email@iiti.ac.in');
+.quit                            # Exit
+```
+
+### Adding New Faculty/Staff Images
+
+1. Add image to `public/images/faculty/` or `public/images/staff/`
+2. Update `lib/images.ts` with the mapping:
+   ```typescript
+   const facultyImages: Record<string, string> = {
+     'Dr. New Faculty': '/images/faculty/new-faculty.jpg',
+     // ...
+   };
+   ```
+
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+ADMIN_PASSWORD=your_secure_password
+JWT_SECRET=your_jwt_secret_key
+```
+
+## Navigation
+
+Navigation structure is defined in `config/nav-data.ts`. To add/modify menu items:
+
+```typescript
+// config/nav-data.ts
+export const navData: NavItem[] = [
+  {
+    label: 'Section Name',
+    children: [
+      { label: 'Page Name', href: '/path' },
+      { label: 'External Link', href: 'https://...', external: true },
+    ],
+  },
+];
+```
+
+## Adding New Pages
+
+1. Create a new folder in `app/` with `page.tsx`
+2. Use existing components from `components/`
+3. Add navigation link in `config/nav-data.ts`
+
+Example:
+```typescript
+// app/new-page/page.tsx
+import PageLayout from '@/components/layout/PageLayout';
+
+export default function NewPage() {
+  return (
+    <PageLayout title="Page Title" subtitle="Description">
+      {/* Content */}
+    </PageLayout>
+  );
+}
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+```bash
+npm run build
+# Deploy via Vercel CLI or GitHub integration
+```
+
+### Self-hosted
+
+```bash
+npm run build
+npm run start
+```
+
+Note: Ensure `database.sqlite` is included in the deployment and the server has write access for SQLite.
+
+## Common Tasks
+
+### Add a new student batch
+
+1. Create JSON file: `data/seed/people_btech.json` (add entries)
+2. Run `npm run seed`
+
+### Update timetable links
+
+Edit `config/nav-data.ts` and update the Timetable section URLs.
+
+### Add new lab
+
+1. Add entry to `data/seed/research_uglabs.json` or `research_pglabs.json`
+2. Add lab image to `public/images/labs/`
+3. Run `npm run seed`
+
+### Modify theme/colors
+
+Edit `config/theme.ts`:
+```typescript
+palette: {
+  primary: { main: '#1a237e' },  // Deep blue
+  secondary: { main: '#c5a47e' }, // Gold
+}
+```
+
+## License
+
+Internal use - IIT Indore Electrical Engineering Department
