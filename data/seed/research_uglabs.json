@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Electrical and Electronics Engineering Laboratory",
+    "experiments": "{\"experiments\": [\"Familiarization with CRO, Function Generator, Power Supply and Digital Multimeter\", \"Characteristics of passive circuit elements (R, L, C)\", \"Verification of Network Theorems\", \"Time and frequency responses of RC, RLC Circuits\", \"Some electronic components and their characteristics: Diode, Zener Diode, LED, Photodetector, Microphone\", \"DC power supply\", \"Bipolar Junction Transistor (BJT) Circuits\", \"Voltage amplifiers using Operational Amplifiers\", \"Waveshaping and Waveform Generation using op-amps\"]}",
+    "equipments": "{\"equipments\": [\"30 MHz Dual Channel CROs\", \"3 MHz Function Generators\", \"DC Power Supplies 30V\", \"Digital Multimeters\", \"RLC Meters\"]}",
+    "image": "images/EE154_Lab.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Control System Laboratory",
+    "experiments": "{\"experiments\": [\"Speed Control of DC Motor\", \"Speed Control of DC Motor using PID Control\", \"Open-loop Process Response to Sine Input\", \"Closed Loop Control PID set point : steady state and transient response\", \"PID with ramp process disturbance\", \"Lead/Lag Compensator First and Second Order\"]}",
+    "equipments": "{\"equipments\": [\"Computer Systems\", \"NI-ELVIS QNET Kits\", \"Lab view Software\", \"PID Control Trainers\"]}",
+    "image": "images/Control_Lab.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Electrical Machines and Power Electronics (EMPEL) Laboratory",
+    "experiments": "{\"experiments\": [\"Short Circuit and Open circuit tests and load test of a Single-Phase Transformer\", \"Speed control of a Separately Excited DC motor\", \"Open Circuit and Load Tests on a Separately Excited DC Generator   \", \"Speed Control of a 3-\\u0424 Squirrel Cage Induction Motor by V/f Control  and loading test\", \"Load test on synchronous motor\", \"Study of DC DC Buck and Boost converters with different filters and loads\", \"Operation of controlled rectifiers (AC-DC)\", \"Study of DC- AC conversion \\u2013 Inverters\", \"Basics of AC-AC conversion.\"]}",
+    "equipments": "{\"equipments\": [\"Amplifier AC/DC with BNC  male to female connectors\", \"Buck converters\", \"Boost converters\", \"Buck-boost converters\", \"Flyback converters\", \"Forward converters\", \"Current probes 100 A, AC/DC 100 kHz\", \"Current probe 50 A, DC 50 MHz\", \"Rotating machine test benches - AC/DC loads with motors\", \"DSP kits with motor DSP-2407A\", \"DSP board with J-tag emulator DR0 70054113\", \"EZ-DSP starter kit TMS320F28335\", \"Data acquisition cards\", \"DSO 2-channel 40 MHz (Tektronix)\", \"DSO 4-channel 200 MHz (tektronix)TPS-2024B\", \"DSO 2-channel 100 MHz (Tektronix) TDS-1012EDU\", \"DSO 2-channel 70 MHz Scientific make SMO-2072\", \"DSO 4-channel 100 MHz TDS-2014\", \"DC electronic load 350 W\", \"CROs SM 330, 30 MHz\", \"DC power supplies\", \"Function generator 10 MHz Scientific\", \"Function generators AFG 1022, 25 MHz\", \"Function generators 80 MHz, SMG 2082\", \"High voltage probes 250 MHz, 100x, 2.5 kV\", \"High voltage probes 50 MHz 50x/500x 1.3 kV p5200 A\", \"High voltage probes 250 MHz\", \"IGBT 1-phase signal phase converter voltage source\", \"IGBT 3-phase phase converter Z-source\", \"Single phase 4 A transformer\", \"Single phase 8 A transformer\", \"3-phase isolation transformers 3 kVA, 5 kVA\", \"3-phase transformers 20 A\", \"3-phase transformers 10 A\", \"Single phase isolation transformer\", \"NVIS single phase transformer kit with load\", \"NVIS RLC resonance trainer kits\", \"NVIS three phase lab kits\", \"LCR meter sm-6019\", \"Power analyzer PM 1000+\", \"Power supplies 32 V/10 A, model PDS 3210\", \"Programmable DC power supply, REGOL DP 832\", \"Multi-range DC power supply 360 W\", \"Programmable DC power supplies 60 V/10 A\", \"Programmable DC power supplies, 30 V/36 A, 360 W\", \"Programmable DC power supplies Delta SM-66-ar-110\", \"Programmable DC power supply Delta SM-660-ar-11\", \"Aplab SCR pre-regulated power supply 0-80 V/25 A\", \"Solar array simulator 120 V/10 A\", \"Solar panel insight with converter and controller\", \"Solar PV laboratory kits from IIT Bombay\", \"Soldering station MAX 8550\", \"Winding machine for transformer inductor\", \"Computers with UPS\", \"Cut section motor units:Single and three phase IM, DC motor\", \"Power Electronic and Electric Drive kits:National Infotech.\", \"Special Electrical Machine kits\"]}",
+    "image": "images/256_Lab.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Microprocessor Laboratory",
+    "experiments": "{\"experiments\": [\"Familiarisation with the 8085\", \"Familiarisation with the software\", \"Interfacing of 8255 Mode 0\", \"Interfacing of 8255 Mode 1\", \"Interfacing of ADC and DAC with 8085\", \"Study of Interrupts and Interfacing of 8253 Timer\", \"Interfacing  of Usart 8251\", \"Introduction of Microcontroller 8051\", \"Overview for Anshuman classic-85 kit and ASCII codes PC to kit interfacing\"]}",
+    "equipments": "{\"equipments\": [\"Anshuman 8085 Kits\", \"Anshuman 8051 Kits\", \"Converter Cards\", \"Anshuman 8253 Timer Interrupts Cards\", \"Anshuman 8255 Kits\", \"Anshuman XPO 51 Kits\", \"Anshuman ADC Cards\", \"Anshuman DAC Cards\"]}",
+    "image": "images/Microprocessor_Lab.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Electronic Devices Laboratory",
+    "experiments": "{\"experiments\": [\"To Get Familiar with the Oscilloscope, observe waveforms Generated with Function Generator and make measurements for a series RC Circuit.\", \"To measure the DC I-V Characteristics of Diodes.\", \"To measure the AC/DC Characteristics of Diode Clipping circuits, voltage doublers, rectified differentiation, and precision rectifier.\", \"To measure the reverse-bias capacitance of P-N junction capacitance.\", \"To measure the minority carrier lifetime in a semiconductor photodiode by 3 independent techniques.\", \"To obtain the I-V Characteristics of bipolar transistor and computer transistors parameters.\", \"To obtain some small signal parameters of bipolar junction transistors (BJTs).\", \"To measure and analyze bias quantities (DC currents and voltages) and small-signal gain of the given common-emitter amplifier circuit.\", \"To obtain MOSFET Parameters from DC Current-Voltage Measurements.\"]}",
+    "equipments": "{\"equipments\": [\"Digital Storage Oscilloscopes 50 MHz Bandwidth & 2 Channels.\", \"Digital Storage Oscilloscopes 100 MHz Bandwidth & 2 Channels.\", \"Function Generator 3 MHz AM/FM Function Pulse Generators.\", \"4.5 Digit Bench Top Digital Multimeters\", \"Multiple DC Power Supplies 0-30V/2A, 0-5V/5A, +/-15V/1A.\", \"Digital Multimeters 3.5 digit Handheld\"]}",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Analog Circuits Laboratory",
+    "experiments": "{\"experiments\": [\"To study the working of inverting, non-inverting, differentiator, and integrator circuits using operational amplifiers\", \"To study the working of Active filters, Butterworth low-pass filter, Butterworth high-pass filter, Wide band-pass filter, and Multiple Feedback band-pass filter circuits using operational amplifiers\", \"To study and measure the non-ideal parameters of LM741\", \"To study the working of Schmitt triggers, Multivibrators, and precision rectifier circuits using operational amplifiers.\", \"To study the working of Wien Bridge oscillator, log and antilog amplifier circuits using operational amplifiers.\", \"To study the working of Difference amplifiers, instrumentation amplifiers and voltage regulator circuits using operational amplifiers.\", \"To study the characteristics of following current mirrors (sources).\", \"Design Challenge- 1 Design a circuit using op-amps to solve the differential equations. (Differential equation solver)\", \"Design Challenge- 2 Design a circuit to generate a 1 kHz sine wave (which will drive a speaker) whenever the supply voltage is outside this range.\", \"Design Challenge- 3 Pulse Width Modulation (PWM) signal generator.\"]}",
+    "equipments": "{\"equipments\": [\"Digital Storage Oscilloscopes 50 MHz Bandwidth with 2 Channels\", \"Digital Storage Oscilloscopes 100 MHz Bandwidth with 2 Channels\", \"Function Generator 3 MHz AM/FM Function Pulse Generators.\", \"4.5 Digit Bench Top Digital Multimeters\", \"Multiple DC Power Supplies 0-30V/2A, 0-5V/5A, +/-15V/1A\", \"Digital Multimeters 3.5 digit Handheld\"]}",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Digital Systems Laboratory",
+    "experiments": "{\"experiments\": [\"To gain familiarity with digital integrated circuits by setting up simple logic circuits.\", \"To study the working of Combinational logic circuits TTL adder, multiplexer, and decoder.\", \"To study the working of Sequential logic circuits Flip Flops and Counters.\", \"To study the working of Counters and Shift Registers using with 7490-decade counter and 7495 shift registers.\", \"To study the working of Timer Circuits and DAC.\", \"To study the working of CMOS Logic Gates.\"]}",
+    "equipments": "{\"equipments\": [\"Multiple DC Power Supplies 0-30V/2A, 0-5V/5A, +/-15V/1A\", \"Function Generators, 3 MHz AM/FM function Pulse Generators\", \"Digital Multimeters 3.5 digit Handheld\"]}",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Communications Laboratory",
+    "experiments": "{\"experiments\": [\"To study the operation of a DSB-transmitted carrier Modulation & Demodulation\", \"To study the operation of a DSB-suppressed carrier Modulation & Demodulation\", \"To study the operation of an SSB-suppressed carrier Modulation & Demodulation\", \"To study Frequency Modulation & Demodulation using reactance modulator & demodulator and measure the frequency deviation\", \"Noise spectral density measurement\", \"To study the operation of Pulse Amplitude Modulation (PAM) and Demodulation\", \"To study the operation of Pulse Width Modulation (PWM) and Demodulation\", \"To study the operation of a Pulse Position Modulation (PPM) and Demodulation\"]}",
+    "equipments": "{\"equipments\": [\"XPO-Communication System Trainer Model Master Unit with AM Modulation & Demodulation Expt. Panel/CM6\", \"XPO-Communication System Trainer Model Master Unit with FM Modulation & Demodulation Expt. Panel/CM7\", \"Amplitude Modulation Transmitter ACL-01\", \"Amplitude Modulation Receiver ACL-02\", \"Frequency Modulation Transmitter Kit ACL-03\", \"Frequency Demodulation Receiver Kit ACL-04\", \"Noise Spectral Density Measurement Kit ACL-05\", \"FDM Transmitter & Receiver Kit ACL-06\", \"Analog Signal Sampling & Reconstruction Kit DCL-01\", \"PAM Time-Division Multiplexing & Demultiplexing Kit DCL-02\", \"Pulse Code Modulation Transmitter Kit DCL-03\", \"Pulse Code Demodulation Receiver Kit DCL-04\", \"Pulse Amplitude/Pulse Width/Pulse Position Modulation/Demodulation Kit DCL-08\", \"VLSI Based Digital Communication training system DCS-01\", \"VLSI Based Advance Digital Communication Training system DCS-02\", \"Digital storage Oscilloscopes 70 MHz Bandwidth & 2 Channels\", \"Digital Multimeters 3.5 digit Handheld\"]}",
+    "image": "images/Communications_Lab.jpg"
+  }
+]

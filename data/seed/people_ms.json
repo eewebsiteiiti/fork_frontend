@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "CHITTIPROLU SAI GANESH",
+    "roll_no": "2204102001",
+    "image": "images/image001.png",
+    "year": 2022
+  },
+  {
+    "id": 2,
+    "name": "ANKITKUMAR VIPULKUMAR PATEL",
+    "roll_no": "2204102005",
+    "image": "images/image002.png",
+    "year": 2022
+  },
+  {
+    "id": 3,
+    "name": "GULREZ KHAN LODI",
+    "roll_no": "2204102007",
+    "image": "images/image005.png",
+    "year": 2022
+  },
+  {
+    "id": 4,
+    "name": "NEERAJ NIKHIL",
+    "roll_no": "2204102008",
+    "image": "images/image007.png",
+    "year": 2022
+  },
+  {
+    "id": 5,
+    "name": "RADHESHYAM MANOJKUMAR SHARMA",
+    "roll_no": "2204102009",
+    "image": "images/image009.png",
+    "year": 2022
+  },
+  {
+    "id": 6,
+    "name": "SHRUTI SANDIP GHODKE",
+    "roll_no": "2204102010",
+    "image": "images/image010.png",
+    "year": 2022
+  }
+]

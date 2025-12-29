@@ -1,0 +1,32 @@
+[
+  {
+    "id": 7,
+    "description": "The EESA was launched.",
+    "date": 16,
+    "link": "",
+    "day": "Wednesday",
+    "month": "August",
+    "time": "17:00:00",
+    "title": "Electrical Engineering Students Association (EESA) Launched"
+  },
+  {
+    "id": 8,
+    "description": "Commencement of classes for the newly arrived 2023 batch begins.",
+    "date": 9,
+    "link": "",
+    "day": "Wednesday",
+    "month": "August",
+    "time": "08:30:00",
+    "title": "Classes for 2023 Batch"
+  },
+  {
+    "id": 9,
+    "description": "Autumn Semester of 2023 for the students on roll begins.",
+    "date": 26,
+    "link": "",
+    "day": "Wednesday",
+    "month": "July",
+    "time": "08:30:00",
+    "title": "Autumn Semester of 2023"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mr. Ravindra Chouhan",
+    "title": "Senior Lab Assistant",
+    "email": "cravindra@iiti.ac.in",
+    "image": "images/Ravindra.JPG",
+    "phone": "5132"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Raghvendra Hanswal",
+    "title": "Senior Lab Assistant",
+    "email": "raghvendra@iiti.ac.in",
+    "image": "images/raghuvendra.JPG",
+    "phone": "3599"
+  },
+  {
+    "id": 3,
+    "name": "Mr. Raju Singh Dawer",
+    "title": "Junior Lab Assistant",
+    "email": "rajudawer@iiti.ac.in",
+    "image": "images/Raju.JPG",
+    "phone": "----"
+  },
+  {
+    "id": 4,
+    "name": "Mr. Prateek Rode",
+    "title": "Junior Lab Assistant",
+    "email": "prateek.rode@iiti.ac.in",
+    "image": "images/prateek.JPG",
+    "phone": "----"
+  },
+  {
+    "id": 5,
+    "name": "Mr. Ram Kumar",
+    "title": "Junior Attendant",
+    "email": "ramkiiti@iiti.ac.in",
+    "image": "images/Ram_Kumar.JPG",
+    "phone": "3441"
+  },
+  {
+    "id": 6,
+    "name": "Ms. Sakshi Jain",
+    "title": "Junior Assistant, HoD Office",
+    "email": "hodee@iiti.ac.in",
+    "image": "images/Sakshi_moqcoi8.JPG",
+    "phone": "660-3275-3463"
+  },
+  {
+    "id": 7,
+    "name": "Ms. Shrashti Sharma",
+    "title": "Junior Assistant",
+    "email": "hodee@iiti.ac.in",
+    "image": "images/shrashti.jpg",
+    "phone": ""
+  }
+]

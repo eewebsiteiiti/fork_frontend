@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "name": "A remote pregnancy detection and monitoring device for mammal with multiple foetuses",
+    "pi": "D. Nayak, R.B. Pachori, G. Banda, S.D. Choudhari, and S. Neema",
+    "uuid": "202121016255",
+    "status": "Granted",
+    "year": "Oct. 2022"
+  },
+  {
+    "id": 2,
+    "name": "Apparatus, systems and methods for quality-aware energy-efficient PPG signal analysis and cardiovascular disease diagnosis and prediction",
+    "pi": "R.B. Pachori, M.S. Manikandan, and J. Varghese V",
+    "uuid": "202221075607",
+    "status": "Filed",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 3,
+    "name": "Systems and methods for contextual information aware physiological parameter analysis and intelligent human disease prediction",
+    "pi": "R.B. Pachori, M.S. Manikandan, and N. Phukan",
+    "uuid": "202221075605",
+    "status": "Filed",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 4,
+    "name": "Systems and methods for quality aware energy-efficient respiration rate estimation from photoplethysmography (PPG) signal",
+    "pi": "R.B. Pachori, M.S. Manikandan, and J. Varghese V",
+    "uuid": "202221075071",
+    "status": "Filed",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 5,
+    "name": "Apparatus and methods for noise-aware and energy-efficient pulse rate variability and heart rate variability analysis",
+    "pi": "R.B. Pachori, M.S. Manikandan, and F.A. Razak",
+    "uuid": "202221075073",
+    "status": "Filed",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 6,
+    "name": "Apparatus and methods for noise-aware energy-efficient ECG signal analysis and cardiovascular disease diagnosis and prediction",
+    "pi": "R.B. Pachori, M.S. Manikandan, and A. Mondal",
+    "uuid": "202221075072",
+    "status": "Filed",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 7,
+    "name": "System and method for predicting Parkinsons disease",
+    "pi": "R.B. Pachori and K. DasSystem and method for predicting Parkinsons disease",
+    "uuid": "202221027358",
+    "status": "Filed",
+    "year": "May, 2022"
+  },
+  {
+    "id": 8,
+    "name": "Read Recharge (RRC) based Process Variation Tolerant 10T SRAM Cell",
+    "pi": "Nandakishor Yadav and Santosh Kumar Vishvakarma",
+    "uuid": "413266",
+    "status": "Granted",
+    "year": "Dec. 2022"
+  },
+  {
+    "id": 9,
+    "name": "P-N tuned differential 8T static random access memory (SRAM) cell",
+    "pi": "C. B. Kushwah, Santosh Kumar Vishvakarma",
+    "uuid": "406860",
+    "status": "Granted",
+    "year": "Sep. 2022"
+  },
+  {
+    "id": 10,
+    "name": "Offset Compensated Data Sensing Technique for Low Energy Embedded SRAM",
+    "pi": "Bhupendra Singh Reniwal and Santosh Kumar Vishvakarma",
+    "uuid": "394437",
+    "status": "Granted",
+    "year": "Apr. 2022"
+  },
+  {
+    "id": 11,
+    "name": "High-Performance Double Gate Tunnel Field Effect Transistor For Low Power Applications",
+    "pi": "Vikas Vijayvargiya and Santosh Kumar Vishvakarma",
+    "uuid": "388463",
+    "status": "Granted",
+    "year": "Feb. 2022"
+  },
+  {
+    "id": 12,
+    "name": "A wide range variable resistance readout circuit",
+    "pi": "Shaibal Mukherjee, Chandrabhan Patel, Vikash Kumar, Sumit Chaudhary, Ranjan Kumar",
+    "uuid": "202221061451",
+    "status": "Filed",
+    "year": "Nov. 2022"
+  },
+  {
+    "id": 13,
+    "name": "Silicon compatible yttria based memristive crossbar array and a method of fabrication thereof",
+    "pi": "Shaibal Mukherjee, Sanjay Kumar, Mangal Das, Kumari Jyoti",
+    "uuid": "202121013663",
+    "status": "Filed",
+    "year": "2022"
+  },
+  {
+    "id": 14,
+    "name": "Conjugated compound for resistive switching, device and method of fabrication",
+    "pi": "Apurba K Das, Shaibal Mukherjee, Rohit G. Jadhav, Amitesh Kumar",
+    "uuid": "201921027542",
+    "status": "Filed",
+    "year": "2022"
+  },
+  {
+    "id": 15,
+    "name": "A device for assessment of seed pre-treatments",
+    "pi": "Vimal Bhatia, Mr. Puneet Singh Thakur, Amit Chatterjee, and Shashi Prakash",
+    "uuid": "389627",
+    "status": "Granted",
+    "year": "2022"
+  },
+  {
+    "id": 16,
+    "name": "A Method for Adaptive Multi-User Clustering in Non-Orthogonal Multiple Access Systems with Imperfect Successive Interference Cancellation",
+    "pi": "M. Nemalidinne, P. Reddy M, A. Kumar, and P. K. Upadhyay",
+    "uuid": "202241018280",
+    "status": "Filed",
+    "year": "Sep. 2022"
+  },
+  {
+    "id": 17,
+    "name": "System and method for biometric identification using ECG signals",
+    "pi": "B. Fatimah, P. Singh, A. Singhal, and R.B. Pachori",
+    "uuid": "2021106695",
+    "status": "Granted",
+    "year": "Dec. 2021"
+  },
+  {
+    "id": 18,
+    "name": "Low Leakage-High Stability Differential Positive Feedback Controlled 10T (DPFC10T) SRAM Cell",
+    "pi": "Pooran Singh and Santosh Kumar Vishvakarma",
+    "uuid": "370308",
+    "status": "Granted",
+    "year": "Jun. 2021"
+  },
+  {
+    "id": 19,
+    "name": "An Ultra Low Power, Read Decoupled Differential Write 10T SRAM Cell with Higher Read/Write Noise Margin",
+    "pi": "Vishal Sharma and Santosh Kumar Vishvakarma",
+    "uuid": "358866",
+    "status": "Granted",
+    "year": "Feb. 2021"
+  },
+  {
+    "id": 20,
+    "name": "Constant transconductance bias Device",
+    "pi": "Ravi Kumar, Rajasekhar Nagulapalli, Santosh Kumar Vishvakarma",
+    "uuid": "202221042164",
+    "status": "Filed",
+    "year": "2021"
+  },
+  {
+    "id": 21,
+    "name": "A method of fabricating high two dimensional electron gas density yielding zinc oxide heterostructure",
+    "pi": "Shaibal Mukherjee, Abhinav Kranti, Md Arif Khan, Rohit Singh",
+    "uuid": "368230",
+    "status": "Granted",
+    "year": "May-21"
+  },
+  {
+    "id": 22,
+    "name": "Ultrasensitive NO2 sensor based on S and N doped carbon dot functionalized tungsten oxide",
+    "pi": "Shaibal Mukherjee, Apurba K Das, Chandrabhan Patel, Biswajit Mandal, Rohit Gajanan Jadhav",
+    "uuid": "202021041967",
+    "status": "Filed",
+    "year": "2021"
+  },
+  {
+    "id": 23,
+    "name": "A Software Defined Radio Module to perform an inter-system communication",
+    "pi": "V. Bhatia, and V.S. Tomar",
+    "uuid": "381039",
+    "status": "Granted",
+    "year": "2021"
+  },
+  {
+    "id": 24,
+    "name": "Spoof recognition in an ear biometric system",
+    "pi": "Vimal Bhatia, Amit Chatterjee, Mr. Puneet Singh Thakur, and Shashi Prakash",
+    "uuid": "382786",
+    "status": "Granted",
+    "year": "2021"
+  },
+  {
+    "id": 25,
+    "name": "Method and system for low power source spectrum sensing",
+    "pi": "Vimal Bhatia, Abhijeet Bishnu",
+    "uuid": "382567",
+    "status": "Granted",
+    "year": "2021"
+  },
+  {
+    "id": 26,
+    "name": "A fingerprint acquisition system for anti-theft fingerprint biometry and method thereof",
+    "pi": "Amit Chatterjee, Vimal Bhatia, and Shashi Prakash",
+    "uuid": "376417",
+    "status": "Granted",
+    "year": "2021"
+  },
+  {
+    "id": 27,
+    "name": "A biochemical sensor with engineered nanophotonic structure, the process of preparation and use thereof",
+    "pi": "M. Kumar, Sulabh, L. Singh, S. Jain, S. Rajput, V. Kaushik, H. C. Jha",
+    "uuid": "202121008991",
+    "status": "Granted",
+    "year": "Mar. 2021"
+  },
+  {
+    "id": 28,
+    "name": "Compact Wideband Millimeter-Wave Power Divider using Substrate Integrated Waveguide",
+    "pi": "Saptarshi Ghosh, and Maharana Pratap Singh",
+    "uuid": "202121044226",
+    "status": "Filed",
+    "year": "Sep. 2021"
+  },
+  {
+    "id": 30,
+    "name": "Organo-acidified zinc oxide carbon monoxide sensor",
+    "pi": "Shaibal Mukherjee, Apurba K. Das, Ajay Agarwal, Biswajit Mandal, Aaryashree, Sayan Maiti",
+    "uuid": "201921026594",
+    "status": "Filed",
+    "year": "2020"
+  },
+  {
+    "id": 31,
+    "name": "Hybrid mesoporous composites gas sensors",
+    "pi": "Shaibal Mukherjee, Apurba K. Das, Ajay Agarwal, Aaryashree, Biswajit Mandal, Ankan Biswas",
+    "uuid": "201921026576",
+    "status": "Filed",
+    "year": "2020"
+  },
+  {
+    "id": 32,
+    "name": "Method and Apparatus for secure ear biomteric recognition using single shot fringe projection themography",
+    "pi": "V. Bhatia, Puneet Singh, A. Chatterjee and S. Prakash",
+    "uuid": "-",
+    "status": "Filed",
+    "year": "Jun. 2020"
+  },
+  {
+    "id": 33,
+    "name": "A method of fabricating zinc oxide based heterostructure for high electron mobility transistor",
+    "pi": "Shaibal Mukherjee, Abhinav Kranti, Rohit Singh, Md Arif Khan",
+    "uuid": "201721007309",
+    "status": "Filed",
+    "year": "Sep. 2018"
+  },
+  {
+    "id": 34,
+    "name": "Dual ion beam sputtered cost-effective and non-volatile resistive memory devices",
+    "pi": "Shaibal Mukherjee and Amitesh Kumar",
+    "uuid": "201621020046",
+    "status": "Filed",
+    "year": "Dec. 2017"
+  },
+  {
+    "id": 35,
+    "name": "System, method and device for low cost identification of road congestion for traffic management",
+    "pi": "Vimal Bhatia, A. Tripathi, and A. Bapat",
+    "uuid": "201621010338",
+    "status": "Granted",
+    "year": "22016"
+  },
+  {
+    "id": 36,
+    "name": "System, method and apparatus for Low Complexity Non Orthogonal Multiple Access (NOMA) receiver for mixed constellation",
+    "pi": "Vimal Bhatia and R. Mitra",
+    "uuid": "201621018329",
+    "status": "Granted",
+    "year": "2016"
+  },
+  {
+    "id": 37,
+    "name": "Method and apparatus for low complexity natural gradient based OFDM channel estimator",
+    "pi": "Vimal Bhatia and A. Bishnu",
+    "uuid": "20162100000",
+    "status": "Granted",
+    "year": "2016"
+  },
+  {
+    "id": 38,
+    "name": "Method and apparatus for Detection of Active Taps Location in OFDM System",
+    "pi": "Vimal Bhatia and A. Bishnu",
+    "uuid": "201621036738",
+    "status": "Granted",
+    "year": "2016"
+  },
+  {
+    "id": 39,
+    "name": "System and method for emergency services",
+    "pi": "Vimal Bhatia, S. Jain, and A. Tripathi",
+    "uuid": "2033/MUM/2015",
+    "status": "Granted",
+    "year": "2015"
+  },
+  {
+    "id": 40,
+    "name": "A multi-frequency based transceiver",
+    "pi": "Vimal Bhatia, and V.S. Tomar",
+    "uuid": "2242/MUM/2015",
+    "status": "Granted",
+    "year": "2015"
+  },
+  {
+    "id": 41,
+    "name": "Method and apparatus for recording, archiving, media management and playing back of a telephone call",
+    "pi": "Vimal Bhatia, H. Haidery, and H. Dogra",
+    "uuid": "2317/MUM/2015",
+    "status": "Granted",
+    "year": "2015"
+  },
+  {
+    "id": 42,
+    "name": "Method and apparatus for managing phone/device profile based on an event",
+    "pi": "Vimal Bhatia, S. Kalsi, D. Singh, and S. Goyal",
+    "uuid": "3415/MUM/2015",
+    "status": "Granted",
+    "year": "2015"
+  }
+]

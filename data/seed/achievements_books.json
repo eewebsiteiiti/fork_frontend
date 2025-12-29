@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "year": 2023,
+    "name": "Time-frequency Analysis Techniques and Their Applications",
+    "author": "R. B. Pachori",
+    "image": "images/3.png",
+    "publication": "CRC Press"
+  },
+  {
+    "id": 2,
+    "year": 2023,
+    "name": "Machine Intelligence Techniques for Data Analysis and Signal Processing",
+    "author": "D. S. Sisodia, L. Garg, R. B. Pachori, and M. Tanveer",
+    "image": "images/4.png",
+    "publication": "Springer"
+  },
+  {
+    "id": 3,
+    "year": 2022,
+    "name": "AI-Enabled Smart Healthcare Using Biomedical Signals,",
+    "author": "R. K. Chaurasiya, D. K. Agrawal, and R. B. Pachori",
+    "image": "images/5.png",
+    "publication": "IGI Global"
+  },
+  {
+    "id": 4,
+    "year": 2022,
+    "name": "Pattern Recognition and Data Analysis with Applications",
+    "author": "D. Gupta, R. S. Goswami, S. Banerjee, M. Tanveer, and R. B. Pachori",
+    "image": "images/6.png",
+    "publication": "Springer"
+  },
+  {
+    "id": 5,
+    "year": 2022,
+    "name": "6G: Sustainable Development for Rural and Remote Communities",
+    "author": "S. Dixit, & V. Bhatia, S. Khanganba, & A. Agrawal",
+    "image": "images/7.png",
+    "publication": "Springer, Singapore"
+  },
+  {
+    "id": 6,
+    "year": 2021,
+    "name": "Computational Mathematics, Nanoelectronics, and Astrophysics",
+    "author": "S. Mukherjee, A. Datta, S. Manna, S. K. Sahoo",
+    "image": "images/8.png",
+    "publication": "Springer, May"
+  },
+  {
+    "id": 7,
+    "year": 2021,
+    "name": "AI and Deep Learning in Biometric Security Trends, Potential, and Challenges",
+    "author": "G. Jaswal, V. Kanhangad, R. Ramachandra",
+    "image": "images/9.png",
+    "publication": "CRC Press, Mar"
+  },
+  {
+    "id": 8,
+    "year": 2020,
+    "name": "Intelligent Data Analytics  for Terror Threat Prediction: Architectures, Methodologies, Techniques and Applications",
+    "author": "S. K. Pani, S. K. Singh, R. B. Pachori, L. Garg, and X. Zhang",
+    "image": "images/10.png",
+    "publication": "Wiley- Scrivener"
+  },
+  {
+    "id": 9,
+    "year": 2020,
+    "name": "Handbook of Research on Advancement of Artificial Intelligence in Healthcare Engineering",
+    "author": "D. S. Sisodia, R.B. Pachori, and L. Garg",
+    "image": "images/11.png",
+    "publication": "IGI Global"
+  },
+  {
+    "id": 10,
+    "year": 2019,
+    "name": "VLSI Design and Test",
+    "author": "A. Sengupta, S. Dasgupta, V. Singh, R. Sharma, S. K. Vishvakarma",
+    "image": "images/12.png",
+    "publication": "Springer-Singapore"
+  },
+  {
+    "id": 11,
+    "year": 2018,
+    "name": "Machine Intelligence and Signal Analysis, Advances in Intelligent Systems and Computing",
+    "author": "M. Tanveer and R. B. Pachori",
+    "image": "images/13.png",
+    "publication": "Springer"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "id": 6,
+    "year": 2013,
+    "name": "Ankit Goyal",
+    "award": "The President of India Gold Medalist",
+    "image": "",
+    "roll_no": 900227
+  },
+  {
+    "id": 8,
+    "year": 2013,
+    "name": "Anamika Patel",
+    "award": "Departmental Silver Medalist",
+    "image": "",
+    "roll_no": 900202
+  },
+  {
+    "id": 9,
+    "year": 2014,
+    "name": "Kotha Samhitha Reddy",
+    "award": "The President of India Gold Medalist",
+    "image": "",
+    "roll_no": 1000323
+  },
+  {
+    "id": 10,
+    "year": 2014,
+    "name": "N Swathi",
+    "award": "Departmental Silver Medalist",
+    "image": "",
+    "roll_no": 1000235
+  },
+  {
+    "id": 11,
+    "year": 2015,
+    "name": "Ronshee Chawla",
+    "award": "The President of India Gold Medalist",
+    "image": "images/image001_wzjs1P1.png",
+    "roll_no": 1100230
+  },
+  {
+    "id": 12,
+    "year": 2015,
+    "name": "Deepak R",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image005_DSR11Vy.png",
+    "roll_no": 1100311
+  },
+  {
+    "id": 13,
+    "year": 2016,
+    "name": "Patil Ishan Ankur",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image006.png",
+    "roll_no": 1200222
+  },
+  {
+    "id": 14,
+    "year": 2017,
+    "name": "Ritesh Modi",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image008.png",
+    "roll_no": 130002032
+  },
+  {
+    "id": 15,
+    "year": 2018,
+    "name": "Kartikeya Surendra Singh",
+    "award": "Departmental Silver Medalist",
+    "image": "",
+    "roll_no": 140002016
+  },
+  {
+    "id": 16,
+    "year": 2019,
+    "name": "Bhole Aashish Kiran",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image011.png",
+    "roll_no": 150002012
+  },
+  {
+    "id": 17,
+    "year": 2020,
+    "name": "Khushboo Ahuja",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image013_YNSU0od.png",
+    "roll_no": 160002024
+  },
+  {
+    "id": 18,
+    "year": 2021,
+    "name": "Shruti Parag Landge",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image015_SiMKbeZ.png",
+    "roll_no": 170002049
+  },
+  {
+    "id": 19,
+    "year": 2021,
+    "name": "Shaik Nemath Ahmed",
+    "award": "All Rounder",
+    "image": "images/image019_lqNBf5h.png",
+    "roll_no": 170002045
+  },
+  {
+    "id": 20,
+    "year": 2022,
+    "name": "Danyal Shahid Shamsi",
+    "award": "The President of India Gold Medalist",
+    "image": "images/image003.png",
+    "roll_no": 180002012
+  },
+  {
+    "id": 21,
+    "year": 2022,
+    "name": "Sumedha Srivastava",
+    "award": "Departmental Silver Medalist",
+    "image": "images/image017_PyVEYmU.png",
+    "roll_no": 180004032
+  },
+  {
+    "id": 22,
+    "year": 2022,
+    "name": "Mukala Jogesh Kumar",
+    "award": "All Rounder",
+    "image": "images/image022.png",
+    "roll_no": 180002037
+  }
+]

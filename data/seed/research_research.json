@@ -1,0 +1,1154 @@
+[
+  {
+    "id": 62,
+    "specialization": "signal",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 63,
+    "specialization": "signal",
+    "description": "Time-frequency analysis is a signal processing approach that analyses signals in both the time and frequency domains. It permits more precise analysis of non-stationary signals by breaking a signal into its basic frequency components as they vary over time, and has wide applications in domains such as audio analysis, picture processing, and neurology.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Time-Frequency Analysis",
+    "link": ""
+  },
+  {
+    "id": 64,
+    "specialization": "signal",
+    "description": "Speech signal processing research is concerned with analysing and improving the quality of speech signals through the use of various techniques such as noise reduction, voice enhancement, speaker identification, and speech recognition. Telecommunications, audio coding, speech therapy, and human-computer interaction are all examples of uses in this subject. Continuous research is being conducted to increase the accuracy and efficiency of speech processing systems.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Speech Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 65,
+    "specialization": "signal",
+    "description": "Signal processing for communications is an important field of study that aims to improve the efficiency and quality of communication networks. Creating algorithms and procedures for signal modulation, channel coding, equalisation, and synchronisation is part of the job. This field is used in a variety of wireless and cable communication technologies, including mobile phones, satellite communications, and fibre optics.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Signal Processing for Communications",
+    "link": ""
+  },
+  {
+    "id": 66,
+    "specialization": "signal",
+    "description": "Wireless cooperative communication techniques are a fast expanding area of research aimed at increasing the performance of wireless communication systems by allowing user collaboration. It entails creating algorithms and protocols that let numerous users to send and receive data jointly, hence boosting overall system efficiency and dependability. Ongoing research in this area is aimed at addressing the problems that fading channels, interference, and resource allocation face in cooperative communication systems\ufffdto create cooperative communication strategies that are efficient and scalable enough to be used in real-world wireless networks.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Wireless cooperative communication techniques",
+    "link": ""
+  },
+  {
+    "id": 67,
+    "specialization": "signal",
+    "description": "A critical area of research in wireless communication systems is the performance analysis of relaying techniques across wireless fading channels. It entails investigating the effects of various relaying strategies, such as amplify-and-forward, decode-and-forward, and compress-and-forward, on overall system performance, such as bit error rate, channel capacity, and outage probability. Ongoing research in this field is aimed at developing efficient relaying mechanisms that can reduce the influence of fading and increase overall system performance.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Performance analysis of relaying strategies over wireless fading channels",
+    "link": ""
+  },
+  {
+    "id": 68,
+    "specialization": "signal",
+    "description": "MIMO (Multiple-Input Multiple-Output) systems, which use multiple antennas at the transmitter and receiver to improve system performance, are a crucial technology in current wireless communication systems. In this field of research, algorithms and techniques for channel estimation, precoding, beamforming, and resource allocation in MIMO systems are being developed in order to maximise data rate, increase system dependability, and limit the impacts of fading and interference. ",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "MIMO systems",
+    "link": ""
+  },
+  {
+    "id": 69,
+    "specialization": "signal",
+    "description": "Biometrics research entails the development of technology and procedures for identifying individuals based on their unique biological characteristics, such as facial features, fingerprints, iris patterns, and voiceprints. Access control, identity verification, and criminal investigation are just a few of the uses for this field. Ongoing research attempts to improve biometric system accuracy and reliability, address privacy problems, and investigate the possible uses of developing biometric technology.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Biometrics",
+    "link": ""
+  },
+  {
+    "id": 70,
+    "specialization": "signal",
+    "description": "The development of algorithms and strategies for processing and analysing digital signals and images is a fundamental field of research in digital signal and image processing. Many applications exist in this discipline, including audio and video compression, image enhancement, feature extraction, and pattern recognition. Ongoing research attempts to create efficient and resilient signal and image processing algorithms capable of handling enormous amounts of data while overcoming the hurdles provided by noisy and unpredictable data.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Digital Signal and Image processing",
+    "link": ""
+  },
+  {
+    "id": 71,
+    "specialization": "signal",
+    "description": "Computer vision research entails creating algorithms and strategies that allow machines to interpret and comprehend visual data from the actual world. There are several applications for this field, including as autonomous driving, facial recognition, medical imaging, and robotics. Ongoing research attempts to improve computer vision system accuracy and efficiency, address privacy problems, and investigate the possible applications of future computer vision technologies such as deep learning and augmented reality.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Computer vision",
+    "link": ""
+  },
+  {
+    "id": 72,
+    "specialization": "signal",
+    "description": "Statistical and adaptive signal processing is an important field of study that involves the development of algorithms and strategies for handling and analysing data in a non-stationary environment. Speech and image processing, adaptive filtering, and data analysis are all examples of uses in this subject. Ongoing research aims to build efficient and robust signal processing algorithms that can adapt to changing signal properties and learn from data, hence enhancing signal processing system performance and reliability.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Statistical and Adaptive Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 73,
+    "specialization": "signal",
+    "description": "The development of algorithms and techniques for processing and analysing signals in wireless communication networks is a critical field of research. Many applications exist in this sector, including channel estimation, equalisation, synchronisation, and interference mitigation. The goal of ongoing research is to provide efficient and robust signal processing algorithms that can improve the performance and reliability of wireless communication systems in the presence of fading, interference, and noise.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Signal Processing for Wireless Communication",
+    "link": ""
+  },
+  {
+    "id": 74,
+    "specialization": "signal",
+    "description": "SDR research focuses on designing radio systems that can be modified in software to serve a wide range of wireless communication standards. Wireless communication, military communications, and emergency services are just a few of the applications for this subject. Ongoing research seeks to create efficient SDR designs, signal processing algorithms, and protocols that will allow for flexible, reconfigurable, and secure communication systems.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Software Defined Radio",
+    "link": ""
+  },
+  {
+    "id": 75,
+    "specialization": "signal",
+    "description": "Voice over IP (VoIP) is a technology that allows voice communication over the internet through the use of the Internet Protocol (IP). VoIP research involves developing algorithms and techniques for voice coding, packetization, routing, and quality of service (QoS) management in order to improve the voice quality, reliability, and security of VoIP systems and to address the challenges posed by VoIP integration with other communication technologies.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Voice over IP (VOIP)",
+    "link": ""
+  },
+  {
+    "id": 76,
+    "specialization": "vlsi",
+    "description": "Nanoscale devices are electrical components with dimensions measured in nanometers and operating at the nanoscale level. Circuit design refers to the process of developing and manufacturing sophisticated integrated circuits with millions or billions of transistors. Nanoscale devices have transformed VLSI/ULSI circuit design by enabling smaller, more powerful integrated circuits with enhanced performance and efficiency.Nanoscale Devices and VLSI/ULSI Circuit Design research strives to provide novel materials, fabrication techniques, and design methodologies to overcome the constraints of traditional technologies. ",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Nanoscale Devices and VLSI/ULSI Circuit Design",
+    "link": ""
+  },
+  {
+    "id": 77,
+    "specialization": "vlsi",
+    "description": "Multigate GAA (Gate-All-Around) MOSFETs are a potential technology for nanoscale devices due to their good electrostatic control, low power consumption, and great performance. To effectively depict the complicated physics involved in these devices, extensive simulation approaches are required. To optimise their performance and exploit their unique qualities, GAA MOSFET circuit implementation necessitates the creation of novel design approaches.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate GAA MOSFET modeling and Circuit Implementation",
+    "link": ""
+  },
+  {
+    "id": 78,
+    "specialization": "vlsi",
+    "description": "When compared to traditional planar MOSFETs, multigate MOSFETs such as Double-Gate and FinFETs have demonstrated considerable gains in performance, power consumption, and reliability. SRAM (Static Random Access Memory) design with these devices necessitates novel circuit strategies to capitalise on their unique qualities, such as increased drive strength and lower leakage. To get the optimum performance, these techniques involve optimising cell architecture, biassing systems, and size tactics.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate MOSFET (DG, FinFET) based SRAM Design",
+    "link": ""
+  },
+  {
+    "id": 79,
+    "specialization": "vlsi",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 80,
+    "specialization": "vlsi",
+    "description": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, and Solar Cells are advanced semiconductor devices that make use of materials from the periodic table's groups II-VI, III-V, and IV-VI, such as ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, and CdZnO. These materials have remarkable optical and electrical properties, making them suitable for a wide range of optoelectronic applications such as high-efficiency photovoltaic cells and solid-state lighting.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, Solar Cells: Materials covering group II-VI, III-V, and IV-VI from periodic table viz. ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, CdZnO",
+    "link": ""
+  },
+  {
+    "id": 81,
+    "specialization": "vlsi",
+    "description": "Nanophotonics is a branch of science concerned with the interaction of light with tiny structures. Nanophotonics is used in photonic LED and solar cell systems to improve efficiency and performance. Photonic bandgap defect microcavity devices are a sort of nanophotonic structure that may be utilised to control light propagation and localization for a variety of applications such as sensing and communication systems.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nanophotonics, photonic LED and solar cell, Photonic bandgap defect microcavity devices",
+    "link": ""
+  },
+  {
+    "id": 82,
+    "specialization": "vlsi",
+    "description": "Nano-scale sensors and Terahertz devices based on Si-Ge have distinct benefits due to their superior electrical and optical features. Small variations in temperature, pressure, and other environmental conditions can be detected by Si-Ge nanoscale sensors, making them suitable in a variety of sensing applications. Terahertz devices based on Si-Ge have also demonstrated potential in high-speed communication systems and spectroscopy.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale sensors, Terahertz devices mainly based on Si-Ge",
+    "link": ""
+  },
+  {
+    "id": 83,
+    "specialization": "vlsi",
+    "description": "A thin film coating known as broadband anti-reflection (BBAR) is used to decrease reflections on optical surfaces such as laser mirrors. BBAR coatings have the potential to improve the efficiency and performance of laser systems. Surface passivation is a procedure used to protect a detector's surface against contamination, which can lead to performance loss. Surface passivation approaches can improve detector stability and reliability.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Broadband anti-reflection (BBAR) Coating for Lasers, Surface Passivation for Detectors",
+    "link": ""
+  },
+  {
+    "id": 84,
+    "specialization": "vlsi",
+    "description": "Carbon nanotube fabrication and characterisation involve the synthesis and investigation of these nanoscale materials, which have extraordinary mechanical, electrical, and thermal properties. Because of their unique features and high aspect ratios, carbon nanotubes have found several applications, including nanoelectronics, energy storage, and medicinal devices.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Fabrication and characterization of carbon nanotube and their applications",
+    "link": ""
+  },
+  {
+    "id": 85,
+    "specialization": "vlsi",
+    "description": "Due to their superior electronic properties, high electron mobility transistor (HEMT) devices based on ZnO, GaN, and AlGaN are attractive for high-frequency and high-power applications. These materials are suited for use in high-speed communication and power electronics systems due to their high electron mobility, low noise, and high breakdown voltage.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "High electron mobility transistor (HEMT) based on ZnO, GaN, AlGaN",
+    "link": ""
+  },
+  {
+    "id": 86,
+    "specialization": "vlsi",
+    "description": "Organic electronic/photonic devices control the flow of electrons or photons using organic materials. They've been used in a variety of devices, including organic light-emitting diodes (OLEDs), organic solar cells, and organic field-effect transistors (OFETs). Techniques for studying the characteristics of organic materials include photoluminescence spectroscopy and thin film production and characterisation. Organic electrical device-based sensors have been created for applications such as gas sensing and environmental monitoring.",
+    "person": "Dr. Vipul Singh",
+    "name": "Organic electronic/photonic devices and their applications, Photoluminescence spectroscopy, thin film fabrication and characterization, novel sensors based on organic electronic devices.",
+    "link": ""
+  },
+  {
+    "id": 87,
+    "specialization": "vlsi",
+    "description": "Single electron devices, bulk and SOI MOSFETs, and other silicon nanodevices are employed in low power information processing circuits and RF-SETs. Low-frequency noise in MOSFETs is a performance limiting factor. Sensors based on MOSFETs have been developed for a variety of applications, including gas sensing and biosensing. MOSFET miniaturisation has resulted in substantial advances in the field of nanoelectronics.",
+    "person": "Dr. Vipul Singh",
+    "name": "Silicon nanodevices, Single electron devices, Bulk and SOI MOSFETs, Low frequency noise in MOSFETs, MOSFET based sensors, Low power information processing circuits and RF-SET etc.",
+    "link": ""
+  },
+  {
+    "id": 88,
+    "specialization": "vlsi",
+    "description": "Solid-state devices are electronic devices that use semiconductor features to control the flow of electrons. The use of nanotechnology to miniaturise solid-state devices has resulted in the development of high-performance electronic components and circuits. Circuit design is critical in optimising solid-state devices for a variety of applications such as communication systems, sensors, and energy conversion devices.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Solid-State Devices, Circuit Design and Nanotechnology",
+    "link": ""
+  },
+  {
+    "id": 89,
+    "specialization": "vlsi",
+    "description": "In both bulk and SOI (silicon-on-insulator) technologies, novel MOS (metal-oxide-semiconductor) devices, including single and multi-gate devices, have been produced. When compared to typical MOSFETs, these devices provide better performance, such as higher mobility, reduced power consumption, and more reliability. They are used in a variety of fields, including high-speed digital circuits, memory devices, and sensors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Novel MOS devices (single and multi-gate) in Bulk/SOI technology",
+    "link": ""
+  },
+  {
+    "id": 90,
+    "specialization": "vlsi",
+    "description": "To fulfil the energy efficiency expectations of modern electronic systems, low power circuit design for analogue, RF, and digital applications using nanoscale components is critical. The advantages of nanoscale devices are minimal power consumption and great performance. Voltage scaling, clock gating, and power gating are all techniques used to reduce power usage while maintaining system performance.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Low power circuit design (for analog/RF/digital applications) with nanoscale devices",
+    "link": ""
+  },
+  {
+    "id": 91,
+    "specialization": "vlsi",
+    "description": "Bipolar transistors are commonly used in high-power and high-frequency applications due to their fast switching rates and power handling capabilities. Thermal resistance optimisation is critical in bipolar transistor design since it impacts performance and reliability. Thermal coupling, heat sinking, and substrate design are all utilised to improve the thermal resistance of bipolar transistors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Bipolar Transistors: Thermal resistance optimization",
+    "link": ""
+  },
+  {
+    "id": 92,
+    "specialization": "vlsi",
+    "description": "The design and study of HEMTs (high electron mobility transistors) based on GaN and ZnO involve optimising device architectures and material properties for high-performance applications in power electronics, wireless communications, and photonics. Advanced simulation and modelling approaches are used by researchers to understand the electrical and thermal properties of these materials and to design novel fabrication processes for improved device performance and reliability.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Design and analysis of GaN and ZnO based HEMTs",
+    "link": ""
+  },
+  {
+    "id": 93,
+    "specialization": "vlsi",
+    "description": "Photothermal reaction is the creation of heat by a substance in response to light absorption. This reaction can be utilised for a variety of purposes, including photothermal imaging, which is a technique for imaging a sample based on its photothermal response. Photothermal imaging provides a sensitive and non-destructive method of imaging samples with high spatial resolution by measuring temperature changes produced by light absorption.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photothermal response and photothermal imaging",
+    "link": ""
+  },
+  {
+    "id": 94,
+    "specialization": "vlsi",
+    "description": "Photoacoustic microscopy (PAM) is a biological imaging technology that combines the excellent resolution of optical imaging with the deep penetration of ultrasound. PAM can generate images with great contrast and resolution by employing laser pulses to generate acoustic waves, making it excellent for visualising biological tissues and structures. PAM has showed promise in non-invasive disease diagnosis and monitoring, including cancer and cardiovascular disease.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photoacoustic microscopy for biomedical applications",
+    "link": ""
+  },
+  {
+    "id": 95,
+    "specialization": "vlsi",
+    "description": "Biophotonics is a new branch of electrical engineering that focuses on the development of new photonic technologies and their application to biological systems. Design and manufacture of optical sensors, light sources, and imaging systems for biomedical applications such as cancer detection, drug discovery, and medical diagnostics are examples of this. ",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Biophotonics",
+    "link": ""
+  },
+  {
+    "id": 96,
+    "specialization": "vlsi",
+    "description": "Integrated optoelectronics, nanophotonics, and semiconductor optoelectronics are all research areas that focus on the manipulation and control of light at the nanoscale. Integrated optoelectronics is the integration of optical and electronic components on a single chip, whereas nanophotonics is concerned with light behaviour at the nanoscale. Semiconductor optoelectronics uses semiconductors to generate, manipulate, and detect light, and has applications in telecommunications, lighting, and solar energy.a",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Integrated Optoelectronics, Nanophotonics, Semiconductor Optoelectronics",
+    "link": ""
+  },
+  {
+    "id": 97,
+    "specialization": "vlsi",
+    "description": "Nanoscale photonic devices and optical interconnects are technologies that enable nanoscale communication and data transport. Nano-scale photonic devices are usually composed of semiconductor materials and employ light to accomplish activities including switching, modulation, and amplification. Optical interconnects are used to carry data between electronic components and are faster, more efficient, and less susceptible to interference than standard electrical interconnects. These technologies are essential for the creation of high-performance computer and communication systems.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Nano-scale photonic devices, Optical Interconnects",
+    "link": ""
+  },
+  {
+    "id": 98,
+    "specialization": "vlsi",
+    "description": "The procedures and techniques used to construct structures and devices at the micro- and nano-scales are referred to as micro/nano fabrication technologies. Among these technologies are lithography, etching, deposition, and bonding. They are essential for the advancement of micro- and nanoelectronics, photonics, and bioelectronics, with applications in semiconductors, sensors, and medical devices. Micro/nano fabrication technology advancements are driving innovation and determining the future of several sectors.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Micro/Nano Fabrication Technologies",
+    "link": ""
+  },
+  {
+    "id": 99,
+    "specialization": "power",
+    "description": "Power electronic system modelling and simulation entail the use of mathematical models and software tools to forecast the behaviour and performance of electronic circuits and devices used in power conversion and control. Engineers can use these techniques to optimise designs, assess various topologies, and increase the efficiency, reliability, and safety of power electronic systems. Modelling and simulation are critical for the design and development of sophisticated power electronics for renewable energy, electric vehicles, and smart grid applications.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Modelling and simulation of power electronic systems",
+    "link": ""
+  },
+  {
+    "id": 100,
+    "specialization": "power",
+    "description": "Power electronics is essential in renewable energy systems because it allows for the conversion, control, and management of electrical power generated by renewable sources such as solar, wind, and hydro. Inverters and converters convert the DC electricity supplied by renewable sources into AC power that can be used by the grid or consumed by the end user. Power electronics also help with energy storage, voltage management, and improving power quality in renewable energy systems. The use of power electronics in renewable energy systems is critical for the transition to a carbon-neutral energy future.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Application of power electronics in renewable energy systems",
+    "link": ""
+  },
+  {
+    "id": 101,
+    "specialization": "power",
+    "description": "The process of measuring, monitoring, and analysing the characteristics of electrical power to verify that it satisfies particular quality requirements is known as power quality analysis. Voltage, current, frequency, and harmonic distortion are examples of such parameters. Poor power quality can cause equipment failure, lower efficiency, and safety issues, hence power quality analysis is critical for the reliable operation of electrical systems and equipment. Smart grids, renewable energy systems, and industrial automation all make use of advanced power quality analysis tools.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Power Quality Analysis",
+    "link": ""
+  },
+  {
+    "id": 102,
+    "specialization": "power",
+    "description": "A microgrid is a small-scale electricity distribution system that can function independently or in conjunction with the main grid. It usually consists of distributed energy resources like solar, wind, or biomass, as well as energy storage systems and power electronics for grid control and management. Microgrids provide various advantages, including enhanced reliability, energy efficiency, and resilience, and are utilised in a variety of applications ranging from isolated settlements to military sites and data centres.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Micro grid",
+    "link": ""
+  },
+  {
+    "id": 103,
+    "specialization": "power",
+    "description": "Power system dynamics and security analysis are concerned with the research and analysis of the behaviour and stability of electrical power systems under various operating situations. This involves the modelling and simulation of power system components and their interconnections, as well as the analysis of the impact of disturbances, failures, and cyber-attacks on the security and stability of the system. Power system dynamics and security analysis are critical for guaranteeing electrical power system reliability, safety, and efficiency.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power system dynamics and security analysis",
+    "link": ""
+  },
+  {
+    "id": 104,
+    "specialization": "power",
+    "description": "The process of removing or reducing government control and regulation over the electricity industry is referred to as power sector deregulation. In most cases, this involves introducing competition and market-based processes for power generation, transmission, and distribution. Deregulation of the power sector aims to boost efficiency, lower prices, and improve the quality and dependability of energy supplies. However, it can also lead to market failures as well as social and environmental issues, and its successful adoption necessitates careful planning and execution.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power sector deregulation",
+    "link": ""
+  },
+  {
+    "id": 105,
+    "specialization": "power",
+    "description": "Flexible AC Transmission Systems (FACTS) controllers are devices that can change and manage the electrical power transmission characteristics of AC power systems. They alter the voltage, current, and impedance of the gearbox line using modern power electronics, which can increase power quality, stability, and dependability. FACTS controllers are utilised in many different applications, including as renewable energy systems, smart grids, and industrial automation.",
+    "person": "Dr. Trapti Jain",
+    "name": "FACTS controllers",
+    "link": ""
+  },
+  {
+    "id": 106,
+    "specialization": "power",
+    "description": "AI has a wide range of applications in power systems, including load forecasting, problem diagnosis, optimisation, and control. Artificial intelligence (AI) techniques such as neural networks, fuzzy logic, and genetic algorithms are used to model and analyse data from power systems, allowing for better decision-making, increased efficiency, and increased reliability. AI is also being utilised to create new power system applications and technologies, such as energy management systems, demand response, and distributed generation.",
+    "person": "Dr. Trapti Jain",
+    "name": "Artificial Intelligence applications to power systems",
+    "link": ""
+  },
+  {
+    "id": 107,
+    "specialization": "power",
+    "description": "The degree of stability and consistency in the electrical power supply is referred to as power quality. Poor power quality can cause voltage fluctuations, surges, and other disturbances that can damage equipment and impair electrical device performance. It is required for modern electrical systems to operate reliably and efficiently.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power Quality",
+    "link": ""
+  },
+  {
+    "id": 108,
+    "specialization": "power",
+    "description": "Electric vehicle integration involves integrating electric car charging facilities into the electrical grid as well as developing laws, legislation, and technologies to promote their wider adoption. It entails tackling issues such as controlling growing electricity consumption and ensuring the reliability and stability of the power grid, as well as promoting the use of sustainable mobility.",
+    "person": "Dr. Trapti Jain",
+    "name": "Intergration of Electric Vehicles",
+    "link": ""
+  },
+  {
+    "id": 109,
+    "specialization": "power",
+    "description": "A microgrid is a localised energy system that can function independently or in tandem with the larger power grid. Local generation sources, such as solar panels or wind turbines, energy storage devices, and control systems are generally included. Microgrids have the potential to improve grid resilience, lower energy costs, and promote renewable energy integration.",
+    "person": "Dr. Trapti Jain",
+    "name": "Micro grid",
+    "link": ""
+  },
+  {
+    "id": 110,
+    "specialization": "signal",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 111,
+    "specialization": "signal",
+    "description": "Time-frequency analysis is a signal processing approach that analyses signals in both the time and frequency domains. It permits more precise analysis of non-stationary signals by breaking a signal into its basic frequency components as they vary over time, and has wide applications in domains such as audio analysis, picture processing, and neurology.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Time-Frequency Analysis",
+    "link": ""
+  },
+  {
+    "id": 112,
+    "specialization": "signal",
+    "description": "Speech signal processing research is concerned with analysing and improving the quality of speech signals through the use of various techniques such as noise reduction, voice enhancement, speaker identification, and speech recognition. Telecommunications, audio coding, speech therapy, and human-computer interaction are all examples of uses in this subject. Continuous research is being conducted to increase the accuracy and efficiency of speech processing systems.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Speech Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 113,
+    "specialization": "signal",
+    "description": "Signal processing for communications is an important field of study that aims to improve the efficiency and quality of communication networks. Creating algorithms and procedures for signal modulation, channel coding, equalisation, and synchronisation is part of the job. This field is used in a variety of wireless and cable communication technologies, including mobile phones, satellite communications, and fibre optics.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Signal Processing for Communications",
+    "link": ""
+  },
+  {
+    "id": 114,
+    "specialization": "signal",
+    "description": "Wireless cooperative communication techniques are a fast expanding area of research aimed at increasing the performance of wireless communication systems by allowing user collaboration. It entails creating algorithms and protocols that let numerous users to send and receive data jointly, hence boosting overall system efficiency and dependability. Ongoing research in this area is aimed at addressing the problems that fading channels, interference, and resource allocation face in cooperative communication systems\ufffdto create cooperative communication strategies that are efficient and scalable enough to be used in real-world wireless networks.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Wireless cooperative communication techniques",
+    "link": ""
+  },
+  {
+    "id": 115,
+    "specialization": "signal",
+    "description": "A critical area of research in wireless communication systems is the performance analysis of relaying techniques across wireless fading channels. It entails investigating the effects of various relaying strategies, such as amplify-and-forward, decode-and-forward, and compress-and-forward, on overall system performance, such as bit error rate, channel capacity, and outage probability. Ongoing research in this field is aimed at developing efficient relaying mechanisms that can reduce the influence of fading and increase overall system performance.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Performance analysis of relaying strategies over wireless fading channels",
+    "link": ""
+  },
+  {
+    "id": 116,
+    "specialization": "signal",
+    "description": "MIMO (Multiple-Input Multiple-Output) systems, which use multiple antennas at the transmitter and receiver to improve system performance, are a crucial technology in current wireless communication systems. In this field of research, algorithms and techniques for channel estimation, precoding, beamforming, and resource allocation in MIMO systems are being developed in order to maximise data rate, increase system dependability, and limit the impacts of fading and interference. ",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "MIMO systems",
+    "link": ""
+  },
+  {
+    "id": 117,
+    "specialization": "signal",
+    "description": "Biometrics research entails the development of technology and procedures for identifying individuals based on their unique biological characteristics, such as facial features, fingerprints, iris patterns, and voiceprints. Access control, identity verification, and criminal investigation are just a few of the uses for this field. Ongoing research attempts to improve biometric system accuracy and reliability, address privacy problems, and investigate the possible uses of developing biometric technology.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Biometrics",
+    "link": ""
+  },
+  {
+    "id": 118,
+    "specialization": "signal",
+    "description": "The development of algorithms and strategies for processing and analysing digital signals and images is a fundamental field of research in digital signal and image processing. Many applications exist in this discipline, including audio and video compression, image enhancement, feature extraction, and pattern recognition. Ongoing research attempts to create efficient and resilient signal and image processing algorithms capable of handling enormous amounts of data while overcoming the hurdles provided by noisy and unpredictable data.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Digital Signal and Image processing",
+    "link": ""
+  },
+  {
+    "id": 119,
+    "specialization": "signal",
+    "description": "Computer vision research entails creating algorithms and strategies that allow machines to interpret and comprehend visual data from the actual world. There are several applications for this field, including as autonomous driving, facial recognition, medical imaging, and robotics. Ongoing research attempts to improve computer vision system accuracy and efficiency, address privacy problems, and investigate the possible applications of future computer vision technologies such as deep learning and augmented reality.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Computer vision",
+    "link": ""
+  },
+  {
+    "id": 120,
+    "specialization": "signal",
+    "description": "Statistical and adaptive signal processing is an important field of study that involves the development of algorithms and strategies for handling and analysing data in a non-stationary environment. Speech and image processing, adaptive filtering, and data analysis are all examples of uses in this subject. Ongoing research aims to build efficient and robust signal processing algorithms that can adapt to changing signal properties and learn from data, hence enhancing signal processing system performance and reliability.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Statistical and Adaptive Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 121,
+    "specialization": "signal",
+    "description": "The development of algorithms and techniques for processing and analysing signals in wireless communication networks is a critical field of research. Many applications exist in this sector, including channel estimation, equalisation, synchronisation, and interference mitigation. The goal of ongoing research is to provide efficient and robust signal processing algorithms that can improve the performance and reliability of wireless communication systems in the presence of fading, interference, and noise.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Signal Processing for Wireless Communication",
+    "link": ""
+  },
+  {
+    "id": 122,
+    "specialization": "signal",
+    "description": "SDR research focuses on designing radio systems that can be modified in software to serve a wide range of wireless communication standards. Wireless communication, military communications, and emergency services are just a few of the applications for this subject. Ongoing research seeks to create efficient SDR designs, signal processing algorithms, and protocols that will allow for flexible, reconfigurable, and secure communication systems.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Software Defined Radio",
+    "link": ""
+  },
+  {
+    "id": 123,
+    "specialization": "signal",
+    "description": "Voice over IP (VoIP) is a technology that allows voice communication over the internet through the use of the Internet Protocol (IP). VoIP research involves developing algorithms and techniques for voice coding, packetization, routing, and quality of service (QoS) management in order to improve the voice quality, reliability, and security of VoIP systems and to address the challenges posed by VoIP integration with other communication technologies.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Voice over IP (VOIP)",
+    "link": ""
+  },
+  {
+    "id": 124,
+    "specialization": "vlsi",
+    "description": "Nanoscale devices are electrical components with dimensions measured in nanometers and operating at the nanoscale level. Circuit design refers to the process of developing and manufacturing sophisticated integrated circuits with millions or billions of transistors. Nanoscale devices have transformed VLSI/ULSI circuit design by enabling smaller, more powerful integrated circuits with enhanced performance and efficiency.Nanoscale Devices and VLSI/ULSI Circuit Design research strives to provide novel materials, fabrication techniques, and design methodologies to overcome the constraints of traditional technologies. ",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Nanoscale Devices and VLSI/ULSI Circuit Design",
+    "link": ""
+  },
+  {
+    "id": 125,
+    "specialization": "vlsi",
+    "description": "Multigate GAA (Gate-All-Around) MOSFETs are a potential technology for nanoscale devices due to their good electrostatic control, low power consumption, and great performance. To effectively depict the complicated physics involved in these devices, extensive simulation approaches are required. To optimise their performance and exploit their unique qualities, GAA MOSFET circuit implementation necessitates the creation of novel design approaches.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate GAA MOSFET modeling and Circuit Implementation",
+    "link": ""
+  },
+  {
+    "id": 126,
+    "specialization": "vlsi",
+    "description": "When compared to traditional planar MOSFETs, multigate MOSFETs such as Double-Gate and FinFETs have demonstrated considerable gains in performance, power consumption, and reliability. SRAM (Static Random Access Memory) design with these devices necessitates novel circuit strategies to capitalise on their unique qualities, such as increased drive strength and lower leakage. To get the optimum performance, these techniques involve optimising cell architecture, biassing systems, and size tactics.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate MOSFET (DG, FinFET) based SRAM Design",
+    "link": ""
+  },
+  {
+    "id": 127,
+    "specialization": "vlsi",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 128,
+    "specialization": "vlsi",
+    "description": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, and Solar Cells are advanced semiconductor devices that make use of materials from the periodic table's groups II-VI, III-V, and IV-VI, such as ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, and CdZnO. These materials have remarkable optical and electrical properties, making them suitable for a wide range of optoelectronic applications such as high-efficiency photovoltaic cells and solid-state lighting.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, Solar Cells: Materials covering group II-VI, III-V, and IV-VI from periodic table viz. ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, CdZnO",
+    "link": ""
+  },
+  {
+    "id": 129,
+    "specialization": "vlsi",
+    "description": "Nanophotonics is a branch of science concerned with the interaction of light with tiny structures. Nanophotonics is used in photonic LED and solar cell systems to improve efficiency and performance. Photonic bandgap defect microcavity devices are a sort of nanophotonic structure that may be utilised to control light propagation and localization for a variety of applications such as sensing and communication systems.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nanophotonics, photonic LED and solar cell, Photonic bandgap defect microcavity devices",
+    "link": ""
+  },
+  {
+    "id": 130,
+    "specialization": "vlsi",
+    "description": "Nano-scale sensors and Terahertz devices based on Si-Ge have distinct benefits due to their superior electrical and optical features. Small variations in temperature, pressure, and other environmental conditions can be detected by Si-Ge nanoscale sensors, making them suitable in a variety of sensing applications. Terahertz devices based on Si-Ge have also demonstrated potential in high-speed communication systems and spectroscopy.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale sensors, Terahertz devices mainly based on Si-Ge",
+    "link": ""
+  },
+  {
+    "id": 131,
+    "specialization": "vlsi",
+    "description": "A thin film coating known as broadband anti-reflection (BBAR) is used to decrease reflections on optical surfaces such as laser mirrors. BBAR coatings have the potential to improve the efficiency and performance of laser systems. Surface passivation is a procedure used to protect a detector's surface against contamination, which can lead to performance loss. Surface passivation approaches can improve detector stability and reliability.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Broadband anti-reflection (BBAR) Coating for Lasers, Surface Passivation for Detectors",
+    "link": ""
+  },
+  {
+    "id": 132,
+    "specialization": "vlsi",
+    "description": "Carbon nanotube fabrication and characterisation involve the synthesis and investigation of these nanoscale materials, which have extraordinary mechanical, electrical, and thermal properties. Because of their unique features and high aspect ratios, carbon nanotubes have found several applications, including nanoelectronics, energy storage, and medicinal devices.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Fabrication and characterization of carbon nanotube and their applications",
+    "link": ""
+  },
+  {
+    "id": 133,
+    "specialization": "vlsi",
+    "description": "Due to their superior electronic properties, high electron mobility transistor (HEMT) devices based on ZnO, GaN, and AlGaN are attractive for high-frequency and high-power applications. These materials are suited for use in high-speed communication and power electronics systems due to their high electron mobility, low noise, and high breakdown voltage.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "High electron mobility transistor (HEMT) based on ZnO, GaN, AlGaN",
+    "link": ""
+  },
+  {
+    "id": 134,
+    "specialization": "vlsi",
+    "description": "Organic electronic/photonic devices control the flow of electrons or photons using organic materials. They've been used in a variety of devices, including organic light-emitting diodes (OLEDs), organic solar cells, and organic field-effect transistors (OFETs). Techniques for studying the characteristics of organic materials include photoluminescence spectroscopy and thin film production and characterisation. Organic electrical device-based sensors have been created for applications such as gas sensing and environmental monitoring.",
+    "person": "Dr. Vipul Singh",
+    "name": "Organic electronic/photonic devices and their applications, Photoluminescence spectroscopy, thin film fabrication and characterization, novel sensors based on organic electronic devices.",
+    "link": ""
+  },
+  {
+    "id": 135,
+    "specialization": "vlsi",
+    "description": "Single electron devices, bulk and SOI MOSFETs, and other silicon nanodevices are employed in low power information processing circuits and RF-SETs. Low-frequency noise in MOSFETs is a performance limiting factor. Sensors based on MOSFETs have been developed for a variety of applications, including gas sensing and biosensing. MOSFET miniaturisation has resulted in substantial advances in the field of nanoelectronics.",
+    "person": "Dr. Vipul Singh",
+    "name": "Silicon nanodevices, Single electron devices, Bulk and SOI MOSFETs, Low frequency noise in MOSFETs, MOSFET based sensors, Low power information processing circuits and RF-SET etc.",
+    "link": ""
+  },
+  {
+    "id": 136,
+    "specialization": "vlsi",
+    "description": "Solid-state devices are electronic devices that use semiconductor features to control the flow of electrons. The use of nanotechnology to miniaturise solid-state devices has resulted in the development of high-performance electronic components and circuits. Circuit design is critical in optimising solid-state devices for a variety of applications such as communication systems, sensors, and energy conversion devices.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Solid-State Devices, Circuit Design and Nanotechnology",
+    "link": ""
+  },
+  {
+    "id": 137,
+    "specialization": "vlsi",
+    "description": "In both bulk and SOI (silicon-on-insulator) technologies, novel MOS (metal-oxide-semiconductor) devices, including single and multi-gate devices, have been produced. When compared to typical MOSFETs, these devices provide better performance, such as higher mobility, reduced power consumption, and more reliability. They are used in a variety of fields, including high-speed digital circuits, memory devices, and sensors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Novel MOS devices (single and multi-gate) in Bulk/SOI technology",
+    "link": ""
+  },
+  {
+    "id": 138,
+    "specialization": "vlsi",
+    "description": "To fulfil the energy efficiency expectations of modern electronic systems, low power circuit design for analogue, RF, and digital applications using nanoscale components is critical. The advantages of nanoscale devices are minimal power consumption and great performance. Voltage scaling, clock gating, and power gating are all techniques used to reduce power usage while maintaining system performance.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Low power circuit design (for analog/RF/digital applications) with nanoscale devices",
+    "link": ""
+  },
+  {
+    "id": 139,
+    "specialization": "vlsi",
+    "description": "Bipolar transistors are commonly used in high-power and high-frequency applications due to their fast switching rates and power handling capabilities. Thermal resistance optimisation is critical in bipolar transistor design since it impacts performance and reliability. Thermal coupling, heat sinking, and substrate design are all utilised to improve the thermal resistance of bipolar transistors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Bipolar Transistors: Thermal resistance optimization",
+    "link": ""
+  },
+  {
+    "id": 140,
+    "specialization": "vlsi",
+    "description": "The design and study of HEMTs (high electron mobility transistors) based on GaN and ZnO involve optimising device architectures and material properties for high-performance applications in power electronics, wireless communications, and photonics. Advanced simulation and modelling approaches are used by researchers to understand the electrical and thermal properties of these materials and to design novel fabrication processes for improved device performance and reliability.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Design and analysis of GaN and ZnO based HEMTs",
+    "link": ""
+  },
+  {
+    "id": 141,
+    "specialization": "vlsi",
+    "description": "Photothermal reaction is the creation of heat by a substance in response to light absorption. This reaction can be utilised for a variety of purposes, including photothermal imaging, which is a technique for imaging a sample based on its photothermal response. Photothermal imaging provides a sensitive and non-destructive method of imaging samples with high spatial resolution by measuring temperature changes produced by light absorption.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photothermal response and photothermal imaging",
+    "link": ""
+  },
+  {
+    "id": 142,
+    "specialization": "vlsi",
+    "description": "Photoacoustic microscopy (PAM) is a biological imaging technology that combines the excellent resolution of optical imaging with the deep penetration of ultrasound. PAM can generate images with great contrast and resolution by employing laser pulses to generate acoustic waves, making it excellent for visualising biological tissues and structures. PAM has showed promise in non-invasive disease diagnosis and monitoring, including cancer and cardiovascular disease.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photoacoustic microscopy for biomedical applications",
+    "link": ""
+  },
+  {
+    "id": 143,
+    "specialization": "vlsi",
+    "description": "Biophotonics is a new branch of electrical engineering that focuses on the development of new photonic technologies and their application to biological systems. Design and manufacture of optical sensors, light sources, and imaging systems for biomedical applications such as cancer detection, drug discovery, and medical diagnostics are examples of this. ",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Biophotonics",
+    "link": ""
+  },
+  {
+    "id": 144,
+    "specialization": "vlsi",
+    "description": "Integrated optoelectronics, nanophotonics, and semiconductor optoelectronics are all research areas that focus on the manipulation and control of light at the nanoscale. Integrated optoelectronics is the integration of optical and electronic components on a single chip, whereas nanophotonics is concerned with light behaviour at the nanoscale. Semiconductor optoelectronics uses semiconductors to generate, manipulate, and detect light, and has applications in telecommunications, lighting, and solar energy.a",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Integrated Optoelectronics, Nanophotonics, Semiconductor Optoelectronics",
+    "link": ""
+  },
+  {
+    "id": 145,
+    "specialization": "vlsi",
+    "description": "Nanoscale photonic devices and optical interconnects are technologies that enable nanoscale communication and data transport. Nano-scale photonic devices are usually composed of semiconductor materials and employ light to accomplish activities including switching, modulation, and amplification. Optical interconnects are used to carry data between electronic components and are faster, more efficient, and less susceptible to interference than standard electrical interconnects. These technologies are essential for the creation of high-performance computer and communication systems.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Nano-scale photonic devices, Optical Interconnects",
+    "link": ""
+  },
+  {
+    "id": 146,
+    "specialization": "vlsi",
+    "description": "The procedures and techniques used to construct structures and devices at the micro- and nano-scales are referred to as micro/nano fabrication technologies. Among these technologies are lithography, etching, deposition, and bonding. They are essential for the advancement of micro- and nanoelectronics, photonics, and bioelectronics, with applications in semiconductors, sensors, and medical devices. Micro/nano fabrication technology advancements are driving innovation and determining the future of several sectors.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Micro/Nano Fabrication Technologies",
+    "link": ""
+  },
+  {
+    "id": 147,
+    "specialization": "power",
+    "description": "Power electronic system modelling and simulation entail the use of mathematical models and software tools to forecast the behaviour and performance of electronic circuits and devices used in power conversion and control. Engineers can use these techniques to optimise designs, assess various topologies, and increase the efficiency, reliability, and safety of power electronic systems. Modelling and simulation are critical for the design and development of sophisticated power electronics for renewable energy, electric vehicles, and smart grid applications.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Modelling and simulation of power electronic systems",
+    "link": ""
+  },
+  {
+    "id": 148,
+    "specialization": "power",
+    "description": "Power electronics is essential in renewable energy systems because it allows for the conversion, control, and management of electrical power generated by renewable sources such as solar, wind, and hydro. Inverters and converters convert the DC electricity supplied by renewable sources into AC power that can be used by the grid or consumed by the end user. Power electronics also help with energy storage, voltage management, and improving power quality in renewable energy systems. The use of power electronics in renewable energy systems is critical for the transition to a carbon-neutral energy future.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Application of power electronics in renewable energy systems",
+    "link": ""
+  },
+  {
+    "id": 149,
+    "specialization": "power",
+    "description": "The process of measuring, monitoring, and analysing the characteristics of electrical power to verify that it satisfies particular quality requirements is known as power quality analysis. Voltage, current, frequency, and harmonic distortion are examples of such parameters. Poor power quality can cause equipment failure, lower efficiency, and safety issues, hence power quality analysis is critical for the reliable operation of electrical systems and equipment. Smart grids, renewable energy systems, and industrial automation all make use of advanced power quality analysis tools.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Power Quality Analysis",
+    "link": ""
+  },
+  {
+    "id": 150,
+    "specialization": "power",
+    "description": "A microgrid is a small-scale electricity distribution system that can function independently or in conjunction with the main grid. It usually consists of distributed energy resources like solar, wind, or biomass, as well as energy storage systems and power electronics for grid control and management. Microgrids provide various advantages, including enhanced reliability, energy efficiency, and resilience, and are utilised in a variety of applications ranging from isolated settlements to military sites and data centres.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Micro grid",
+    "link": ""
+  },
+  {
+    "id": 151,
+    "specialization": "power",
+    "description": "Power system dynamics and security analysis are concerned with the research and analysis of the behaviour and stability of electrical power systems under various operating situations. This involves the modelling and simulation of power system components and their interconnections, as well as the analysis of the impact of disturbances, failures, and cyber-attacks on the security and stability of the system. Power system dynamics and security analysis are critical for guaranteeing electrical power system reliability, safety, and efficiency.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power system dynamics and security analysis",
+    "link": ""
+  },
+  {
+    "id": 152,
+    "specialization": "power",
+    "description": "The process of removing or reducing government control and regulation over the electricity industry is referred to as power sector deregulation. In most cases, this involves introducing competition and market-based processes for power generation, transmission, and distribution. Deregulation of the power sector aims to boost efficiency, lower prices, and improve the quality and dependability of energy supplies. However, it can also lead to market failures as well as social and environmental issues, and its successful adoption necessitates careful planning and execution.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power sector deregulation",
+    "link": ""
+  },
+  {
+    "id": 153,
+    "specialization": "power",
+    "description": "Flexible AC Transmission Systems (FACTS) controllers are devices that can change and manage the electrical power transmission characteristics of AC power systems. They alter the voltage, current, and impedance of the gearbox line using modern power electronics, which can increase power quality, stability, and dependability. FACTS controllers are utilised in many different applications, including as renewable energy systems, smart grids, and industrial automation.",
+    "person": "Dr. Trapti Jain",
+    "name": "FACTS controllers",
+    "link": ""
+  },
+  {
+    "id": 154,
+    "specialization": "power",
+    "description": "AI has a wide range of applications in power systems, including load forecasting, problem diagnosis, optimisation, and control. Artificial intelligence (AI) techniques such as neural networks, fuzzy logic, and genetic algorithms are used to model and analyse data from power systems, allowing for better decision-making, increased efficiency, and increased reliability. AI is also being utilised to create new power system applications and technologies, such as energy management systems, demand response, and distributed generation.",
+    "person": "Dr. Trapti Jain",
+    "name": "Artificial Intelligence applications to power systems",
+    "link": ""
+  },
+  {
+    "id": 155,
+    "specialization": "power",
+    "description": "The degree of stability and consistency in the electrical power supply is referred to as power quality. Poor power quality can cause voltage fluctuations, surges, and other disturbances that can damage equipment and impair electrical device performance. It is required for modern electrical systems to operate reliably and efficiently.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power Quality",
+    "link": ""
+  },
+  {
+    "id": 156,
+    "specialization": "power",
+    "description": "Electric vehicle integration involves integrating electric car charging facilities into the electrical grid as well as developing laws, legislation, and technologies to promote their wider adoption. It entails tackling issues such as controlling growing electricity consumption and ensuring the reliability and stability of the power grid, as well as promoting the use of sustainable mobility.",
+    "person": "Dr. Trapti Jain",
+    "name": "Intergration of Electric Vehicles",
+    "link": ""
+  },
+  {
+    "id": 157,
+    "specialization": "power",
+    "description": "A microgrid is a localised energy system that can function independently or in tandem with the larger power grid. Local generation sources, such as solar panels or wind turbines, energy storage devices, and control systems are generally included. Microgrids have the potential to improve grid resilience, lower energy costs, and promote renewable energy integration.",
+    "person": "Dr. Trapti Jain",
+    "name": "Micro grid",
+    "link": ""
+  },
+  {
+    "id": 158,
+    "specialization": "signal",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 159,
+    "specialization": "signal",
+    "description": "Time-frequency analysis is a signal processing approach that analyses signals in both the time and frequency domains. It permits more precise analysis of non-stationary signals by breaking a signal into its basic frequency components as they vary over time, and has wide applications in domains such as audio analysis, picture processing, and neurology.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Time-Frequency Analysis",
+    "link": ""
+  },
+  {
+    "id": 160,
+    "specialization": "signal",
+    "description": "Speech signal processing research is concerned with analysing and improving the quality of speech signals through the use of various techniques such as noise reduction, voice enhancement, speaker identification, and speech recognition. Telecommunications, audio coding, speech therapy, and human-computer interaction are all examples of uses in this subject. Continuous research is being conducted to increase the accuracy and efficiency of speech processing systems.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Speech Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 161,
+    "specialization": "signal",
+    "description": "Signal processing for communications is an important field of study that aims to improve the efficiency and quality of communication networks. Creating algorithms and procedures for signal modulation, channel coding, equalisation, and synchronisation is part of the job. This field is used in a variety of wireless and cable communication technologies, including mobile phones, satellite communications, and fibre optics.",
+    "person": "Dr. Ram Bilas Pachori",
+    "name": "Signal Processing for Communications",
+    "link": ""
+  },
+  {
+    "id": 162,
+    "specialization": "signal",
+    "description": "Wireless cooperative communication techniques are a fast expanding area of research aimed at increasing the performance of wireless communication systems by allowing user collaboration. It entails creating algorithms and protocols that let numerous users to send and receive data jointly, hence boosting overall system efficiency and dependability. Ongoing research in this area is aimed at addressing the problems that fading channels, interference, and resource allocation face in cooperative communication systems\ufffdto create cooperative communication strategies that are efficient and scalable enough to be used in real-world wireless networks.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Wireless cooperative communication techniques",
+    "link": ""
+  },
+  {
+    "id": 163,
+    "specialization": "signal",
+    "description": "A critical area of research in wireless communication systems is the performance analysis of relaying techniques across wireless fading channels. It entails investigating the effects of various relaying strategies, such as amplify-and-forward, decode-and-forward, and compress-and-forward, on overall system performance, such as bit error rate, channel capacity, and outage probability. Ongoing research in this field is aimed at developing efficient relaying mechanisms that can reduce the influence of fading and increase overall system performance.",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "Performance analysis of relaying strategies over wireless fading channels",
+    "link": ""
+  },
+  {
+    "id": 164,
+    "specialization": "signal",
+    "description": "MIMO (Multiple-Input Multiple-Output) systems, which use multiple antennas at the transmitter and receiver to improve system performance, are a crucial technology in current wireless communication systems. In this field of research, algorithms and techniques for channel estimation, precoding, beamforming, and resource allocation in MIMO systems are being developed in order to maximise data rate, increase system dependability, and limit the impacts of fading and interference. ",
+    "person": "Dr. Prabhat K. Upadhyay",
+    "name": "MIMO systems",
+    "link": ""
+  },
+  {
+    "id": 165,
+    "specialization": "signal",
+    "description": "Biometrics research entails the development of technology and procedures for identifying individuals based on their unique biological characteristics, such as facial features, fingerprints, iris patterns, and voiceprints. Access control, identity verification, and criminal investigation are just a few of the uses for this field. Ongoing research attempts to improve biometric system accuracy and reliability, address privacy problems, and investigate the possible uses of developing biometric technology.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Biometrics",
+    "link": ""
+  },
+  {
+    "id": 166,
+    "specialization": "signal",
+    "description": "The development of algorithms and strategies for processing and analysing digital signals and images is a fundamental field of research in digital signal and image processing. Many applications exist in this discipline, including audio and video compression, image enhancement, feature extraction, and pattern recognition. Ongoing research attempts to create efficient and resilient signal and image processing algorithms capable of handling enormous amounts of data while overcoming the hurdles provided by noisy and unpredictable data.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Digital Signal and Image processing",
+    "link": ""
+  },
+  {
+    "id": 167,
+    "specialization": "signal",
+    "description": "Computer vision research entails creating algorithms and strategies that allow machines to interpret and comprehend visual data from the actual world. There are several applications for this field, including as autonomous driving, facial recognition, medical imaging, and robotics. Ongoing research attempts to improve computer vision system accuracy and efficiency, address privacy problems, and investigate the possible applications of future computer vision technologies such as deep learning and augmented reality.",
+    "person": "Dr. Vivek Kanhangad",
+    "name": "Computer vision",
+    "link": ""
+  },
+  {
+    "id": 168,
+    "specialization": "signal",
+    "description": "Statistical and adaptive signal processing is an important field of study that involves the development of algorithms and strategies for handling and analysing data in a non-stationary environment. Speech and image processing, adaptive filtering, and data analysis are all examples of uses in this subject. Ongoing research aims to build efficient and robust signal processing algorithms that can adapt to changing signal properties and learn from data, hence enhancing signal processing system performance and reliability.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Statistical and Adaptive Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 169,
+    "specialization": "signal",
+    "description": "The development of algorithms and techniques for processing and analysing signals in wireless communication networks is a critical field of research. Many applications exist in this sector, including channel estimation, equalisation, synchronisation, and interference mitigation. The goal of ongoing research is to provide efficient and robust signal processing algorithms that can improve the performance and reliability of wireless communication systems in the presence of fading, interference, and noise.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Signal Processing for Wireless Communication",
+    "link": ""
+  },
+  {
+    "id": 170,
+    "specialization": "signal",
+    "description": "SDR research focuses on designing radio systems that can be modified in software to serve a wide range of wireless communication standards. Wireless communication, military communications, and emergency services are just a few of the applications for this subject. Ongoing research seeks to create efficient SDR designs, signal processing algorithms, and protocols that will allow for flexible, reconfigurable, and secure communication systems.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Software Defined Radio",
+    "link": ""
+  },
+  {
+    "id": 171,
+    "specialization": "signal",
+    "description": "Voice over IP (VoIP) is a technology that allows voice communication over the internet through the use of the Internet Protocol (IP). VoIP research involves developing algorithms and techniques for voice coding, packetization, routing, and quality of service (QoS) management in order to improve the voice quality, reliability, and security of VoIP systems and to address the challenges posed by VoIP integration with other communication technologies.",
+    "person": "Dr. Vimal Bhatia",
+    "name": "Voice over IP (VOIP)",
+    "link": ""
+  },
+  {
+    "id": 172,
+    "specialization": "vlsi",
+    "description": "Nanoscale devices are electrical components with dimensions measured in nanometers and operating at the nanoscale level. Circuit design refers to the process of developing and manufacturing sophisticated integrated circuits with millions or billions of transistors. Nanoscale devices have transformed VLSI/ULSI circuit design by enabling smaller, more powerful integrated circuits with enhanced performance and efficiency.Nanoscale Devices and VLSI/ULSI Circuit Design research strives to provide novel materials, fabrication techniques, and design methodologies to overcome the constraints of traditional technologies. ",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Nanoscale Devices and VLSI/ULSI Circuit Design",
+    "link": ""
+  },
+  {
+    "id": 173,
+    "specialization": "vlsi",
+    "description": "Multigate GAA (Gate-All-Around) MOSFETs are a potential technology for nanoscale devices due to their good electrostatic control, low power consumption, and great performance. To effectively depict the complicated physics involved in these devices, extensive simulation approaches are required. To optimise their performance and exploit their unique qualities, GAA MOSFET circuit implementation necessitates the creation of novel design approaches.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate GAA MOSFET modeling and Circuit Implementation",
+    "link": ""
+  },
+  {
+    "id": 174,
+    "specialization": "vlsi",
+    "description": "When compared to traditional planar MOSFETs, multigate MOSFETs such as Double-Gate and FinFETs have demonstrated considerable gains in performance, power consumption, and reliability. SRAM (Static Random Access Memory) design with these devices necessitates novel circuit strategies to capitalise on their unique qualities, such as increased drive strength and lower leakage. To get the optimum performance, these techniques involve optimising cell architecture, biassing systems, and size tactics.",
+    "person": "Dr. Santosh K. Vishvakarma",
+    "name": "Multigate MOSFET (DG, FinFET) based SRAM Design",
+    "link": ""
+  },
+  {
+    "id": 175,
+    "specialization": "vlsi",
+    "description": "Biomedical Signal Processing is an interdisciplinary field that analyses and interprets physiological signals such as electroencephalograms (EEG), electrocardiograms (ECG), electromyograms (EMG), and others using mathematical and computer approaches. The field seeks to extract meaningful information from these signals in order to aid in the diagnosis, monitoring, and treatment of a variety of medical diseases. Neuroscience, cardiology, rehabilitation, and sleep medicine are all applications of biomedical signal processing. Signal filtering, feature extraction, classification, and pattern recognition are some of the approaches used.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Biomedical Signal Processing",
+    "link": ""
+  },
+  {
+    "id": 176,
+    "specialization": "vlsi",
+    "description": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, and Solar Cells are advanced semiconductor devices that make use of materials from the periodic table's groups II-VI, III-V, and IV-VI, such as ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, and CdZnO. These materials have remarkable optical and electrical properties, making them suitable for a wide range of optoelectronic applications such as high-efficiency photovoltaic cells and solid-state lighting.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale Multiple Quantum Well Lasers, hybrid LEDs, Photodetectors, Solar Cells: Materials covering group II-VI, III-V, and IV-VI from periodic table viz. ZnO, PbSe, GaN, AlGaN, AlGaAs, GaAs, ITO, MgZnO, CdZnO",
+    "link": ""
+  },
+  {
+    "id": 177,
+    "specialization": "vlsi",
+    "description": "Nanophotonics is a branch of science concerned with the interaction of light with tiny structures. Nanophotonics is used in photonic LED and solar cell systems to improve efficiency and performance. Photonic bandgap defect microcavity devices are a sort of nanophotonic structure that may be utilised to control light propagation and localization for a variety of applications such as sensing and communication systems.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nanophotonics, photonic LED and solar cell, Photonic bandgap defect microcavity devices",
+    "link": ""
+  },
+  {
+    "id": 178,
+    "specialization": "vlsi",
+    "description": "Nano-scale sensors and Terahertz devices based on Si-Ge have distinct benefits due to their superior electrical and optical features. Small variations in temperature, pressure, and other environmental conditions can be detected by Si-Ge nanoscale sensors, making them suitable in a variety of sensing applications. Terahertz devices based on Si-Ge have also demonstrated potential in high-speed communication systems and spectroscopy.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Nano-scale sensors, Terahertz devices mainly based on Si-Ge",
+    "link": ""
+  },
+  {
+    "id": 179,
+    "specialization": "vlsi",
+    "description": "A thin film coating known as broadband anti-reflection (BBAR) is used to decrease reflections on optical surfaces such as laser mirrors. BBAR coatings have the potential to improve the efficiency and performance of laser systems. Surface passivation is a procedure used to protect a detector's surface against contamination, which can lead to performance loss. Surface passivation approaches can improve detector stability and reliability.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Broadband anti-reflection (BBAR) Coating for Lasers, Surface Passivation for Detectors",
+    "link": ""
+  },
+  {
+    "id": 180,
+    "specialization": "vlsi",
+    "description": "Carbon nanotube fabrication and characterisation involve the synthesis and investigation of these nanoscale materials, which have extraordinary mechanical, electrical, and thermal properties. Because of their unique features and high aspect ratios, carbon nanotubes have found several applications, including nanoelectronics, energy storage, and medicinal devices.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "Fabrication and characterization of carbon nanotube and their applications",
+    "link": ""
+  },
+  {
+    "id": 181,
+    "specialization": "vlsi",
+    "description": "Due to their superior electronic properties, high electron mobility transistor (HEMT) devices based on ZnO, GaN, and AlGaN are attractive for high-frequency and high-power applications. These materials are suited for use in high-speed communication and power electronics systems due to their high electron mobility, low noise, and high breakdown voltage.",
+    "person": "Dr. Shaibal Mukherjee",
+    "name": "High electron mobility transistor (HEMT) based on ZnO, GaN, AlGaN",
+    "link": ""
+  },
+  {
+    "id": 182,
+    "specialization": "vlsi",
+    "description": "Organic electronic/photonic devices control the flow of electrons or photons using organic materials. They've been used in a variety of devices, including organic light-emitting diodes (OLEDs), organic solar cells, and organic field-effect transistors (OFETs). Techniques for studying the characteristics of organic materials include photoluminescence spectroscopy and thin film production and characterisation. Organic electrical device-based sensors have been created for applications such as gas sensing and environmental monitoring.",
+    "person": "Dr. Vipul Singh",
+    "name": "Organic electronic/photonic devices and their applications, Photoluminescence spectroscopy, thin film fabrication and characterization, novel sensors based on organic electronic devices.",
+    "link": ""
+  },
+  {
+    "id": 183,
+    "specialization": "vlsi",
+    "description": "Single electron devices, bulk and SOI MOSFETs, and other silicon nanodevices are employed in low power information processing circuits and RF-SETs. Low-frequency noise in MOSFETs is a performance limiting factor. Sensors based on MOSFETs have been developed for a variety of applications, including gas sensing and biosensing. MOSFET miniaturisation has resulted in substantial advances in the field of nanoelectronics.",
+    "person": "Dr. Vipul Singh",
+    "name": "Silicon nanodevices, Single electron devices, Bulk and SOI MOSFETs, Low frequency noise in MOSFETs, MOSFET based sensors, Low power information processing circuits and RF-SET etc.",
+    "link": ""
+  },
+  {
+    "id": 184,
+    "specialization": "vlsi",
+    "description": "Solid-state devices are electronic devices that use semiconductor features to control the flow of electrons. The use of nanotechnology to miniaturise solid-state devices has resulted in the development of high-performance electronic components and circuits. Circuit design is critical in optimising solid-state devices for a variety of applications such as communication systems, sensors, and energy conversion devices.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Solid-State Devices, Circuit Design and Nanotechnology",
+    "link": ""
+  },
+  {
+    "id": 185,
+    "specialization": "vlsi",
+    "description": "In both bulk and SOI (silicon-on-insulator) technologies, novel MOS (metal-oxide-semiconductor) devices, including single and multi-gate devices, have been produced. When compared to typical MOSFETs, these devices provide better performance, such as higher mobility, reduced power consumption, and more reliability. They are used in a variety of fields, including high-speed digital circuits, memory devices, and sensors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Novel MOS devices (single and multi-gate) in Bulk/SOI technology",
+    "link": ""
+  },
+  {
+    "id": 186,
+    "specialization": "vlsi",
+    "description": "To fulfil the energy efficiency expectations of modern electronic systems, low power circuit design for analogue, RF, and digital applications using nanoscale components is critical. The advantages of nanoscale devices are minimal power consumption and great performance. Voltage scaling, clock gating, and power gating are all techniques used to reduce power usage while maintaining system performance.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Low power circuit design (for analog/RF/digital applications) with nanoscale devices",
+    "link": ""
+  },
+  {
+    "id": 187,
+    "specialization": "vlsi",
+    "description": "Bipolar transistors are commonly used in high-power and high-frequency applications due to their fast switching rates and power handling capabilities. Thermal resistance optimisation is critical in bipolar transistor design since it impacts performance and reliability. Thermal coupling, heat sinking, and substrate design are all utilised to improve the thermal resistance of bipolar transistors.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Bipolar Transistors: Thermal resistance optimization",
+    "link": ""
+  },
+  {
+    "id": 188,
+    "specialization": "vlsi",
+    "description": "The design and study of HEMTs (high electron mobility transistors) based on GaN and ZnO involve optimising device architectures and material properties for high-performance applications in power electronics, wireless communications, and photonics. Advanced simulation and modelling approaches are used by researchers to understand the electrical and thermal properties of these materials and to design novel fabrication processes for improved device performance and reliability.",
+    "person": "Dr. Abhinav Kranti",
+    "name": "Design and analysis of GaN and ZnO based HEMTs",
+    "link": ""
+  },
+  {
+    "id": 189,
+    "specialization": "vlsi",
+    "description": "Photothermal reaction is the creation of heat by a substance in response to light absorption. This reaction can be utilised for a variety of purposes, including photothermal imaging, which is a technique for imaging a sample based on its photothermal response. Photothermal imaging provides a sensitive and non-destructive method of imaging samples with high spatial resolution by measuring temperature changes produced by light absorption.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photothermal response and photothermal imaging",
+    "link": ""
+  },
+  {
+    "id": 190,
+    "specialization": "vlsi",
+    "description": "Photoacoustic microscopy (PAM) is a biological imaging technology that combines the excellent resolution of optical imaging with the deep penetration of ultrasound. PAM can generate images with great contrast and resolution by employing laser pulses to generate acoustic waves, making it excellent for visualising biological tissues and structures. PAM has showed promise in non-invasive disease diagnosis and monitoring, including cancer and cardiovascular disease.",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Photoacoustic microscopy for biomedical applications",
+    "link": ""
+  },
+  {
+    "id": 191,
+    "specialization": "vlsi",
+    "description": "Biophotonics is a new branch of electrical engineering that focuses on the development of new photonic technologies and their application to biological systems. Design and manufacture of optical sensors, light sources, and imaging systems for biomedical applications such as cancer detection, drug discovery, and medical diagnostics are examples of this. ",
+    "person": "Dr. Srivathsan Vasudevan",
+    "name": "Biophotonics",
+    "link": ""
+  },
+  {
+    "id": 192,
+    "specialization": "vlsi",
+    "description": "Integrated optoelectronics, nanophotonics, and semiconductor optoelectronics are all research areas that focus on the manipulation and control of light at the nanoscale. Integrated optoelectronics is the integration of optical and electronic components on a single chip, whereas nanophotonics is concerned with light behaviour at the nanoscale. Semiconductor optoelectronics uses semiconductors to generate, manipulate, and detect light, and has applications in telecommunications, lighting, and solar energy.a",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Integrated Optoelectronics, Nanophotonics, Semiconductor Optoelectronics",
+    "link": ""
+  },
+  {
+    "id": 193,
+    "specialization": "vlsi",
+    "description": "Nanoscale photonic devices and optical interconnects are technologies that enable nanoscale communication and data transport. Nano-scale photonic devices are usually composed of semiconductor materials and employ light to accomplish activities including switching, modulation, and amplification. Optical interconnects are used to carry data between electronic components and are faster, more efficient, and less susceptible to interference than standard electrical interconnects. These technologies are essential for the creation of high-performance computer and communication systems.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Nano-scale photonic devices, Optical Interconnects",
+    "link": ""
+  },
+  {
+    "id": 194,
+    "specialization": "vlsi",
+    "description": "The procedures and techniques used to construct structures and devices at the micro- and nano-scales are referred to as micro/nano fabrication technologies. Among these technologies are lithography, etching, deposition, and bonding. They are essential for the advancement of micro- and nanoelectronics, photonics, and bioelectronics, with applications in semiconductors, sensors, and medical devices. Micro/nano fabrication technology advancements are driving innovation and determining the future of several sectors.",
+    "person": "Dr. Mukesh Kumar",
+    "name": "Micro/Nano Fabrication Technologies",
+    "link": ""
+  },
+  {
+    "id": 195,
+    "specialization": "power",
+    "description": "Power electronic system modelling and simulation entail the use of mathematical models and software tools to forecast the behaviour and performance of electronic circuits and devices used in power conversion and control. Engineers can use these techniques to optimise designs, assess various topologies, and increase the efficiency, reliability, and safety of power electronic systems. Modelling and simulation are critical for the design and development of sophisticated power electronics for renewable energy, electric vehicles, and smart grid applications.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Modelling and simulation of power electronic systems",
+    "link": ""
+  },
+  {
+    "id": 196,
+    "specialization": "power",
+    "description": "Power electronics is essential in renewable energy systems because it allows for the conversion, control, and management of electrical power generated by renewable sources such as solar, wind, and hydro. Inverters and converters convert the DC electricity supplied by renewable sources into AC power that can be used by the grid or consumed by the end user. Power electronics also help with energy storage, voltage management, and improving power quality in renewable energy systems. The use of power electronics in renewable energy systems is critical for the transition to a carbon-neutral energy future.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Application of power electronics in renewable energy systems",
+    "link": ""
+  },
+  {
+    "id": 197,
+    "specialization": "power",
+    "description": "The process of measuring, monitoring, and analysing the characteristics of electrical power to verify that it satisfies particular quality requirements is known as power quality analysis. Voltage, current, frequency, and harmonic distortion are examples of such parameters. Poor power quality can cause equipment failure, lower efficiency, and safety issues, hence power quality analysis is critical for the reliable operation of electrical systems and equipment. Smart grids, renewable energy systems, and industrial automation all make use of advanced power quality analysis tools.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Power Quality Analysis",
+    "link": ""
+  },
+  {
+    "id": 198,
+    "specialization": "power",
+    "description": "A microgrid is a small-scale electricity distribution system that can function independently or in conjunction with the main grid. It usually consists of distributed energy resources like solar, wind, or biomass, as well as energy storage systems and power electronics for grid control and management. Microgrids provide various advantages, including enhanced reliability, energy efficiency, and resilience, and are utilised in a variety of applications ranging from isolated settlements to military sites and data centres.",
+    "person": "Dr. Amod C. Umarikar",
+    "name": "Micro grid",
+    "link": ""
+  },
+  {
+    "id": 199,
+    "specialization": "power",
+    "description": "Power system dynamics and security analysis are concerned with the research and analysis of the behaviour and stability of electrical power systems under various operating situations. This involves the modelling and simulation of power system components and their interconnections, as well as the analysis of the impact of disturbances, failures, and cyber-attacks on the security and stability of the system. Power system dynamics and security analysis are critical for guaranteeing electrical power system reliability, safety, and efficiency.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power system dynamics and security analysis",
+    "link": ""
+  },
+  {
+    "id": 200,
+    "specialization": "power",
+    "description": "The process of removing or reducing government control and regulation over the electricity industry is referred to as power sector deregulation. In most cases, this involves introducing competition and market-based processes for power generation, transmission, and distribution. Deregulation of the power sector aims to boost efficiency, lower prices, and improve the quality and dependability of energy supplies. However, it can also lead to market failures as well as social and environmental issues, and its successful adoption necessitates careful planning and execution.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power sector deregulation",
+    "link": ""
+  },
+  {
+    "id": 201,
+    "specialization": "power",
+    "description": "Flexible AC Transmission Systems (FACTS) controllers are devices that can change and manage the electrical power transmission characteristics of AC power systems. They alter the voltage, current, and impedance of the gearbox line using modern power electronics, which can increase power quality, stability, and dependability. FACTS controllers are utilised in many different applications, including as renewable energy systems, smart grids, and industrial automation.",
+    "person": "Dr. Trapti Jain",
+    "name": "FACTS controllers",
+    "link": ""
+  },
+  {
+    "id": 202,
+    "specialization": "power",
+    "description": "AI has a wide range of applications in power systems, including load forecasting, problem diagnosis, optimisation, and control. Artificial intelligence (AI) techniques such as neural networks, fuzzy logic, and genetic algorithms are used to model and analyse data from power systems, allowing for better decision-making, increased efficiency, and increased reliability. AI is also being utilised to create new power system applications and technologies, such as energy management systems, demand response, and distributed generation.",
+    "person": "Dr. Trapti Jain",
+    "name": "Artificial Intelligence applications to power systems",
+    "link": ""
+  },
+  {
+    "id": 203,
+    "specialization": "power",
+    "description": "The degree of stability and consistency in the electrical power supply is referred to as power quality. Poor power quality can cause voltage fluctuations, surges, and other disturbances that can damage equipment and impair electrical device performance. It is required for modern electrical systems to operate reliably and efficiently.",
+    "person": "Dr. Trapti Jain",
+    "name": "Power Quality",
+    "link": ""
+  },
+  {
+    "id": 204,
+    "specialization": "power",
+    "description": "Electric vehicle integration involves integrating electric car charging facilities into the electrical grid as well as developing laws, legislation, and technologies to promote their wider adoption. It entails tackling issues such as controlling growing electricity consumption and ensuring the reliability and stability of the power grid, as well as promoting the use of sustainable mobility.",
+    "person": "Dr. Trapti Jain",
+    "name": "Intergration of Electric Vehicles",
+    "link": ""
+  },
+  {
+    "id": 205,
+    "specialization": "power",
+    "description": "A microgrid is a localised energy system that can function independently or in tandem with the larger power grid. Local generation sources, such as solar panels or wind turbines, energy storage devices, and control systems are generally included. Microgrids have the potential to improve grid resilience, lower energy costs, and promote renewable energy integration.",
+    "person": "Dr. Trapti Jain",
+    "name": "Micro grid",
+    "link": ""
+  }
+]

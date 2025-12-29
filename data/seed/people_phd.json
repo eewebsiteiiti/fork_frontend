@@ -1,0 +1,514 @@
+[
+  {
+    "id": 1,
+    "name": "Narendra Singh Dhakad",
+    "roll_no": "1901202004",
+    "image": "images/1901202004.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 2,
+    "name": "Neha Maheshwari",
+    "roll_no": "2101102009",
+    "image": "images/2101102009.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 3,
+    "name": "Vasundhara Trivedi",
+    "roll_no": "2101202007",
+    "image": "images/2101202007.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 4,
+    "name": "Mukul Vishnu Lokhande",
+    "roll_no": "2201102020",
+    "image": "images/2201102020.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 5,
+    "name": "Shashank Singh",
+    "roll_no": "2201102010",
+    "image": "images/2201102010.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 6,
+    "name": "Vikash Vishwakarma",
+    "roll_no": "2201202009",
+    "image": "images/2201202009.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 7,
+    "name": "Rohit Kumar Nirala",
+    "roll_no": "2001102005",
+    "image": "images/2001102005.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2020
+  },
+  {
+    "id": 8,
+    "name": "Sandeep Semwal",
+    "roll_no": "1901102018",
+    "image": "images/1901102018.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 9,
+    "name": "Pritika Singh ",
+    "roll_no": "2201102006",
+    "image": "images/2201102006.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 10,
+    "name": "Sidhi G Ramer",
+    "roll_no": "2201202008",
+    "image": "images/2201202008.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 11,
+    "name": "Navneet Chouhan ",
+    "roll_no": "2201102019",
+    "image": "images/2201102019.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 12,
+    "name": "Nishu Singh",
+    "roll_no": "2201102005",
+    "image": "images/2201102005.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 13,
+    "name": "Suresh Pandey",
+    "roll_no": "1901102026",
+    "image": "images/1901102026.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 14,
+    "name": "Rahul Dev Mishra",
+    "roll_no": "1901202008",
+    "image": "images/1901202008.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 15,
+    "name": "Prem Babu",
+    "roll_no": "1901202005",
+    "image": "images/1901202005.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 16,
+    "name": "Santosh Kumar",
+    "roll_no": "2101202005",
+    "image": "images/2101202005.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 17,
+    "name": "Ashutosh Kumar",
+    "roll_no": "2101202002",
+    "image": "images/2101202002.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 18,
+    "name": "Nikita Mohanta",
+    "roll_no": "2101202004",
+    "image": "images/2101202004.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 19,
+    "name": "Chandrabhan Patel",
+    "roll_no": "1901102009",
+    "image": "images/1901102009.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 20,
+    "name": "Mayank Dubey",
+    "roll_no": "1901102014",
+    "image": "images/1901102014.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 21,
+    "name": "Kumari Jyoti",
+    "roll_no": "1901202002",
+    "image": "images/1901202002.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 22,
+    "name": "Sumit Chaudhary",
+    "roll_no": "1901202011",
+    "image": "images/1901202011.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 23,
+    "name": "Saurabh Yadav",
+    "roll_no": "2101191001",
+    "image": "images/2101191001.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 24,
+    "name": "Brahmadutta Mahapatra",
+    "roll_no": "2201102003",
+    "image": "images/2201102003.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 25,
+    "name": "Vikash Kumar Verma",
+    "roll_no": "2201102008",
+    "image": "images/2201102008.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 26,
+    "name": "Ajit Yadav",
+    "roll_no": "2201202002",
+    "image": "images/2201202002.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 27,
+    "name": "Lokesh Kumar Hindoliya",
+    "roll_no": "2201202005",
+    "image": "images/2201202005.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 28,
+    "name": "Animesh Paul",
+    "roll_no": "2301102001",
+    "image": "images/2301102001.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2023
+  },
+  {
+    "id": 29,
+    "name": "Maharana Pratap Singh",
+    "roll_no": "1901102011",
+    "image": "images/1901102011.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 30,
+    "name": "Priyank Mishra",
+    "roll_no": "2001102004",
+    "image": "images/image057.png",
+    "details": "Micro/Nano Electronics",
+    "year": 2020
+  },
+  {
+    "id": 31,
+    "name": "Patinavalasa Megh Sainadh",
+    "roll_no": "2101102007",
+    "image": "images/image059.png",
+    "details": "Micro/Nano Electronics",
+    "year": 2021
+  },
+  {
+    "id": 32,
+    "name": "Akhila Gouda",
+    "roll_no": "2201102002",
+    "image": "images/image062.png",
+    "details": "Micro/Nano Electronics",
+    "year": 2022
+  },
+  {
+    "id": 33,
+    "name": "Suhel Khan",
+    "roll_no": "1901102003",
+    "image": "images/1901102003.jpg",
+    "details": "Micro/Nano Electronics",
+    "year": 2019
+  },
+  {
+    "id": 34,
+    "name": "Amit Kumar Naik",
+    "roll_no": "1901102027",
+    "image": "images/1901102027.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 35,
+    "name": "Cheepurupalli Shivaji",
+    "roll_no": "2201202004",
+    "image": "images/image067.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2022
+  },
+  {
+    "id": 36,
+    "name": "Kajal Yadav",
+    "roll_no": "2206102001",
+    "image": "images/image069.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2022
+  },
+  {
+    "id": 37,
+    "name": "Chandan Kumar Singh",
+    "roll_no": "1801202003",
+    "image": "images/image071.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2018
+  },
+  {
+    "id": 38,
+    "name": "Kritiprasanna Das",
+    "roll_no": "1901102016",
+    "image": "images/1901102016.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 39,
+    "name": "Vivek Kumar Singh",
+    "roll_no": "1901102012",
+    "image": "images/1901102012.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 40,
+    "name": "Amishi Vijay",
+    "roll_no": "2101202001",
+    "image": "images/image077.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2021
+  },
+  {
+    "id": 41,
+    "name": "Ashok Mahato",
+    "roll_no": "2101102003",
+    "image": "images/image079.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2021
+  },
+  {
+    "id": 42,
+    "name": "Aditya Nalwaya",
+    "roll_no": "2101102001",
+    "image": "images/image081.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2021
+  },
+  {
+    "id": 43,
+    "name": "Yamalakonda Venu Gopal",
+    "roll_no": "2001102006",
+    "image": "images/image083.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2020
+  },
+  {
+    "id": 44,
+    "name": "Anupma Sharma",
+    "roll_no": "1901202007",
+    "image": "images/1901202007.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 45,
+    "name": "Shubham Bisen",
+    "roll_no": "1901202001",
+    "image": "images/1901202001.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 46,
+    "name": "Vaishali Sharma",
+    "roll_no": "1901102029",
+    "image": "images/1901102029.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 47,
+    "name": "Vidya Bhaskar Shukla",
+    "roll_no": "1901102025",
+    "image": "images/1901102025.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 48,
+    "name": "Justin Jose",
+    "roll_no": "1901102021",
+    "image": "images/1901102021.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 49,
+    "name": "Deepak Kumar",
+    "roll_no": "1901102017",
+    "image": "images/1901102017.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 50,
+    "name": "Sumanta Kumar Nanda",
+    "roll_no": "1901102015",
+    "image": "images/1901102015.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 51,
+    "name": "Abhinav Singh Parihar",
+    "roll_no": "1901102013",
+    "image": "images/1901102013.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 52,
+    "name": "Purva Sharma",
+    "roll_no": "1801202007",
+    "image": "images/image101.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2018
+  },
+  {
+    "id": 53,
+    "name": "Neha Sharma",
+    "roll_no": "2201102021",
+    "image": "images/image103.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2022
+  },
+  {
+    "id": 54,
+    "name": "Narendra Vishwakarma",
+    "roll_no": "1901102004",
+    "image": "images/1901102004.jpg",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2019
+  },
+  {
+    "id": 55,
+    "name": "Deepshikha Singh",
+    "roll_no": "2001102002",
+    "image": "images/image107.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2020
+  },
+  {
+    "id": 56,
+    "name": "Nayim Ahamed",
+    "roll_no": "2201202010",
+    "image": "images/image109.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2022
+  },
+  {
+    "id": 57,
+    "name": "Prashant Sharma",
+    "roll_no": "2301102004",
+    "image": "images/image111_cLch42A.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2023
+  },
+  {
+    "id": 58,
+    "name": "Manojkumar Balaji Kokare",
+    "roll_no": "2201102016",
+    "image": "images/image113.png",
+    "details": "Communication, Signal and Image Processing",
+    "year": 2022
+  },
+  {
+    "id": 59,
+    "name": "Adnan Iqbal",
+    "roll_no": "1901102005",
+    "image": "images/1901102005.jpg",
+    "details": "Power Electronics and Power Systems",
+    "year": 2019
+  },
+  {
+    "id": 60,
+    "name": "Purna Kukadiya",
+    "roll_no": "2101102005",
+    "image": "images/image117.png",
+    "details": "Power Electronics and Power Systems",
+    "year": 2021
+  },
+  {
+    "id": 61,
+    "name": "Siddhant Singh Maurya",
+    "roll_no": "2101102008",
+    "image": "images/image119.png",
+    "details": "Power Electronics and Power Systems",
+    "year": 2021
+  },
+  {
+    "id": 62,
+    "name": "Nisheet Soni",
+    "roll_no": "2201102022",
+    "image": "images/image121.png",
+    "details": "Power Electronics and Power Systems",
+    "year": 2022
+  },
+  {
+    "id": 63,
+    "name": "Jitendra Prajapati",
+    "roll_no": "2201102023",
+    "image": "images/image123.png",
+    "details": "Power Electronics and Power Systems",
+    "year": 2022
+  },
+  {
+    "id": 64,
+    "name": "Shilpa Vishwakarma",
+    "roll_no": "2201102011",
+    "image": "images/image125.png",
+    "details": "Power Electronics and Power Systems",
+    "year": 2022
+  }
+]

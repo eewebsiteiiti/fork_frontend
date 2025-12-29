@@ -1,0 +1,614 @@
+[
+  {
+    "id": 560,
+    "program": "BTech",
+    "semester": 1,
+    "code": "BSE 102",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Bio-Sciences"
+  },
+  {
+    "id": 561,
+    "program": "BTech",
+    "semester": 1,
+    "code": "MA 105",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Calculus"
+  },
+  {
+    "id": 562,
+    "program": "BTech",
+    "semester": 1,
+    "code": "PH 106",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Physics-II"
+  },
+  {
+    "id": 563,
+    "program": "BTech",
+    "semester": 1,
+    "code": "EE 104",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Basic Electrical and Electronics Engineering"
+  },
+  {
+    "id": 564,
+    "program": "BTech",
+    "semester": 1,
+    "code": "ME 106",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Basic Mechanical Engineering"
+  },
+  {
+    "id": 565,
+    "program": "BTech",
+    "semester": 1,
+    "code": "HS 108",
+    "credit": 3.0,
+    "ltp": "0-0-3",
+    "name": "Fundamentals of Economics"
+  },
+  {
+    "id": 566,
+    "program": "BTech",
+    "semester": 1,
+    "code": "PH 156",
+    "credit": 1.5,
+    "ltp": "0-0-2",
+    "name": "Physics Lab"
+  },
+  {
+    "id": 567,
+    "program": "BTech",
+    "semester": 1,
+    "code": "EE 154",
+    "credit": 1.0,
+    "ltp": "0-0-2",
+    "name": "Basic Electrical and Electronics Engineering Lab"
+  },
+  {
+    "id": 568,
+    "program": "BTech",
+    "semester": 1,
+    "code": "IC 156",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Basic Manufacturing Techniques"
+  },
+  {
+    "id": 569,
+    "program": "BTech",
+    "semester": 1,
+    "code": "NO 101",
+    "credit": 0.0,
+    "ltp": "0-0-0",
+    "name": "National Sports Organization (NSO)"
+  },
+  {
+    "id": 570,
+    "program": "BTech",
+    "semester": 2,
+    "code": "CH 103",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Chemistry"
+  },
+  {
+    "id": 571,
+    "program": "BTech",
+    "semester": 2,
+    "code": "MA 106",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Linear Algebra and Ordinary Differential Equations-I"
+  },
+  {
+    "id": 572,
+    "program": "BTech",
+    "semester": 2,
+    "code": "PH 105",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Physics-I"
+  },
+  {
+    "id": 573,
+    "program": "BTech",
+    "semester": 2,
+    "code": "CS 103",
+    "credit": 2.0,
+    "ltp": "2-0-0",
+    "name": "Computer Programming"
+  },
+  {
+    "id": 574,
+    "program": "BTech",
+    "semester": 2,
+    "code": "HS 159",
+    "credit": 3.0,
+    "ltp": "0-3-0",
+    "name": "English Language and Communication"
+  },
+  {
+    "id": 575,
+    "program": "BTech",
+    "semester": 2,
+    "code": "IC 151",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Computer Programming Lab"
+  },
+  {
+    "id": 576,
+    "program": "BTech",
+    "semester": 2,
+    "code": "CH 153",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Chemistry Lab"
+  },
+  {
+    "id": 577,
+    "program": "BTech",
+    "semester": 2,
+    "code": "IC 153",
+    "credit": 2.5,
+    "ltp": "1-0-3",
+    "name": "Engineering Graphics"
+  },
+  {
+    "id": 578,
+    "program": "BTech",
+    "semester": 2,
+    "code": "NO 102",
+    "credit": 0.0,
+    "ltp": "0-0-0",
+    "name": "National Sports Organization (NSO)"
+  },
+  {
+    "id": 579,
+    "program": "BTech",
+    "semester": 3,
+    "code": "MA 203",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Complex Analysis and Differential Equations-II"
+  },
+  {
+    "id": 580,
+    "program": "BTech",
+    "semester": 3,
+    "code": "EE 201",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Network Theory"
+  },
+  {
+    "id": 581,
+    "program": "BTech",
+    "semester": 3,
+    "code": "EE 203",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Electronic Devices"
+  },
+  {
+    "id": 582,
+    "program": "BTech",
+    "semester": 3,
+    "code": "EE 205",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Introduction to Electrical Systems"
+  },
+  {
+    "id": 583,
+    "program": "BTech",
+    "semester": 3,
+    "code": "EE 253",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Electronic Devices Lab"
+  },
+  {
+    "id": 584,
+    "program": "BTech",
+    "semester": 3,
+    "code": "IC 211",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Experimental Engineering Lab"
+  },
+  {
+    "id": 585,
+    "program": "BTech",
+    "semester": 4,
+    "code": "MA 204",
+    "credit": 4.0,
+    "ltp": "3-0-2",
+    "name": "Numerical Methods"
+  },
+  {
+    "id": 586,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 202",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Signals and Systems"
+  },
+  {
+    "id": 587,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 204",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Analog Circuits"
+  },
+  {
+    "id": 588,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 206",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Electrical Machines & Power Electronics"
+  },
+  {
+    "id": 589,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 208",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Systems"
+  },
+  {
+    "id": 590,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 254",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Analog Circuits Lab"
+  },
+  {
+    "id": 591,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 256",
+    "credit": 2.0,
+    "ltp": "0-0-4",
+    "name": "Electrical Machines Lab"
+  },
+  {
+    "id": 592,
+    "program": "BTech",
+    "semester": 4,
+    "code": "EE 258",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Digital Systems Lab"
+  },
+  {
+    "id": 593,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 301N",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Microprocessors and Digital Systems Design"
+  },
+  {
+    "id": 594,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 303",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Probability and Random Processes"
+  },
+  {
+    "id": 595,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 305",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Electromagnetic Waves"
+  },
+  {
+    "id": 596,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 307",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Communication Systems"
+  },
+  {
+    "id": 597,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 309",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Electrical Measurements and Instrumentation"
+  },
+  {
+    "id": 598,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 311",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "VLSI Systems and Technology"
+  },
+  {
+    "id": 599,
+    "program": "BTech",
+    "semester": 5,
+    "code": "EE 351N",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Microprocessors and Digital Systems Design Lab"
+  },
+  {
+    "id": 600,
+    "program": "BTech",
+    "semester": 6,
+    "code": "HS 302",
+    "credit": 1.5,
+    "ltp": "3-0-0",
+    "name": "Environmental Studies: Social Aspects (Half Semester course)"
+  },
+  {
+    "id": 601,
+    "program": "BTech",
+    "semester": 6,
+    "code": "ES 302",
+    "credit": 1.5,
+    "ltp": "3-0-0",
+    "name": "Environmental Studies: Scientific and Engineering Aspects (Half Semester course)"
+  },
+  {
+    "id": 602,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 302",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Control Systems"
+  },
+  {
+    "id": 603,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 304",
+    "credit": 4.0,
+    "ltp": "3-1-0",
+    "name": "Digital Signal Processing"
+  },
+  {
+    "id": 604,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 306",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Communications"
+  },
+  {
+    "id": 605,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 308",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Power Systems"
+  },
+  {
+    "id": 606,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 352",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Control Systems Lab"
+  },
+  {
+    "id": 607,
+    "program": "BTech",
+    "semester": 6,
+    "code": "EE 356",
+    "credit": 1.5,
+    "ltp": "0-0-3",
+    "name": "Communications Lab"
+  },
+  {
+    "id": 608,
+    "program": "BTech",
+    "semester": 7,
+    "code": "EE 493",
+    "credit": 20.0,
+    "ltp": "0-0-40",
+    "name": "B. Tech Project"
+  },
+  {
+    "id": 609,
+    "program": "BTech",
+    "semester": 8,
+    "code": "EE-XXX",
+    "credit": 3.0,
+    "ltp": "X-X-X",
+    "name": "Discipline Elective-I"
+  },
+  {
+    "id": 610,
+    "program": "BTech",
+    "semester": 8,
+    "code": "EE-XXX",
+    "credit": 3.0,
+    "ltp": "X-X-X",
+    "name": "Discipline Elective-III"
+  },
+  {
+    "id": 611,
+    "program": "BTech",
+    "semester": 8,
+    "code": "EE-XXX",
+    "credit": 3.0,
+    "ltp": "X-X-X",
+    "name": "Discipline Elective-III"
+  },
+  {
+    "id": 612,
+    "program": "BTech",
+    "semester": 8,
+    "code": "ZZ-XXX",
+    "credit": 3.0,
+    "ltp": "X-X-X",
+    "name": "Open Elective-I"
+  },
+  {
+    "id": 613,
+    "program": "BTech",
+    "semester": 8,
+    "code": "ZZ-XXX",
+    "credit": 3.0,
+    "ltp": "X-X-X",
+    "name": "Open Elective-II"
+  },
+  {
+    "id": 614,
+    "program": "MTech",
+    "semester": 1,
+    "code": "EE 603",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Optimization Techniques"
+  },
+  {
+    "id": 615,
+    "program": "MTech",
+    "semester": 1,
+    "code": "EE 641",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Signal Processing"
+  },
+  {
+    "id": 616,
+    "program": "MTech",
+    "semester": 1,
+    "code": "EE 643",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Detection and Estimation Theory"
+  },
+  {
+    "id": 617,
+    "program": "MTech",
+    "semester": 1,
+    "code": "EE 701",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Time-Frequency Analysis"
+  },
+  {
+    "id": 618,
+    "program": "MTech",
+    "semester": 1,
+    "code": "EE 441",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Signal Processing"
+  },
+  {
+    "id": 619,
+    "program": "MTech",
+    "semester": 2,
+    "code": "CS 601",
+    "credit": 3.0,
+    "ltp": "2-0-2",
+    "name": "Soft Computing"
+  },
+  {
+    "id": 620,
+    "program": "MTech",
+    "semester": 2,
+    "code": "EE 642",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Wireless Communication"
+  },
+  {
+    "id": 621,
+    "program": "MTech",
+    "semester": 2,
+    "code": "EE 644",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Image Processing"
+  },
+  {
+    "id": 622,
+    "program": "MTech",
+    "semester": 2,
+    "code": "EE 646",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Information and Coding Theory"
+  },
+  {
+    "id": 623,
+    "program": "MTech",
+    "semester": 2,
+    "code": "CS 401",
+    "credit": 3.0,
+    "ltp": "2-0-2",
+    "name": "Soft Computing"
+  },
+  {
+    "id": 624,
+    "program": "MTech",
+    "semester": 2,
+    "code": "EE 446",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Information and Coding Theory"
+  },
+  {
+    "id": 625,
+    "program": "MTech",
+    "semester": 2,
+    "code": "EE 698",
+    "credit": 2.0,
+    "ltp": "0-2-0",
+    "name": "PG seminar course"
+  },
+  {
+    "id": 626,
+    "program": "MTech",
+    "semester": 3,
+    "code": "EE 799",
+    "credit": 18.0,
+    "ltp": "0-0-36",
+    "name": "M. Tech. Research Project (Stage-I)"
+  },
+  {
+    "id": 627,
+    "program": "MTech",
+    "semester": 4,
+    "code": "EE 800",
+    "credit": 18.0,
+    "ltp": "0-0-36",
+    "name": "M. Tech. Research Project (Stage-II)"
+  }
+]

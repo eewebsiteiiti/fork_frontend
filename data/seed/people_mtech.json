@@ -1,0 +1,289 @@
+[
+  {
+    "id": 1,
+    "name": "EMANI NAGA SESHA SAI ANJANA",
+    "roll_no": "2202102002",
+    "image": "images/image013.png",
+    "year": 2022
+  },
+  {
+    "id": 3,
+    "name": "CHANDA SUCHARITHA",
+    "roll_no": "2202102004",
+    "image": "images/image017_2RUQ4MO.png",
+    "year": 2022
+  },
+  {
+    "id": 4,
+    "name": "EGU DHEERAJ KUMAR",
+    "roll_no": "2202102005",
+    "image": "images/image019_MtYq5kw.png",
+    "year": 2022
+  },
+  {
+    "id": 5,
+    "name": "SAIM REHAN",
+    "roll_no": "2202102008",
+    "image": "images/image021.png",
+    "year": 2022
+  },
+  {
+    "id": 6,
+    "name": "PRAKHAR KESHARI",
+    "roll_no": "2202102010",
+    "image": "images/image023.png",
+    "year": 2022
+  },
+  {
+    "id": 7,
+    "name": "KOMAL GUPTA",
+    "roll_no": "2202102016",
+    "image": "images/image025.png",
+    "year": 2022
+  },
+  {
+    "id": 8,
+    "name": "SUDHIR",
+    "roll_no": "2202102019",
+    "image": "images/image027.png",
+    "year": 2022
+  },
+  {
+    "id": 9,
+    "name": "MADHUR SACHDEV",
+    "roll_no": "2202102021",
+    "image": "images/image031.png",
+    "year": 2022
+  },
+  {
+    "id": 10,
+    "name": "PURANJEET PAHARI",
+    "roll_no": "2202102020",
+    "image": "images/image029.png",
+    "year": 2022
+  },
+  {
+    "id": 11,
+    "name": "SAGAR PATEL",
+    "roll_no": "2202102022",
+    "image": "images/image033.png",
+    "year": 2022
+  },
+  {
+    "id": 12,
+    "name": "CHANDAVATH SUMAN",
+    "roll_no": "2202102024",
+    "image": "images/image035.png",
+    "year": 2022
+  },
+  {
+    "id": 13,
+    "name": "DHARMENDRA KARTIKEY",
+    "roll_no": "2202102027",
+    "image": "images/image037.png",
+    "year": 2022
+  },
+  {
+    "id": 14,
+    "name": "AKSHAT JAUHARI",
+    "roll_no": "2302102001",
+    "image": "images/2302102001.jpg",
+    "year": 2023
+  },
+  {
+    "id": 15,
+    "name": "DIVYANSHI SINGH",
+    "roll_no": "2302102003",
+    "image": "images/2302102003.jpg",
+    "year": 2023
+  },
+  {
+    "id": 16,
+    "name": "M SAI VAMSHI",
+    "roll_no": "2302102005",
+    "image": "images/2302102005.jpg",
+    "year": 2023
+  },
+  {
+    "id": 17,
+    "name": "MOHD UZAIR",
+    "roll_no": "2302102006",
+    "image": "images/2302102006.jpg",
+    "year": 2023
+  },
+  {
+    "id": 18,
+    "name": "SAISH DILIP KAJROLKAR",
+    "roll_no": "2302102007",
+    "image": "images/2302102007.jpg",
+    "year": 2023
+  },
+  {
+    "id": 19,
+    "name": "SHUBHAM KASHYAP",
+    "roll_no": "2302102008",
+    "image": "images/2302102008.jpg",
+    "year": 2023
+  },
+  {
+    "id": 20,
+    "name": "VIMLESH KUMAR",
+    "roll_no": "2302102009",
+    "image": "images/2302102009.jpg",
+    "year": 2023
+  },
+  {
+    "id": 21,
+    "name": "KRISHNA KUMAR MISHRA",
+    "roll_no": "2302102010",
+    "image": "images/2302102010.jpg",
+    "year": 2023
+  },
+  {
+    "id": 22,
+    "name": "ANAND KUMAR",
+    "roll_no": "2302102011",
+    "image": "images/2302102011.jpg",
+    "year": 2023
+  },
+  {
+    "id": 23,
+    "name": "VAISHALI ROHILLA",
+    "roll_no": "2302102012",
+    "image": "images/2302102012.jpg",
+    "year": 2023
+  },
+  {
+    "id": 24,
+    "name": "SUSHOVAN CHOWBHURY",
+    "roll_no": "2302102013",
+    "image": "images/2302102013.jpg",
+    "year": 2023
+  },
+  {
+    "id": 25,
+    "name": "VINISH RANJAN",
+    "roll_no": "2302102014",
+    "image": "images/2302102014.jpg",
+    "year": 2023
+  },
+  {
+    "id": 26,
+    "name": "RAHUL KUSHWAH",
+    "roll_no": "2302102015",
+    "image": "images/2302102015.jpg",
+    "year": 2023
+  },
+  {
+    "id": 27,
+    "name": "ABU SAID PRAVEJ ALAM",
+    "roll_no": "2302102016",
+    "image": "images/2302102016.jpg",
+    "year": 2023
+  },
+  {
+    "id": 28,
+    "name": "AMIT SINGH",
+    "roll_no": "2302102017",
+    "image": "images/2302102017.jpg",
+    "year": 2023
+  },
+  {
+    "id": 29,
+    "name": "Arpit Choudhary",
+    "roll_no": "2302102018",
+    "image": "images/2302102018.jpg",
+    "year": 2023
+  },
+  {
+    "id": 30,
+    "name": "Atharv Alok Limaye",
+    "roll_no": "2302102019",
+    "image": "images/2302102019.jpg",
+    "year": 2023
+  },
+  {
+    "id": 31,
+    "name": "Omkar Rajesh Kokane",
+    "roll_no": "2302102023",
+    "image": "images/2302102023.jpg",
+    "year": 2023
+  },
+  {
+    "id": 32,
+    "name": "Rambabu Kumar",
+    "roll_no": "2302102024",
+    "image": "images/2302102024.jpg",
+    "year": 2023
+  },
+  {
+    "id": 33,
+    "name": "Sapan Kushwaha",
+    "roll_no": "2302102025",
+    "image": "images/2302102025.jpg",
+    "year": 2023
+  },
+  {
+    "id": 34,
+    "name": "Sushil Chaudhary",
+    "roll_no": "2302102027",
+    "image": "images/2302102027.jpg",
+    "year": 2023
+  },
+  {
+    "id": 35,
+    "name": "SUVIRN UPADHYAY",
+    "roll_no": "2302102028",
+    "image": "images/2302102028.jpg",
+    "year": 2023
+  },
+  {
+    "id": 36,
+    "name": "ASHISH KUMAR SINGH",
+    "roll_no": "2302102029",
+    "image": "images/2302102029.jpg",
+    "year": 2023
+  },
+  {
+    "id": 37,
+    "name": "NIKHIL RANJAN",
+    "roll_no": "2302102030",
+    "image": "images/2302102030.jpg",
+    "year": 2023
+  },
+  {
+    "id": 38,
+    "name": "SAURABH KUMAR",
+    "roll_no": "2302102031",
+    "image": "images/2302102031.jpg",
+    "year": 2023
+  },
+  {
+    "id": 39,
+    "name": "Shivam Chaudhary",
+    "roll_no": "2302102032",
+    "image": "images/2302102032.jpg",
+    "year": 2023
+  },
+  {
+    "id": 40,
+    "name": "Ashreta Sahay ",
+    "roll_no": "2302102033",
+    "image": "images/2302102033.jpg",
+    "year": 2023
+  },
+  {
+    "id": 41,
+    "name": "Shivam Vaish",
+    "roll_no": "2302102034",
+    "image": "images/2302102034.jpg",
+    "year": 2023
+  },
+  {
+    "id": 42,
+    "name": "Akash Pandey",
+    "roll_no": "2302102035",
+    "image": "images/2302102035.jpg",
+    "year": 2023
+  }
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "id": 27,
+    "code": "EE 410 / EE 610",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Power Electronics Applications to Power Transmission"
+  },
+  {
+    "id": 28,
+    "code": "EE 411",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Communication System Theory"
+  },
+  {
+    "id": 29,
+    "code": "EE 412 / EE 612",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Communication Systems"
+  },
+  {
+    "id": 30,
+    "code": "EE 413",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Discrete Data and Digital Control"
+  },
+  {
+    "id": 31,
+    "code": "EE 414",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Special Semiconductor Devices"
+  },
+  {
+    "id": 32,
+    "code": "EE 415",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Electronic Instrumentation"
+  },
+  {
+    "id": 33,
+    "code": "EE 416",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Industrial Instrumentation"
+  },
+  {
+    "id": 34,
+    "code": "EE 417",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Analog Filters"
+  },
+  {
+    "id": 35,
+    "code": "EE 418",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Control System Design"
+  },
+  {
+    "id": 36,
+    "code": "EE 419",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Biomedical Optics"
+  },
+  {
+    "id": 37,
+    "code": "EE 420 / EE 620",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "IC Fabrication Technology"
+  },
+  {
+    "id": 38,
+    "code": "EE 421",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "MOS Devices and Modeling"
+  },
+  {
+    "id": 39,
+    "code": "EE 422",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Circuit Design"
+  },
+  {
+    "id": 40,
+    "code": "EE 424 / EE 724",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Micro-processes and Nanotechnology"
+  },
+  {
+    "id": 41,
+    "code": "EE 426",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "MOSFET Reliability Issues"
+  },
+  {
+    "id": 42,
+    "code": "EE 427",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Physics of Semiconductor Devices"
+  },
+  {
+    "id": 43,
+    "code": "EE 428",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Memory Technology"
+  },
+  {
+    "id": 44,
+    "code": "EE 429 / EE 629",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Nanotechnology and Nanoelectronics"
+  },
+  {
+    "id": 45,
+    "code": "EE 430",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Analog CMOS IC Design"
+  },
+  {
+    "id": 46,
+    "code": "EE 431/IEE 431/EE 631",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Optoelectronics"
+  },
+  {
+    "id": 47,
+    "code": "EE 432 / EE 632",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Organic Electronics"
+  },
+  {
+    "id": 48,
+    "code": "EE 434 / EE 634",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Semiconductor Based Devices"
+  },
+  {
+    "id": 49,
+    "code": "EE 436",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Microwave and Satellite Communication"
+  },
+  {
+    "id": 50,
+    "code": "EE 438",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Computer Control and Automation of Power Systems"
+  },
+  {
+    "id": 51,
+    "code": "EE 441/ EE 641",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Signal Processing"
+  },
+  {
+    "id": 52,
+    "code": "EE 446 / EE 646",
+    "program": "BTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Information and Coding Theory"
+  },
+  {
+    "id": 53,
+    "code": "EE 448/ EE 648",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Antennas and Propagation"
+  },
+  {
+    "id": 54,
+    "code": "EE 450/ EE 650",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Internet of Things (IoT) Networks"
+  },
+  {
+    "id": 55,
+    "code": "EE 601",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Power Electronics"
+  },
+  {
+    "id": 56,
+    "code": "EE 607",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Power System Operation and Control"
+  },
+  {
+    "id": 57,
+    "code": "EE 619",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Biomedical Optics"
+  },
+  {
+    "id": 58,
+    "code": "EE 620",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "IC Fabrication Technology"
+  },
+  {
+    "id": 59,
+    "code": "EE 621",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "MOS Devices & Modeling"
+  },
+  {
+    "id": 60,
+    "code": "EE 622",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Circuit Design"
+  },
+  {
+    "id": 61,
+    "code": "EE 623",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Introduction to VLSI Design"
+  },
+  {
+    "id": 62,
+    "code": "EE 625",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "VLSI Signal Processing"
+  },
+  {
+    "id": 63,
+    "code": "EE 626",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "MOSFET Reliability Issues"
+  },
+  {
+    "id": 64,
+    "code": "EE 627",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Fundamentals of Analog CMOS IC Design"
+  },
+  {
+    "id": 65,
+    "code": "EE 628",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Memory Technology"
+  },
+  {
+    "id": 66,
+    "code": "EE 629",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Nanotechnology and Nanoelectronics"
+  },
+  {
+    "id": 67,
+    "code": "EE 631",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Organic Electronics"
+  },
+  {
+    "id": 68,
+    "code": "EE 645",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Mathematical Methods for Signal Processing"
+  },
+  {
+    "id": 69,
+    "code": "EE 622 / EE 422",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Digital Circuit Design"
+  },
+  {
+    "id": 70,
+    "code": "EE 628 / EE 428",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Memory Technology"
+  },
+  {
+    "id": 71,
+    "code": "EE 722",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Optoelectronics"
+  },
+  {
+    "id": 72,
+    "code": "EE 724",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Advanced Micro-processes and Nanotechnology"
+  },
+  {
+    "id": 73,
+    "code": "EE 740",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "Speech Signal Processing"
+  },
+  {
+    "id": 74,
+    "code": "EE 742",
+    "program": "MTech",
+    "credit": 3.0,
+    "ltp": "2-1-0",
+    "name": "MIMO Wireless Communications"
+  }
+]

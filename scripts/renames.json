@@ -1,0 +1,458 @@
+[
+  {
+    "old": "banners/about.JPG",
+    "new": "banners/about.jpg"
+  },
+  {
+    "old": "banners/eesa.JPG",
+    "new": "banners/eesa.jpg"
+  },
+  {
+    "old": "banners/faculty.JPG",
+    "new": "banners/faculty.jpg"
+  },
+  {
+    "old": "banners/pg_lab.png",
+    "new": "banners/pg-lab.png"
+  },
+  {
+    "old": "banners/research.JPG",
+    "new": "banners/research.jpg"
+  },
+  {
+    "old": "banners/staff.JPG",
+    "new": "banners/staff.jpg"
+  },
+  {
+    "old": "banners/ug_lab.png",
+    "new": "banners/ug-lab.png"
+  },
+  {
+    "old": "carousel/1.JPG",
+    "new": "carousel/1.jpg"
+  },
+  {
+    "old": "carousel/10.JPG",
+    "new": "carousel/10.jpg"
+  },
+  {
+    "old": "carousel/11.JPG",
+    "new": "carousel/11.jpg"
+  },
+  {
+    "old": "carousel/12.JPG",
+    "new": "carousel/12.jpg"
+  },
+  {
+    "old": "carousel/13.JPG",
+    "new": "carousel/13.jpg"
+  },
+  {
+    "old": "carousel/14.JPG",
+    "new": "carousel/14.jpg"
+  },
+  {
+    "old": "carousel/2.JPG",
+    "new": "carousel/2.jpg"
+  },
+  {
+    "old": "carousel/3.JPG",
+    "new": "carousel/3.jpg"
+  },
+  {
+    "old": "carousel/4.JPG",
+    "new": "carousel/4.jpg"
+  },
+  {
+    "old": "carousel/5.JPG",
+    "new": "carousel/5.jpg"
+  },
+  {
+    "old": "carousel/7.JPG",
+    "new": "carousel/7.jpg"
+  },
+  {
+    "old": "carousel/8.JPG",
+    "new": "carousel/8.jpg"
+  },
+  {
+    "old": "carousel/9.JPG",
+    "new": "carousel/9.jpg"
+  },
+  {
+    "old": "eesa/NCP08410.JPG",
+    "new": "eesa/ncp08410.jpg"
+  },
+  {
+    "old": "eesa/NCP08454.JPG",
+    "new": "eesa/ncp08454.jpg"
+  },
+  {
+    "old": "eesa/NCP08455.JPG",
+    "new": "eesa/ncp08455.jpg"
+  },
+  {
+    "old": "eesa/NCP08459.JPG",
+    "new": "eesa/ncp08459.jpg"
+  },
+  {
+    "old": "eesa/NCP08473.JPG",
+    "new": "eesa/ncp08473.jpg"
+  },
+  {
+    "old": "eesa/NCP08525.JPG",
+    "new": "eesa/ncp08525.jpg"
+  },
+  {
+    "old": "eesa/NCP08526.JPG",
+    "new": "eesa/ncp08526.jpg"
+  },
+  {
+    "old": "eesa/NCP08541.JPG",
+    "new": "eesa/ncp08541.jpg"
+  },
+  {
+    "old": "eesa/NCP08579.JPG",
+    "new": "eesa/ncp08579.jpg"
+  },
+  {
+    "old": "eesa/NCP08596.JPG",
+    "new": "eesa/ncp08596.jpg"
+  },
+  {
+    "old": "eesa/eesa.JPG",
+    "new": "eesa/eesa.jpg"
+  },
+  {
+    "old": "eesa/eesa11.JPG",
+    "new": "eesa/eesa11.jpg"
+  },
+  {
+    "old": "eesa/eesa12.JPG",
+    "new": "eesa/eesa12.jpg"
+  },
+  {
+    "old": "eesa/eesa13.JPG",
+    "new": "eesa/eesa13.jpg"
+  },
+  {
+    "old": "fauna/IITI_Bird_KV.JPG",
+    "new": "fauna/iiti-bird-kv.jpg"
+  },
+  {
+    "old": "fauna/IITI_Fox.JPG",
+    "new": "fauna/iiti-fox.jpg"
+  },
+  {
+    "old": "fauna/IITI_Lapwing.JPG",
+    "new": "fauna/iiti-lapwing.jpg"
+  },
+  {
+    "old": "fauna/IITI_Leopard-2.JPG",
+    "new": "fauna/iiti-leopard-2.jpg"
+  },
+  {
+    "old": "fauna/IITI_Leopard-3.JPG",
+    "new": "fauna/iiti-leopard-3.jpg"
+  },
+  {
+    "old": "fauna/IITI_Leopard-4.JPG",
+    "new": "fauna/iiti-leopard-4.jpg"
+  },
+  {
+    "old": "fauna/IITI_Leopard.JPG",
+    "new": "fauna/iiti-leopard.jpg"
+  },
+  {
+    "old": "fauna/IITI_Leopard_DRB.JPG",
+    "new": "fauna/iiti-leopard-drb.jpg"
+  },
+  {
+    "old": "fauna/IITI_Nightjar_Kshipra.JPG",
+    "new": "fauna/iiti-nightjar-kshipra.jpg"
+  },
+  {
+    "old": "fauna/IITI_Owl_DRB.JPG",
+    "new": "fauna/iiti-owl-drb.jpg"
+  },
+  {
+    "old": "fauna/IITI_Owl_Guest_House.JPG",
+    "new": "fauna/iiti-owl-guest-house.jpg"
+  },
+  {
+    "old": "fauna/IITI_Plum_Headed.JPG",
+    "new": "fauna/iiti-plum-headed.jpg"
+  },
+  {
+    "old": "fauna/IITI_Roller_Kshipra.JPG",
+    "new": "fauna/iiti-roller-kshipra.jpg"
+  },
+  {
+    "old": "fauna/IITI_Snake.JPG",
+    "new": "fauna/iiti-snake.jpg"
+  },
+  {
+    "old": "fauna/IITI_peacock.JPG",
+    "new": "fauna/iiti-peacock.jpg"
+  },
+  {
+    "old": "fauna/IITI_spotted.JPG",
+    "new": "fauna/iiti-spotted.jpg"
+  },
+  {
+    "old": "gallery/1.JPG",
+    "new": "gallery/1.jpg"
+  },
+  {
+    "old": "gallery/13.JPG",
+    "new": "gallery/13.jpg"
+  },
+  {
+    "old": "gallery/2.JPG",
+    "new": "gallery/2.jpg"
+  },
+  {
+    "old": "gallery/Control_and_Optimisation.png",
+    "new": "gallery/control-and-optimisation.png"
+  },
+  {
+    "old": "gallery/Screenshot 2023-10-28 211304.png",
+    "new": "gallery/screenshot-2023-10-28-211304.png"
+  },
+  {
+    "old": "gallery/batches/btech22_old.jpg",
+    "new": "gallery/batches/btech22-old.jpg"
+  },
+  {
+    "old": "gallery/batches/phd_23.JPG",
+    "new": "gallery/batches/phd-23.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6820.JPG",
+    "new": "gallery/department/9k6a6820.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6826.JPG",
+    "new": "gallery/department/9k6a6826.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6827.JPG",
+    "new": "gallery/department/9k6a6827.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6838.JPG",
+    "new": "gallery/department/9k6a6838.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6843.JPG",
+    "new": "gallery/department/9k6a6843.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6853.JPG",
+    "new": "gallery/department/9k6a6853.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6855.JPG",
+    "new": "gallery/department/9k6a6855.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6859.JPG",
+    "new": "gallery/department/9k6a6859.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6861.JPG",
+    "new": "gallery/department/9k6a6861.jpg"
+  },
+  {
+    "old": "gallery/department/9K6A6862.JPG",
+    "new": "gallery/department/9k6a6862.jpg"
+  },
+  {
+    "old": "gallery/department/DUGC.JPG",
+    "new": "gallery/department/dugc.jpg"
+  },
+  {
+    "old": "gallery/department/FC1.JPG",
+    "new": "gallery/department/fc1.jpg"
+  },
+  {
+    "old": "gallery/department/FC2.JPG",
+    "new": "gallery/department/fc2.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6805.JPG",
+    "new": "gallery/department/img-6805.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6892.JPG",
+    "new": "gallery/department/img-6892.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6902.JPG",
+    "new": "gallery/department/img-6902.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6913.JPG",
+    "new": "gallery/department/img-6913.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6920.JPG",
+    "new": "gallery/department/img-6920.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6925.JPG",
+    "new": "gallery/department/img-6925.jpg"
+  },
+  {
+    "old": "gallery/department/IMG_6928.JPG",
+    "new": "gallery/department/img-6928.jpg"
+  },
+  {
+    "old": "gallery/department/csp.JPG",
+    "new": "gallery/department/csp.jpg"
+  },
+  {
+    "old": "gallery/department/ps.JPG",
+    "new": "gallery/department/ps.jpg"
+  },
+  {
+    "old": "gallery/department/staffCombo.JPG",
+    "new": "gallery/department/staffcombo.jpg"
+  },
+  {
+    "old": "gallery/department/vdn.JPG",
+    "new": "gallery/department/vdn.jpg"
+  },
+  {
+    "old": "gallery/events/NCP07849.JPG",
+    "new": "gallery/events/ncp07849.jpg"
+  },
+  {
+    "old": "gallery/events/NCP07860.JPG",
+    "new": "gallery/events/ncp07860.jpg"
+  },
+  {
+    "old": "gallery/events/NCP07919.JPG",
+    "new": "gallery/events/ncp07919.jpg"
+  },
+  {
+    "old": "gallery/events/Tesla_Coil.jpeg",
+    "new": "gallery/events/tesla-coil.jpeg"
+  },
+  {
+    "old": "gallery/trips/TRIP1.jpg",
+    "new": "gallery/trips/trip1.jpg"
+  },
+  {
+    "old": "gallery/trips/TRIP3.jpg",
+    "new": "gallery/trips/trip3.jpg"
+  },
+  {
+    "old": "gallery/trips/TRIP4.jpg",
+    "new": "gallery/trips/trip4.jpg"
+  },
+  {
+    "old": "gallery/trips/TRIP5.jpg",
+    "new": "gallery/trips/trip5.jpg"
+  },
+  {
+    "old": "labs/research/AnalogandMixedSignalICdesignLaboratory.jpg",
+    "new": "labs/research/analogandmixedsignalicdesignlaboratory.jpg"
+  },
+  {
+    "old": "labs/research/DigitalCircuitDesignLaboratory.jpg",
+    "new": "labs/research/digitalcircuitdesignlaboratory.jpg"
+  },
+  {
+    "old": "labs/research/DiscreteDeviceFabricationandCharacterizationLaboratory.jpg",
+    "new": "labs/research/discretedevicefabricationandcharacterizationlaboratory.jpg"
+  },
+  {
+    "old": "labs/research/SystemonProgrammableChipDesignLaboratory.jpg",
+    "new": "labs/research/systemonprogrammablechipdesignlaboratory.jpg"
+  },
+  {
+    "old": "logos/eesa_logo.png",
+    "new": "logos/eesa-logo.png"
+  },
+  {
+    "old": "logos/profile_placeholder.jpg",
+    "new": "logos/profile-placeholder.jpg"
+  },
+  {
+    "old": "people/faculty/Amod.JPG",
+    "new": "people/faculty/amod.jpg"
+  },
+  {
+    "old": "people/faculty/Apinna.JPG",
+    "new": "people/faculty/apinna.jpg"
+  },
+  {
+    "old": "people/faculty/DOSA.JPG",
+    "new": "people/faculty/dosa.jpg"
+  },
+  {
+    "old": "people/faculty/Dibbendu_Img.png",
+    "new": "people/faculty/dibbendu-img.png"
+  },
+  {
+    "old": "people/faculty/SM.png",
+    "new": "people/faculty/sm.png"
+  },
+  {
+    "old": "people/faculty/Saptrishi.JPG",
+    "new": "people/faculty/saptrishi.jpg"
+  },
+  {
+    "old": "people/faculty/Sumit.JPG",
+    "new": "people/faculty/sumit.jpg"
+  },
+  {
+    "old": "people/faculty/Swami.JPG",
+    "new": "people/faculty/swami.jpg"
+  },
+  {
+    "old": "people/faculty/Trapti.JPG",
+    "new": "people/faculty/trapti.jpg"
+  },
+  {
+    "old": "people/faculty/Vijay.JPG",
+    "new": "people/faculty/vijay.jpg"
+  },
+  {
+    "old": "people/faculty/WhatsApp_Image_2023-10-23_at_20.52.12_b22a3f84.jpg",
+    "new": "people/faculty/whatsapp-image-2023-10-23-at-20.52.12-b22a3f84.jpg"
+  },
+  {
+    "old": "people/faculty/kranti.JPG",
+    "new": "people/faculty/kranti.jpg"
+  },
+  {
+    "old": "people/faculty/mukesh_ZZCh8I7.JPG",
+    "new": "people/faculty/mukesh-zzch8i7.jpg"
+  },
+  {
+    "old": "people/faculty/pachori.JPG",
+    "new": "people/faculty/pachori.jpg"
+  },
+  {
+    "old": "people/faculty/pic.JPG",
+    "new": "people/faculty/pic.jpg"
+  },
+  {
+    "old": "people/faculty/prabhat_ZDTOMHj.JPG",
+    "new": "people/faculty/prabhat-zdtomhj.jpg"
+  },
+  {
+    "old": "people/faculty/vimal.JPG",
+    "new": "people/faculty/vimal.jpg"
+  },
+  {
+    "old": "people/faculty/vipul.JPG",
+    "new": "people/faculty/vipul.jpg"
+  },
+  {
+    "old": "people/faculty/vivek.JPG",
+    "new": "people/faculty/vivek.jpg"
+  }
+]
