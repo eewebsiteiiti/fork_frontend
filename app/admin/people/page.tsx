@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Box,
@@ -71,7 +71,7 @@ interface Person {
   [key: string]: unknown;
 }
 
-export default function PeopleAdminPage() {
+function PeopleAdminPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const initialType = searchParams.get('type') || 'faculty';
@@ -509,5 +509,13 @@ export default function PeopleAdminPage() {
         </DialogActions>
       </Dialog>
     </Box>
+  );
+}
+
+export default function PeopleAdminPage() {
+  return (
+    <Suspense fallback={<Box sx={{ display: 'flex', justifyContent: 'center', py: 4 }}><CircularProgress /></Box>}>
+      <PeopleAdminPageContent />
+    </Suspense>
   );
 }
