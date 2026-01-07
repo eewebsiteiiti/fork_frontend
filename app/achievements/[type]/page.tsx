@@ -190,7 +190,7 @@ function FacultyAwardsSection() {
             {awards.map((award, index) => (
               <TableRow key={award.id} sx={{ bgcolor: index % 2 === 0 ? 'white' : 'grey.50' }}>
                 <TableCell>{index + 1}</TableCell>
-                <TableCell fontWeight={500}>{award.name}</TableCell>
+                <TableCell sx={{ fontWeight: 500 }}>{award.name}</TableCell>
                 <TableCell>{award.award}</TableCell>
                 <TableCell><Chip label={award.year} size="small" /></TableCell>
               </TableRow>
