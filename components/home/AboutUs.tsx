@@ -53,7 +53,7 @@ export default function AboutUs() {
               component="img"
               src="/images/about.JPG"
               alt="About EE"
-              sx={{ width: '160%', borderRadius: 2 }}
+              sx={{ width: '100%', borderRadius: 2 }}
             />
           </Grid>
         </Grid>
