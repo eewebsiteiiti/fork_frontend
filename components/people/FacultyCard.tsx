@@ -1,8 +1,31 @@
 'use client';
 
-import { Box, Typography, Paper, Link as MuiLink } from '@mui/material';
+import { useState } from 'react';
+import { Avatar, Box, Typography, Paper, Link as MuiLink } from '@mui/material';
 import { Email, Phone, Business, Language } from '@mui/icons-material';
-import { getFacultyImagePath, PLACEHOLDER_IMAGE } from '@/lib/images';
+import { getFacultyImagePath } from '@/lib/images';
+
+// Get initials from name
+function getInitials(name: string): string {
+  const parts = name.replace(/^Prof\.\s*/i, '').trim().split(/\s+/);
+  if (parts.length === 1) {
+    return parts[0].substring(0, 2).toUpperCase();
+  }
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+// Generate consistent color from name
+function stringToColor(string: string): string {
+  let hash = 0;
+  for (let i = 0; i < string.length; i++) {
+    hash = string.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const colors = [
+    '#1976d2', '#388e3c', '#d32f2f', '#7b1fa2', '#c2185b',
+    '#0288d1', '#00796b', '#e64a19', '#5d4037', '#455a64'
+  ];
+  return colors[Math.abs(hash) % colors.length];
+}
 
 interface Faculty {
   id: number;
@@ -19,6 +42,7 @@ interface Faculty {
 }
 
 export default function FacultyCard({ faculty }: { faculty: Faculty }) {
+  const [imageError, setImageError] = useState(false);
   const imageUrl = getFacultyImagePath(faculty.name, faculty.image);
 
   return (
@@ -43,22 +67,37 @@ export default function FacultyCard({ faculty }: { faculty: Faculty }) {
           flexShrink: 0,
           width: { xs: 120, md: 100 },
           height: { xs: 150, md: 125 },
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <Box
-          component="img"
-          src={imageUrl}
-          alt={faculty.name}
-          onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-            e.currentTarget.src = PLACEHOLDER_IMAGE;
-          }}
-          sx={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            borderRadius: 1,
-          }}
-        />
+        {imageError ? (
+          <Avatar
+            sx={{
+              width: { xs: 100, md: 80 },
+              height: { xs: 100, md: 80 },
+              bgcolor: stringToColor(faculty.name),
+              fontSize: { xs: 36, md: 28 },
+              fontWeight: 600,
+            }}
+          >
+            {getInitials(faculty.name)}
+          </Avatar>
+        ) : (
+          <Box
+            component="img"
+            src={imageUrl}
+            alt={faculty.name}
+            onError={() => setImageError(true)}
+            sx={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              borderRadius: 1,
+            }}
+          />
+        )}
       </Box>
 
       {/* Main Info */}

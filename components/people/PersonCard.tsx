@@ -1,9 +1,90 @@
 'use client';
 
-import { Box, Card, CardContent, CardMedia, Typography, Chip } from '@mui/material';
+import React from 'react';
+import { Avatar, Box, Card, CardContent, Typography, Chip } from '@mui/material';
 import { Email, Phone, Language, LocationOn } from '@mui/icons-material';
 import Link from 'next/link';
-import { getStudentImagePath, getFacultyImagePath, getStaffImagePath, PLACEHOLDER_IMAGE } from '@/lib/images';
+import { getStudentImagePath, getFacultyImagePath, getStaffImagePath } from '@/lib/images';
+
+// Get initials from name (up to 2 characters)
+function getInitials(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) {
+    return parts[0].substring(0, 2).toUpperCase();
+  }
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+// Generate a consistent color based on name
+function stringToColor(string: string): string {
+  let hash = 0;
+  for (let i = 0; i < string.length; i++) {
+    hash = string.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const colors = [
+    '#1976d2', '#388e3c', '#d32f2f', '#7b1fa2', '#c2185b',
+    '#0288d1', '#00796b', '#e64a19', '#5d4037', '#455a64'
+  ];
+  return colors[Math.abs(hash) % colors.length];
+}
+
+// Image with avatar fallback - uses state to track load status
+function ImageWithFallback({ src, alt, height }: { src: string; alt: string; height: number }) {
+  const [status, setStatus] = React.useState<'loading' | 'loaded' | 'error'>('loading');
+
+  React.useEffect(() => {
+    if (!src) {
+      setStatus('error');
+      return;
+    }
+
+    const img = new Image();
+    img.onload = () => setStatus('loaded');
+    img.onerror = () => setStatus('error');
+    img.src = src;
+  }, [src]);
+
+  // Show avatar if no src, loading, or error
+  if (status !== 'loaded') {
+    return (
+      <Box
+        sx={{
+          height,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          bgcolor: 'grey.100',
+        }}
+      >
+        <Avatar
+          sx={{
+            width: height * 0.6,
+            height: height * 0.6,
+            bgcolor: stringToColor(alt),
+            fontSize: height * 0.2,
+            fontWeight: 600,
+          }}
+        >
+          {getInitials(alt)}
+        </Avatar>
+      </Box>
+    );
+  }
+
+  // Show image only after it's confirmed loaded
+  return (
+    <Box
+      component="img"
+      src={src}
+      alt={alt}
+      sx={{
+        height,
+        width: '100%',
+        objectFit: 'cover',
+      }}
+    />
+  );
+}
 
 interface PersonCardProps {
   name: string;
@@ -49,26 +130,16 @@ export default function PersonCard({
     if (type === 'staff') {
       return getStaffImagePath(name, image);
     }
-    return image || PLACEHOLDER_IMAGE;
+    return image || '';
   };
 
   const imageUrl = getImageUrl();
 
-  // Handle image loading errors by showing placeholder
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.src = PLACEHOLDER_IMAGE;
-  };
-
-  // Alumni - card with placeholder image
+  // Alumni - card with avatar (no photos for alumni)
   if (type === 'alumni') {
     return (
       <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-        <CardMedia
-          component="img"
-          sx={{ height: 200, objectFit: 'cover' }}
-          image={PLACEHOLDER_IMAGE}
-          alt={name}
-        />
+        <ImageWithFallback src="" alt={name} height={200} />
         <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
           <Typography variant="subtitle1" fontWeight={600} gutterBottom>
             {name}
@@ -86,13 +157,7 @@ export default function PersonCard({
   if (type === 'student') {
     return (
       <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-        <CardMedia
-          component="img"
-          sx={{ height: 200, objectFit: 'cover' }}
-          image={imageUrl}
-          alt={name}
-          onError={handleImageError}
-        />
+        <ImageWithFallback src={imageUrl} alt={name} height={200} />
         <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
           <Typography variant="h6" fontWeight={600} gutterBottom>
             {name}
@@ -112,13 +177,7 @@ export default function PersonCard({
 
   return (
     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <CardMedia
-        component="img"
-        sx={{ height: 250, objectFit: 'cover' }}
-        image={imageUrl}
-        alt={name}
-        onError={handleImageError}
-      />
+      <ImageWithFallback src={imageUrl} alt={name} height={250} />
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography variant="h6" fontWeight={600} gutterBottom>
           {name}

@@ -36,7 +36,7 @@ const facultyImageMap: Record<string, string> = {
   'Prof. Amod C. Umarikar': 'amod.jpg',
   'Prof. Ram Bilas Pachori': 'pachori.jpg',
   'Prof. Santosh Kumar Vishvakarma': 'santosh.jpg',
-  'Prof. Shaibal Mukherjee': 'sm.png',
+  'Prof. Shaibal Mukherjee': 'sm.jpg',
   'Prof. Vipul Singh': 'vipul.jpg',
   'Prof. Abhinav Kranti': 'kranti.jpg',
   'Prof. Trapti Jain': 'trapti.jpg',
