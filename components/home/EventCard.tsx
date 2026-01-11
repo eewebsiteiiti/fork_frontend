@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { Box, Typography, CardMedia, Grid } from '@mui/material';
+import * as React from 'react';
+import { Box, Typography, Grid } from '@mui/material';
 
 const EVENT_PLACEHOLDER = '/images/logos/event-placeholder.jpg';
 
@@ -17,6 +17,32 @@ interface EventCardProps {
   link?: string;
 }
 
+function ImageWithFallback({ src, alt }: { src: string; alt: string }) {
+  const [status, setStatus] = React.useState<'loading' | 'loaded' | 'error'>('loading');
+
+  React.useEffect(() => {
+    if (!src) {
+      setStatus('error');
+      return;
+    }
+    const img = new Image();
+    img.onload = () => setStatus('loaded');
+    img.onerror = () => setStatus('error');
+    img.src = src;
+  }, [src]);
+
+  const imageSrc = status === 'loaded' ? src : EVENT_PLACEHOLDER;
+
+  return (
+    <Box
+      component="img"
+      src={imageSrc}
+      alt={alt}
+      sx={{ height: 140, width: '100%', objectFit: 'cover' }}
+    />
+  );
+}
+
 export default function EventCard({
   title,
   description,
@@ -27,18 +53,11 @@ export default function EventCard({
   time,
   year,
 }: EventCardProps) {
-  const [imgSrc, setImgSrc] = useState(image || EVENT_PLACEHOLDER);
-
   return (
     <Box>
       <Grid container direction="column" alignItems="flex-start">
         <Grid size={12}>
-          <CardMedia
-            component="img"
-            sx={{ height: 140, width: '100%', objectFit: 'cover' }}
-            image={imgSrc}
-            onError={() => setImgSrc(EVENT_PLACEHOLDER)}
-          />
+          <ImageWithFallback src={image} alt={title} />
         </Grid>
         <Grid size={12}>
           <Grid container justifyContent="space-between" sx={{ mt: 1 }}>
