@@ -76,9 +76,9 @@ const committees: Committee[] = [
     fullName: 'Department Website Committee',
     function: 'The Department Website Committee oversees the activities of the Student Team which updates and maintains the Departmental website.',
     members: [
-      'Dr. Vijay A.S (Convener)',
-      'Dr. Saptarshi Ghosh',
-      'Dr. Sumit Gautam',
+      'Dr. Sharad Kumar Singh (Convener)',
+      'Dr. Lokesh Kumar Dewangan',
+      'Dr. Prathap Reddy',
     ],
     email: 'website.ee@iiti.ac.in',
   },
@@ -87,9 +87,9 @@ const committees: Committee[] = [
     fullName: 'Department Space Committee',
     function: 'The committee looks into the space related requirements regarding UG and PG research labs and for individual faculty members and makes suitable recommendations regarding the same.',
     members: [
-      'Dr. Swaminathan R. (Convener)',
+      'Dr. Subhadeep Paladhi (Convener)',
+      'Dr. Swaminathan R.',
       'Prof. Srivathsan Vasudevan',
-      'Dr. Subhadeep Paladhi',
     ],
     email: '-',
   },
@@ -112,7 +112,7 @@ export default function CommitteesPage() {
       backgroundImage="/images/banners/faculty.jpg"
       backgroundPosition="center -350%"
     >
-      <Container maxWidth="lg" sx={{ py: 6 }}>
+      <Container maxWidth="xl" sx={{ py: 6 }}>
         <TableContainer component={Paper} elevation={2}>
           <Table>
             <TableHead>
