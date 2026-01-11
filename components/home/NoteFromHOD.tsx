@@ -44,7 +44,7 @@ export default function NoteFromHOD() {
             Engineering Department at IIT Indore.
           </Typography>
           <Typography variant="h6" color="white" fontWeight={600} sx={{ mt: 2 }}>
-            ~ Vivek Kanchan
+            ~ Swaminathan R.
           </Typography>
         </Grid>
       </Grid>

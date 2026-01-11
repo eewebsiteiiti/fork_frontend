@@ -42,6 +42,7 @@ export const navData: NavItem[] = [
       {
         label: 'M.Tech. Students',
         children: [
+          { label: '2025', href: '/people/mtech/2025' },
           { label: '2024', href: '/people/mtech/2024' },
           { label: '2023', href: '/people/mtech/2023' },
         ],
@@ -52,12 +53,12 @@ export const navData: NavItem[] = [
           { label: '2024', href: '/people/btech/2024' },
           { label: '2023', href: '/people/btech/2023' },
           { label: '2022', href: '/people/btech/2022' },
-          { label: '2021', href: '/people/btech/2021' },
         ],
       },
       {
         label: 'Alumni',
         children: [
+          { label: '2021', href: '/people/alumni/2021' },
           { label: '2020', href: '/people/alumni/2020' },
           { label: '2019', href: '/people/alumni/2019' },
           { label: '2018', href: '/people/alumni/2018' },
@@ -158,5 +159,5 @@ export const footerStats = {
   patents: 35,
   projects: 110,
   projectGrants: 32.6,
-  googleScholarCitations: 55000,
+  googleScholarCitations: 60000,
 };
