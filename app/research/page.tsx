@@ -1,10 +1,22 @@
-import { Box, Container, Typography, Paper } from '@mui/material';
+import { Box, Container, Typography, Paper, Chip } from '@mui/material';
+import {
+  Wifi,
+  GraphicEq,
+  BoltOutlined,
+  ElectricalServices,
+  Memory,
+  SettingsInputAntenna,
+  Science,
+  Psychology,
+  Tune,
+} from '@mui/icons-material';
 import PageLayout from '@/components/layout/PageLayout';
 
-// Research areas with faculty lists
+// Research areas with faculty lists and icons
 const researchAreas = [
   {
     title: 'Communications',
+    icon: Wifi,
     faculty: [
       'Prof. Ram Bilas Pachori',
       'Prof. Prabhat Kumar Upadhyay',
@@ -17,6 +29,7 @@ const researchAreas = [
   },
   {
     title: 'Signal and Image Processing',
+    icon: GraphicEq,
     faculty: [
       'Prof. Ram Bilas Pachori',
       'Prof. Prabhat Kumar Upadhyay',
@@ -28,6 +41,7 @@ const researchAreas = [
   },
   {
     title: 'Power Electronics and Electric Machines',
+    icon: BoltOutlined,
     faculty: [
       'Prof. Amod C. Umarikar',
       'Prof. Vijay A. S.',
@@ -37,6 +51,7 @@ const researchAreas = [
   },
   {
     title: 'Power Systems',
+    icon: ElectricalServices,
     faculty: [
       'Prof. Trapti Jain',
       'Prof. Subhadeep Paladhi',
@@ -45,6 +60,7 @@ const researchAreas = [
   },
   {
     title: 'VLSI Design',
+    icon: Memory,
     faculty: [
       'Prof. Santosh Kumar Vishvakarma',
       'Prof. Shaibal Mukherjee',
@@ -53,6 +69,7 @@ const researchAreas = [
   },
   {
     title: 'Radio Frequency and Microwave',
+    icon: SettingsInputAntenna,
     faculty: [
       'Prof. Saptarshi Ghosh',
       'Prof. Rinkee Chopra',
@@ -60,6 +77,7 @@ const researchAreas = [
   },
   {
     title: 'Nanoelectronic Devices',
+    icon: Science,
     faculty: [
       'Prof. Srivathsan Vasudevan',
       'Prof. Mukesh Kumar',
@@ -70,6 +88,7 @@ const researchAreas = [
   },
   {
     title: 'Machine Learning and Deep Learning',
+    icon: Psychology,
     faculty: [
       'Prof. Ram Bilas Pachori',
       'Prof. Vivek Kanhangad',
@@ -80,6 +99,7 @@ const researchAreas = [
   },
   {
     title: 'Control Instrumentation and Optimization',
+    icon: Tune,
     faculty: [
       'Prof. Sharad Kumar Singh',
       'Prof. Srivathsan Vasudevan',
@@ -91,21 +111,21 @@ export default function ResearchPage() {
   return (
     <PageLayout
       title="Research"
-      subtitle="In line with the vision of the pursuit of excellence, the Department actively engages in cutting-edge research in the field of Electronics, Electrical and Communcation Engineering. We strive to develop a vibrant research culture with strong industry-alumni-academia connects."
+      subtitle="In line with the vision of the pursuit of excellence, the Department actively engages in cutting-edge research in the field of Electronics, Electrical and Communication Engineering. We strive to develop a vibrant research culture with strong industry-alumni-academia connects."
       backgroundImage="/images/banners/research.jpg"
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
-        {/* Central timeline layout */}
+        {/* Timeline layout */}
         <Box sx={{ position: 'relative' }}>
-          {/* Center line */}
+          {/* Center line with gradient */}
           <Box
             sx={{
               position: 'absolute',
               left: '50%',
               top: 0,
               bottom: 0,
-              width: 4,
-              bgcolor: 'primary.main',
+              width: 3,
+              background: 'linear-gradient(180deg, #000249 0%, #B2103F 50%, #000249 100%)',
               transform: 'translateX(-50%)',
               display: { xs: 'none', md: 'block' },
               borderRadius: 2,
@@ -114,6 +134,7 @@ export default function ResearchPage() {
 
           {researchAreas.map((area, index) => {
             const isLeft = index % 2 === 0;
+            const Icon = area.icon;
 
             return (
               <Box
@@ -121,35 +142,43 @@ export default function ResearchPage() {
                 sx={{
                   display: 'flex',
                   justifyContent: { xs: 'center', md: isLeft ? 'flex-start' : 'flex-end' },
-                  mb: 4,
+                  mb: 5,
                   position: 'relative',
                 }}
               >
-                {/* Connector dot */}
+                {/* Connector dot with icon */}
                 <Box
                   sx={{
                     position: 'absolute',
                     left: '50%',
-                    top: 24,
-                    width: 16,
-                    height: 16,
-                    bgcolor: 'secondary.main',
+                    top: 20,
+                    width: 44,
+                    height: 44,
+                    bgcolor: 'white',
                     borderRadius: '50%',
                     transform: 'translateX(-50%)',
-                    display: { xs: 'none', md: 'block' },
+                    display: { xs: 'none', md: 'flex' },
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     zIndex: 1,
                     border: '3px solid',
                     borderColor: 'primary.main',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
                   }}
-                />
+                >
+                  <Icon sx={{ color: 'secondary.main', fontSize: 22 }} />
+                </Box>
 
                 {/* Connector line */}
                 <Box
                   sx={{
                     position: 'absolute',
-                    top: 30,
+                    top: 40,
                     [isLeft ? 'right' : 'left']: '50%',
-                    width: { md: '5%' },
+                    [isLeft ? 'left' : 'right']: { md: isLeft ? 'auto' : 'auto' },
+                    width: { md: 'calc(5% - 22px)' },
+                    marginLeft: isLeft ? 0 : '22px',
+                    marginRight: isLeft ? '22px' : 0,
                     height: 2,
                     bgcolor: 'primary.main',
                     display: { xs: 'none', md: 'block' },
@@ -158,36 +187,54 @@ export default function ResearchPage() {
 
                 {/* Card */}
                 <Paper
-                  elevation={2}
+                  elevation={0}
                   sx={{
-                    width: { xs: '100%', md: '42%' },
-                    p: 0,
+                    width: { xs: '100%', md: '43%' },
                     overflow: 'hidden',
-                    transition: 'transform 0.2s, box-shadow 0.2s',
+                    transition: 'all 0.3s ease',
+                    border: '1px solid',
+                    borderColor: 'grey.200',
+                    borderRadius: 3,
                     '&:hover': {
-                      transform: 'translateY(-4px)',
-                      boxShadow: 6,
+                      transform: { md: 'scale(1.02)' },
+                      boxShadow: '0 12px 40px rgba(0,0,0,0.12)',
+                      borderColor: 'primary.main',
                     },
                   }}
                 >
                   {/* Header */}
                   <Box
                     sx={{
-                      bgcolor: 'primary.main',
+                      background: 'linear-gradient(135deg, #000249 0%, #1a1a6e 100%)',
                       color: 'white',
                       px: 3,
-                      py: 1.5,
-                      clipPath: isLeft
-                        ? 'polygon(0 0, 100% 0, 95% 100%, 0 100%)'
-                        : 'polygon(5% 0, 100% 0, 100% 100%, 0 100%)',
+                      py: 2,
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 2,
+                      flexDirection: isLeft ? 'row' : 'row-reverse',
                     }}
                   >
+                    <Box
+                      sx={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: 2,
+                        bgcolor: 'rgba(255,255,255,0.15)',
+                        display: { xs: 'flex', md: 'flex' },
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Icon sx={{ fontSize: 24 }} />
+                    </Box>
                     <Typography
                       variant="h6"
                       fontWeight={600}
                       sx={{
+                        flex: 1,
                         fontSize: { xs: '1rem', sm: '1.1rem' },
-                        textAlign: isLeft ? 'left' : 'right',
+                        textAlign: { xs: 'left', md: isLeft ? 'left' : 'right' },
                       }}
                     >
                       {area.title}
@@ -195,41 +242,46 @@ export default function ResearchPage() {
                   </Box>
 
                   {/* Faculty list */}
-                  <Box sx={{ p: 2.5 }}>
-                    <Box
-                      component="ul"
+                  <Box sx={{ p: 2.5, bgcolor: 'grey.50' }}>
+                    <Typography
+                      variant="body1"
                       sx={{
-                        m: 0,
-                        pl: isLeft ? 2.5 : 0,
-                        pr: isLeft ? 0 : 2.5,
-                        listStyle: 'none',
+                        color: 'text.secondary',
+                        fontWeight: 600,
+                        textTransform: 'uppercase',
+                        letterSpacing: 1,
+                        display: 'block',
+                        mb: 1.5,
                         textAlign: { xs: 'left', md: isLeft ? 'left' : 'right' },
                       }}
                     >
+                      Faculty Members
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: 1,
+                        justifyContent: { xs: 'flex-start', md: isLeft ? 'flex-start' : 'flex-end' },
+                      }}
+                    >
                       {area.faculty.map((name) => (
-                        <Typography
-                          component="li"
+                        <Chip
                           key={name}
-                          variant="body2"
+                          label={name.replace('Prof. ', '')}
+                          size="medium"
                           sx={{
-                            py: 0.5,
-                            color: 'text.secondary',
-                            position: 'relative',
-                            '&::before': {
-                              content: '""',
-                              position: 'absolute',
-                              [isLeft ? 'left' : 'right']: -16,
-                              top: '50%',
-                              transform: 'translateY(-50%)',
-                              width: 6,
-                              height: 6,
-                              bgcolor: 'secondary.main',
-                              borderRadius: '50%',
+                            bgcolor: 'white',
+                            border: '1px solid',
+                            borderColor: 'grey.300',
+                            fontSize: '1rem',
+                            '&:hover': {
+                              bgcolor: 'primary.main',
+                              color: 'white',
+                              borderColor: 'primary.main',
                             },
                           }}
-                        >
-                          {name}
-                        </Typography>
+                        />
                       ))}
                     </Box>
                   </Box>

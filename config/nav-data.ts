@@ -133,8 +133,9 @@ export const navData: NavItem[] = [
     label: 'Achievements',
     children: [
       { label: 'Books Published', href: '/achievements/books' },
-      { label: 'Faculty Recognitions', href: '/achievements/faculty-awards' },
-      { label: 'Student Achievements', href: '/achievements/student-awards' },
+      { label: 'Faculty Recognitions', href: '/achievements/faculty' },
+      { label: 'Student Achievements', href: '/achievements/students' },
+      { label: 'Patents', href: '/achievements/patents' },
     ],
   },
   {

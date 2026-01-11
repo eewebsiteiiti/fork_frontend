@@ -58,13 +58,6 @@ export default function FloraFaunaPage() {
                   '&:hover': { transform: 'scale(1.02)' },
                 }}
               />
-              <ImageListItemBar
-                title={image.title}
-                sx={{
-                  borderRadius: '0 0 4px 4px',
-                  background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-                }}
-              />
             </ImageListItem>
           ))}
         </ImageList>

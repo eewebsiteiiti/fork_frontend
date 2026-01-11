@@ -126,5 +126,29 @@
     "award": "All Rounder",
     "image": "images/image022.png",
     "roll_no": 180002037
+  },
+  {
+    "id": 23,
+    "year": 2023,
+    "name": "Dev Daftari",
+    "award": "Departmental Silver Medalist",
+    "image": "",
+    "roll_no": 190002000
+  },
+  {
+    "id": 24,
+    "year": 2024,
+    "name": "Harman Singh Bagga",
+    "award": "Departmental Silver Medalist",
+    "image": "",
+    "roll_no": 200002000
+  },
+  {
+    "id": 25,
+    "year": 2024,
+    "name": "Aditya Guwaharikar",
+    "award": "All Rounder",
+    "image": "",
+    "roll_no": 200002000
   }
 ]

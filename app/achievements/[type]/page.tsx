@@ -240,7 +240,7 @@ function StudentAwardsSection() {
                 {goldMedalists.map((award) => (
                   <TableRow key={award.id}>
                     <TableCell fontWeight={600}>{award.name}</TableCell>
-                    <TableCell>{award.roll_no}</TableCell>
+                    <TableCell>{award.roll_no ? String(Math.floor(Number(award.roll_no))) : ''}</TableCell>
                     <TableCell>{award.year}</TableCell>
                   </TableRow>
                 ))}
@@ -268,7 +268,7 @@ function StudentAwardsSection() {
                 {silverMedalists.map((award) => (
                   <TableRow key={award.id}>
                     <TableCell fontWeight={600}>{award.name}</TableCell>
-                    <TableCell>{award.roll_no}</TableCell>
+                    <TableCell>{award.roll_no ? String(Math.floor(Number(award.roll_no))) : ''}</TableCell>
                     <TableCell>{award.year}</TableCell>
                   </TableRow>
                 ))}
