@@ -45,7 +45,7 @@ const researchAreas = [
     image: '/images/about/research/vlsi.jpg',
   },
   {
-    title: 'Power Electronics, Machines and Power Systems (PEPS)',
+    title: 'Power Electronics, Machines and Power Systems (PSPE)',
     description: 'Power Electronics, Machines and Power Systems group works on efficient and optimal generation, transmission, distribution, use of electrical energy and efficient electric drives.',
     image: '/images/about/research/power.png',
   },

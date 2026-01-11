@@ -41,8 +41,8 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
     semesters: 4,
     dbProgram: 'MTech',
   },
-  'mtech-peps': {
-    title: 'M.Tech Courses (PEPS)',
+  'mtech-pspe': {
+    title: 'M.Tech Courses (PSPE)',
     subtitle: 'Power Electronics, Power Systems specialization',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,

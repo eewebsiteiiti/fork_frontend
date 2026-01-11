@@ -109,7 +109,7 @@ export const navData: NavItem[] = [
           { label: 'B.Tech. (after 2023)', href: '/courses/btech/new' },
           { label: 'M.Tech. (CSP)', href: '/courses/mtech-csp' },
           { label: 'M.Tech. (VDN)', href: '/courses/mtech-vdn' },
-          { label: 'M.Tech. (PEPS)', href: '/courses/mtech-peps' },
+          { label: 'M.Tech. (PSPE)', href: '/courses/mtech-pspe' },
         ],
       },
       {
@@ -152,10 +152,10 @@ export const navData: NavItem[] = [
 export const footerStats = {
   faculty: 24,
   studentsGraduated: 1050,
-  publications: 1500,
+  publications: 1750,
   placement: 94,
-  patents: 27,
-  projects: 100,
+  patents: 35,
+  projects: 110,
   projectGrants: 32.6,
-  googleScholarCitations: 52250,
+  googleScholarCitations: 55000,
 };
