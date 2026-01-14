@@ -157,7 +157,7 @@ export default function PersonCard({
   if (type === 'student') {
     return (
       <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-        <ImageWithFallback src={imageUrl} alt={name} height={200} />
+        <ImageWithFallback src={imageUrl} alt={name} height={250} />
         <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
           <Typography variant="h6" fontWeight={600} gutterBottom>
             {name}
@@ -177,7 +177,7 @@ export default function PersonCard({
 
   return (
     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <ImageWithFallback src={imageUrl} alt={name} height={250} />
+      <ImageWithFallback src={imageUrl} alt={name} height={450} />
       <CardContent sx={{ flexGrow: 1 }}>
         <Typography variant="h6" fontWeight={600} gutterBottom>
           {name}

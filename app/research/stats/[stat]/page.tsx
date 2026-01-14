@@ -126,7 +126,7 @@ export default async function StatsPage({
               color="secondary.main"
               sx={{ fontSize: { xs: '4rem', md: '7rem' }, fontWeight: 700 }}
             >
-              52,250+
+              60,000+
             </Typography>
             <Typography variant="h4" color="secondary.main" sx={{ mt: 2 }}>
               ... & Counting!

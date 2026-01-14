@@ -291,7 +291,7 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://www.linkedin.com/company/electrical-engineering-students-association/"
+                href="https://in.linkedin.com/in/department-of-electrical-engineering-iit-indore-00801738b"
                 target="_blank"
                 sx={{ color: 'grey.400', '&:hover': { color: 'white' } }}
               >

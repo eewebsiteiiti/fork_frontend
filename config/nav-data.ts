@@ -106,7 +106,6 @@ export const navData: NavItem[] = [
       {
         label: 'Courses',
         children: [
-          { label: 'B.Tech. (before 2023)', href: '/courses/btech' },
           { label: 'B.Tech. (after 2023)', href: '/courses/btech/new' },
           { label: 'M.Tech. (CSP)', href: '/courses/mtech-csp' },
           { label: 'M.Tech. (VDN)', href: '/courses/mtech-vdn' },

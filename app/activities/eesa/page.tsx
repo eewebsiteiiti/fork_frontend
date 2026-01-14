@@ -57,7 +57,7 @@ export default function EESAPage() {
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
             <IconButton
               component="a"
-              href="https://www.youtube.com/@eloiiti"
+              href="https://www.youtube.com/@EESA_IITI"
               target="_blank"
               sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.1)', '&:hover': { bgcolor: 'rgba(255,255,255,0.2)' } }}
             >
