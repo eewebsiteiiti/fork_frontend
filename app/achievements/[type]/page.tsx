@@ -18,6 +18,7 @@ interface Award {
   roll_no?: string;
   year: number;
   award: string;
+  image?: string;
 }
 
 interface Patent {
@@ -211,100 +212,52 @@ function FacultyAwardsSection() {
 function StudentAwardsSection() {
   const awards = getStudentAwards();
 
-  // Separate gold and silver medalists
-  const goldMedalists = awards.filter(a => a.award?.toLowerCase().includes('gold'));
-  const silverMedalists = awards.filter(a => a.award?.toLowerCase().includes('silver'));
-  const otherAwards = awards.filter(a => !a.award?.toLowerCase().includes('gold') && !a.award?.toLowerCase().includes('silver'));
+  // Sort by year descending (newest first)
+  const sortedAwards = [...awards].sort((a, b) => b.year - a.year);
+
+  const getBackgroundColor = (award: string) => {
+    if (award?.toLowerCase().includes('gold')) return '#ffda95';
+    if (award?.toLowerCase().includes('silver')) return '#dfdfdf';
+    return 'white';
+  };
 
   return (
     <>
-      <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-        Total Awards: {awards.length}
-      </Typography>
-
-      {goldMedalists.length > 0 && (
-        <>
-          <Typography variant="h5" sx={{ mb: 2, color: '#FFD700', fontWeight: 600 }}>
-            🏅 President&apos;s Gold Medalists
-          </Typography>
-          <TableContainer component={Paper} sx={{ mb: 4 }}>
-            <Table>
-              <TableHead>
-                <TableRow sx={{ bgcolor: '#FFD700' }}>
-                  <TableCell sx={{ fontWeight: 600 }}>Name</TableCell>
-                  <TableCell sx={{ fontWeight: 600 }}>Roll No</TableCell>
-                  <TableCell sx={{ fontWeight: 600 }}>Year</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {goldMedalists.map((award) => (
-                  <TableRow key={award.id}>
-                    <TableCell fontWeight={600}>{award.name}</TableCell>
-                    <TableCell>{award.roll_no ? String(Math.floor(Number(award.roll_no))) : ''}</TableCell>
-                    <TableCell>{award.year}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </>
-      )}
-
-      {silverMedalists.length > 0 && (
-        <>
-          <Typography variant="h5" sx={{ mb: 2, color: '#C0C0C0', fontWeight: 600 }}>
-            🥈 Silver Medalists
-          </Typography>
-          <TableContainer component={Paper} sx={{ mb: 4 }}>
-            <Table>
-              <TableHead>
-                <TableRow sx={{ bgcolor: '#E8E8E8' }}>
-                  <TableCell sx={{ fontWeight: 600 }}>Name</TableCell>
-                  <TableCell sx={{ fontWeight: 600 }}>Roll No</TableCell>
-                  <TableCell sx={{ fontWeight: 600 }}>Year</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {silverMedalists.map((award) => (
-                  <TableRow key={award.id}>
-                    <TableCell fontWeight={600}>{award.name}</TableCell>
-                    <TableCell>{award.roll_no ? String(Math.floor(Number(award.roll_no))) : ''}</TableCell>
-                    <TableCell>{award.year}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </>
-      )}
-
-      {otherAwards.length > 0 && (
-        <>
-          <Typography variant="h5" sx={{ mb: 2, fontWeight: 600 }}>
-            Other Achievements
-          </Typography>
-          <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow sx={{ bgcolor: 'primary.main' }}>
-                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Name</TableCell>
-                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Award</TableCell>
-                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Year</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {otherAwards.map((award, index) => (
-                  <TableRow key={award.id} sx={{ bgcolor: index % 2 === 0 ? 'white' : 'grey.50' }}>
-                    <TableCell>{award.name}</TableCell>
-                    <TableCell>{award.award}</TableCell>
-                    <TableCell>{award.year}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </>
-      )}
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow sx={{ bgcolor: 'primary.main' }}>
+              <TableCell sx={{ color: 'white', fontWeight: 600 }}>Name</TableCell>
+              <TableCell sx={{ color: 'white', fontWeight: 600 }}>Roll No</TableCell>
+              <TableCell sx={{ color: 'white', fontWeight: 600 }}>Award</TableCell>
+              <TableCell sx={{ color: 'white', fontWeight: 600 }}>Year</TableCell>
+              <TableCell sx={{ color: 'white', fontWeight: 600 }}>Image</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {sortedAwards.map((award) => (
+              <TableRow key={award.id} sx={{ bgcolor: getBackgroundColor(award.award) }}>
+                <TableCell sx={{ fontWeight: 600, color: 'primary.main' }}>{award.name}</TableCell>
+                <TableCell sx={{ color: 'primary.main' }}>
+                  {award.roll_no ? String(Math.floor(Number(award.roll_no))) : ''}
+                </TableCell>
+                <TableCell sx={{ color: 'primary.main' }}>{award.award}</TableCell>
+                <TableCell sx={{ color: 'gray' }}>{award.year}</TableCell>
+                <TableCell>
+                  {award.image && (
+                    <img
+                      src={award.image}
+                      alt={award.name}
+                      width={50}
+                      style={{ borderRadius: '4px' }}
+                    />
+                  )}
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
 
       {awards.length === 0 && (
         <Box sx={{ textAlign: 'center', py: 8 }}>
