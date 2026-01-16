@@ -13,6 +13,7 @@ export function initializeDatabase() {
       link TEXT,
       image TEXT,
       subtitle TEXT,
+      subtitle_link TEXT,
       place TEXT,
       phone TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,

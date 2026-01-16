@@ -37,6 +37,7 @@ interface Faculty {
   address: string;
   link: string;
   subtitle: string;
+  subtitle_link: string;
   place: string;
   image?: string;
 }
@@ -131,9 +132,21 @@ export default function FacultyCard({ faculty }: { faculty: Faculty }) {
         </Typography>
 
         {faculty.subtitle && (
-          <Typography variant="body2" color="secondary.main" fontStyle="italic">
-            {faculty.subtitle}
-          </Typography>
+          faculty.subtitle_link ? (
+            <MuiLink
+              href={`mailto:${faculty.subtitle_link}`}
+              underline="hover"
+              sx={{ color: 'secondary.main', fontStyle: 'italic' }}
+            >
+              <Typography variant="body2" component="span">
+                {faculty.subtitle}
+              </Typography>
+            </MuiLink>
+          ) : (
+            <Typography variant="body2" color="secondary.main" fontStyle="italic">
+              {faculty.subtitle}
+            </Typography>
+          )
         )}
 
         {faculty.details && (

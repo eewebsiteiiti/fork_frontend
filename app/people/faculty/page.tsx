@@ -13,6 +13,7 @@ interface Faculty {
   address: string;
   link: string;
   subtitle: string;
+  subtitle_link: string;
   place: string;
 }
 

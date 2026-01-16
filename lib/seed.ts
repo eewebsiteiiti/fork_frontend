@@ -13,7 +13,7 @@ const seedMappings: SeedMapping[] = [
   {
     file: 'people_faculty.json',
     table: 'faculty',
-    columns: ['name', 'title', 'email', 'details', 'address', 'link', 'image', 'subtitle', 'place', 'phone'],
+    columns: ['name', 'title', 'email', 'details', 'address', 'link', 'image', 'subtitle', 'subtitle_link', 'place', 'phone'],
   },
   {
     file: 'people_staff.json',
