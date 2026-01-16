@@ -176,7 +176,7 @@ export default function AboutPage() {
           </Typography>
           <Box
             component="img"
-            src="/images/about/history.png"
+            src="/images/about/journey.jpg"
             alt="Our Journey - Department History"
             sx={{
               width: { xs: '100%', md: '65%' },

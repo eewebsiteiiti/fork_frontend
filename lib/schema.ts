@@ -145,6 +145,7 @@ export function initializeDatabase() {
       program TEXT,
       semester INTEGER,
       elective INTEGER DEFAULT 0,
+      specialization TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     );
 

@@ -73,7 +73,7 @@ const seedMappings: SeedMapping[] = [
   {
     file: 'course_coursenew.json',
     table: 'courses_new',
-    columns: ['code', 'name', 'credit', 'ltp', 'program', 'semester', 'elective'],
+    columns: ['code', 'name', 'credit', 'ltp', 'program', 'semester', 'elective', 'specialization'],
   },
   {
     file: 'course_elective.json',

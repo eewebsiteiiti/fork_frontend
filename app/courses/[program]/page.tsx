@@ -14,7 +14,7 @@ interface Course {
   program?: string;
 }
 
-const programConfig: Record<string, { title: string; subtitle: string; headerImage: string; semesters: number; dbProgram?: string }> = {
+const programConfig: Record<string, { title: string; subtitle: string; headerImage: string; semesters: number; dbProgram?: string; specialization?: string }> = {
   btech: {
     title: 'B.Tech Courses',
     subtitle: 'Undergraduate curriculum in Electrical Engineering',
@@ -23,7 +23,7 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
   },
   mtech: {
     title: 'M.Tech Courses',
-    subtitle: 'Postgraduate curriculum in CSP and VDN',
+    subtitle: 'Postgraduate curriculum in CSP, VDN and PSPE',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
   },
@@ -33,6 +33,7 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
     dbProgram: 'MTech',
+    specialization: 'CSP',
   },
   'mtech-vdn': {
     title: 'M.Tech Courses (VDN)',
@@ -40,13 +41,15 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
     dbProgram: 'MTech',
+    specialization: 'VDN',
   },
   'mtech-pspe': {
     title: 'M.Tech Courses (PSPE)',
-    subtitle: 'Power Electronics, Power Systems specialization',
+    subtitle: 'Power Systems and Power Electronics specialization',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
     dbProgram: 'MTech',
+    specialization: 'PSPE',
   },
   phd: {
     title: 'Ph.D. Courses',
@@ -67,7 +70,12 @@ function getCourses(program: string, config: typeof programConfig[string]): Cour
     const dbProgram = config.dbProgram || programMap[program] || program;
 
     // Try courses_new table first (has semester info), then courses
-    let courses = db.prepare(`SELECT * FROM courses_new WHERE program = ? ORDER BY semester, code`).all(dbProgram) as Course[];
+    let courses: Course[];
+    if (config.specialization) {
+      courses = db.prepare(`SELECT * FROM courses_new WHERE program = ? AND specialization = ? ORDER BY semester, code`).all(dbProgram, config.specialization) as Course[];
+    } else {
+      courses = db.prepare(`SELECT * FROM courses_new WHERE program = ? ORDER BY semester, code`).all(dbProgram) as Course[];
+    }
     if (courses.length === 0) {
       courses = db.prepare(`SELECT * FROM courses WHERE program = ? ORDER BY name`).all(dbProgram) as Course[];
     }
@@ -158,37 +166,80 @@ export default async function CoursesPage({
           {selectedSemester && ` for Semester ${selectedSemester}`}
         </Typography>
 
-        {/* Courses Table */}
-        <TableContainer component={Paper} sx={{ mb: 6 }}>
-          <Table>
-            <TableHead>
-              <TableRow sx={{ bgcolor: 'primary.main' }}>
-                <TableCell sx={{ color: 'white', fontWeight: 600 }}>Code</TableCell>
-                <TableCell sx={{ color: 'white', fontWeight: 600 }}>Course Name</TableCell>
-                <TableCell sx={{ color: 'white', fontWeight: 600 }}>Credits</TableCell>
-                <TableCell sx={{ color: 'white', fontWeight: 600 }}>Semester</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {filteredCourses.map((course, index) => (
-                <TableRow
-                  key={course.id}
-                  sx={{
-                    bgcolor: index % 2 === 0 ? 'white' : 'grey.50',
-                    '&:hover': { bgcolor: 'action.hover' },
-                  }}
-                >
-                  <TableCell>
-                    <Chip label={course.code || course.course_code || '-'} size="small" color="primary" variant="outlined" />
-                  </TableCell>
-                  <TableCell>{course.name}</TableCell>
-                  <TableCell>{course.credit}</TableCell>
-                  <TableCell>{course.semester || '-'}</TableCell>
+        {/* Courses Display */}
+        {selectedSemester ? (
+          /* Single semester view - flat table */
+          <TableContainer component={Paper} sx={{ mb: 6 }}>
+            <Table>
+              <TableHead>
+                <TableRow sx={{ bgcolor: 'primary.main' }}>
+                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Code</TableCell>
+                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Course Name</TableCell>
+                  <TableCell sx={{ color: 'white', fontWeight: 600 }}>Credits</TableCell>
                 </TableRow>
+              </TableHead>
+              <TableBody>
+                {filteredCourses.map((course, index) => (
+                  <TableRow
+                    key={course.id}
+                    sx={{
+                      bgcolor: index % 2 === 0 ? 'white' : 'grey.50',
+                      '&:hover': { bgcolor: 'action.hover' },
+                    }}
+                  >
+                    <TableCell>
+                      <Chip label={course.code || course.course_code || '-'} size="small" color="primary" variant="outlined" />
+                    </TableCell>
+                    <TableCell>{course.name}</TableCell>
+                    <TableCell>{course.credit}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        ) : (
+          /* All semesters view - grouped by semester */
+          <Box sx={{ mb: 6 }}>
+            {Object.keys(coursesBySemester)
+              .map(Number)
+              .sort((a, b) => a - b)
+              .map((sem) => (
+                <Box key={sem} sx={{ mb: 4 }}>
+                  <Typography variant="h5" sx={{ mb: 2, fontFamily: 'Caudex, serif', color: 'primary.main' }}>
+                    Semester {sem}
+                  </Typography>
+                  <TableContainer component={Paper}>
+                    <Table>
+                      <TableHead>
+                        <TableRow sx={{ bgcolor: 'primary.main' }}>
+                          <TableCell sx={{ color: 'white', fontWeight: 600 }}>Code</TableCell>
+                          <TableCell sx={{ color: 'white', fontWeight: 600 }}>Course Name</TableCell>
+                          <TableCell sx={{ color: 'white', fontWeight: 600 }}>Credits</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {coursesBySemester[sem].map((course, index) => (
+                          <TableRow
+                            key={course.id}
+                            sx={{
+                              bgcolor: index % 2 === 0 ? 'white' : 'grey.50',
+                              '&:hover': { bgcolor: 'action.hover' },
+                            }}
+                          >
+                            <TableCell>
+                              <Chip label={course.code || course.course_code || '-'} size="small" color="primary" variant="outlined" />
+                            </TableCell>
+                            <TableCell>{course.name}</TableCell>
+                            <TableCell>{course.credit}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Box>
               ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+          </Box>
+        )}
 
         {filteredCourses.length === 0 && (
           <Box sx={{ textAlign: 'center', py: 4, mb: 4 }}>
