@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "seed": "npx tsx scripts/seed.ts",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "db:checkpoint": "npx tsx scripts/db-checkpoint.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
