@@ -40,6 +40,8 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 | `npm run start` | Start production server |
 | `npm run seed` | Seed/reset the database |
 | `npm run lint` | Run ESLint |
+| `npm run db:checkpoint` | Flush WAL changes to main database file |
+| `npm run db:studio` | Open Drizzle Studio for database browsing |
 
 ## Project Structure
 
@@ -81,7 +83,7 @@ The database includes the following tables:
 | `staff` | Staff members |
 | `btech`, `mtech`, `phd`, `ms` | Students by program |
 | `alumni` | Alumni records |
-| `courses`, `courses_new` | Course listings |
+| `courses`, `courses_new` | Course listings (courses_new has semester & specialization) |
 | `electives` | Elective courses |
 | `ug_labs`, `pg_labs` | Laboratory information |
 | `research` | Research areas |
@@ -105,6 +107,25 @@ rm database.sqlite database.sqlite-shm database.sqlite-wal
 # Reseed
 npm run seed
 ```
+
+### Course Structure
+
+Courses are stored in `courses_new` table with the following structure:
+
+| Field | Description |
+|-------|-------------|
+| `code` | Course code (e.g., EE101) |
+| `name` | Course name |
+| `credit` | Credit hours |
+| `ltp` | Lecture-Tutorial-Practical hours |
+| `program` | BTech, MTech, or PhD |
+| `semester` | Semester number (1-8 for BTech, 1-4 for MTech) |
+| `specialization` | For MTech: CSP, VDN, or PSPE (null for BTech) |
+
+**MTech Specializations:**
+- **CSP** - Communications and Signal Processing (`/courses/mtech-csp`)
+- **VDN** - VLSI Design and Nanoelectronics (`/courses/mtech-vdn`)
+- **PSPE** - Power Systems and Power Electronics (`/courses/mtech-pspe`)
 
 ### Updating Data
 
@@ -219,6 +240,19 @@ npm run start
 ```
 
 Note: Ensure `database.sqlite` is included in the deployment and the server has write access for SQLite.
+
+### Committing Database Changes
+
+SQLite uses WAL (Write-Ahead Logging) mode. Changes are written to `database.sqlite-wal` before being merged into the main file. To commit database changes to git:
+
+```bash
+# Flush WAL changes to main database file
+npm run db:checkpoint
+
+# Now git will see the changes
+git add database.sqlite
+git commit -m "Update database"
+```
 
 ## Common Tasks
 
