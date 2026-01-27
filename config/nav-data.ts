@@ -50,6 +50,7 @@ export const navData: NavItem[] = [
       {
         label: 'B.Tech. Students',
         children: [
+          { label: '2025', href: '/people/btech/2025' },
           { label: '2024', href: '/people/btech/2024' },
           { label: '2023', href: '/people/btech/2023' },
           { label: '2022', href: '/people/btech/2022' },

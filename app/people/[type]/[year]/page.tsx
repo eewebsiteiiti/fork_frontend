@@ -55,7 +55,7 @@ const typeConfig: Record<string, { title: string; subtitle: string; table: strin
 
 function getPeopleByYear(table: string, year: number): Person[] {
   try {
-    return db.prepare(`SELECT * FROM ${table} WHERE year = ? ORDER BY name ASC`).all(year) as Person[];
+    return db.prepare(`SELECT * FROM ${table} WHERE year = ? ORDER BY roll_no ASC`).all(year) as Person[];
   } catch {
     return [];
   }

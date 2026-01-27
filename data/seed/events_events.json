@@ -1,79 +1,29 @@
 [
   {
-    "id": 4,
-    "description": "Electrical Department Orientation for the new batch of PG students was held on 26th July 2023.",
-    "date": 26,
-    "month": "July",
-    "day": "Wednesday",
+    "id": 1,
+    "title": "Teacher's Day Celebration",
+    "description": "The EE Department celebrated Teacher's Day to honor and appreciate the faculty members.",
+    "event_date": "2025-09-03",
     "time": "16:00:00",
     "link": "",
-    "title": "Electrical Department PG Orientation",
-    "image": "images/pg.jpeg"
+    "image": "images/events/teachers-day.jpg"
   },
   {
-    "id": 5,
-    "description": "Electrical Department Orientation for the fresh UG Student batch was held on 16th August 2023.",
-    "date": 16,
-    "month": "August",
-    "day": "Wednesday",
+    "id": 2,
+    "title": "Research vs Industry Talk",
+    "description": "Engineer's Day Special: Talk by Prof. Ram Bilas Pachori on Research vs Industry perspectives.",
+    "event_date": "2025-09-15",
     "time": "16:00:00",
     "link": "",
-    "title": "Electrical Department UG Orientation",
-    "image": "images/ug.jpeg"
+    "image": "images/events/engineers-day.jpg"
   },
   {
-    "id": 9,
-    "description": "The association was formally inaugrated by HOD-EE on August 16th 2023",
-    "date": 16,
-    "month": "August",
-    "day": "Wednesday",
-    "time": "17:00:00",
+    "id": 3,
+    "title": "IlluminEE",
+    "description": "Department Traditional Night - A celebration of culture and talent by the EE Department.",
+    "event_date": "2025-10-15",
+    "time": "18:00:00",
     "link": "",
-    "title": "EESA Inauguration",
-    "image": "images/eesa.jpeg"
-  },
-  {
-    "id": 10,
-    "description": "Visit of 3rd year B. Tech. students to Omkareshwar Hydro power station",
-    "date": 1,
-    "month": "April",
-    "day": "Saturday",
-    "time": "09:00:00",
-    "link": "",
-    "title": "Field Trip",
-    "image": "images/field.JPG"
-  },
-  {
-    "id": 11,
-    "description": "The EE Department organized a valedictory function before the institute convocation for the graduating students of 2023.",
-    "date": 14,
-    "month": "July",
-    "day": "Friday",
-    "time": "16:30:00",
-    "link": "",
-    "title": "Department Valedictory Function",
-    "image": "images/valeditory.JPG"
-  },
-  {
-    "id": 12,
-    "description": "Visit of 2nd year UG students yo Bharat Heavy Electricals Limited (BHEL)",
-    "date": 7,
-    "month": "October",
-    "day": "Saturday",
-    "time": "11:00:00",
-    "link": "",
-    "title": "Visit to BHEL",
-    "image": "images/image_2023-10-13_230444787.png"
-  },
-  {
-    "id": 13,
-    "description": "A memorandum of understanding was signed by the power group by L&T and the faculty representative from IIT Indore.",
-    "date": 4,
-    "month": "October",
-    "day": "Wednesday",
-    "time": "11:30:00",
-    "link": "https://www.larsentoubro.com/pressreleases/2023-10-21-larsen-toubro-partners-with-iit-indore-for-advancing-renewable-energy-integration-and-control-technology-reach/",
-    "title": "L&T and IITI MoU signing",
-    "image": "images/image_2023-10-13_230750387.png"
+    "image": "images/events/illuminee.jpg"
   }
 ]

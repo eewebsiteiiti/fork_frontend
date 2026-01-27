@@ -30,26 +30,30 @@ interface Patent {
   status: string;
 }
 
-const typeConfig: Record<string, { title: string; subtitle: string; icon: React.ReactNode }> = {
+const typeConfig: Record<string, { title: string; subtitle: string; icon: React.ReactNode; headerImage: string }> = {
   books: {
     title: 'Books Published',
     subtitle: 'Academic contributions by our faculty',
     icon: <MenuBook sx={{ fontSize: 40 }} />,
+    headerImage: '/images/banners/books.png',
   },
   faculty: {
     title: 'Faculty Recognitions',
     subtitle: 'Awards and honors received by our faculty members',
     icon: <EmojiEvents sx={{ fontSize: 40 }} />,
+    headerImage: '/images/banners/faculty.jpg',
   },
   students: {
     title: 'Student Achievements',
     subtitle: 'Outstanding accomplishments by our students',
     icon: <School sx={{ fontSize: 40 }} />,
+    headerImage: '/images/banners/student-achievements-2.jpg',
   },
   patents: {
     title: 'Patents',
     subtitle: 'Intellectual property and innovations',
     icon: <Star sx={{ fontSize: 40 }} />,
+    headerImage: '/images/banners/books.png',
   },
 };
 
@@ -101,7 +105,7 @@ export default async function AchievementsPage({
     <PageLayout
       title={config.title}
       subtitle={config.subtitle}
-      backgroundImage="/images/banners/books.png"
+      backgroundImage={config.headerImage}
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
         {/* Navigation Tabs */}

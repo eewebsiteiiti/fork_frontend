@@ -128,8 +128,12 @@ export const PLACEHOLDER_IMAGE = '/images/logos/profile-placeholder.jpg';
 // Event placeholder
 export const EVENT_PLACEHOLDER = '/images/logos/event-placeholder.jpg';
 
-// Get event image path based on event ID
-// Images should be placed in /public/images/events/event-{id}.jpg
-export function getEventImagePath(eventId: number): string {
+// Get event image path
+// Uses database image if provided, otherwise falls back to event-{id}.jpg pattern
+export function getEventImagePath(eventId: number, dbImage?: string | null): string {
+  if (dbImage && dbImage.trim() !== '') {
+    // Ensure path starts with /
+    return dbImage.startsWith('/') ? dbImage : `/${dbImage}`;
+  }
   return `/images/events/event-${eventId}.jpg`;
 }

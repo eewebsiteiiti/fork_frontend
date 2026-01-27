@@ -21,11 +21,8 @@ interface Event {
   id: number;
   title: string;
   description: string;
-  date: number;
-  month: string;
-  day: string;
+  event_date: string;
   time: string;
-  year?: number;
   image: string;
   link: string;
 }
@@ -41,13 +38,24 @@ interface News {
   id: number;
   title: string;
   description: string;
-  date: number;
-  month: string;
-  day: string;
+  event_date: string;
   time: string;
-  year?: number;
-  image: string;
   link: string;
+}
+
+// Helper function to parse date and derive display values
+function parseEventDate(dateStr: string) {
+  const date = new Date(dateStr);
+  const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                  'July', 'August', 'September', 'October', 'November', 'December'];
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+  return {
+    date: date.getDate(),
+    month: months[date.getMonth()],
+    day: days[date.getDay()],
+    year: date.getFullYear(),
+  };
 }
 
 function getEvents(): Event[] {
@@ -68,7 +76,7 @@ function getAnnouncements(): Announcement[] {
 
 function getNews(): News[] {
   try {
-    return db.prepare('SELECT * FROM news ORDER BY id DESC LIMIT 6').all() as News[];
+    return db.prepare('SELECT * FROM news ORDER BY event_date ASC LIMIT 6').all() as News[];
   } catch {
     return [];
   }
@@ -116,35 +124,38 @@ export default function HomePage() {
 
             <Grid container spacing={3}>
               {events.length > 0 ? (
-                events.map((event) => (
-                  <Grid key={event.id} size={{ xs: 12, sm: 6, md: 4 }}>
-                    {event.link ? (
-                      <Link href={event.link} target="_blank" style={{ textDecoration: 'none' }}>
+                events.map((event) => {
+                  const parsedDate = parseEventDate(event.event_date);
+                  return (
+                    <Grid key={event.id} size={{ xs: 12, sm: 6, md: 4 }}>
+                      {event.link ? (
+                        <Link href={event.link} target="_blank" style={{ textDecoration: 'none' }}>
+                          <EventCard
+                            title={event.title}
+                            description={event.description}
+                            image={getEventImagePath(event.id, event.image)}
+                            date={parsedDate.date}
+                            month={parsedDate.month}
+                            day={parsedDate.day}
+                            time={event.time}
+                            year={parsedDate.year}
+                          />
+                        </Link>
+                      ) : (
                         <EventCard
                           title={event.title}
                           description={event.description}
-                          image={getEventImagePath(event.id)}
-                          date={event.date}
-                          month={event.month}
-                          day={event.day}
+                          image={getEventImagePath(event.id, event.image)}
+                          date={parsedDate.date}
+                          month={parsedDate.month}
+                          day={parsedDate.day}
                           time={event.time}
-                          year={event.year}
+                          year={parsedDate.year}
                         />
-                      </Link>
-                    ) : (
-                      <EventCard
-                        title={event.title}
-                        description={event.description}
-                        image={getEventImagePath(event.id)}
-                        date={event.date}
-                        month={event.month}
-                        day={event.day}
-                        time={event.time}
-                        year={event.year}
-                      />
-                    )}
-                  </Grid>
-                ))
+                      )}
+                    </Grid>
+                  );
+                })
               ) : (
                 <Grid size={12}>
                   <Typography color="text.secondary">No events to display</Typography>
@@ -168,20 +179,23 @@ export default function HomePage() {
 
             <Grid container spacing={3} justifyContent="center">
               {news.length > 0 ? (
-                news.map((item) => (
-                  <Grid key={item.id} size={{ xs: 12, sm: 6, md: 4 }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                      <DateCard
-                        title={item.title}
-                        description={item.description}
-                        date={item.date}
-                        month={item.month}
-                        day={item.day}
-                        time={item.time}
-                      />
-                    </Box>
-                  </Grid>
-                ))
+                news.map((item) => {
+                  const parsedDate = parseEventDate(item.event_date);
+                  return (
+                    <Grid key={item.id} size={{ xs: 12, sm: 6, md: 4 }}>
+                      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                        <DateCard
+                          title={item.title}
+                          description={item.description}
+                          date={parsedDate.date}
+                          month={parsedDate.month}
+                          day={parsedDate.day}
+                          time={item.time}
+                        />
+                      </Box>
+                    </Grid>
+                  );
+                })
               ) : (
                 <Grid size={12}>
                   <Typography color="text.secondary">No important dates to display</Typography>

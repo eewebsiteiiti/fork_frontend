@@ -1,32 +1,26 @@
 [
   {
-    "id": 7,
-    "description": "The EESA was launched.",
-    "date": 16,
-    "link": "",
-    "day": "Wednesday",
-    "month": "August",
-    "time": "17:00:00",
-    "title": "Electrical Engineering Students Association (EESA) Launched"
+    "id": 1,
+    "title": "Spring 2026 Semester Begins",
+    "description": "Commencement of Spring Semester 2026 for all students.",
+    "event_date": "2026-01-05",
+    "time": "08:30:00",
+    "link": ""
   },
   {
-    "id": 8,
-    "description": "Commencement of classes for the newly arrived 2023 batch begins.",
-    "date": 9,
-    "link": "",
-    "day": "Wednesday",
-    "month": "August",
-    "time": "08:30:00",
-    "title": "Classes for 2023 Batch"
+    "id": 2,
+    "title": "Mid Semester Examinations Begin",
+    "description": "Mid semester examinations for Spring 2026 begin.",
+    "event_date": "2026-02-26",
+    "time": "09:00:00",
+    "link": ""
   },
   {
-    "id": 9,
-    "description": "Autumn Semester of 2023 for the students on roll begins.",
-    "date": 26,
-    "link": "",
-    "day": "Wednesday",
-    "month": "July",
-    "time": "08:30:00",
-    "title": "Autumn Semester of 2023"
+    "id": 3,
+    "title": "End Semester Examinations Begin",
+    "description": "End semester examinations for Spring 2026 begin.",
+    "event_date": "2026-05-02",
+    "time": "09:00:00",
+    "link": ""
   }
 ]

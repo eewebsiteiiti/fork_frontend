@@ -83,7 +83,7 @@ const seedMappings: SeedMapping[] = [
   {
     file: 'events_events.json',
     table: 'events',
-    columns: ['title', 'description', 'date', 'month', 'day', 'time', 'image', 'link'],
+    columns: ['title', 'description', 'event_date', 'time', 'image', 'link'],
   },
   {
     file: 'announcements_announcements.json',
@@ -93,7 +93,7 @@ const seedMappings: SeedMapping[] = [
   {
     file: 'news_news.json',
     table: 'news',
-    columns: ['title', 'description', 'date', 'month', 'day', 'time', 'link'],
+    columns: ['title', 'description', 'event_date', 'time', 'link'],
   },
   {
     file: 'reads_reads.json',
