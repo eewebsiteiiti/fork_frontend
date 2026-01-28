@@ -67,10 +67,10 @@ function getPeople(table: string): Person[] {
         SELECT * FROM staff
         ORDER BY
           CASE
-            WHEN title LIKE '%Senior Lab Assistant%' THEN 1
-            WHEN title LIKE '%Junior Lab Assistant%' THEN 2
-            WHEN title LIKE '%Attendant%' THEN 3
-            WHEN title LIKE '%Junior Assistant%' THEN 4
+            WHEN title LIKE '%Junior Assistant%' THEN 1
+            WHEN title LIKE '%Senior Lab Assistant%' THEN 2
+            WHEN title LIKE '%Junior Lab Assistant%' THEN 3
+            WHEN title LIKE '%Attendant%' THEN 4
             ELSE 5
           END,
           id ASC
