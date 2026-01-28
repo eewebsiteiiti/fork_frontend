@@ -85,7 +85,7 @@ a {
 /* Research page styles */
 #rectangle-l-outside {
   width: 60%;
-  height: 100px;
+  height: 120px;
   clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
   float: right;
   background: #000;
@@ -94,7 +94,7 @@ a {
 
 #rectangle-l-inside {
   width: 100%;
-  height: 100px;
+  height: 120px;
   position: relative;
   top: 1px;
   right: 1px;
@@ -105,7 +105,7 @@ a {
 
 #rectangle-r-outside {
   width: 60%;
-  height: 100px;
+  height: 120px;
   text-align: right;
   background-color: #000;
   clip-path: polygon(25% 1%, 100% 0, 100% 100%, 0 100%, 0 25%);
@@ -113,7 +113,7 @@ a {
 
 #rectangle-r-inside {
   width: 100%;
-  height: 100px;
+  height: 120px;
   top: 1px;
   position: relative;
   left: 1px;

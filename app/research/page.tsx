@@ -105,6 +105,7 @@ export default function ResearchPage() {
                     <li>Prof. Santosh Kumar Vishvakarma</li>
                     <li>Prof. Shaibal Mukherjee</li>
                     <li>Prof. Mukesh Kumar</li>
+                    <li>Prof. Vipul Singh</li>
                   </ul>
                 </Typography>
               </div>
