@@ -67,13 +67,21 @@ export default function PageHeader({
           size={{ xs: 0, md: 6 }}
           sx={{
             display: { xs: 'none', md: 'block' },
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: backgroundPosition,
+            pt: { md: '150px' },
             minHeight: 500,
             clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0% 100%)',
           }}
-        />
+        >
+          <Box
+            sx={{
+              width: '100%',
+              height: '100%',
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: backgroundPosition,
+            }}
+          />
+        </Grid>
       </Grid>
     </Box>
   );

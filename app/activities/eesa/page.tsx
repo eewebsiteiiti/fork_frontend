@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Grid, Paper, IconButton, ImageList, ImageListItem } from '@mui/material';
-import { YouTube, Instagram, Email, Facebook, LinkedIn } from '@mui/icons-material';
+import { YouTube, Instagram, Email, Facebook, LinkedIn, Language } from '@mui/icons-material';
 import PageLayout from '@/components/layout/PageLayout';
 
 const eesaImages = [
@@ -55,6 +55,14 @@ export default function EESAPage() {
             Connect With Us
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
+            <IconButton
+              component="a"
+              href="https://eesa.iiti.ac.in"
+              target="_blank"
+              sx={{ color: 'white', bgcolor: 'rgba(255,255,255,0.1)', '&:hover': { bgcolor: 'rgba(255,255,255,0.2)' } }}
+            >
+              <Language fontSize="large" />
+            </IconButton>
             <IconButton
               component="a"
               href="https://www.youtube.com/@EESA_IITI"
