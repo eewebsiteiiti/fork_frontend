@@ -126,7 +126,7 @@ export const navData: NavItem[] = [
           { label: 'B.Tech. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=415267304#gid=415267304', external: true },
           { label: 'B.Tech. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=2052617232#gid=2052617232', external: true },
           { label: 'B.Tech. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=0#gid=0', external: true },
-          { label: 'Course Slots', href: 'https://drive.google.com/file/d/1hiyQKYPU5iQFeiYhX5P1S__JQomjB9aU/view', external: true },
+          { label: 'Course Slots', href: '/documents/course-slots-spring-2025.pdf', external: true },
         ],
       },
     ],
