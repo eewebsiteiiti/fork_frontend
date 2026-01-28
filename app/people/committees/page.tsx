@@ -41,7 +41,7 @@ const committees: Committee[] = [
     fullName: 'Department Budget Advisory Committee',
     function: 'The committee prepares the final annual procurement plan (FAPP) and distributes the funds in accordance with the guidelines shared by the office of the Dean of Administration.',
     members: [
-      'Prof. Vivek Kanhangad (Chairperson & Convener)',
+      'Head of Department (Chairperson & Convener)',
       'Prof. Trapti Jain (Member)',
       'Dr. Saptarshi Ghosh (Member)',
       'Dr. Vijay A.S (Member)',
@@ -94,9 +94,9 @@ const committees: Committee[] = [
     email: '-',
   },
   {
-    name: 'T&P',
-    fullName: 'Training & Placement Coordinator',
-    function: 'The Training & Placement Coordinator facilitates placement activities and coordinates with the institute placement cell for student career opportunities.',
+    name: 'DT&P',
+    fullName: 'Department Training & Placement Committee Coordinator',
+    function: 'The Department Training & Placement Committee Coordinator facilitates placement activities and coordinates with the institute placement cell for student career opportunities.',
     members: [
       'Dr. Appina Balasubramanyam (Coordinator)',
     ],
