@@ -130,6 +130,7 @@ export default async function PeopleYearPage({
                 roll_no={person.roll_no}
                 year={person.year}
                 program={type}
+                image={person.image}
                 type={type === 'alumni' ? 'alumni' : 'student'}
               />
             </Grid>

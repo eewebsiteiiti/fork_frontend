@@ -57,7 +57,7 @@ const researchAreas = [
   {
     title: 'Control Instrumentation And Optimization',
     description: 'Control optimization involves the meticulous management of system behavior and the strategic refinement of processes to attain optimal outcomes. By monitoring variables, making informed decisions, and applying adjustments, control optimization ensures efficiency and effectiveness.',
-    image: '/images/logos/ee-logo.jpg',
+    image: '/images/about/research/control.png',
   },
 ];
 
@@ -147,24 +147,79 @@ export default function AboutPage() {
         </Typography>
         <Grid container spacing={3} justifyContent="center">
           {researchAreas.map((area) => (
-            <Grid key={area.title} size={{ xs: 12, sm: 6, md: 4, lg: 2.4 }}>
-              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={area.image}
-                  alt={area.title}
-                  sx={{ objectFit: 'cover' }}
-                />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography variant="subtitle1" fontWeight={600} gutterBottom color="primary">
-                    {area.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {area.description}
-                  </Typography>
-                </CardContent>
-              </Card>
+            <Grid key={area.title} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+              <Box
+                sx={{
+                  textAlign: 'center',
+                  border: '1px solid #ddd',
+                  p: 2,
+                  height: 280,
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  overflow: 'hidden',
+                  '&:hover': {
+                    borderColor: 'primary.main',
+                    height: 300,
+                  },
+                  '&:hover .research-icon': {
+                    top: '-30px',
+                  },
+                  '&:hover .research-title': {
+                    top: '-30px',
+                  },
+                  '&:hover .research-description': {
+                    opacity: 1,
+                    transform: 'scale(1)',
+                  },
+                }}
+              >
+                <Box
+                  className="research-icon"
+                  sx={{
+                    position: 'relative',
+                    top: '50px',
+                    display: 'inline-block',
+                    mb: 1,
+                    transition: 'all 0.3s ease',
+                  }}
+                >
+                  <Box
+                    component="img"
+                    src={area.image}
+                    alt={area.title}
+                    sx={{ width: 100, height: 100, objectFit: 'contain' }}
+                  />
+                </Box>
+                <Typography
+                  className="research-title"
+                  variant="h6"
+                  fontWeight={600}
+                  color="primary"
+                  sx={{
+                    position: 'relative',
+                    top: '50px',
+                    fontSize: '0.95rem',
+                    transition: 'all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                  }}
+                >
+                  {area.title}
+                </Typography>
+                <Typography
+                  className="research-description"
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    width: '100%',
+                    mx: 'auto',
+                    fontSize: '0.70rem',
+                    opacity: 0,
+                    transform: 'scale(0)',
+                    transition: 'all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+                  }}
+                >
+                  {area.description}
+                </Typography>
+              </Box>
             </Grid>
           ))}
         </Grid>
