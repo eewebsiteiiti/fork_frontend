@@ -32,8 +32,8 @@ import { Edit, Delete, Add, Search, CloudUpload } from '@mui/icons-material';
 const PEOPLE_TYPES = [
   { value: 'faculty', label: 'Faculty' },
   { value: 'staff', label: 'Staff' },
-  { value: 'btech', label: 'B.Tech' },
-  { value: 'mtech', label: 'M.Tech' },
+  { value: 'btech', label: 'B. Tech.' },
+  { value: 'mtech', label: 'M. Tech.' },
   { value: 'phd', label: 'Ph.D' },
   { value: 'ms', label: 'M.S.' },
   { value: 'alumni', label: 'Alumni' },

@@ -28,13 +28,13 @@ const typeConfig: Record<string, { title: string; subtitle: string; table: strin
     headerImage: '/images/banners/staff.jpg',
   },
   btech: {
-    title: 'B.Tech Students',
+    title: 'B. Tech. Students',
     subtitle: 'Undergraduate students in Electrical Engineering',
     table: 'btech',
     headerImage: '/images/banners/btech.png',
   },
   mtech: {
-    title: 'M.Tech Students',
+    title: 'M. Tech. Students',
     subtitle: 'Postgraduate students in CSP and VDN',
     table: 'mtech',
     headerImage: '/images/banners/mtech.png',

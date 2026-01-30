@@ -17,19 +17,19 @@ interface Course {
 
 const programConfig: Record<string, { title: string; subtitle: string; headerImage: string; semesters: number; dbProgram?: string; specialization?: string }> = {
   btech: {
-    title: 'B.Tech Courses',
+    title: 'B. Tech. Courses',
     subtitle: 'Undergraduate curriculum in Electrical Engineering',
     headerImage: '/images/banners/btech.png',
     semesters: 8,
   },
   mtech: {
-    title: 'M.Tech Courses',
+    title: 'M. Tech. Courses',
     subtitle: 'Postgraduate curriculum in CSP, VDN and PSPE',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
   },
   'mtech-csp': {
-    title: 'M.Tech Courses (CSP)',
+    title: 'M. Tech. Courses (CSP)',
     subtitle: 'Curriculum for Masters program in Communications and Signal Processing specialization',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
@@ -37,7 +37,7 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
     specialization: 'CSP',
   },
   'mtech-vdn': {
-    title: 'M.Tech Courses (VDN)',
+    title: 'M. Tech. Courses (VDN)',
     subtitle: 'Curriculum for Masters program in VLSI Design and Nanoelectronics specialization',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,
@@ -45,7 +45,7 @@ const programConfig: Record<string, { title: string; subtitle: string; headerIma
     specialization: 'VDN',
   },
   'mtech-pspe': {
-    title: 'M.Tech Courses (PSPE)',
+    title: 'M. Tech. Courses (PSPE)',
     subtitle: 'Curriculum for Masters program in Power Systems and Power Electronics specialization',
     headerImage: '/images/banners/mtech.png',
     semesters: 4,

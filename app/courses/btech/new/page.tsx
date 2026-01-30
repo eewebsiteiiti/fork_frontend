@@ -69,7 +69,7 @@ export default async function NewBTechCoursesPage({
 
   return (
     <PageLayout
-      title="B.Tech Courses (New Curriculum)"
+      title="B. Tech. Courses (New Curriculum)"
       subtitle="Updated undergraduate curriculum in Electrical Engineering"
       backgroundImage="/images/banners/btech.png"
     >

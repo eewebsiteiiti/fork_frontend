@@ -4,12 +4,12 @@ import PageLayout from '@/components/layout/PageLayout';
 const articles = [
   {
     title: 'EESA',
-    author: 'Rakshit Jangid (2022 B.Tech.)',
+    author: 'Rakshit Jangid (2022 B. Tech..)',
     pdf: '/pdf/EESA.pdf',
   },
   {
     title: 'Bouncing',
-    author: 'Tejas Chaudhari (2022 B.Tech.)',
+    author: 'Tejas Chaudhari (2022 B. Tech..)',
     pdf: '/pdf/Bouncing.pdf',
   },
   {

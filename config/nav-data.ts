@@ -42,7 +42,7 @@ export const navData: NavItem[] = [
         ],
       },
       {
-        label: 'M.Tech. Students',
+        label: 'M. Tech.. Students',
         children: [
           { label: '2025', href: '/people/mtech/2025' },
           { label: '2024', href: '/people/mtech/2024' },
@@ -50,7 +50,7 @@ export const navData: NavItem[] = [
         ],
       },
       {
-        label: 'B.Tech. Students',
+        label: 'B. Tech.. Students',
         children: [
           { label: '2025', href: '/people/btech/2025' },
           { label: '2024', href: '/people/btech/2024' },
@@ -109,10 +109,10 @@ export const navData: NavItem[] = [
       {
         label: 'Courses',
         children: [
-          { label: 'B.Tech. (after 2023)', href: '/courses/btech/new' },
-          { label: 'M.Tech. (CSP)', href: '/courses/mtech-csp' },
-          { label: 'M.Tech. (VDN)', href: '/courses/mtech-vdn' },
-          { label: 'M.Tech. (PSPE)', href: '/courses/mtech-pspe' },
+          { label: 'B. Tech.. (after 2023)', href: '/courses/btech/new' },
+          { label: 'M. Tech.. (CSP)', href: '/courses/mtech-csp' },
+          { label: 'M. Tech.. (VDN)', href: '/courses/mtech-vdn' },
+          { label: 'M. Tech.. (PSPE)', href: '/courses/mtech-pspe' },
         ],
       },
       {
@@ -125,9 +125,9 @@ export const navData: NavItem[] = [
       {
         label: 'Timetable',
         children: [
-          { label: 'B.Tech. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=415267304#gid=415267304', external: true },
-          { label: 'B.Tech. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=2052617232#gid=2052617232', external: true },
-          { label: 'B.Tech. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=0#gid=0', external: true },
+          { label: 'B. Tech.. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=415267304#gid=415267304', external: true },
+          { label: 'B. Tech.. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=2052617232#gid=2052617232', external: true },
+          { label: 'B. Tech.. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=0#gid=0', external: true },
           { label: 'Course Slots', href: '/documents/course-slots-spring-2025.pdf', external: true },
         ],
       },
