@@ -30,8 +30,28 @@ function getElectives(): Course[] {
     return db.prepare(`
       SELECT * FROM courses_new
       WHERE program = 'BTech' AND elective = 1
-      ORDER BY code
+      ORDER BY semester, code
     `).all() as Course[];
+  } catch {
+    return [];
+  }
+}
+
+interface DeptElective {
+  id: number;
+  code: string;
+  name: string;
+  credit: number;
+  ltp: string;
+}
+
+function getDeptElectives(): DeptElective[] {
+  try {
+    return db.prepare(`
+      SELECT * FROM electives
+      WHERE program = 'BTech'
+      ORDER BY code
+    `).all() as DeptElective[];
   } catch {
     return [];
   }
@@ -47,6 +67,7 @@ export default async function NewBTechCoursesPage({
 
   const allCourses = getCourses();
   const electives = getElectives();
+  const deptElectives = getDeptElectives();
 
   // Get unique semesters
   const semesters = [...new Set(allCourses.map(c => c.semester))].sort((a, b) => a - b);
@@ -169,8 +190,8 @@ export default async function NewBTechCoursesPage({
           </Box>
         ))}
 
-        {/* Electives Section - only show when viewing all */}
-        {!selectedSemester && electives.length > 0 && (
+        {/* EE Department Electives - only show when viewing all */}
+        {!selectedSemester && deptElectives.length > 0 && (
           <Box sx={{ mt: 6 }}>
             <Typography
               variant="h5"
@@ -179,26 +200,25 @@ export default async function NewBTechCoursesPage({
                 fontFamily: 'Caudex, serif',
                 color: 'primary.main',
                 borderBottom: '2px solid',
-                borderColor: 'secondary.main',
+                borderColor: 'primary.main',
                 pb: 1,
                 display: 'inline-block',
               }}
             >
-              Elective Courses
+              EE Department Elective Courses
             </Typography>
 
             <TableContainer component={Paper}>
               <Table size="small">
                 <TableHead>
-                  <TableRow sx={{ bgcolor: 'secondary.main' }}>
+                  <TableRow sx={{ bgcolor: 'primary.main' }}>
                     <TableCell sx={{ color: 'white', fontWeight: 600 }}>Code</TableCell>
                     <TableCell sx={{ color: 'white', fontWeight: 600 }}>Course Name</TableCell>
-                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>L-T-P</TableCell>
-                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>Credits</TableCell>
+                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>L-T-P-C</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {electives.map((course, index) => (
+                  {deptElectives.map((course, index) => (
                     <TableRow
                       key={course.id}
                       sx={{
@@ -207,11 +227,10 @@ export default async function NewBTechCoursesPage({
                       }}
                     >
                       <TableCell>
-                        <Chip label={course.code} size="small" color="secondary" variant="outlined" />
+                        <Chip label={course.code} size="small" color="primary" variant="outlined" />
                       </TableCell>
                       <TableCell>{course.name}</TableCell>
                       <TableCell>{course.ltp}</TableCell>
-                      <TableCell>{course.credit}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

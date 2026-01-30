@@ -109,8 +109,8 @@ export default function CommitteesPage() {
     <PageLayout
       title="Department Committees"
       subtitle="The Department has several committees to ensure smooth administration and functioning of various activities"
-      backgroundImage="/images/banners/faculty.jpg"
-      backgroundPosition="center -350%"
+      backgroundImage="/images/banners/gallery.jpg"
+      backgroundPosition="center"
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
         <TableContainer component={Paper} elevation={2}>

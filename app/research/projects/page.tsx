@@ -25,7 +25,7 @@ export default function ProjectsPage() {
     <PageLayout
       title="Research Projects"
       subtitle="The faculty of the Department are constantly egaged in research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact."
-      backgroundImage="/images/banners/gallery.jpg"
+      backgroundImage="/images/banners/projects.jpg"
       backgroundPosition="center -300%"
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>

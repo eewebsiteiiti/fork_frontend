@@ -43,7 +43,7 @@ const typeConfig: Record<string, { title: string; subtitle: string; table: strin
     title: 'M.S. (Research) Students',
     subtitle: 'Research-focused master\'s students',
     table: 'ms',
-    headerImage: '/images/banners/ms.png',
+    headerImage: '/images/banners/mtech.png',
   },
   alumni: {
     title: 'Alumni',

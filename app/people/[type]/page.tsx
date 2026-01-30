@@ -49,7 +49,7 @@ const typeConfig: Record<string, { title: string; subtitle: string; table: strin
     title: 'M.S. (Research) Students',
     subtitle: 'Research-focused master\'s students',
     table: 'ms',
-    headerImage: '/images/banners/ms.png',
+    headerImage: '/images/banners/mtech.png',
   },
   alumni: {
     title: 'Alumni',
@@ -121,7 +121,7 @@ export default async function PeoplePage({
       title={config.title}
       subtitle={config.subtitle}
       backgroundImage={config.headerImage}
-      backgroundPosition='center -350%'
+      backgroundPosition='center -300%'
     >
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {/* Year Filter for students */}

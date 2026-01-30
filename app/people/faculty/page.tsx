@@ -44,7 +44,7 @@ export default function FacultyPage() {
       title="Faculty"
       subtitle="The Department currently has 24 faculty members whose expertise falls under five main areas: Communications and Signal Processing (CSP), VLSI and Nanoelectronic devices (VDN), Power Electronics, Electrical Machines, Power Systems and Controls (PSPE) & RF and Microwave. The faculty members are actively engaged in cutting-edge research and attract funding through several sponsored projects. Through several active collaborations between the Academia and Industry, we endeavour to constantly develop solutions, technology and products that have real-life societal impact."
       backgroundImage="/images/banners/faculty.jpg"
-      backgroundPosition="center -350%"
+      backgroundPosition="center -300%"
     >
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {faculty.length > 0 ? (
