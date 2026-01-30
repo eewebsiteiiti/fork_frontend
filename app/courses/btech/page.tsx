@@ -16,8 +16,8 @@ interface Course {
 function getCourses(): Course[] {
   try {
     return db.prepare(`
-      SELECT * FROM courses_new
-      WHERE program = 'BTech' AND elective = 0
+      SELECT * FROM btech_courses
+      WHERE elective = 0
       ORDER BY semester, code
     `).all() as Course[];
   } catch {
@@ -25,39 +25,7 @@ function getCourses(): Course[] {
   }
 }
 
-function getElectives(): Course[] {
-  try {
-    return db.prepare(`
-      SELECT * FROM courses_new
-      WHERE program = 'BTech' AND elective = 1
-      ORDER BY semester, code
-    `).all() as Course[];
-  } catch {
-    return [];
-  }
-}
-
-interface DeptElective {
-  id: number;
-  code: string;
-  name: string;
-  credit: number;
-  ltp: string;
-}
-
-function getDeptElectives(): DeptElective[] {
-  try {
-    return db.prepare(`
-      SELECT * FROM electives
-      WHERE program = 'BTech'
-      ORDER BY code
-    `).all() as DeptElective[];
-  } catch {
-    return [];
-  }
-}
-
-export default async function NewBTechCoursesPage({
+export default async function BTechCoursesPage({
   searchParams,
 }: {
   searchParams: Promise<{ semester?: string }>;
@@ -66,8 +34,6 @@ export default async function NewBTechCoursesPage({
   const selectedSemester = semester ? parseInt(semester) : null;
 
   const allCourses = getCourses();
-  const electives = getElectives();
-  const deptElectives = getDeptElectives();
 
   // Get unique semesters
   const semesters = [...new Set(allCourses.map(c => c.semester))].sort((a, b) => a - b);
@@ -90,8 +56,8 @@ export default async function NewBTechCoursesPage({
 
   return (
     <PageLayout
-      title="B. Tech. Courses (New Curriculum)"
-      subtitle="Updated undergraduate curriculum in Electrical Engineering"
+      title="B. Tech. Core Courses"
+      subtitle="Core curriculum for B. Tech. in Electrical Engineering (after 2023)"
       backgroundImage="/images/banners/btech.png"
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
@@ -116,7 +82,7 @@ export default async function NewBTechCoursesPage({
             <Chip
               label="All"
               component="a"
-              href="/courses/btech/new"
+              href="/courses/btech"
               clickable
               color={!selectedSemester ? 'primary' : 'default'}
               variant={!selectedSemester ? 'filled' : 'outlined'}
@@ -126,7 +92,7 @@ export default async function NewBTechCoursesPage({
                 key={sem}
                 label={`Semester ${sem}`}
                 component="a"
-                href={`/courses/btech/new?semester=${sem}`}
+                href={`/courses/btech?semester=${sem}`}
                 clickable
                 color={selectedSemester === sem ? 'primary' : 'default'}
                 variant={selectedSemester === sem ? 'filled' : 'outlined'}
@@ -189,55 +155,6 @@ export default async function NewBTechCoursesPage({
             </TableContainer>
           </Box>
         ))}
-
-        {/* EE Department Electives - only show when viewing all */}
-        {!selectedSemester && deptElectives.length > 0 && (
-          <Box sx={{ mt: 6 }}>
-            <Typography
-              variant="h5"
-              sx={{
-                mb: 2,
-                fontFamily: 'Caudex, serif',
-                color: 'primary.main',
-                borderBottom: '2px solid',
-                borderColor: 'primary.main',
-                pb: 1,
-                display: 'inline-block',
-              }}
-            >
-              EE Department Elective Courses
-            </Typography>
-
-            <TableContainer component={Paper}>
-              <Table size="small">
-                <TableHead>
-                  <TableRow sx={{ bgcolor: 'primary.main' }}>
-                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>Code</TableCell>
-                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>Course Name</TableCell>
-                    <TableCell sx={{ color: 'white', fontWeight: 600 }}>L-T-P-C</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {deptElectives.map((course, index) => (
-                    <TableRow
-                      key={course.id}
-                      sx={{
-                        bgcolor: index % 2 === 0 ? 'white' : 'grey.50',
-                        '&:hover': { bgcolor: 'action.hover' },
-                      }}
-                    >
-                      <TableCell>
-                        <Chip label={course.code} size="small" color="primary" variant="outlined" />
-                      </TableCell>
-                      <TableCell>{course.name}</TableCell>
-                      <TableCell>{course.ltp}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Box>
-        )}
 
         {displaySemesters.length === 0 && (
           <Box sx={{ textAlign: 'center', py: 8 }}>

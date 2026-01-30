@@ -109,10 +109,11 @@ export const navData: NavItem[] = [
       {
         label: 'Courses',
         children: [
-          { label: 'B. Tech. (after 2023)', href: '/courses/btech/new' },
-          { label: 'M. Tech. (CSP)', href: '/courses/mtech-csp' },
-          { label: 'M. Tech. (VDN)', href: '/courses/mtech-vdn' },
-          { label: 'M. Tech. (PSPE)', href: '/courses/mtech-pspe' },
+          { label: 'B. Tech. Core (after 2023)', href: '/courses/btech' },
+          { label: 'M. Tech. Core (CSP)', href: '/courses/mtech-csp' },
+          { label: 'M. Tech. Core (VDN)', href: '/courses/mtech-vdn' },
+          { label: 'M. Tech. Core (PSPE)', href: '/courses/mtech-pspe' },
+          { label: 'Departmental Electives', href: '/courses/electives' },
         ],
       },
       {
