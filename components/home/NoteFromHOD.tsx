@@ -37,8 +37,8 @@ export default function NoteFromHOD() {
             and visitors exploring our department.
             Electrical Engineering at IIT Indore stands as one of the Institute’s largest and most
             multidisciplinary departments. We offer rigorous and forward-looking
-            academic programs including Bachelor of Technology (B. Tech..), Master
-            of Technology (M. Tech..), Master of Science (by Research), and Ph.D.
+            academic programs including Bachelor of Technology (B. Tech.), Master
+            of Technology (M. Tech.), Master of Science (by Research), and Ph.D.
             degrees, designed to prepare students for the challenges of a
             rapidly evolving technological landscape. Our curriculum bridges
             foundational theory with practical applications, fostering
