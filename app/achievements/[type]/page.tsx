@@ -53,7 +53,7 @@ const typeConfig: Record<string, { title: string; subtitle: string; icon: React.
     title: 'Patents',
     subtitle: 'Intellectual property and innovations',
     icon: <Star sx={{ fontSize: 40 }} />,
-    headerImage: '/images/banners/books.png',
+    headerImage: '/images/banners/patents.jpg',
   },
 };
 
@@ -106,6 +106,7 @@ export default async function AchievementsPage({
       title={config.title}
       subtitle={config.subtitle}
       backgroundImage={config.headerImage}
+      backgroundPosition='center 1'
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
         {/* Navigation Tabs */}
