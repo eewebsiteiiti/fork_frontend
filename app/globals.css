@@ -14,55 +14,7 @@ a {
   color: inherit;
 }
 
-/* Carousel animation */
-.imgSlider {
-  width: 100%;
-  height: calc(100vh + 270px);
-  background-image: url("/images/carousel/1.jpg");
-  background-size: cover;
-  background-position: center;
-  animation: changeImage 50s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-}
-
-@keyframes changeImage {
-  0% {
-    background-image: url("/images/carousel/1.jpg");
-  }
-  9.09% {
-    background-image: url("/images/carousel/2.jpg");
-  }
-  18.18% {
-    background-image: url("/images/carousel/3.jpg");
-  }
-  27.27% {
-    background-image: url("/images/carousel/4.jpg");
-  }
-  36.36% {
-    background-image: url("/images/carousel/7.jpg");
-  }
-  45.45% {
-    background-image: url("/images/carousel/8.jpg");
-  }
-  54.54% {
-    background-image: url("/images/carousel/9.jpg");
-  }
-  63.63% {
-    background-image: url("/images/carousel/10.jpg");
-  }
-  72.72% {
-    background-image: url("/images/carousel/11.jpg");
-  }
-  81.81% {
-    background-image: url("/images/carousel/12.jpg");
-  }
-  90.9% {
-    background-image: url("/images/carousel/13.jpg");
-  }
-  100% {
-    background-image: url("/images/carousel/1.jpg");
-  }
-}
-
+/* Carousel text overlay */
 .carousel-text {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;

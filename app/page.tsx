@@ -1,5 +1,7 @@
 import { Box, Container, Typography, Grid, Button } from '@mui/material';
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Carousel from '@/components/home/Carousel';
@@ -82,10 +84,24 @@ function getNews(): News[] {
   }
 }
 
+function getCarouselImages(): string[] {
+  try {
+    const carouselDir = path.join(process.cwd(), 'public', 'images', 'carousel');
+    const files = fs.readdirSync(carouselDir);
+    return files
+      .filter(file => /\.(jpg|jpeg|png|webp)$/i.test(file))
+      .sort()
+      .map(file => `/images/carousel/${file}`);
+  } catch {
+    return [];
+  }
+}
+
 export default function HomePage() {
   const events = getEvents();
   const announcements = getAnnouncements();
   const news = getNews();
+  const carouselImages = getCarouselImages();
 
   return (
     <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -94,7 +110,7 @@ export default function HomePage() {
 
       {/* Hero Carousel - Full viewport height with navbar overlay */}
       <Box sx={{ position: 'relative' }}>
-        <Carousel />
+        <Carousel images={carouselImages} />
       </Box>
 
       {/* Events & News Section */}
