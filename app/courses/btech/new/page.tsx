@@ -1,4 +1,5 @@
-import { Box, Container, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Chip } from '@mui/material';
+import { Box, Container, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Chip, Button } from '@mui/material';
+import { OpenInNew } from '@mui/icons-material';
 import PageLayout from '@/components/layout/PageLayout';
 import db from '@/lib/db';
 
@@ -73,6 +74,18 @@ export default async function NewBTechCoursesPage({
       backgroundImage="/images/banners/btech.png"
     >
       <Container maxWidth="xl" sx={{ py: 6 }}>
+        {/* IIT Indore Curriculum Link */}
+        <Box sx={{ mb: 4 }}>
+          <Button
+            variant="outlined"
+            href="https://academic.iiti.ac.in/app/storage/app/coursecurriculum/DcoHfLLD5OSzzJFQkn26g1LSQZSoDTPalMm8gPYu.pdf"
+            target="_blank"
+            endIcon={<OpenInNew />}
+          >
+            IIT Indore EE Course Curriculum
+          </Button>
+        </Box>
+
         {/* Semester Filter */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h6" gutterBottom>
