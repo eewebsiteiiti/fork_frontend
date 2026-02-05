@@ -243,7 +243,7 @@ export default function HomePage() {
 
               <Box sx={{ mt: 2 }}>
                 {announcements.length > 0 ? (
-                  [...announcements].reverse().map((ann) => (
+                  announcements.map((ann) => (
                     <Box
                       key={ann.id}
                       sx={{

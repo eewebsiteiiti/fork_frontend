@@ -62,7 +62,7 @@ export default function Gallery() {
               width="350"
               height={240}
               src="https://www.youtube.com/embed/s8f3N_14HeQ"
-              allow="autoplay; encrypted-media"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               style={{ border: 0 }}
             />
