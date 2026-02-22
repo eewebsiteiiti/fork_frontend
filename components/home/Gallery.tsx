@@ -61,7 +61,7 @@ export default function Gallery() {
               title="Departmental Video"
               width="350"
               height={240}
-              src="https://www.youtube.com/embed/s8f3N_14HeQ"
+              src="https://www.youtube.com/embed/4ZBnNHY2Bpk"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               style={{ border: 0 }}
