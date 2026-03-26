@@ -14,6 +14,8 @@ import db from '@/lib/db';
 import { initializeDatabase, checkTablesExist } from '@/lib/schema';
 import { getEventImagePath } from '@/lib/images';
 
+export const dynamic = 'force-dynamic';
+
 // Ensure database is initialized
 if (!checkTablesExist()) {
   initializeDatabase();
