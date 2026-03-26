@@ -243,7 +243,7 @@ export default function HomePage() {
                 NEWS
               </Typography>
 
-              <Box sx={{ mt: 2 }}>
+              <Box sx={{ mt: 2, maxHeight: 400, overflowY: 'auto' }}>
                 {announcements.length > 0 ? (
                   announcements.map((ann) => (
                     <Box
