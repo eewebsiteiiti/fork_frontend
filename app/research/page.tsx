@@ -17,11 +17,10 @@ const domains = [
       'Prof. Ayush Tripathi',
       'Prof. Saptrishi Ghosh',
       'Prof. Rinkee Chopra',
-      'Prof. Sharad Kumar Singh',
     ],
   },
   {
-    title: 'PSPE',
+    title: 'PSPE and Control',
     subtitle: 'Power Electronics, Machines and Power Systems',
     faculty: [
       'Prof. Amod C. Umarikar',
@@ -30,6 +29,7 @@ const domains = [
       'Prof. B Prathap Reddy',
       'Prof. Trapti Jain',
       'Prof. Shubhadeep Paladhi',
+      'Prof. Sharad Kumar Singh',
     ],
   },
   {
