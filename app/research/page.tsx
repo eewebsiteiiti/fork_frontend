@@ -33,8 +33,8 @@ const domains = [
     ],
   },
   {
-    title: 'VDN',
-    subtitle: 'VLSI Design & Nanoelectronics',
+    title: 'VDN and Photonics',
+    subtitle: 'VLSI Devices, Nanoelectronics and Photonics',
     faculty: [
       'Prof. Santosh Kumar Vishvakarma',
       'Prof. Shaibal Mukherjee',
