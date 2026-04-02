@@ -77,6 +77,7 @@ export default function AdminLoginPage() {
 
           <form onSubmit={handleSubmit}>
             <TextField
+              id="admin-password"
               fullWidth
               type="password"
               label="Password"
