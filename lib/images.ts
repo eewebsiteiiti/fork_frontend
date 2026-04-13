@@ -18,11 +18,16 @@ function isValidImagePath(path: string | null | undefined): path is string {
   return Boolean(path && path.trim() !== '' && path !== 'null' && path !== 'undefined');
 }
 
+// Normalize a DB image path to always have a leading /
+function normalizeImagePath(p: string): string {
+  return p.startsWith('/') ? p : `/${p}`;
+}
+
 // Get student image path based on program and roll number
 export function getStudentImagePath(program: string, rollNo: string, dbImage?: string | null): string {
   // If there's an image stored in database, use it
   if (isValidImagePath(dbImage)) {
-    return dbImage;
+    return normalizeImagePath(dbImage);
   }
   const programDir = program.toLowerCase();
   return `/images/people/students/${programDir}/${rollNo}.jpg`;
@@ -63,7 +68,7 @@ const facultyImageMap: Record<string, string> = {
 export function getFacultyImagePath(name: string, dbImage?: string | null): string {
   // If there's an image stored in database, use it
   if (isValidImagePath(dbImage)) {
-    return dbImage;
+    return normalizeImagePath(dbImage);
   }
   // Try mapping
   const imageName = facultyImageMap[name];
@@ -89,7 +94,7 @@ const staffImageMap: Record<string, string> = {
 export function getStaffImagePath(name: string, dbImage?: string | null): string {
   // If there's an image stored in database, use it
   if (isValidImagePath(dbImage)) {
-    return dbImage;
+    return normalizeImagePath(dbImage);
   }
   // Try mapping
   const imageName = staffImageMap[name];

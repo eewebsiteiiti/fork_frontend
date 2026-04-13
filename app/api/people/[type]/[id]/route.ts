@@ -47,13 +47,21 @@ export async function PUT(
     delete body.id;
     delete body.created_at;
 
-    const updates = Object.keys(body)
+    const tableInfo = db.prepare(`PRAGMA table_info(${type})`).all() as { name: string }[];
+    const validColumns = new Set(tableInfo.map((col) => col.name));
+
+    const filteredBody = Object.fromEntries(
+      Object.entries(body).filter(([key]) => validColumns.has(key))
+    );
+
+    const updates = Object.keys(filteredBody)
       .map((key) => `${key} = ?`)
       .join(', ');
-    const values = [...Object.values(body), id];
+    const hasUpdatedAt = validColumns.has('updated_at');
+    const values = [...Object.values(filteredBody), id];
 
     const stmt = db.prepare(
-      `UPDATE ${type} SET ${updates}, updated_at = CURRENT_TIMESTAMP WHERE id = ?`
+      `UPDATE ${type} SET ${updates}${hasUpdatedAt ? ', updated_at = CURRENT_TIMESTAMP' : ''} WHERE id = ?`
     );
     const result = stmt.run(...values);
 

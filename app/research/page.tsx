@@ -3,8 +3,7 @@ import PageLayout from '@/components/layout/PageLayout';
 
 const domains = [
   {
-    title: 'CSP & RFM',
-    subtitle: 'Communications, Signal Processing & Radio Frequency Microwave',
+    title: 'Communications, Networks & Signal/Image Processing',
     faculty: [
       'Prof. Ram Bilas Pachori',
       'Prof. Prabhat Kumar Upadhyay',
@@ -15,33 +14,65 @@ const domains = [
       'Prof. Dibbendu Roy',
       'Prof. Vivek Kanhangad',
       'Prof. Ayush Tripathi',
-      'Prof. Saptrishi Ghosh',
-      'Prof. Rinkee Chopra',
     ],
   },
   {
-    title: 'PSPE and Control',
-    subtitle: 'Power Electronics, Machines and Power Systems',
+    title: 'VLSI Design, Nanoelectronics & Photonics',
+    faculty: [
+      'Prof. Srivathsan Vasudevan',
+      'Prof. Shaibal Mukherjee',
+      'Prof. Mukesh Kumar',
+      'Prof. Vipul Singh',
+      'Prof. Santosh Kumar Vishvakarma',
+      'Prof. Abhinav Kranti',
+    ],
+  },
+  {
+    title: 'Power Systems, Power Electronics & Machine Drives',
     faculty: [
       'Prof. Amod C. Umarikar',
       'Prof. Vijay A. S.',
       'Prof. Lokesh Kumar Dewangan',
-      'Prof. B Prathap Reddy',
+      'Prof. Prathap Reddy B',
       'Prof. Trapti Jain',
-      'Prof. Shubhadeep Paladhi',
+      'Prof. Subhadeep Paladhi',
+    ],
+  },
+  {
+    title: 'RF & Microwave',
+    faculty: [
+      'Prof. Saptarshi Ghosh',
+      'Prof. Rinkee Chopra',
+    ],
+  },
+  {
+    title: 'Instrumentation, Robotics & Control',
+    faculty: [
+      'Prof. Srivathsan Vasudevan',
       'Prof. Sharad Kumar Singh',
     ],
   },
   {
-    title: 'VDN and Photonics',
-    subtitle: 'VLSI Devices, Nanoelectronics and Photonics',
+    title: 'Artificial Intelligence & Quantum Technology',
     faculty: [
-      'Prof. Santosh Kumar Vishvakarma',
-      'Prof. Shaibal Mukherjee',
+      'Prof. Vivek Kanhangad',
+      'Prof. Vimal Bhatia',
       'Prof. Mukesh Kumar',
+      'Prof. Shaibal Mukherjee',
+      'Prof. Sharad Kumar Singh',
+      'Prof. Ayush Tripathi',
+      'Prof. Subhadeep Paladhi',
+      'Prof. Saptarshi Ghosh',
+      'Prof. Swaminathan R.',
       'Prof. Vipul Singh',
-      'Prof. Srivathsan Vasudevan',
+      'Prof. Appina Balasubramanyam',
+      'Prof. Trapti Jain',
+      'Prof. Santosh Kumar Vishvakarma',
       'Prof. Abhinav Kranti',
+      'Prof. Prabhat Kumar Upadhyay',
+      'Prof. Sumit Gautam',
+      'Prof. Ram Bilas Pachori',
+      'Prof. Srivathsan Vasudevan',
     ],
   },
 ];
@@ -57,7 +88,7 @@ export default function ResearchPage() {
         <Box sx={{ py: 6, px: { xs: 2, md: 4 } }}>
           <Grid container spacing={4} justifyContent="center">
             {domains.map((domain) => (
-              <Grid key={domain.title} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Grid key={domain.title} size={{ xs: 12, sm: 6 }}>
                 <Box
                   sx={{
                     border: '2px solid',
@@ -78,11 +109,8 @@ export default function ResearchPage() {
                       textAlign: 'center',
                     }}
                   >
-                    <Typography variant="h5" fontWeight="bold">
+                    <Typography variant="h6" fontWeight="bold">
                       {domain.title}
-                    </Typography>
-                    <Typography variant="body2" sx={{ opacity: 0.9, mt: 0.5 }}>
-                      {domain.subtitle}
                     </Typography>
                   </Box>
                   <Box sx={{ p: 2, flexGrow: 1 }}>

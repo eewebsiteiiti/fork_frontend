@@ -52,6 +52,14 @@ const FACULTY_FIELDS = [
   { key: 'image', label: 'Image Path' },
 ];
 
+const STAFF_FIELDS = [
+  { key: 'name', label: 'Name', required: true },
+  { key: 'title', label: 'Title' },
+  { key: 'email', label: 'Email' },
+  { key: 'phone', label: 'Phone' },
+  { key: 'image', label: 'Photo' },
+];
+
 const STUDENT_FIELDS = [
   { key: 'name', label: 'Name', required: true },
   { key: 'roll_no', label: 'Roll Number' },
@@ -105,7 +113,8 @@ function PeopleAdminPageContent() {
   const currentType = PEOPLE_TYPES[activeTab].value;
 
   const getFields = () => {
-    if (currentType === 'faculty' || currentType === 'staff') return FACULTY_FIELDS;
+    if (currentType === 'faculty') return FACULTY_FIELDS;
+    if (currentType === 'staff') return STAFF_FIELDS;
     if (currentType === 'alumni') return ALUMNI_FIELDS;
     return STUDENT_FIELDS;
   };
@@ -209,7 +218,8 @@ function PeopleAdminPageContent() {
       }
 
       const { url } = await res.json();
-      return url;
+      // Strip leading slash — DB stores paths relative to public/, not as URLs
+      return url.replace(/^\//, '');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to upload image');
       return null;
@@ -226,7 +236,8 @@ function PeopleAdminPageContent() {
       data[f.key] = String(item[f.key] || '');
     });
     setFormData(data);
-    setImagePreview(item.image ? String(item.image) : null);
+    const rawImage = item.image ? String(item.image) : null;
+    setImagePreview(rawImage ? `/${rawImage}`.replace(/^\/\//, '/') : null);
     setPendingImageFile(null);
     setDialogOpen(true);
   };
@@ -437,7 +448,7 @@ function PeopleAdminPageContent() {
                   </Typography>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                     <Avatar
-                      src={imagePreview || formData.image || ''}
+                      src={imagePreview || (formData.image ? `/${formData.image}`.replace(/^\/\//, '/') : '')}
                       sx={{ width: 80, height: 80 }}
                     />
                     <Box>
