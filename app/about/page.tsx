@@ -30,34 +30,39 @@ const focusAreas = [
   'Next-generation Communication Systems, Smart Antennas, and Human-Centered AI methods for Signal Processing',
   'Flexible Electronics, Semiconductor Nanofabrication, Electronics-Photonics convergence, Energy efficient systems',
   'Renewable Energy Integration and Smart Grids, Cyber-security aspects, System on Chip Biomedical Devices for diagnostics and therapy',
-  'Novel Algorithms in Control and Optimisation, Drones and Robotics',
+  'Novel Algorithms in Control and Optimization, Drones and Robotics',
 ];
 
 const researchAreas = [
   {
-    title: 'Communications and Signal Processing (CSP)',
-    description: 'Communication and signal processing group works in areas related to wireless communication technologies and various signal/image processing techniques.',
-    image: '/images/about/research/signal.jpg',
+    title: 'Instrumentation, Robotics & Control',
+    description: 'Research in instrumentation, robotics, and control encompasses the design of sensors, actuators, and intelligent control systems for automation, robotic platforms, and real-world dynamic systems.',
+    image: '/images/about/research/control.png',
   },
   {
-    title: 'VLSI Design and Nano Electronics (VDN)',
-    description: 'VLSI Design and Nano Electronics focuses on design and fabrication of various electronic devices having applications in memory, communication, sensors, IoT, and wearable electronics',
+    title: 'VLSI Design, Nanoelectronics & Photonics',
+    description: 'VLSI Design, Nanoelectronics & Photonics focuses on design and fabrication of electronic devices having applications in memory, communication, sensors, IoT, wearable electronics, and photonic integration.',
     image: '/images/about/research/vlsi.jpg',
   },
   {
-    title: 'Power Electronics, Machines and Power Systems (PSPE)',
+    title: 'Power Systems, Power Electronics & Machine Drives',
     description: 'Power Electronics, Machines and Power Systems group works on efficient and optimal generation, transmission, distribution, use of electrical energy and efficient electric drives.',
     image: '/images/about/research/power.png',
   },
   {
-    title: 'RF and Microwave (RFM)',
-    description: 'RF (Radio Frequency) and microwave engineering are a particular domain of electrical engineering that focus on the design and analysis of high-frequency electronic circuits and systems.',
+    title: 'RF & Microwave',
+    description: 'RF and microwave engineering focus on the design and analysis of high-frequency electronic circuits and systems with applications in wireless communication, radar, and sensing.',
     image: '/images/about/research/rf.jpg',
   },
   {
-    title: 'Control Instrumentation And Optimization',
-    description: 'Control optimization involves the meticulous management of system behavior and the strategic refinement of processes to attain optimal outcomes. By monitoring variables, making informed decisions, and applying adjustments, control optimization ensures efficiency and effectiveness.',
-    image: '/images/about/research/control.png',
+    title: 'Communications, Networks & Signal/Image Processing',
+    description: 'Communication and signal processing group works in areas related to wireless communication technologies, network design, and various signal/image processing techniques.',
+    image: '/images/about/research/signal.jpg',
+  },
+  {
+    title: 'Artificial Intelligence & Quantum Technology',
+    description: 'Research in AI and Quantum Technology spans machine learning, deep learning, quantum computing, and their applications in signal processing, communications, VLSI, and biomedical engineering.',
+    image: '/images/about/research/ai-quantum.jpg',
   },
 ];
 
