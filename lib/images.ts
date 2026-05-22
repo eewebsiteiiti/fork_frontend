@@ -62,6 +62,7 @@ const facultyImageMap: Record<string, string> = {
   'Prof. Sharad Kumar Singh': 'sharad-singh.jpg',
   'Prof. Subhadeep Paladhi': 'pic.jpg',
   'Prof. Sumit Gautam': 'sumit.jpg',
+  'Prof. Himali Singh': 'himali.jpg',
   'Prof. Vijay A. S.': 'vijay.jpg',
 };
 
