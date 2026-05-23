@@ -38,7 +38,13 @@ function ImageWithFallback({ src, alt }: { src: string; alt: string }) {
       component="img"
       src={imageSrc}
       alt={alt}
-      sx={{ height: 140, width: '100%', objectFit: 'cover' }}
+      sx={{ 
+        height: 180, 
+        width: '100%', 
+        objectFit: 'contain',
+        bgcolor: 'grey.50',
+        borderRadius: 1
+      }}
     />
   );
 }

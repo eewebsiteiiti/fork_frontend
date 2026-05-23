@@ -28,9 +28,9 @@ const committees: Committee[] = [
     fullName: 'Department Under Graduate Committee',
     function: 'The department has a DUGC to deal with all issues related to UG students, academic programs, UG curriculum and courses, academic performance, academic indiscipline, academic malpractices of UG students. The committee regularly revises the UG curriculum and conducts assessment of the academic programs and suggests appropriate revisions or modifications.',
     members: [
-      'Dr. Vijay A.S (Convener)',
+      'Dr. Lokesh Kumar Dewangan (Convener)',
       'Dr. Srivathsan Vasudevan (Member)',
-      'Dr. Dibbendu Roy (Member)',
+      'Dr. Vijay A.S (Member)',
       'Head of the Department (Ex-Officio)',
       'Student Representative — UG (Nominated by Student Gymkhana)',
     ],
