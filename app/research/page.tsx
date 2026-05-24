@@ -54,6 +54,7 @@ const domains = [
       'Prof. Dibbendu Roy',
       'Prof. Vivek Kanhangad',
       'Prof. Ayush Tripathi',
+      'Prof. Himali Singh'
     ],
     side: 'left',
   },
