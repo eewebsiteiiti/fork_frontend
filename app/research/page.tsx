@@ -79,6 +79,7 @@ const domains = [
       'Prof. Sumit Gautam',
       'Prof. Ram Bilas Pachori',
       'Prof. Srivathsan Vasudevan',
+      'Prof. Himali Singh',
     ],
     side: 'right',
   },

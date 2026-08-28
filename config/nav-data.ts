@@ -120,15 +120,15 @@ export const navData: NavItem[] = [
           { label: 'UG', href: '/labs/ug' },
         ],
       },
-      {
-        label: 'Timetable',
-        children: [
-          { label: 'B. Tech. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=415267304#gid=415267304', external: true },
-          { label: 'B. Tech. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=2052617232#gid=2052617232', external: true },
-          { label: 'B. Tech. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1llvIJUTPa_kp7bJURQb8tA6fwXvamqr-ZKDJPjC6ZV4/edit?gid=0#gid=0', external: true },
-          { label: 'Course Slots', href: '/documents/course-slots-spring-2026.pdf', external: true },
-        ],
-      },
+     {
+  label: 'Timetable',
+  children: [
+    { label: 'B. Tech. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=611893779#gid=611893779', external: true },
+    { label: 'B. Tech. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=1124688975#gid=1124688975', external: true },
+    { label: 'B. Tech. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=737807980#gid=737807980', external: true },
+    { label: 'Course Slots', href: '/documents/course-slots-spring-2026.pdf', external: true },
+  ],
+},
     ],
   },
   {
