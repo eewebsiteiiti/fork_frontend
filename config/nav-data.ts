@@ -126,7 +126,13 @@ export const navData: NavItem[] = [
     { label: 'B. Tech. (4th yr) & PG-Ph.D.', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=611893779#gid=611893779', external: true },
     { label: 'B. Tech. (3rd yr)', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=1124688975#gid=1124688975', external: true },
     { label: 'B. Tech. (2nd yr)', href: 'https://docs.google.com/spreadsheets/d/1KC7nd_wZxW_Mb2eC_KfsyI3fY5vlClDJDEs3FZWiKSA/edit?gid=737807980#gid=737807980', external: true },
-    { label: 'Course Slots', href: '/documents/course-slots-spring-2026.pdf', external: true },
+    { label: 'Course Slots', href: '/documents/course-slots-autumn-2026.pdf', external: true },
+  ],
+},
+{
+  label: 'Academic Calendar',
+  children: [
+    { label: 'Academic Calendar 2026-2027', href: '/documents/academic-calendar-2026-27.pdf', external: true },
   ],
 },
     ],
