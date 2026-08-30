@@ -65,6 +65,12 @@ const galleryCategories = {
       '/images/gallery/trips/trip4.jpg',
       '/images/gallery/trips/trip5.jpg',
       '/images/gallery/events/tesla-coil.jpeg',
+      '/images/gallery/events/2025_batch.jpg',
+    '/images/gallery/events/2026_batch.jpg',
+    '/images/gallery/events/ug1.jpg',
+    '/images/gallery/events/ug2.jpg',
+    '/images/gallery/events/ug3.jpg',
+    '/images/gallery/events/ug4.jpg',
     ],
   },
   eesa: {

@@ -22,6 +22,7 @@ export const navData: NavItem[] = [
       {
         label: 'Ph.D. Students',
         children: [
+           { label: '2026', href: '/people/phd/2026' },
           { label: '2025', href: '/people/phd/2025' },
           { label: '2024', href: '/people/phd/2024' },
           { label: '2023', href: '/people/phd/2023' },
@@ -41,12 +42,14 @@ export const navData: NavItem[] = [
       {
         label: 'M. Tech. Students',
         children: [
+          { label: '2026', href: '/people/mtech/2026' },
           { label: '2025', href: '/people/mtech/2025' },
         ],
       },
       {
         label: 'B. Tech. Students',
         children: [
+          { label: '2026', href: '/people/btech/2026' },
           { label: '2025', href: '/people/btech/2025' },
           { label: '2024', href: '/people/btech/2024' },
           { label: '2023', href: '/people/btech/2023' },
