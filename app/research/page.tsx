@@ -19,6 +19,7 @@ const domains = [
       'Prof. Vipul Singh',
       'Prof. Santosh Kumar Vishvakarma',
       'Prof. Abhinav Kranti',
+      'Prof. Pratibha Verma',
     ],
     side: 'right',
   },
@@ -55,6 +56,7 @@ const domains = [
       'Prof. Vivek Kanhangad',
       'Prof. Ayush Tripathi',
       'Prof. Himali Singh'
+      
     ],
     side: 'left',
   },
@@ -80,6 +82,7 @@ const domains = [
       'Prof. Ram Bilas Pachori',
       'Prof. Srivathsan Vasudevan',
       'Prof. Himali Singh',
+      'Prof. Pratibha Verma',
     ],
     side: 'right',
   },

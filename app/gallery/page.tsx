@@ -71,6 +71,11 @@ const galleryCategories = {
     '/images/gallery/events/ug2.jpg',
     '/images/gallery/events/ug3.jpg',
     '/images/gallery/events/ug4.jpg',
+    '/images/gallery/events/visit-2026-1.jpg',
+      '/images/gallery/events/visit-2026-2.jpg',
+      '/images/gallery/events/visit-2026-3.jpg',
+      '/images/gallery/events/Dr R Swaminathan.JPG',
+      '/images/gallery/events/Dr Vijay A S.JPG'
     ],
   },
   eesa: {
