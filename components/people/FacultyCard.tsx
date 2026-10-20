@@ -122,11 +122,12 @@ export default function FacultyCard({ faculty }: { faculty: Faculty }) {
         )}
 
         {faculty.place && (
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
-            {faculty.place}
-          </Typography>
-        )}
-
+  <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+    {/^ph\.?\s?d/i.test(faculty.place.trim())
+      ? faculty.place
+      : `Ph.D., ${faculty.place}`}
+  </Typography>
+)}
         <Typography variant="body2" color="secondary.main" fontStyle="italic">
           {faculty.title}
         </Typography>
